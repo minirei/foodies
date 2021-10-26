@@ -9,8 +9,11 @@ const LandingPage = () => {
     <>
       <LandingImage>
         <StaticImage
-          src="../../assets/images/town.png"
+          className="hero"
+          src="../../assets/images/town.webp"
           alt="foodie-town"
+          objectFit="cover"
+        //   style={{ bottom: "10vh" }}
         />
       </LandingImage>
     </>
