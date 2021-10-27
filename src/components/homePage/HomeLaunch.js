@@ -9,6 +9,7 @@ import {
   HomeLaunchGallery,
   GalleryImages,
   HomeLaunchImage,
+  HomeLaunchFiller,
 } from "../../styles/homeStyles"
 
 const HomeLaunch = () => {

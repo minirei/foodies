@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { StaticImage } from "gatsby-plugin-image"
 
 // Landing Section
 export const LandingImage = styled.div`
@@ -21,7 +20,8 @@ export const LandingImage = styled.div`
 export const HomeAboutSection = styled.div`
   position: relative;
   width: 100%;
-  padding-bottom: 10vh;
+  padding: 15vh 0 5vh;
+  bottom: 10vh;
 `
 export const HomeAboutContent = styled.div`
   width: 40%;
@@ -55,7 +55,8 @@ export const HomeAboutImage = styled.div`
 export const HomeLaunchSection = styled.div`
   position: relative;
   width: 100%;
-  padding-bottom: 10vh;
+  background-color: palegoldenrod;
+  padding-bottom: 20vh;
 `
 export const HomeLaunchContent = styled.div`
   width: 100%;
@@ -127,5 +128,17 @@ export const HomeLaunchImage = styled.div`
 
   .image {
     border: 3px solid black;
+  }
+`
+
+// IDK if i'm going to use this
+export const HomeLaunchFiller = styled.div`
+  width: 100%;
+  background-color: palegoldenrod;
+  p {
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    /* color: red; */
   }
 `
