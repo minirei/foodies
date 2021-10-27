@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: Ubuntu, 'Helvetica', -apple-system, BlinkMacSystemFont, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto, Ubuntu, 'Helvetica', -apple-system, BlinkMacSystemFont, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: whitesmoke;
     color: black;
     overscroll-behavior: none;
@@ -32,6 +32,8 @@ export const Container = styled.div`
   height: 100%;
   width: auto;
   flex-grow: 1;
+
+  max-width: 300px;
 
   @media (min-width: 1024px) {
     max-width: 960px;
@@ -67,9 +69,27 @@ export const Flex = styled.div`
   width: 100%;
 
   ${props =>
+    props.vertical &&
+    css`
+      flex-direction: column;
+    `}
+
+  ${props =>
     props.spaceBetween &&
     css`
       justify-content: space-between;
+    `}
+
+  ${props =>
+    props.spaceAround &&
+    css`
+      justify-content: space-around;
+    `}
+
+  ${props =>
+    props.spaceEvenly &&
+    css`
+      justify-content: space-evenly;
     `}
 
   ${props =>
@@ -82,6 +102,12 @@ export const Flex = styled.div`
     props.alignTop &&
     css`
       align-items: flex-start;
+    `}
+
+  ${props =>
+    props.wrap &&
+    css`
+      flex-wrap: wrap;
     `}
 
   ${props =>
