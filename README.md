@@ -1,5 +1,9 @@
 # Foodies
 
+## To-Do
+- Implement global context to allow background-colour switching upon triggering certain events in the DOM (scrolling). I think this is achieved w/ framer motion & react-intersection-observer. 
+    - the colours are whitesmoke, palegoldenrod & lightcoral.
+
 ## Website - The Stack
 Frontend: Gatsby
 - images
