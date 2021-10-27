@@ -42,6 +42,9 @@ export const HomeAboutContent = styled.div`
 `
 export const HomeAboutImage = styled.div`
   width: 40%;
+  .image {
+    border: 2px solid black;
+  }
 `
 
 // Launch Section
@@ -86,7 +89,7 @@ export const HomeLaunchGallery = styled.div`
   position: relative;
   width: 100%;
   background-color: lightcoral;
-  padding-bottom: 10vh;
+  /* padding-bottom: 10vh; */
 
   h3 {
     font-weight: 400;
@@ -109,6 +112,13 @@ export const HomeLaunchImage = styled.div`
   width: 100%;
   @media (min-width: 1408px) {
     width: 23%;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto 10vh;
   }
 
   .image {

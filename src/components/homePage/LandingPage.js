@@ -10,7 +10,7 @@ const LandingPage = () => {
       <LandingImage>
         <StaticImage
           className="hero"
-          src="../../assets/images/town.webp"
+          src="../../assets/images/foodie-town-landing.png"
           alt="foodie-town"
           objectFit="cover"
         //   style={{ bottom: "10vh" }}

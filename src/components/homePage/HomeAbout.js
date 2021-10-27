@@ -31,7 +31,7 @@ const HomeAbout = () => {
             </HomeAboutContent>
             <HomeAboutImage>
               <StaticImage
-                className="homeAboutImage"
+                className="image"
                 src="../../assets/images/foodie-about.png"
                 alt="foodie about"
                 objectFit="cover"
