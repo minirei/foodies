@@ -56,7 +56,7 @@ export const HomeLaunchSection = styled.div`
   position: relative;
   width: 100%;
   background-color: palegoldenrod;
-  padding-bottom: 20vh;
+  /* padding-bottom: 20vh; */
 `
 export const HomeLaunchContent = styled.div`
   width: 100%;
