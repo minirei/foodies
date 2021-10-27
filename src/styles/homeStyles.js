@@ -25,19 +25,23 @@ export const HomeAboutSection = styled.div`
 `
 export const HomeAboutContent = styled.div`
   width: 40%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   h3 {
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.6rem;
+    padding-bottom: 2rem;
   }
 
   p {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 2rem;
+    padding-bottom: 1rem;
+    text-align: justify;
   }
 `
 export const HomeAboutImage = styled.div`
