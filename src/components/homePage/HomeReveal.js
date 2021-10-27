@@ -17,23 +17,26 @@ import {
 
 const HomeReveal = () => {
   // Animation
-  const [hovered, setHovered] = useState(false)
+  const [hovered1, setHovered1] = useState(false)
+  const [hovered2, setHovered2] = useState(false)
+  const [hovered3, setHovered3] = useState(false)
 
   return (
     <>
       <HomeRevealSection>
         <Flex spaceBetween>
+          {/* FIRST CURTAIN */}
           <HomeCurtain
             onHoverStart={() => {
-              setHovered(!hovered)
+              setHovered1(!hovered1)
             }}
             onHoverEnd={() => {
-              setHovered(!hovered)
+              setHovered1(!hovered1)
             }}
           >
             <CurtainContent>
               <CurtainHeading
-                animate={{ y: hovered ? `-10vh` : 0 }}
+                animate={{ y: hovered1 ? `-10vh` : 0 }}
                 transition={{
                   duration: 1.4,
                   ease: [0.6, 0.01, -0.05, 0.9],
@@ -46,7 +49,7 @@ const HomeReveal = () => {
               </CurtainHeading>
               <CurtainCover>
                 <CurtainText
-                  animate={{ y: hovered ? `-10vh` : 0 }}
+                  animate={{ y: hovered1 ? `-10vh` : 0 }}
                   transition={{
                     duration: 1.4,
                     ease: [0.6, 0.01, -0.05, 0.9],
@@ -60,16 +63,16 @@ const HomeReveal = () => {
                   </p>
                 </CurtainText>
                 <CurtainContentMask
-                  animate={{ y: hovered ? `100vh` : 0 }}
+                  animate={{ y: hovered1 ? `100vh` : 0 }}
                   transition={{
                     duration: 1.4,
-                    ease: "easeInOut",
+                    ease: "easeOut",
                   }}
                 />
               </CurtainCover>
             </CurtainContent>
             <CurtainImage
-              animate={{ scale: hovered ? 1 : 1.2 }}
+              animate={{ scale: hovered1 ? 1 : 1.2 }}
               transition={{
                 duration: 2,
                 ease: "easeInOut",
@@ -80,7 +83,7 @@ const HomeReveal = () => {
                 src="../../assets/images/baby-panda.jpg"
               />
               <CurtainImageMask
-                animate={{ y: hovered ? `120vh` : 0 }}
+                animate={{ y: hovered1 ? `120vh` : 0 }}
                 transition={{
                   duration: 1.4,
                   ease: [0.6, 0.01, -0.05, 0.9],
@@ -89,56 +92,136 @@ const HomeReveal = () => {
             </CurtainImage>
           </HomeCurtain>
 
-          <HomeCurtain>
+          {/* SECOND CURTAIN */}
+          <HomeCurtain
+            onHoverStart={() => {
+              setHovered2(!hovered2)
+            }}
+            onHoverEnd={() => {
+              setHovered2(!hovered2)
+            }}
+          >
             <CurtainContent>
-              <CurtainHeading>
+              <CurtainHeading
+                animate={{ y: hovered2 ? `-10vh` : 0 }}
+                transition={{
+                  duration: 1.4,
+                  ease: [0.6, 0.01, -0.05, 0.9],
+                }}
+              >
                 <p>02</p>
                 <h1>Making A</h1>
                 <h1>Difference</h1>
               </CurtainHeading>
-              <CurtainText>
-                <p>
-                  5% of all Foodies proceeds from start to end will be donated
-                  to food charities around the world as selected by the
-                  community. Foodies will not only feed those in need, but
-                  create joy and fun for all Foodie holders.
-                </p>
-              </CurtainText>
-              <CurtainContentMask />
+              <CurtainCover>
+                <CurtainText
+                  animate={{ y: hovered2 ? `-10vh` : 0 }}
+                  transition={{
+                    duration: 1.4,
+                    ease: [0.6, 0.01, -0.05, 0.9],
+                  }}
+                >
+                  <p>
+                    5% of all Foodies proceeds from start to end will be donated
+                    to food charities around the world as selected by the
+                    community. Foodies will not only feed those in need, but
+                    create joy and fun for all Foodie holders.
+                  </p>
+                </CurtainText>
+                <CurtainContentMask
+                  animate={{ y: hovered2 ? `100vh` : 0 }}
+                  transition={{
+                    duration: 1.4,
+                    ease: "easeOut",
+                  }}
+                />
+              </CurtainCover>
             </CurtainContent>
-            <CurtainImage>
+            <CurtainImage
+              animate={{ scale: hovered2 ? 1 : 1.2 }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+              }}
+            >
               <StaticImage
                 className="image"
-                src="../../assets/images/baby-panda.jpg"
+                src="../../assets/images/colosseum.png"
               />
-              <CurtainImageMask />
+              <CurtainImageMask
+                animate={{ y: hovered2 ? `120vh` : 0 }}
+                transition={{
+                  duration: 1.4,
+                  ease: [0.6, 0.01, -0.05, 0.9],
+                }}
+              />
             </CurtainImage>
           </HomeCurtain>
 
-          <HomeCurtain>
+          {/* THIRD CURTAIN */}
+          <HomeCurtain
+            onHoverStart={() => {
+              setHovered3(!hovered3)
+            }}
+            onHoverEnd={() => {
+              setHovered3(!hovered3)
+            }}
+          >
             <CurtainContent>
-              <CurtainHeading>
+              <CurtainHeading
+                animate={{ y: hovered3 ? `-10vh` : 0 }}
+                transition={{
+                  duration: 1.4,
+                  ease: [0.6, 0.01, -0.05, 0.9],
+                }}
+              >
                 <p>03</p>
                 <h1>Appreciating</h1>
                 <h1>Culture</h1>
                 <h1>& Cuisine</h1>{" "}
               </CurtainHeading>
-              <CurtainText>
-                <p>
-                  This project centres around food, even the art itself. The
-                  Foodies Community would like to enable the appreciation of
-                  food from various cultures via Foodie Parties as well as our
-                  Discord Channel.
-                </p>
-              </CurtainText>
-              <CurtainContentMask />
+              <CurtainCover>
+                <CurtainText
+                  animate={{ y: hovered3 ? `-10vh` : 0 }}
+                  transition={{
+                    duration: 1.4,
+                    ease: [0.6, 0.01, -0.05, 0.9],
+                  }}
+                >
+                  <p>
+                    This project centres around food, even the art itself. The
+                    Foodies Community would like to enable the appreciation of
+                    food from various cultures via Foodie Parties as well as our
+                    Discord Channel.
+                  </p>
+                </CurtainText>
+                <CurtainContentMask
+                  animate={{ y: hovered3 ? `100vh` : 0 }}
+                  transition={{
+                    duration: 1.4,
+                    ease: "easeOut",
+                  }}
+                />
+              </CurtainCover>
             </CurtainContent>
-            <CurtainImage>
+            <CurtainImage
+              animate={{ scale: hovered3 ? 1 : 1.2 }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+              }}
+            >
               <StaticImage
                 className="image"
-                src="../../assets/images/baby-panda.jpg"
+                src="../../assets/images/foodie-town.webp"
               />
-              <CurtainImageMask />
+              <CurtainImageMask
+                animate={{ y: hovered3 ? `120vh` : 0 }}
+                transition={{
+                  duration: 1.4,
+                  ease: [0.6, 0.01, -0.05, 0.9],
+                }}
+              />
             </CurtainImage>
           </HomeCurtain>
         </Flex>
