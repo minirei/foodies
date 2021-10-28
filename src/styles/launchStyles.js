@@ -75,8 +75,14 @@ export const Marquee = styled.div`
     width: fit-content;
     transform: translate3d(calc(-25%), 0, 0);
     animation: ${roll} 6s linear infinite;
-    animation-play-state: running;
+    animation-play-state: paused;
   }
+
+  .animate {
+      animation-play-state: running;
+  }
+
+
 `
 
 // Gallery

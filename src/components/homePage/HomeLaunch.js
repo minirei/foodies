@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 
@@ -30,11 +30,19 @@ AnimatedLetters.propTypes = {
 }
 
 const HomeLaunch = () => {
+  const [playMarquee, setPlayMarquee] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setPlayMarquee(true)
+    }, 2000)
+  }, [])
+
   return (
     <>
       <HomeLaunchSection>
         <Marquee>
-          <div className="marqueeInner">
+          <div className={`marqueeInner ${playMarquee && "animate"}`}>
             <AnimatedLetters title={"DECEMBER'21"} />
             <AnimatedLetters title={"DECEMBER'21"} />
             <AnimatedLetters title={"DECEMBER'21"} />
