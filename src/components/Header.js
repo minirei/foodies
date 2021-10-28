@@ -12,7 +12,6 @@ import {
   Logo,
   Socials,
 } from "../styles/headerStyles"
-import { blockStatement } from "@babel/types"
 
 const Header = () => {
   // Animation
@@ -23,14 +22,15 @@ const Header = () => {
     initial: {
       x: 0,
       transition: {
-        duration: 1,
+        duration: 1.6,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
     triggered: {
       x: `-10vw`,
       transition: {
-        duration: 1,
+        duration: 1.6,
+        delay: .8,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
@@ -57,6 +57,40 @@ const Header = () => {
       transition: {
         delay: 0.8,
       },
+    },
+  }
+
+  const navAnimation = {
+    initial: {
+      display: `block`,
+      transition: {
+        duration: 0.8,
+        ease: [0.6, 0.01, -0.05, 0.9],
+      },
+    },
+    triggered: {
+      transition: {
+        duration: .8,
+        ease: [0.6, 0.01, -0.05, 0.9],
+        staggerChildren: .2,
+        staggerDirection: -1,
+      },
+    },
+    hide: {
+      display: `none`,
+      transition: {
+        delay: 2,
+      },
+    },
+  }
+
+  const navChildAnimation = {
+    initial: {
+      opacity: 1,
+      display: `inline-block`,
+    },
+    triggered: {
+      opacity: 0,
     },
   }
 
@@ -88,21 +122,19 @@ const Header = () => {
           </Menu>
           <Flex spaceBetween>
             <Navigation
-              variants={logoAnimation}
+              variants={navAnimation}
               animate={controls}
               initial="initial"
             >
-              <h3>
-                <Link className="navLink" href="/">
-                  Foodies
-                </Link>
-                <Link className="navLink" href="/">
-                  Roadmap
-                </Link>
-                <Link className="navLink" href="/">
-                  FAQs
-                </Link>
-              </h3>
+              {/* <Link className="navLink" href="/"> */}
+              <motion.h3 variants={navChildAnimation}>Foodies</motion.h3>
+              {/* </Link> */}
+              {/* <Link className="navLink" href="/"> */}
+              <motion.h3 variants={navChildAnimation}>Roadmap</motion.h3>
+              {/* </Link> */}
+              {/* <Link className="navLink" href="/"> */}
+              <motion.h3 variants={navChildAnimation}>FAQs</motion.h3>
+              {/* </Link> */}
             </Navigation>
             <Socials
               variants={logoAnimation}

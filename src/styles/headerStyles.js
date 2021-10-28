@@ -8,18 +8,23 @@ export const HeaderSection = styled.div`
   z-index: 99;
 `
 
-export const Navigation = styled(motion.div)`
+export const Navigation = styled(motion.ul)`
+  .navLink {
+    color: black;
+    margin-right: 1.4rem;
+    :last-child {
+      margin-right: 0;
+    }
+  }
   h3 {
+    display: inline-block;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
     text-decoration: none;
-    .navLink {
-      color: black;
-      margin-right: 1.4rem;
-      :last-child {
-        margin-right: 0;
-      }
+    margin-right: 1.4rem;
+    :last-child {
+      margin-right: 0;
     }
   }
 `
