@@ -3,6 +3,8 @@
 ## To-Do
 - Implement global context to allow background-colour switching upon triggering certain events in the DOM (scrolling). I think this is achieved w/ framer motion & react-intersection-observer. 
     - the colours are whitesmoke, palegoldenrod & lightcoral.
+- Sticky header
+    - as scroll, fade away social icons, orchestral fade subheadings into menu
 
 ## Website - The Stack
 Frontend: Gatsby

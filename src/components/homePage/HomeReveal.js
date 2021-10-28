@@ -67,6 +67,7 @@ const HomeReveal = () => {
                   transition={{
                     duration: 1.4,
                     ease: "easeOut",
+                    delay: 0.1,
                   }}
                 />
               </CurtainCover>
@@ -85,8 +86,8 @@ const HomeReveal = () => {
               <CurtainImageMask
                 animate={{ y: hovered1 ? `120vh` : 0 }}
                 transition={{
-                  duration: 1.4,
-                  ease: [0.6, 0.01, -0.05, 0.9],
+                  duration: 0.8,
+                  ease: "easeOut",
                 }}
               />
             </CurtainImage>
@@ -133,6 +134,7 @@ const HomeReveal = () => {
                   transition={{
                     duration: 1.4,
                     ease: "easeOut",
+                    delay: 0.1,
                   }}
                 />
               </CurtainCover>
@@ -151,8 +153,8 @@ const HomeReveal = () => {
               <CurtainImageMask
                 animate={{ y: hovered2 ? `120vh` : 0 }}
                 transition={{
-                  duration: 1.4,
-                  ease: [0.6, 0.01, -0.05, 0.9],
+                  duration: 0.8,
+                  ease: "easeOut",
                 }}
               />
             </CurtainImage>
@@ -200,6 +202,7 @@ const HomeReveal = () => {
                   transition={{
                     duration: 1.4,
                     ease: "easeOut",
+                    delay: 0.1,
                   }}
                 />
               </CurtainCover>
@@ -218,8 +221,8 @@ const HomeReveal = () => {
               <CurtainImageMask
                 animate={{ y: hovered3 ? `120vh` : 0 }}
                 transition={{
-                  duration: 1.4,
-                  ease: [0.6, 0.01, -0.05, 0.9],
+                  duration: 0.8,
+                  ease: "easeOut",
                 }}
               />
             </CurtainImage>

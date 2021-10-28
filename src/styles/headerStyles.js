@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const HeaderSection = styled.div`
-  position: relative;
+  position: fixed;
   height: 10vh;
   width: 100%;
   z-index: 99;

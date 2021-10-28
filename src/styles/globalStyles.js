@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: Roboto, Ubuntu, 'Helvetica', -apple-system, BlinkMacSystemFont, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: whitesmoke;
+    background: #EBEBEB;
     color: black;
     overscroll-behavior: none;
     overflow-x: hidden;

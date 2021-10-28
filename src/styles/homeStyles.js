@@ -6,7 +6,7 @@ export const LandingImage = styled.div`
   /* height needs a media query for mobile */
   height: 100vh;
   position: relative;
-  bottom: 10vh;
+  /* bottom: 10vh; */
   .hero {
     height: auto;
     max-height: 100%;
@@ -20,8 +20,7 @@ export const LandingImage = styled.div`
 export const HomeAboutSection = styled.div`
   position: relative;
   width: 100%;
-  padding: 15vh 0 5vh;
-  bottom: 10vh;
+  padding: 10vh 0;
 `
 export const HomeAboutContent = styled.div`
   width: 40%;
