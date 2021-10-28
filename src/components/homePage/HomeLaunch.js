@@ -1,42 +1,63 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import PropTypes from "prop-types"
 
 // Styles
 import { Container, Flex } from "../../styles/globalStyles"
 import {
   HomeLaunchSection,
   HomeLaunchContent,
+  Marquee,
   HomeLaunchGallery,
   GalleryImages,
   HomeLaunchImage,
-  HomeLaunchFiller,
-} from "../../styles/homeStyles"
+} from "../../styles/launchStyles"
+
+const AnimatedLetters = ({ title }) => {
+  return (
+    <span className="rowTitle">
+      {[...title].map(letter => (
+        <span className="rowLetter" key={letter}>
+          {letter}
+        </span>
+      ))}
+    </span>
+  )
+}
+
+AnimatedLetters.propTypes = {
+  title: PropTypes.string.isrequired,
+}
 
 const HomeLaunch = () => {
   return (
     <>
       <HomeLaunchSection>
+        <Marquee>
+          <div className="marqueeInner">
+            <AnimatedLetters title={"DECEMBER'21"} />
+            <AnimatedLetters title={"DECEMBER'21"} />
+            <AnimatedLetters title={"DECEMBER'21"} />
+            <AnimatedLetters title={"DECEMBER'21"} />
+          </div>
+        </Marquee>
         <HomeLaunchContent>
           <Container>
-            <Flex spaceBetween>
-              <Flex vertical center className="launchInfo">
-                <h3>THIS FOODIES LAUNCH</h3>
-                <p>
-                  Comprises 10,000 uniquely cooked individuals (over{" "}
-                  <strong>8 categories</strong> and more than{" "}
-                  <strong>100 traits</strong>) made of - you guessed it - real,
-                  edible food ingredients! Each foodie will belong to 1 of these
-                  4 nationalities:{" "}
-                  <em>Japanese, Italian, American and Chinese</em>, some of the
-                  most popular cuisines in the world. Visually-stunning and
-                  deliciously-prepared, each Foodie embodies the spirit of love,
-                  diversity, and appreciation of food from various cultures!{" "}
-                </p>
-              </Flex>
-              <h1>
-                DEC <br />
-                2021
-              </h1>
+            <Flex vertical center className="launchInfo">
+              <h3>THIS FOODIES LAUNCH</h3>
+              <p>
+                Comprises <strong>10,000</strong> uniquely cooked individuals
+                (over <strong>8 categories</strong> and more than{" "}
+                <strong>100 traits</strong>) made of <em>real</em>, edible food
+                ingredients!
+              </p>
+              <p>
+                Each foodie will belong to 1 of these 4 nationalities:{" "}
+                <em>Japanese, Italian, American and Chinese</em>, some of the
+                most popular cuisines in the world. Visually-stunning and
+                deliciously-prepared, each Foodie embodies the spirit of love,
+                diversity, and appreciation of food from various cultures!{" "}
+              </p>
             </Flex>
           </Container>
         </HomeLaunchContent>

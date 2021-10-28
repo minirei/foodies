@@ -30,7 +30,7 @@ const Header = () => {
       x: `-10vw`,
       transition: {
         duration: 1.6,
-        delay: .8,
+        delay: 0.8,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
@@ -70,9 +70,9 @@ const Header = () => {
     },
     triggered: {
       transition: {
-        duration: .8,
+        duration: 0.8,
         ease: [0.6, 0.01, -0.05, 0.9],
-        staggerChildren: .2,
+        staggerChildren: 0.2,
         staggerDirection: -1,
       },
     },
@@ -98,7 +98,7 @@ const Header = () => {
   const [accordian, setAccordian] = useState(0)
 
   scrollY.onChange(x => {
-    setAccordian(x > 100 ? 1 : 0)
+    setAccordian(x > 200 ? 1 : 0)
   })
 
   useEffect(() => {
@@ -126,15 +126,15 @@ const Header = () => {
               animate={controls}
               initial="initial"
             >
-              {/* <Link className="navLink" href="/"> */}
-              <motion.h3 variants={navChildAnimation}>Foodies</motion.h3>
-              {/* </Link> */}
-              {/* <Link className="navLink" href="/"> */}
-              <motion.h3 variants={navChildAnimation}>Roadmap</motion.h3>
-              {/* </Link> */}
-              {/* <Link className="navLink" href="/"> */}
-              <motion.h3 variants={navChildAnimation}>FAQs</motion.h3>
-              {/* </Link> */}
+              <Link className="navLink" href="/">
+                <motion.h3 variants={navChildAnimation}>Foodies</motion.h3>
+              </Link>
+              <Link className="navLink" href="/roadmap">
+                <motion.h3 variants={navChildAnimation}>Roadmap</motion.h3>
+              </Link>
+              <Link className="navLink" href="/faq">
+                <motion.h3 variants={navChildAnimation}>FAQs</motion.h3>
+              </Link>
             </Navigation>
             <Socials
               variants={logoAnimation}
