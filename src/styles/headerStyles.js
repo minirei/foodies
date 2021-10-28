@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { motion } from "framer-motion"
 
 export const HeaderSection = styled.div`
   position: fixed;
@@ -7,7 +8,7 @@ export const HeaderSection = styled.div`
   z-index: 99;
 `
 
-export const Navigation = styled.div`
+export const Navigation = styled(motion.div)`
   h3 {
     font-size: 1.2rem;
     font-weight: 600;
@@ -22,7 +23,32 @@ export const Navigation = styled.div`
     }
   }
 `
-export const Logo = styled.div`
+
+export const Menu = styled(motion.div)`
+  position: absolute;
+  top: 0;
+  @media (min-width: 1408px) {
+    left: -5vw;
+  }
+
+  button {
+    transform-origin: center;
+    border: none;
+    background: none;
+    outline: none;
+    height: 10vh;
+
+    span {
+      width: 36px;
+      height: 8px;
+      display: block;
+      margin: 8px;
+      background-color: black;
+    }
+  }
+`
+
+export const Logo = styled(motion.div)`
   position: absolute;
   text-align: center;
   width: 100%;
@@ -35,7 +61,7 @@ export const Logo = styled.div`
     margin: 0 auto;
   }
 `
-export const Socials = styled.div`
+export const Socials = styled(motion.div)`
   .icon {
     height: 2.2rem;
     width: 2.2rem;

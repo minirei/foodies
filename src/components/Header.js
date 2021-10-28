@@ -1,25 +1,88 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
+import { motion, useViewportScroll } from "framer-motion"
+import { useAnimation } from "framer-motion"
 
 // Styles
 import { Container, Flex } from "../styles/globalStyles"
 import {
   HeaderSection,
   Navigation,
+  Menu,
   Logo,
   Socials,
 } from "../styles/headerStyles"
 
 const Header = () => {
+  // Animation
+
+  const controls = useAnimation()
+
+  const menuAnimation = {
+    initial: {
+      x: 0,
+      transition: {
+        duration: 1,
+        ease: [0.6, 0.01, -0.05, 0.9],
+      },
+    },
+    triggered: {
+      x: `-10vw`,
+      transition: {
+        duration: 1,
+        ease: [0.6, 0.01, -0.05, 0.9],
+      },
+    },
+  }
+
+  const logoAnimation = {
+    initial: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: [0.6, 0.01, -0.05, 0.9],
+      },
+    },
+    triggered: {
+      opacity: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.6, 0.01, -0.05, 0.9],
+      },
+    },
+  }
+
+  const { scrollY } = useViewportScroll()
+  const [accordian, setAccordian] = useState(0)
+
+  scrollY.onChange(x => {
+    setAccordian(x > 100 ? 1 : 0)
+  })
+
+  useEffect(() => {
+    if (accordian) {
+      controls.start("triggered")
+    } else {
+      controls.start("initial")
+    }
+  }, [accordian, controls])
+
   return (
     <>
       <HeaderSection>
         <Container flex>
-          <Logo>
-            <h1>Foodies</h1>
-          </Logo>
+          <Menu variants={menuAnimation} animate={controls} initial="initial">
+            <button>
+              <span></span>
+              <span></span>
+            </button>
+          </Menu>
           <Flex spaceBetween>
-            <Navigation>
+            <Navigation
+              variants={logoAnimation}
+              animate={controls}
+              initial="initial"
+            >
               <h3>
                 <Link className="navLink" href="/">
                   Foodies
@@ -32,7 +95,11 @@ const Header = () => {
                 </Link>
               </h3>
             </Navigation>
-            <Socials>
+            <Socials
+              variants={logoAnimation}
+              animate={controls}
+              initial="initial"
+            >
               <Flex>
                 <div className="icon instagram">
                   <a
@@ -82,6 +149,11 @@ const Header = () => {
               </Flex>
             </Socials>
           </Flex>
+          <Logo variants={logoAnimation} animate={controls} initial="initial">
+            {/* <motion.div animate={{ opacity: 0 }}> */}
+            <h1>Foodies</h1>
+            {/* </motion.div> */}
+          </Logo>
         </Container>
       </HeaderSection>
     </>
