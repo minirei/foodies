@@ -35,7 +35,7 @@ export const CurtainHeading = styled(motion.div)`
     margin: 0 auto 3rem;
   }
   h1 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 3.8rem;
     margin: 0 auto 1rem;
     letter-spacing: 0.1rem;
@@ -51,9 +51,10 @@ export const CurtainCover = styled(motion.div)`
 
 export const CurtainText = styled(motion.div)`
   p {
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    text-align: justify;
   }
 `
 export const CurtainContentMask = styled(motion.div)`
