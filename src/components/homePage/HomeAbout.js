@@ -14,7 +14,7 @@ const HomeAbout = () => {
     <>
       <HomeAboutSection>
         <Container>
-          <Flex spaceEvenly>
+          <Flex spaceBetween>
             <HomeAboutContent>
               <h3>Welcome to FOODIES: An NFT Project, <strong>but so much more</strong>.</h3>
               <p>

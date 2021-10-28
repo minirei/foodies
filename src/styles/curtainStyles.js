@@ -23,6 +23,7 @@ export const HomeCurtain = styled(motion.div)`
 
 export const CurtainContent = styled.div`
   position: relative;
+  top: 10%;
   width: 50%;
   margin: 0 auto;
   z-index: 10;

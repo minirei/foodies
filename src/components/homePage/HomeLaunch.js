@@ -19,7 +19,7 @@ const HomeLaunch = () => {
         <HomeLaunchContent>
           <Container>
             <Flex spaceBetween>
-              <Flex vertical className="launchInfo">
+              <Flex vertical center className="launchInfo">
                 <h3>THIS FOODIES LAUNCH</h3>
                 <p>
                   Comprises 10,000 uniquely cooked individuals (over{" "}

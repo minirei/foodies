@@ -76,6 +76,7 @@ export const Flex = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
+  height: 100%;
 
   ${props =>
     props.vertical &&
@@ -88,6 +89,12 @@ export const Flex = styled.div`
     css`
       justify-content: space-between;
     `}
+
+  ${props =>
+  props.center &&
+  css`
+    justify-content: center;
+  `}
 
   ${props =>
     props.spaceAround &&

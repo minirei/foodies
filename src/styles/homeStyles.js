@@ -20,17 +20,17 @@ export const LandingImage = styled.div`
 export const HomeAboutSection = styled.div`
   position: relative;
   width: 100%;
-  padding: 10vh 0;
+  padding: 20vh 0;
 `
 export const HomeAboutContent = styled.div`
-  width: 40%;
+  width: 55%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   h3 {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.6rem;
     line-height: 2.6rem;
     padding-bottom: 2rem;
   }
@@ -55,10 +55,13 @@ export const HomeLaunchSection = styled.div`
   position: relative;
   width: 100%;
   background-color: palegoldenrod;
-  /* padding-bottom: 20vh; */
 `
 export const HomeLaunchContent = styled.div`
   width: 100%;
+  /* padding: 10vh 0; */
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
 
   .launchInfo {
     width: 60%;
@@ -92,7 +95,7 @@ export const HomeLaunchGallery = styled.div`
   position: relative;
   width: 100%;
   background-color: lightcoral;
-  /* padding-bottom: 10vh; */
+  padding: 5vh 0;
 
   h3 {
     font-weight: 400;
