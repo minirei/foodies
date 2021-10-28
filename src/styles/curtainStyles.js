@@ -54,7 +54,7 @@ export const CurtainText = styled(motion.div)`
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 2.6rem;
-    text-align: justify;
+    text-align: left;
   }
 `
 export const CurtainContentMask = styled(motion.div)`

@@ -53,6 +53,7 @@ export const Logo = styled(motion.div)`
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  z-index: -1;
   h1 {
     font-size: 3rem;
     font-weight: 700;

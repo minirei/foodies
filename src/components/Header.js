@@ -12,6 +12,7 @@ import {
   Logo,
   Socials,
 } from "../styles/headerStyles"
+import { blockStatement } from "@babel/types"
 
 const Header = () => {
   // Animation
@@ -38,6 +39,7 @@ const Header = () => {
   const logoAnimation = {
     initial: {
       opacity: 1,
+      display: `block`,
       transition: {
         duration: 0.8,
         ease: [0.6, 0.01, -0.05, 0.9],
@@ -48,6 +50,12 @@ const Header = () => {
       transition: {
         duration: 0.8,
         ease: [0.6, 0.01, -0.05, 0.9],
+      },
+    },
+    hide: {
+      display: `none`,
+      transition: {
+        delay: 0.8,
       },
     },
   }
@@ -62,6 +70,7 @@ const Header = () => {
   useEffect(() => {
     if (accordian) {
       controls.start("triggered")
+      controls.start("hide")
     } else {
       controls.start("initial")
     }
