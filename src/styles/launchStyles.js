@@ -6,6 +6,7 @@ export const HomeLaunchSection = styled.div`
   position: relative;
   width: 100%;
   background-color: palegoldenrod;
+  cursor: default;
 `
 
 export const HomeLaunchContent = styled.div`

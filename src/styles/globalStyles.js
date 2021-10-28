@@ -21,6 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     color: rgb(29,29,29);
     overscroll-behavior: none;
     overflow-x: hidden;
+    ${'' /* cursor: default; */}
   }
 `
 

@@ -10,6 +10,7 @@ export const HomeRevealSection = styled.div`
   overflow: hidden;
   /* padding-bottom: 20vh; */
   background-color: palegoldenrod;
+  cursor: default;
 `
 export const HomeCurtain = styled(motion.div)`
   position: relative;

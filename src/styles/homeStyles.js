@@ -21,6 +21,7 @@ export const HomeAboutSection = styled.div`
   position: relative;
   width: 100%;
   padding: 20vh 0;
+  cursor: default;
 `
 export const HomeAboutContent = styled.div`
   width: 55%;
