@@ -5,6 +5,7 @@
     - the colours are whitesmoke, palegoldenrod & lightcoral.
 - Sticky header
     - as scroll, fade away social icons, orchestral fade subheadings into menu
+- adjust HomeLaunchSection to have the launch date as a banner going across the screen
 
 ## Website - The Stack
 Frontend: Gatsby

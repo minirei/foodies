@@ -10,8 +10,8 @@ export const HeaderSection = styled.div`
 export const Navigation = styled.div`
   h3 {
     font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
     text-decoration: none;
     .navLink {
       color: black;
@@ -29,8 +29,8 @@ export const Logo = styled.div`
   margin: 0 auto;
   h1 {
     font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
     color: black;
     margin: 0 auto;
   }
@@ -42,7 +42,7 @@ export const Socials = styled.div`
     display: block;
     position: relative;
     overflow: hidden;
-    margin-right: 0.8rem;
+    margin-right: 1rem;
     :last-child {
       margin-right: 0;
     }

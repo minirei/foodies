@@ -23,7 +23,7 @@ export const HomeCurtain = styled(motion.div)`
 
 export const CurtainContent = styled.div`
   position: relative;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   z-index: 10;
 `
@@ -31,13 +31,14 @@ export const CurtainContent = styled.div`
 export const CurtainHeading = styled(motion.div)`
   p {
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 0 auto 3rem;
   }
   h1 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 3.8rem;
     margin: 0 auto 1rem;
+    letter-spacing: 0.1rem;
   }
   margin-bottom: 3rem;
 `
@@ -50,9 +51,9 @@ export const CurtainCover = styled(motion.div)`
 
 export const CurtainText = styled(motion.div)`
   p {
-    font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
   }
 `
 export const CurtainContentMask = styled(motion.div)`

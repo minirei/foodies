@@ -76,7 +76,7 @@ const HomeReveal = () => {
               animate={{ scale: hovered1 ? 1 : 1.2 }}
               transition={{
                 duration: 2,
-                ease: "easeInOut",
+                ease: "easeOut",
               }}
             >
               <StaticImage
@@ -86,7 +86,7 @@ const HomeReveal = () => {
               <CurtainImageMask
                 animate={{ y: hovered1 ? `120vh` : 0 }}
                 transition={{
-                  duration: 0.8,
+                  duration: 1,
                   ease: "easeOut",
                 }}
               />
@@ -111,7 +111,7 @@ const HomeReveal = () => {
                 }}
               >
                 <p>02</p>
-                <h1>Making A</h1>
+                <h1>Making a</h1>
                 <h1>Difference</h1>
               </CurtainHeading>
               <CurtainCover>
@@ -143,7 +143,7 @@ const HomeReveal = () => {
               animate={{ scale: hovered2 ? 1 : 1.2 }}
               transition={{
                 duration: 2,
-                ease: "easeInOut",
+                ease: "easeOut",
               }}
             >
               <StaticImage
@@ -153,7 +153,7 @@ const HomeReveal = () => {
               <CurtainImageMask
                 animate={{ y: hovered2 ? `120vh` : 0 }}
                 transition={{
-                  duration: 0.8,
+                  duration: 1,
                   ease: "easeOut",
                 }}
               />
@@ -211,7 +211,7 @@ const HomeReveal = () => {
               animate={{ scale: hovered3 ? 1 : 1.2 }}
               transition={{
                 duration: 2,
-                ease: "easeInOut",
+                ease: "easeOut",
               }}
             >
               <StaticImage
@@ -221,7 +221,7 @@ const HomeReveal = () => {
               <CurtainImageMask
                 animate={{ y: hovered3 ? `120vh` : 0 }}
                 transition={{
-                  duration: 0.8,
+                  duration: 1,
                   ease: "easeOut",
                 }}
               />

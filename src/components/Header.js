@@ -16,7 +16,7 @@ const Header = () => {
       <HeaderSection>
         <Container flex>
           <Logo>
-            <h1>FOODIES</h1>
+            <h1>Foodies</h1>
           </Logo>
           <Flex spaceBetween>
             <Navigation>

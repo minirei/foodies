@@ -59,7 +59,6 @@ export const HomeLaunchSection = styled.div`
 `
 export const HomeLaunchContent = styled.div`
   width: 100%;
-  background-color: palegoldenrod;
 
   .launchInfo {
     width: 60%;
@@ -109,7 +108,7 @@ export const GalleryImages = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 5vw;
+  padding: 0 10vw;
 `
 
 export const HomeLaunchImage = styled.div`
