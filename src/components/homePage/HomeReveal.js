@@ -84,7 +84,7 @@ const HomeReveal = () => {
                 src="../../assets/images/baby-panda.jpg"
               />
               <CurtainImageMask
-                animate={{ y: hovered1 ? `120vh` : 0 }}
+                animate={{ y: hovered1 ? `140vh` : 0 }}
                 transition={{
                   duration: 1,
                   ease: "easeOut",
@@ -151,7 +151,7 @@ const HomeReveal = () => {
                 src="../../assets/images/colosseum.png"
               />
               <CurtainImageMask
-                animate={{ y: hovered2 ? `120vh` : 0 }}
+                animate={{ y: hovered2 ? `140vh` : 0 }}
                 transition={{
                   duration: 1,
                   ease: "easeOut",
@@ -219,7 +219,7 @@ const HomeReveal = () => {
                 src="../../assets/images/foodie-town.webp"
               />
               <CurtainImageMask
-                animate={{ y: hovered3 ? `120vh` : 0 }}
+                animate={{ y: hovered3 ? `140vh` : 0 }}
                 transition={{
                   duration: 1,
                   ease: "easeOut",
