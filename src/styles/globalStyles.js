@@ -1,11 +1,6 @@
 import styled, { css, createGlobalStyle } from "styled-components"
 import { normalize } from "styled-normalize"
 
-// Font
-const PoppinsFont = css`
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-`
-
 // Global style wrapper
 export const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -20,11 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     font-smooth: always;
   }
 
-  ${PoppinsFont}
   body {
-    ${
-      "" /* font-family: Roboto, Ubuntu, 'Helvetica', -apple-system, BlinkMacSystemFont, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    }
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #EBEBEB;
     color: rgb(29,29,29);
@@ -91,10 +82,10 @@ export const Flex = styled.div`
     `}
 
   ${props =>
-  props.center &&
-  css`
-    justify-content: center;
-  `}
+    props.center &&
+    css`
+      justify-content: center;
+    `}
 
   ${props =>
     props.spaceAround &&

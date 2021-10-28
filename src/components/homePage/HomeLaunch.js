@@ -17,7 +17,8 @@ const AnimatedLetters = ({ title }) => {
   return (
     <span className="rowTitle">
       {[...title].map(letter => (
-        <span className="rowLetter" key={letter}>
+        // eslint-disable-next-line react/jsx-key
+        <span className="rowLetter">
           {letter}
         </span>
       ))}
@@ -26,8 +27,8 @@ const AnimatedLetters = ({ title }) => {
 }
 
 AnimatedLetters.propTypes = {
-  title: PropTypes.string.isrequired,
-}
+  title: PropTypes.string,
+};
 
 const HomeLaunch = () => {
   const [playMarquee, setPlayMarquee] = useState(false)
@@ -51,7 +52,7 @@ const HomeLaunch = () => {
         </Marquee>
         <HomeLaunchContent>
           <Container>
-            <Flex vertical center className="launchInfo">
+            <Flex vertical alignTop className="launchInfo">
               <h3>THIS FOODIES LAUNCH</h3>
               <p>
                 Comprises <strong>10,000</strong> uniquely cooked individuals

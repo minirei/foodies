@@ -40,7 +40,6 @@ export const HomeLaunchContent = styled.div`
 `
 
 // Marquee
-
 const roll = keyframes`
 from {
     transform: translate3d(calc(-25%), 0, 0);
