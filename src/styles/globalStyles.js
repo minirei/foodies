@@ -33,6 +33,7 @@ export const Container = styled.div`
   height: 100%;
   width: auto;
   flex-grow: 1;
+  overflow: hidden;
 
   max-width: 300px;
 

@@ -30,19 +30,13 @@ export const Navigation = styled(motion.ul)`
 `
 
 export const Menu = styled(motion.div)`
-  position: absolute;
+  position: relative;
+  display: inline-block;
   top: 0;
+  left: 5%;
 
-  @media (min-width: 1024px) {
-    left: -1vw;
-  }
-
-  @media (min-width: 1216px) {
-    left: -3vw;
-  }
-
-  @media (min-width: 1408px) {
-    left: -8vw;
+  @media screen and (min-width: 1024px) {
+    position: absolute;
   }
 
   button {
@@ -63,9 +57,16 @@ export const Menu = styled(motion.div)`
 `
 
 export const Logo = styled(motion.div)`
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
+
+  position: relative;
+  display: inline-block;
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+  }
+
   h1 {
     z-index: 1;
     display: inline;
