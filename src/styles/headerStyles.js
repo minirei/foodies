@@ -32,6 +32,15 @@ export const Navigation = styled(motion.ul)`
 export const Menu = styled(motion.div)`
   position: absolute;
   top: 0;
+
+  @media (min-width: 1024px) {
+    left: -1vw;
+  }
+
+  @media (min-width: 1216px) {
+    left: -3vw;
+  }
+
   @media (min-width: 1408px) {
     left: -5vw;
   }

@@ -33,14 +33,15 @@ export const CurtainContent = styled.div`
 export const CurtainHeading = styled(motion.div)`
   p {
     font-weight: 200;
-    font-size: 2.4rem;
+    font-size: 2vw;
     margin: 0 auto 3rem;
   }
   h1 {
     font-weight: 600;
-    font-size: 3.8rem;
+    font-size: 3.4vw;
     margin: 0 auto 1rem;
     letter-spacing: 0.1rem;
+    white-space: nowrap;
   }
   margin-bottom: 3rem;
 `

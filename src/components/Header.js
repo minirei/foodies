@@ -27,7 +27,7 @@ const Header = () => {
       },
     },
     triggered: {
-      x: `-10vw`,
+      x: `-5vw`,
       transition: {
         duration: 1.6,
         delay: 0.8,
