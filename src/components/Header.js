@@ -13,11 +13,16 @@ import {
   Socials,
 } from "../styles/headerStyles"
 
-const Header = () => {
-  const windowWidth = window.innerWidth
-  const small = windowWidth < 1024
-  // Animation
+// Hooks
+import useWindowSize from "../hooks/useWindowSize"
 
+const Header = () => {
+
+  // For mobile
+  const size = useWindowSize()
+  const small = size.width < 1024
+  
+  // Animation
   const controls = useAnimation()
 
   const menuAnimation = {

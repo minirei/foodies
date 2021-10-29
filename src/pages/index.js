@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 
 // Components
 import Layout from "../components/Layout"
@@ -8,14 +8,31 @@ import HomeLaunch from "../components/homePage/HomeLaunch"
 import HomeReveal from "../components/homePage/HomeReveal"
 
 const IndexPage = () => {
+  // loading
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    loading
+      ? document.querySelector("body").classList.add("loading")
+      : document.querySelector("body").classList.remove("loading")
+  }, [loading])
+
+  useEffect(() => {
+    setLoading(false)
+  })
+
   return (
     <>
-      <Layout>
-        <LandingPage />
-        <HomeAbout />
-        <HomeLaunch />
-        <HomeReveal />
-      </Layout>
+      {loading ? (
+        <div></div>
+      ) : (
+        <Layout>
+          <LandingPage />
+          <HomeAbout />
+          <HomeLaunch />
+          <HomeReveal />
+        </Layout>
+      )}
     </>
   )
 }
