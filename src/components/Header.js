@@ -126,14 +126,17 @@ const Header = () => {
               animate={controls}
               initial="initial"
             >
-              <Link className="navLink" href="/">
-                <motion.h3 variants={navChildAnimation}>Foodies</motion.h3>
+              <Link className="navLink" href="/about">
+                <motion.h3 variants={navChildAnimation}>About</motion.h3>
               </Link>
               <Link className="navLink" href="/roadmap">
                 <motion.h3 variants={navChildAnimation}>Roadmap</motion.h3>
               </Link>
               <Link className="navLink" href="/faq">
                 <motion.h3 variants={navChildAnimation}>FAQs</motion.h3>
+              </Link>
+              <Link className="navLink" href="/guide">
+                <motion.h3 variants={navChildAnimation}>Guide</motion.h3>
               </Link>
             </Navigation>
             <Socials
@@ -159,7 +162,7 @@ const Header = () => {
                 </div>
                 <div className="icon discord">
                   <a
-                    href="https://discord.com/invite/qZqny3JP"
+                    href="https://discord.gg/9Qttw23Zs2"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -191,9 +194,9 @@ const Header = () => {
             </Socials>
           </Flex>
           <Logo variants={logoAnimation} animate={controls} initial="initial">
-            {/* <motion.div animate={{ opacity: 0 }}> */}
-            <h1>Foodies</h1>
-            {/* </motion.div> */}
+            <Link href="/">
+              <h1>Foodies</h1>
+            </Link>
           </Logo>
         </Container>
       </HeaderSection>

@@ -65,10 +65,11 @@ export const Menu = styled(motion.div)`
 export const Logo = styled(motion.div)`
   position: absolute;
   text-align: center;
-  width: 100%;
   margin: 0 auto;
-  z-index: -1;
   h1 {
+    z-index: 1;
+    display: inline;
+    width: auto;
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 0.3rem;
