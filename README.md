@@ -5,7 +5,8 @@
 - Implement global context to allow background-colour switching upon triggering certain events in the DOM (scrolling). I think this is achieved w/ framer motion & react-intersection-observer.
   - the colours are whitesmoke, palegoldenrod & lightcoral.
 - Make the actual MENU
-- adjust HomeLaunchSection to have the launch date as a banner going across the screen
+- adjust HomeLaunchSection to have the launch date as a banner going across the screen (NOW ADD ANIMATIONS!!!)
+- adjust gallery section to follow stockdutchdesign's lookbook format
 
 ## Website - The Stack
 

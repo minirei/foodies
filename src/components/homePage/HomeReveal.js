@@ -73,7 +73,7 @@ const HomeReveal = () => {
               </CurtainCover>
             </CurtainContent>
             <CurtainImage
-              animate={{ scale: hovered1 ? 1 : 1.2 }}
+              animate={{ scale: hovered1 ? 1 : 1.4 }}
               transition={{
                 duration: 2,
                 ease: "easeOut",
@@ -140,7 +140,7 @@ const HomeReveal = () => {
               </CurtainCover>
             </CurtainContent>
             <CurtainImage
-              animate={{ scale: hovered2 ? 1 : 1.2 }}
+              animate={{ scale: hovered2 ? 1 : 1.4 }}
               transition={{
                 duration: 2,
                 ease: "easeOut",
@@ -208,7 +208,7 @@ const HomeReveal = () => {
               </CurtainCover>
             </CurtainContent>
             <CurtainImage
-              animate={{ scale: hovered3 ? 1 : 1.2 }}
+              animate={{ scale: hovered3 ? 1 : 1.4 }}
               transition={{
                 duration: 2,
                 ease: "easeOut",

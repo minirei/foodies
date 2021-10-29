@@ -48,14 +48,14 @@ const Header = () => {
     triggered: {
       opacity: 0,
       transition: {
-        duration: 0.8,
+        duration: 1.2,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
     hide: {
       display: `none`,
       transition: {
-        delay: 0.8,
+        delay: 1.2,
       },
     },
   }
