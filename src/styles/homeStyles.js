@@ -20,7 +20,7 @@ export const LandingImage = styled.div`
 export const HomeAboutSection = styled.div`
   position: relative;
   width: 100%;
-  padding: 20vh 0;
+  height: 120vh;
   cursor: default;
 `
 export const HomeAboutContent = styled.div`
