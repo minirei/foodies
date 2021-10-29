@@ -21,7 +21,7 @@ Frontend: Gatsby
 ### Fonts
 Sans-Serif
 - Poppins
-
+    - https://www.typewolf.com/poppins
 Serif
-- P22 Mackinac Pro
-- FreightDispMedium
+- Garamond
+

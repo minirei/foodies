@@ -37,6 +37,7 @@ export const CurtainHeading = styled(motion.div)`
     margin: 0 auto 3rem;
   }
   h1 {
+    font-family: "EB Garamond", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 3.4vw;
     margin: 0 auto 1rem;

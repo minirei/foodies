@@ -42,7 +42,7 @@ export const Menu = styled(motion.div)`
   }
 
   @media (min-width: 1408px) {
-    left: -5vw;
+    left: -8vw;
   }
 
   button {

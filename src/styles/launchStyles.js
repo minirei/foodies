@@ -21,13 +21,14 @@ export const HomeLaunchContent = styled.div`
     right: 0;
     position: absolute;
     h3 {
+      font-family: "EB Garamond", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       width: 100%;
       font-weight: 600;
       font-size: 4.6rem;
       line-height: 10rem;
       letter-spacing: 0.1rem;
       text-transform: uppercase;
-      text-align: right;
+      text-align: left;
       margin: 0 auto;
     }
     p {
@@ -79,10 +80,8 @@ export const Marquee = styled.div`
   }
 
   .animate {
-      animation-play-state: running;
+    animation-play-state: running;
   }
-
-
 `
 
 // Gallery
@@ -106,7 +105,7 @@ export const GalleryImages = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 10vw;
+  padding: 0 7vw;
 `
 
 export const HomeLaunchImage = styled.div`
@@ -116,10 +115,11 @@ export const HomeLaunchImage = styled.div`
   }
 
   p {
-    font-weight: 500;
-    font-size: 2rem;
+    font-family: "EB Garamond", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
     text-align: center;
-    margin: 1rem auto 10vh;
+    margin: 1rem auto;
   }
 
   .image {

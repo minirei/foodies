@@ -30,10 +30,10 @@ export const HomeAboutContent = styled.div`
   flex-direction: column;
   align-items: flex-start;
   h3 {
+    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
-    font-size: 2.6rem;
-    line-height: 2.6rem;
-    padding-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
   p {
