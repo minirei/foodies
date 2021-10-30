@@ -32,8 +32,9 @@ export const Navigation = styled(motion.ul)`
 export const Menu = styled(motion.div)`
   position: relative;
   display: inline-block;
+  height: 10vh;
   top: 0;
-  left: 5%;
+  right: 5%;
 
   @media screen and (min-width: 1024px) {
     position: absolute;
@@ -57,9 +58,12 @@ export const Menu = styled(motion.div)`
 `
 
 export const Logo = styled(motion.div)`
-
   position: relative;
-  display: inline-block;
+  display: flex;
+  height: 10vh;
+  top: 0;
+  left: 5%;
+  align-items: center;
 
   @media screen and (min-width: 1024px) {
     position: absolute;
@@ -68,9 +72,11 @@ export const Logo = styled(motion.div)`
   }
 
   h1 {
+    transform-origin: center;
     z-index: 1;
     display: inline;
     width: auto;
+    height: auto;
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 0.3rem;

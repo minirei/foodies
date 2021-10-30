@@ -17,24 +17,23 @@ import {
 import useWindowSize from "../hooks/useWindowSize"
 
 const Header = () => {
-
   // For mobile
   const size = useWindowSize()
   const small = size.width < 1024
-  
+
   // Animation
   const controls = useAnimation()
 
   const menuAnimation = {
     initial: {
-      left: `10%`,
+      right: `5%`,
       transition: {
         duration: 1.6,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
     triggered: {
-      left: `1%`,
+      right: `1%`,
       transition: {
         duration: 1.6,
         delay: 0.8,
@@ -46,7 +45,7 @@ const Header = () => {
   const logoAnimation = {
     initial: {
       opacity: 1,
-      display: `inline-block`,
+      display: `flex`,
       transition: {
         duration: 0.8,
         ease: [0.6, 0.01, -0.05, 0.9],
@@ -141,6 +140,11 @@ const Header = () => {
               <span></span>
             </button>
           </Menu>
+          <Logo variants={logoAnimation} animate={controls} initial="initial">
+            <Link href="/">
+              <h1>Foodies</h1>
+            </Link>
+          </Logo>
           <Container flex>
             <Flex spaceBetween>
               <Navigation
@@ -215,11 +219,6 @@ const Header = () => {
                 </Flex>
               </Socials>
             </Flex>
-            <Logo variants={logoAnimation} animate={controls} initial="initial">
-              <Link href="/">
-                <h1>Foodies</h1>
-              </Link>
-            </Logo>
           </Container>
         </HeaderSection>
       )}
