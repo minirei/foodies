@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   ${normalize}
   * {
     text-decoration: none;
+    box-sizing: border-box;
   }
 
   html {
@@ -16,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    box-sizing: border-box;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #EBEBEB;
     color: rgb(29,29,29);

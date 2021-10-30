@@ -4,12 +4,12 @@ import { motion } from "framer-motion"
 
 // Styles
 import { Container, Flex } from "../styles/globalStyles"
-import { Menu} from "../styles/headerStyles"
+import { Menu, Logo } from "../styles/headerStyles"
 import {
   SiteNavSection,
   NavHeader,
-  NavLogo,
   NavContent,
+  Heading,
   NavBottom,
   Socials,
   Icon,
@@ -20,22 +20,33 @@ const SiteNav = () => {
     <>
       <SiteNavSection>
         <NavHeader>
-          <Flex spaceBetween>
-            <NavLogo>
-              <Link href="/">
-                <h1>Foodies</h1>
-              </Link>
-            </NavLogo>
-            <Menu>
-              <button>
-                <span></span>
-                <span></span>
-              </button>
-            </Menu>
-          </Flex>
+          <Logo>
+            <h1>Foodies</h1>
+          </Logo>
+          <Menu>
+            <button>
+              <span></span>
+              <span></span>
+            </button>
+          </Menu>
         </NavHeader>
-        <Flex vertical>
-          <NavContent></NavContent>
+        <Flex vertical center>
+          <NavContent>
+            <div className="main">
+              <Heading large>About</Heading>
+              <Heading large>FAQs</Heading>
+              <Heading large>Guide</Heading>
+              <Heading large>Mint</Heading>
+            </div>
+            <div className="roadmap">
+              <Heading large>Roadmap</Heading>
+              <Heading>Foodie Parties</Heading>
+              <Heading>Foodie Kitchen</Heading>
+              <Heading>Supply Drop</Heading>
+              <Heading>Foodie Wars</Heading>
+
+            </div>
+          </NavContent>
           <NavBottom>
             <Flex>
               <div>CARDANO LOGO COPYRIGHT</div>

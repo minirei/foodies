@@ -59,6 +59,9 @@ export const Marquee = styled.div`
 
   .rowTitle,
   .rowLetter {
+    color: palegoldenrod;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 5px;
     font-size: 22rem;
     font-weight: 700;
     letter-spacing: -0.8rem;
@@ -75,7 +78,7 @@ export const Marquee = styled.div`
     padding-top: 10vh;
     width: fit-content;
     transform: translate3d(calc(-25%), 0, 0);
-    animation: ${roll} 6s linear infinite;
+    animation: ${roll} 5s linear infinite;
     animation-play-state: paused;
   }
 

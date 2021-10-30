@@ -34,7 +34,8 @@ export const Menu = styled(motion.div)`
   display: inline-block;
   height: 10vh;
   top: 0;
-  right: 5%;
+  /* TODO add something to change position based on whether user has scrolled down */
+  right: 10%;
 
   @media screen and (min-width: 1024px) {
     position: absolute;
@@ -84,22 +85,22 @@ export const Logo = styled(motion.div)`
     margin: 0 auto;
   }
 `
-export const Socials = styled(motion.div)`
-  .icon {
-    height: 2.2rem;
-    width: 2.2rem;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    margin-right: 1rem;
-    :last-child {
-      margin-right: 0;
-    }
-    svg {
-      position: absolute;
-    }
-    path {
-      fill: black;
-    }
-  }
-`
+// export const Socials = styled(motion.div)`
+//   .icon {
+//     height: 2.2rem;
+//     width: 2.2rem;
+//     display: block;
+//     position: relative;
+//     overflow: hidden;
+//     margin-right: 1rem;
+//     :last-child {
+//       margin-right: 0;
+//     }
+//     svg {
+//       position: absolute;
+//     }
+//     path {
+//       fill: black;
+//     }
+//   }
+// `

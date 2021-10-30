@@ -26,7 +26,7 @@ const Header = () => {
 
   const menuAnimation = {
     initial: {
-      right: `5%`,
+      right: `10%`,
       transition: {
         duration: 1.6,
         ease: [0.6, 0.01, -0.05, 0.9],
@@ -145,7 +145,7 @@ const Header = () => {
             </Link>
           </Logo>
           <Container>
-            <Flex spaceBetween>
+            <Flex flexEnd>
               <Navigation
                 variants={navAnimation}
                 animate={controls}
