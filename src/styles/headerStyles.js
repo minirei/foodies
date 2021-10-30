@@ -62,7 +62,7 @@ export const Logo = styled(motion.div)`
   display: flex;
   height: 10vh;
   top: 0;
-  left: 5%;
+  left: 3%;
   align-items: center;
 
   @media screen and (min-width: 1024px) {
