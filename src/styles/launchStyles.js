@@ -22,7 +22,8 @@ export const HomeLaunchContent = styled.div`
     position: absolute;
     /* padding-top: 5vh; */
     h3 {
-      font-family: "EB Garamond", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
       width: 100%;
       font-weight: 600;
       font-size: 4.6rem;
@@ -92,7 +93,7 @@ export const Marquee = styled.div`
 export const HomeLaunchGallery = styled.div`
   position: relative;
   width: 100%;
-  background-color: lightcoral;
+  background-color: #de8979;
   padding: 5vh 0;
 
   h3 {
@@ -119,7 +120,7 @@ export const HomeLaunchImage = styled.div`
   }
 
   p {
-    font-family: "EB Garamond", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 2.2rem;
     text-align: center;

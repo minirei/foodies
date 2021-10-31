@@ -2,12 +2,15 @@
 
 ## To-Do
 
+- add headers to each section
+  - 001 - lookbook
+  - 002 - our goals
+- adjust gallery section to follow stockdutchdesign's lookbook format
 - Implement global context to allow background-colour switching upon triggering certain events in the DOM (scrolling). I think this is achieved w/ framer motion & react-intersection-observer.
   - the colours are whitesmoke, palegoldenrod & lightcoral.
 - adjust HomeLaunchSection to have the launch date as a banner going across the screen (NOW ADD ANIMATIONS!!!)
-- adjust gallery section to follow stockdutchdesign's lookbook format
 - roadmap
-- implement parallax scrolling over hero image like https://www.flyplatoon.com/
+<!-- - implement parallax scrolling over hero image like https://www.flyplatoon.com/ -->
 
 ## Website - The Stack
 

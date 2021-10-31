@@ -30,7 +30,7 @@ export const HomeAboutSection = styled.div`
   overflow: visible;
 `
 export const HomeAboutContent = styled(motion.div)`
-  width: 55%;
+  width: 60%;
   height: 100%;
   position: relative;
   display: flex;
@@ -53,11 +53,11 @@ export const HomeAboutContent = styled(motion.div)`
   }
 `
 export const HomeAboutImage = styled.div`
-  width: 40%;
+  width: 35%;
   overflow: visible;
   .image {
     /* border: 2px solid black; */
-    width: 120%;
+    width: 130%;
   }
 `
 
