@@ -23,15 +23,20 @@ export const HomeAboutSection = styled.div`
   position: relative;
   width: 100%;
   height: 80vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   cursor: default;
   background-color: #ebebeb;
+  overflow: visible;
 `
-export const HomeAboutContent = styled.div`
+export const HomeAboutContent = styled(motion.div)`
   width: 55%;
+  height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
   h3 {
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
@@ -49,8 +54,10 @@ export const HomeAboutContent = styled.div`
 `
 export const HomeAboutImage = styled.div`
   width: 40%;
+  overflow: visible;
   .image {
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    width: 120%;
   }
 `
 

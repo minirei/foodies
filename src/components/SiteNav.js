@@ -181,7 +181,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                 initial="initial"
                 exit="exit"
               >
-                <h1>Foodies</h1>
+                <h1>FOODIES</h1>
               </Logo>
               <Menu
                 className={`${accordian && "scrolled"} `}

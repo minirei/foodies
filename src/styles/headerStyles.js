@@ -82,9 +82,11 @@ export const Logo = styled(motion.div)`
     display: inline;
     width: auto;
     height: auto;
+    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
     font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 0.3rem;
+    font-weight: 600;
+    /* letter-spacing: 0.3rem; */
     color: black;
     margin: 0 auto;
   }

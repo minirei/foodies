@@ -20,6 +20,7 @@ export const HomeLaunchContent = styled.div`
     width: 75%;
     right: 0;
     position: absolute;
+    /* padding-top: 5vh; */
     h3 {
       font-family: "EB Garamond", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       width: 100%;

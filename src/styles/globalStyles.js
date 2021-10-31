@@ -73,6 +73,12 @@ export const Container = styled.div`
       align-items: center;
       justify-content: center;
     `}
+
+  ${props =>
+    props.overflowVisible &&
+    css`
+      overflow: visible;
+    `}
 `
 
 export const Flex = styled.div`
@@ -86,6 +92,12 @@ export const Flex = styled.div`
     props.vertical &&
     css`
       flex-direction: column;
+    `}
+
+  ${props =>
+    props.overflowVisible &&
+    css`
+      overflow: visible;
     `}
 
   ${props =>

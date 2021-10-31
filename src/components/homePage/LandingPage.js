@@ -7,12 +7,15 @@ import { LandingImage } from "../../styles/homeStyles"
 
 const LandingPage = () => {
   const { scrollY } = useViewportScroll()
-  const y1 = useTransform(scrollY, [0, 1000], [0, 300])
-  const o1 = useTransform(scrollY, [0, 700], [1, 0])
+  const y1 = useTransform(scrollY, [0, 1000], [0, 500])
+  const o1 = useTransform(scrollY, [0, 600], [1, 0])
 
   return (
     <>
-      <LandingImage style={{ y: y1, opacity: o1 }}>
+      <LandingImage
+        style={{ y: y1, opacity: o1 }}
+        transition={{ duration: 2, ease: "easeIn" }}
+      >
         <StaticImage
           className="hero"
           src="../../assets/images/foodie-town.webp"

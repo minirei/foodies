@@ -54,14 +54,14 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
     triggered: {
       opacity: 0,
       transition: {
-        duration: 1.2,
+        duration: 2,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
     hide: {
       display: `none`,
       transition: {
-        delay: 1.2,
+        delay: 2,
       },
     },
   }
@@ -126,7 +126,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
               </button>
             </Menu>
             <Logo variants={logoAnimation} animate={controls} initial="initial">
-              <h1>Foodies</h1>
+              <h1>FOODIES</h1>
             </Logo>
           </Flex>
         </HeaderSection>
@@ -145,7 +145,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
           </Menu>
           <Logo variants={logoAnimation} animate={controls} initial="initial">
             <Link href="/">
-              <h1>Foodies</h1>
+              <h1>FOODIES</h1>
             </Link>
           </Logo>
           <Container>
