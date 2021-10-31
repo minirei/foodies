@@ -1,12 +1,14 @@
 import styled from "styled-components"
+import { motion } from "framer-motion"
 
 // Landing Section
-export const LandingImage = styled.div`
+export const LandingImage = styled(motion.div)`
   width: 100vw;
   /* height needs a media query for mobile */
   height: 100vh;
   position: relative;
   /* bottom: 10vh; */
+  z-index: -1;
   .hero {
     height: auto;
     max-height: 100%;
@@ -22,6 +24,7 @@ export const HomeAboutSection = styled.div`
   width: 100%;
   height: 80vh;
   cursor: default;
+  background-color: #ebebeb;
 `
 export const HomeAboutContent = styled.div`
   width: 55%;
