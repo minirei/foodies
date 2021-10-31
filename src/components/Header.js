@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { motion, useViewportScroll } from "framer-motion"
 import { useAnimation } from "framer-motion"
+import PropTypes from "prop-types"
 
 // Styles
 import { Container, Flex } from "../styles/globalStyles"
@@ -10,13 +11,12 @@ import {
   Navigation,
   Menu,
   Logo,
-  Socials,
 } from "../styles/headerStyles"
 
 // Hooks
 import useWindowSize from "../hooks/useWindowSize"
 
-const Header = () => {
+const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
   // For mobile
   const size = useWindowSize()
   const small = size.width < 1024
@@ -100,7 +100,6 @@ const Header = () => {
   }
 
   const { scrollY } = useViewportScroll()
-  const [accordian, setAccordian] = useState(0)
 
   scrollY.onChange(x => {
     setAccordian(x > 150 ? 1 : 0)
@@ -133,7 +132,12 @@ const Header = () => {
         </HeaderSection>
       ) : (
         <HeaderSection>
-          <Menu variants={menuAnimation} animate={controls} initial="initial">
+          <Menu
+            variants={menuAnimation}
+            animate={controls}
+            initial="initial"
+            onClick={() => setToggleMenu(!toggleMenu)}
+          >
             <button>
               <span></span>
               <span></span>
@@ -170,6 +174,13 @@ const Header = () => {
       )}
     </>
   )
+}
+
+Header.propTypes = {
+  toggleMenu: PropTypes.bool.isRequired,
+  setToggleMenu: PropTypes.func.isRequired,
+  accordian: PropTypes.bool.isRequired,
+  setAccordian: PropTypes.func.isRequired,
 }
 
 export default Header

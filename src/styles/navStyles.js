@@ -1,17 +1,31 @@
 import styled, { css } from "styled-components"
 import { motion } from "framer-motion"
 
-export const SiteNavSection = styled.div`
-  position: relative;
+export const SiteNavSection = styled(motion.div)`
+  position: fixed;
   height: 100vh;
   width: 100vw;
+  z-index: 100;
+  overflow: hidden;
   background-color: #de8979;
   .line {
-    height: 100%;
+    &.short {
+      height: 100%;
+    }
+    height: 100vh;
     left: 0;
     position: absolute;
     top: 0;
     width: 1px;
+    display: block;
+    background: black;
+  }
+  .horizontalLine {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
     display: block;
     background: black;
   }
@@ -21,7 +35,7 @@ export const NavHeader = styled.div`
   position: fixed;
   height: 10vh;
   width: 100%;
-  z-index: 99;
+  z-index: 101;
 `
 
 export const NavContent = styled.div`
@@ -32,16 +46,6 @@ export const NavContent = styled.div`
   display: grid;
   box-sizing: border-box;
   grid-template-columns: 1fr 1fr;
-  ::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    left: 0;
-    bottom: 0;
-    display: block;
-    background: black;
-  }
 
   .main {
     grid-column: 1/2;
@@ -161,6 +165,7 @@ export const Icon = styled.div`
   height: 100%;
   width: 100%;
   /* border: 1px solid black; */
+  overflow: hidden;
   .svgWrapper {
     position: relative;
     width: fit-content;

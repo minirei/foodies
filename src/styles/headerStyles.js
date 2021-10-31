@@ -37,11 +37,9 @@ export const Menu = styled(motion.div)`
   /* TODO add something to change position based on whether user has scrolled down */
   right: 10%;
 
-  ${props =>
-    props.sitenav &&
-    css`
-      right: 1%;
-    `}
+  &.scrolled {
+    right: 1%;
+  }
 
   @media screen and (min-width: 1024px) {
     position: absolute;
