@@ -45,7 +45,7 @@ const HomeLaunch = () => {
   // Animation
   const [contentRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: `10%`,
+    rootMargin: `-5%`,
   })
   const controls = useAnimation()
 

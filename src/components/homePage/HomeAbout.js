@@ -1,10 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React, { useEffect } from "react"
 import { useInView } from "react-intersection-observer"
-import {
-  motion,
-  useAnimation,
-} from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 
 // Components
 import { Container, Flex } from "../../styles/globalStyles"
@@ -44,50 +41,52 @@ const HomeAbout = () => {
   }, [controls, inView])
   return (
     <>
-      <HomeAboutSection>
-        <Container overflowVisible>
-          <Flex spaceBetween>
-            <HomeAboutContent>
-              <Parallax offset={200}>
-                <motion.div
-                  className="animationWrapper"
-                  ref={contentRef}
-                  variants={contentAnimation}
-                  animate={controls}
-                  initial="hidden"
-                >
-                  <h3>
-                    Welcome to FOODIES: An NFT Project,{" "}
-                    <strong>but so much more</strong>.
-                  </h3>
-                  <p>
-                    Food is something that connects us universally. Perhaps it
-                    has to do with how we need it to live. But perhaps it can be
-                    for much, much more than survival. Here at Foodies, we bring
-                    Food to life!
-                  </p>
-                  <p>
-                    Foodies will live in Foodie Town, a bustling hub with a
-                    variety of hotspots and activities such as: Foodie Kitchen,
-                    Foodie Parties, and Foodie Wars!
-                  </p>
-                </motion.div>
-              </Parallax>
-            </HomeAboutContent>
+      <Parallax>
+        <HomeAboutSection>
+          <Container overflowVisible>
+            <Flex spaceBetween>
+              <HomeAboutContent>
+                <Parallax offset={200}>
+                  <motion.div
+                    className="animationWrapper"
+                    ref={contentRef}
+                    variants={contentAnimation}
+                    animate={controls}
+                    initial="hidden"
+                  >
+                    <h3>
+                      Welcome to FOODIES: An NFT Project,{" "}
+                      <strong>but so much more</strong>.
+                    </h3>
+                    <p>
+                      Food is something that connects us universally. Perhaps it
+                      has to do with how we need it to live. But perhaps it can
+                      be for much, much more than survival. Here at Foodies, we
+                      bring Food to life!
+                    </p>
+                    <p>
+                      Foodies will live in Foodie Town, a bustling hub with a
+                      variety of hotspots and activities such as: Foodie
+                      Kitchen, Foodie Parties, and Foodie Wars!
+                    </p>
+                  </motion.div>
+                </Parallax>
+              </HomeAboutContent>
 
-            <HomeAboutImage>
-              <Parallax offset={50}>
-                <StaticImage
-                  className="image"
-                  src="../../assets/images/foodie-about.png"
-                  alt="foodie about"
-                  objectFit="cover"
-                />
-              </Parallax>
-            </HomeAboutImage>
-          </Flex>
-        </Container>
-      </HomeAboutSection>
+              <HomeAboutImage>
+                <Parallax offset={50}>
+                  <StaticImage
+                    className="image"
+                    src="../../assets/images/foodie-about.png"
+                    alt="foodie about"
+                    objectFit="cover"
+                  />
+                </Parallax>
+              </HomeAboutImage>
+            </Flex>
+          </Container>
+        </HomeAboutSection>
+      </Parallax>
     </>
   )
 }
