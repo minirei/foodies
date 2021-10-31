@@ -5,6 +5,16 @@ export const SiteNavSection = styled.div`
   position: relative;
   height: 100vh;
   width: 100vw;
+  background-color: #de8979;
+  .line {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    display: block;
+    background: black;
+  }
 `
 
 export const NavHeader = styled.div`
@@ -16,13 +26,22 @@ export const NavHeader = styled.div`
 
 export const NavContent = styled.div`
   position: relative;
-  background-color: palegoldenrod;
   height: 100%;
   width: 100%;
   padding-left: 25vw;
   display: grid;
   box-sizing: border-box;
   grid-template-columns: 1fr 1fr;
+  ::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background: black;
+  }
 
   .main {
     grid-column: 1/2;
@@ -31,6 +50,7 @@ export const NavContent = styled.div`
     height: 100%;
     justify-content: flex-end;
     padding-bottom: 157px;
+    position: relative;
   }
 
   .roadmap {
@@ -40,16 +60,15 @@ export const NavContent = styled.div`
     height: 100%;
     justify-content: flex-end;
     padding-bottom: 65px;
+    position: relative;
   }
-
-
 `
 
 export const Heading = styled.h1`
   font-size: calc(2.6rem + 1vw);
   color: black;
   font-weight: 400;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: calc(4.6rem + 1vw);
   margin: 0;
@@ -64,9 +83,96 @@ export const Heading = styled.h1`
 
 export const NavBottom = styled.div`
   position: relative;
-  background-color: lightcoral;
   width: 100%;
-  height: 20vw;
+  height: 15vw;
+  .leftInfo {
+    position: absolute;
+    height: 100%;
+    width: 25vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    .imageWrapper {
+      height: 100%;
+      max-height: 100%;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .image {
+        max-height: 100%;
+        max-width: 45%;
+        object-fit: contain;
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 1.3rem;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+  }
+  .wrapper {
+    padding-left: 25vw;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    .info {
+      grid-column: 1/2;
+      height: 100%;
+    }
+    .infoWrapper {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+    }
+    h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
+      margin: 0;
+      padding-bottom: 4rem;
+    }
+    p {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .socials {
+    grid-column: 2/2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 `
-export const Socials = styled.div``
-export const Icon = styled.div``
+export const Icon = styled.div`
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
+  .svgWrapper {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  a {
+    height: 40%;
+    width: 40%;
+  }
+`

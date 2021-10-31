@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    ${'' /* font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */}
     background: #EBEBEB;
     color: rgb(29,29,29);
     overscroll-behavior: none;

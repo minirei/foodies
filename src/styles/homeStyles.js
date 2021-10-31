@@ -20,7 +20,7 @@ export const LandingImage = styled.div`
 export const HomeAboutSection = styled.div`
   position: relative;
   width: 100%;
-  height: 120vh;
+  height: 80vh;
   cursor: default;
 `
 export const HomeAboutContent = styled.div`
@@ -38,8 +38,8 @@ export const HomeAboutContent = styled.div`
 
   p {
     font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
     padding-bottom: 1rem;
     text-align: justify;
   }

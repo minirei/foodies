@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { motion } from "framer-motion"
 
 export const HeaderSection = styled.div`
@@ -36,6 +36,12 @@ export const Menu = styled(motion.div)`
   top: 0;
   /* TODO add something to change position based on whether user has scrolled down */
   right: 10%;
+
+  ${props =>
+    props.sitenav &&
+    css`
+      right: 1%;
+    `}
 
   @media screen and (min-width: 1024px) {
     position: absolute;
