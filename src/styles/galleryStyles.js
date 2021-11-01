@@ -43,6 +43,23 @@ export const GalleryCategory = styled(motion.div)`
       margin: 0;
       text-align: center;
       white-space: nowrap;
+      z-index: 1;
     }
+  }
+  .floatingBackground, .floatingFoodie {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    top: -10%;
+    left: 10%;
+    width: 55%;
+    z-index: 0;
+  }
+
+  .floatingFoodie {
+    top: 20%;
+    width: 40%;
+    left: 50%;
+    z-index: 2;
   }
 `

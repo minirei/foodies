@@ -2,13 +2,16 @@ import React, { useEffect, useState } from "react"
 import { motion, useAnimation } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
 
-// Components
+// Hooks
+import useMousePosition from "../../hooks/useMousePosition"
 
 // Styles
 import { Container, Flex } from "../../styles/globalStyles"
 import { HomeGallerySection, GalleryCategory } from "../../styles/galleryStyles"
 
 const HomeGallery = () => {
+  // Floating requirements
+  const { x, y } = useMousePosition()
   // Animation
   const controls = useAnimation()
   const textAnimation = {
@@ -58,25 +61,36 @@ const HomeGallery = () => {
                 China: Forbidden City
               </motion.h1>
             </motion.div>
-            <div className="image"></div>
+            <div className="floatingBackground">
+              <StaticImage src="../../assets/images/forbidden-city.png" />
+            </div>
+            <div className="floatingFoodie">
+              <StaticImage src="../../assets/images/foodie-about.png" />
+            </div>
           </GalleryCategory>
-          <GalleryCategory className="temp">
+          <GalleryCategory>
             <div className="content">
               <h1>Italy: The Colosseum</h1>
             </div>
-            <div className="image"></div>
+            <div className="floatingBackground">
+              <StaticImage />
+            </div>
           </GalleryCategory>
           <GalleryCategory>
             <div className="content">
               <h1>Japan: Kinkaku-Ji</h1>
             </div>
-            <div className="image"></div>
+            <div className="floatingBackground">
+              <StaticImage />
+            </div>
           </GalleryCategory>
-          <GalleryCategory className="temp">
+          <GalleryCategory>
             <div className="content">
               <h1>USA: Statue of Liberty</h1>
             </div>
-            <div className="image"></div>
+            <div className="floatingBackground">
+              <StaticImage />
+            </div>
           </GalleryCategory>
         </Flex>
       </Container>
