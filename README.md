@@ -3,11 +3,11 @@
 ## To-Do
 
 - adjust gallery section to follow stockdutchdesign's lookbook format
-  - add the thing where pictures pop up and follow you 
+  - change background on diff hovers (FIND SOME COLOURS FIRST THO)
   - ref: https://www.youtube.com/watch?v=qvFLjZvz5Mw&t=903s
-- adjust HomeLaunchSection to have the launch date as a banner going across the screen (NOW ADD ANIMATIONS!!!) 
+-  animate marquee
   - ref: https://www.youtube.com/watch?v=BtsVMvds3P0&t=343s
-- roadmap
+- implement roadmap slider showreel thing
 - Implement global context to allow background-colour switching upon triggering certain events in the DOM (scrolling). I think this is achieved w/ framer motion & react-intersection-observer.
   - the colours are rgb(235,235,235), rgb(29,29,29), 
   - might not be necessary if i just change the background colour of the SECTION
