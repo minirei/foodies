@@ -7,6 +7,7 @@ export const HomeRevealSection = styled.div`
   position: relative;
   width: 100%;
   height: 120vh;
+  margin-top: 20vh;
   overflow: hidden;
   /* padding-bottom: 20vh; */
   background-color: palegoldenrod;
@@ -20,6 +21,18 @@ export const HomeCurtain = styled(motion.div)`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  .heading {
+    position: absolute;
+    margin: 0;
+    top: 15%;
+    width: 50%;
+    z-index: 10;
+    h3 {
+      font-size: 2rem;
+      font-weight: 400;
+      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
 `
 
 export const CurtainContent = styled.div`
@@ -33,13 +46,15 @@ export const CurtainContent = styled.div`
 export const CurtainHeading = styled(motion.div)`
   p {
     font-weight: 200;
-    font-size: 2vw;
+    font-size: calc(2rem + 0.5vw);
+    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 auto 3rem;
   }
   h1 {
-    font-family: "EB Garamond", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    font-size: 3.4vw;
+    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: calc(3rem + 1vw);
+    color: #292929;
     margin: 0 auto 1rem;
     letter-spacing: 0.1rem;
     white-space: nowrap;

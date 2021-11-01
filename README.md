@@ -11,6 +11,7 @@
 - adjust HomeLaunchSection to have the launch date as a banner going across the screen (NOW ADD ANIMATIONS!!!)
 - roadmap
 <!-- - implement parallax scrolling over hero image like https://www.flyplatoon.com/ -->
+- change the policy id
 
 ## Website - The Stack
 
