@@ -162,13 +162,16 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
     },
   }
 
+  // Triggers menu animation when opened AND turns scrolling off
   useEffect(() => {
     if (toggleMenu) {
       controls.start("triggered")
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
     }
   }, [controls, toggleMenu])
 
-  console.log(`${logoAnimation}`)
   return (
     <>
       <AnimatePresence>

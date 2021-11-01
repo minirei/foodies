@@ -12,6 +12,7 @@ import { HomeGallerySection, GalleryCategory } from "../../styles/galleryStyles"
 const HomeGallery = () => {
   // Floating requirements
   const { x, y } = useMousePosition()
+  console.log(x,y)
   // Animation
   const controls = useAnimation()
   const textAnimation = {
