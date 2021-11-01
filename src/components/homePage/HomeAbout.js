@@ -46,7 +46,7 @@ const HomeAbout = () => {
           <Container overflowVisible>
             <Flex spaceBetween>
               <HomeAboutContent>
-                <Parallax offset={200}>
+                <Parallax offset={150}>
                   <motion.div
                     className="animationWrapper"
                     ref={contentRef}

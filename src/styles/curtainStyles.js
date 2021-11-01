@@ -7,11 +7,24 @@ export const HomeRevealSection = styled.div`
   position: relative;
   width: 100%;
   height: 120vh;
-  margin-top: 20vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   overflow: hidden;
   /* padding-bottom: 20vh; */
-  background-color: palegoldenrod;
+  background-color: rgb(222,183,153);
   cursor: default;
+  .chapter {
+    position: absolute;
+    top: 5%;
+    left: 8.33%;
+    z-index: 10;
+    h3 {
+      font-size: 2rem;
+      font-weight: 400;
+      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
+    }
+  }
 `
 export const HomeCurtain = styled(motion.div)`
   position: relative;
@@ -21,18 +34,6 @@ export const HomeCurtain = styled(motion.div)`
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  .heading {
-    position: absolute;
-    margin: 0;
-    top: 15%;
-    width: 50%;
-    z-index: 10;
-    h3 {
-      font-size: 2rem;
-      font-weight: 400;
-      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-  }
 `
 
 export const CurtainContent = styled.div`
@@ -77,7 +78,7 @@ export const CurtainText = styled(motion.div)`
   }
 `
 export const CurtainContentMask = styled(motion.div)`
-  background-color: palegoldenrod;
+  background-color: rgb(222,183,153);
   position: absolute;
   z-index: 1;
   height: 100%;
@@ -101,7 +102,7 @@ export const CurtainImage = styled(motion.div)`
 export const CurtainImageMask = styled(motion.div)`
   position: absolute;
   display: block;
-  background-color: palegoldenrod;
+  background-color: rgb(222,183,153);
   height: 100%;
   width: 100%;
   top: 0;

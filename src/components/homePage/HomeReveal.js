@@ -25,6 +25,16 @@ const HomeReveal = () => {
   return (
     <>
       <HomeRevealSection>
+        <motion.div
+          className="chapter"
+          animate={{ opacity: hovered1 ? 0 : 1 }}
+          transition={{
+            duration: 1,
+            ease: [0.6, 0.01, -0.05, 0.9],
+          }}
+        >
+          <h3>001 - Our Core Values</h3>
+        </motion.div>
         <Flex spaceBetween>
           {/* FIRST CURTAIN */}
           <HomeCurtain
@@ -35,16 +45,6 @@ const HomeReveal = () => {
               setHovered1(!hovered1)
             }}
           >
-            <motion.div
-              className="heading"
-              animate={{ opacity: hovered1 ? 0 : 1 }}
-              transition={{
-                duration: 1,
-                ease: [0.6, 0.01, -0.05, 0.9],
-              }}
-            >
-              <h3>001 - Our Core Values</h3>
-            </motion.div>
             <CurtainContent>
               <CurtainHeading
                 animate={{ y: hovered1 ? `-10vh` : 0 }}

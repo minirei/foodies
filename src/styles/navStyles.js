@@ -55,6 +55,7 @@ export const NavContent = styled.div`
     justify-content: flex-end;
     padding-bottom: 157px;
     position: relative;
+    mix-blend-mode: hard-light;
   }
 
   .roadmap {

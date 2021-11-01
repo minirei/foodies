@@ -6,6 +6,7 @@ import LandingPage from "../components/homePage/LandingPage"
 import HomeAbout from "../components/homePage/HomeAbout"
 import HomeLaunch from "../components/homePage/HomeLaunch"
 import HomeReveal from "../components/homePage/HomeReveal"
+import HomeGallery from "../components/homePage/HomeGallery"
 
 const IndexPage = () => {
   // loading
@@ -30,6 +31,7 @@ const IndexPage = () => {
           <LandingPage />
           <HomeAbout />
           <HomeLaunch />
+          <HomeGallery />
           <HomeReveal />
         </Layout>
       )}

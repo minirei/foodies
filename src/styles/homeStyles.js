@@ -22,7 +22,7 @@ export const LandingImage = styled(motion.div)`
 export const HomeAboutSection = styled.div`
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
   cursor: default;
@@ -42,6 +42,7 @@ export const HomeAboutContent = styled(motion.div)`
     font-weight: 500;
     font-size: 3rem;
     line-height: 3rem;
+    padding-top: calc(5rem + 10vh);
   }
 
   p {
@@ -57,14 +58,14 @@ export const HomeAboutImage = styled.div`
   overflow: visible;
   .image {
     /* border: 2px solid black; */
-    width: 130%;
+    width: 145%;
   }
 `
 
 // IDK if i'm going to use this
 export const HomeLaunchFiller = styled.div`
   width: 100%;
-  background-color: palegoldenrod;
+  background-color: rgb(222,183,153);
   p {
     font-weight: 500;
     font-size: 2rem;

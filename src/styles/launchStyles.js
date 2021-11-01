@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export const HomeLaunchSection = styled.div`
   position: relative;
   width: 100%;
-  background-color: palegoldenrod;
+  background-color: rgb(222,183,153);
   cursor: default;
 `
 
@@ -61,7 +61,7 @@ export const Marquee = styled.div`
 
   .rowTitle,
   .rowLetter {
-    color: palegoldenrod;
+    color: rgb(222,183,153);
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 5px;
     font-size: 22rem;
@@ -89,45 +89,45 @@ export const Marquee = styled.div`
   }
 `
 
-// Gallery
-export const HomeLaunchGallery = styled.div`
-  position: relative;
-  width: 100%;
-  background-color: #de8979;
-  padding: 5vh 0;
+// Gallery (OLD)
+// export const HomeLaunchGallery = styled.div`
+//   position: relative;
+//   width: 100%;
+//   background-color: #de8979;
+//   padding: 5vh 0;
 
-  h3 {
-    font-weight: 400;
-    font-size: 2rem;
-    text-align: start;
-    line-height: 3rem;
-    margin: 0 auto;
-    padding: 2rem 0;
-  }
-`
+//   h3 {
+//     font-weight: 400;
+//     font-size: 2rem;
+//     text-align: start;
+//     line-height: 3rem;
+//     margin: 0 auto;
+//     padding: 2rem 0;
+//   }
+// `
 
-export const GalleryImages = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 7vw;
-`
+// export const GalleryImages = styled.div`
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   padding: 0 7vw;
+// `
 
-export const HomeLaunchImage = styled.div`
-  width: 100%;
-  @media (min-width: 1408px) {
-    width: 23%;
-  }
+// export const HomeLaunchImage = styled.div`
+//   width: 100%;
+//   @media (min-width: 1408px) {
+//     width: 23%;
+//   }
 
-  p {
-    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    font-size: 2.2rem;
-    text-align: center;
-    margin: 1rem auto;
-  }
+//   p {
+//     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+//     font-weight: 600;
+//     font-size: 2.2rem;
+//     text-align: center;
+//     margin: 1rem auto;
+//   }
 
-  .image {
-    border: 3px solid black;
-  }
-`
+//   .image {
+//     border: 3px solid black;
+//   }
+// `
