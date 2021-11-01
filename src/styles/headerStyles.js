@@ -31,11 +31,14 @@ export const Navigation = styled(motion.ul)`
 
 export const Menu = styled(motion.div)`
   position: relative;
-  display: inline-block;
+  display: flex;
   height: 10vh;
   top: 0;
-  /* TODO add something to change position based on whether user has scrolled down */
   right: 10%;
+  z-index: 100;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
 
   &.scrolled {
     right: 1%;
@@ -50,7 +53,8 @@ export const Menu = styled(motion.div)`
     border: none;
     background: none;
     outline: none;
-    height: 10vh;
+    cursor: pointer;
+    height: fit-content;
 
     span {
       width: 36px;
