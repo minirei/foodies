@@ -3,7 +3,6 @@ import { motion, useAnimation } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
 
 // Components
-import Parallax from "../../elements/Parallax"
 
 // Styles
 import { Container, Flex } from "../../styles/globalStyles"
@@ -35,55 +34,53 @@ const HomeGallery = () => {
   }, [controls, hovered1])
 
   return (
-    <Parallax>
-      <HomeGallerySection>
-        <div className="chapter">
-          <h3>002 - Cultural Diversity</h3>
-        </div>
-        <Container overflowVisible>
-          <Flex vertical>
-            <GalleryCategory>
-              <motion.div
-                className="content"
-                onHoverStart={() => {
-                  setHovered1(!hovered1)
-                }}
-                onHoverEnd={() => {
-                  setHovered1(!hovered1)
-                }}
+    <HomeGallerySection>
+      <div className="chapter">
+        <h3>002 - Cultural Diversity</h3>
+      </div>
+      <Container overflowVisible>
+        <Flex vertical>
+          <GalleryCategory>
+            <motion.div
+              className="content"
+              onHoverStart={() => {
+                setHovered1(!hovered1)
+              }}
+              onHoverEnd={() => {
+                setHovered1(!hovered1)
+              }}
+            >
+              <motion.h1
+                variants={textAnimation}
+                animate={controls}
+                initial="initial"
               >
-                <motion.h1
-                  variants={textAnimation}
-                  animate={controls}
-                  initial="initial"
-                >
-                  China: Forbidden City
-                </motion.h1>
-              </motion.div>
-              <div className="image"></div>
-            </GalleryCategory>
-            <GalleryCategory className="temp">
-              <div className="content">
-                <h1>Italy: The Colosseum</h1>
-              </div>
-              <div className="image"></div>
-            </GalleryCategory>
-            <GalleryCategory>
-              <div className="content">
-                <h1>Japan: Kinkaku-Ji</h1>
-              </div>
-              <div className="image"></div>
-            </GalleryCategory>
-            <GalleryCategory className="temp">
-              <div className="content">
-                <h1>USA: Statue of Liberty</h1>
-              </div>
-              <div className="image"></div>
-            </GalleryCategory>
-          </Flex>
-        </Container>
-      </HomeGallerySection>
-    </Parallax>
+                China: Forbidden City
+              </motion.h1>
+            </motion.div>
+            <div className="image"></div>
+          </GalleryCategory>
+          <GalleryCategory className="temp">
+            <div className="content">
+              <h1>Italy: The Colosseum</h1>
+            </div>
+            <div className="image"></div>
+          </GalleryCategory>
+          <GalleryCategory>
+            <div className="content">
+              <h1>Japan: Kinkaku-Ji</h1>
+            </div>
+            <div className="image"></div>
+          </GalleryCategory>
+          <GalleryCategory className="temp">
+            <div className="content">
+              <h1>USA: Statue of Liberty</h1>
+            </div>
+            <div className="image"></div>
+          </GalleryCategory>
+        </Flex>
+      </Container>
+    </HomeGallerySection>
   )
 }
 

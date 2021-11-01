@@ -9,6 +9,7 @@ export const HomeGallerySection = styled.div`
   padding-bottom: 20vh;
   width: 100vw;
   background-color: #ebebeb;
+  cursor: default;
   .chapter {
     position: absolute;
     margin: 0;

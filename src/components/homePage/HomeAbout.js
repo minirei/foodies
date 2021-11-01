@@ -74,7 +74,7 @@ const HomeAbout = () => {
               </HomeAboutContent>
 
               <HomeAboutImage>
-                <Parallax offset={50}>
+                <Parallax offset={0}>
                   <StaticImage
                     className="image"
                     src="../../assets/images/foodie-about.png"

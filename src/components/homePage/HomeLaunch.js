@@ -67,7 +67,7 @@ const HomeLaunch = () => {
   }, [controls, inView])
 
   return (
-    <Parallax>
+    <Parallax offset={50}>
       <HomeLaunchSection>
         <Marquee>
           <div className={`marqueeInner ${playMarquee && "animate"}`}>
