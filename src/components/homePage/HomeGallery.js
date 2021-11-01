@@ -12,18 +12,36 @@ import { HomeGallerySection, GalleryCategory } from "../../styles/galleryStyles"
 const HomeGallery = () => {
   // Floating requirements
   const { x, y } = useMousePosition()
-  console.log(x,y)
+  console.log(x, y)
   // Animation
   const controls = useAnimation()
   const textAnimation = {
     initial: {
       color: `rgb(29, 29, 29)`,
+      transition: {
+        duration: 0.6,
+      },
     },
     triggered: {
       color: `rgb(235, 235, 235)`,
+      transition: {
+        duration: 0.6,
+      },
     },
-    transition: {
-      duration: 0.6,
+  }
+
+  const floatingAnimation = {
+    initial: {
+      opacity: 0,
+      transition: {
+        duration: 0.4,
+      },
+    },
+    triggered: {
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+      },
     },
   }
 
@@ -48,10 +66,10 @@ const HomeGallery = () => {
             <motion.div
               className="content"
               onHoverStart={() => {
-                setHovered1(!hovered1)
+                setHovered1(true)
               }}
               onHoverEnd={() => {
-                setHovered1(!hovered1)
+                setHovered1(false)
               }}
             >
               <motion.h1
@@ -62,9 +80,14 @@ const HomeGallery = () => {
                 China: Forbidden City
               </motion.h1>
             </motion.div>
-            <div className="floatingBackground">
+            <motion.div
+              className="floatingBackground"
+              variants={floatingAnimation}
+              animate={controls}
+              initial="initial"
+            >
               <StaticImage src="../../assets/images/forbidden-city.png" />
-            </div>
+            </motion.div>
             <div className="floatingFoodie">
               <StaticImage src="../../assets/images/foodie-about.png" />
             </div>
