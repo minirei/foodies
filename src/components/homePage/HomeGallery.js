@@ -145,7 +145,7 @@ const HomeGallery = () => {
               animate={controls1}
               initial="initial"
             >
-              <StaticImage src="../../assets/images/foodie-about.png" />
+              <StaticImage src="../../assets/images/chinese-foodie.png" />
             </motion.div>
           </GalleryCategory>
 
@@ -184,7 +184,7 @@ const HomeGallery = () => {
               animate={controls2}
               initial="initial"
             >
-              <StaticImage src="../../assets/images/foodie-about.png" />
+              <StaticImage src="../../assets/images/italian-foodie.png" />
             </motion.div>
           </GalleryCategory>
 
@@ -223,7 +223,7 @@ const HomeGallery = () => {
               animate={controls3}
               initial="initial"
             >
-              <StaticImage src="../../assets/images/foodie-about.png" />
+              <StaticImage src="../../assets/images/japanese-foodie.png" />
             </motion.div>
           </GalleryCategory>
 
@@ -262,7 +262,7 @@ const HomeGallery = () => {
               animate={controls4}
               initial="initial"
             >
-              <StaticImage src="../../assets/images/foodie-about.png" />
+              <StaticImage src="../../assets/images/american-foodie.png" />
             </motion.div>
           </GalleryCategory>
         </Flex>
