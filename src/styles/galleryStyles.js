@@ -10,6 +10,7 @@ export const HomeGallerySection = styled.div`
   width: 100vw;
   background-color: #ebebeb;
   cursor: default;
+  overflow: hidden;
   .chapter {
     position: absolute;
     margin: 0;
@@ -43,23 +44,23 @@ export const GalleryCategory = styled(motion.div)`
       margin: 0;
       text-align: center;
       white-space: nowrap;
-      z-index: 1;
+      z-index: 2;
     }
   }
   .floatingBackground, .floatingFoodie {
     pointer-events: none;
     position: absolute;
     overflow: hidden;
-    top: -10%;
+    top: -20%;
     left: 10%;
     width: 55%;
-    z-index: 0;
+    z-index: 1;
+    opacity: 0;
   }
 
   .floatingFoodie {
-    top: 20%;
-    width: 40%;
-    left: 50%;
-    z-index: 2;
+    top: 0%;
+    width: 30%;
+    left: 55%;
   }
 `

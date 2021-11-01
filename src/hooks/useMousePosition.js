@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-export default function useMousePosition() {
+export default function useMousePosition({ hovered }) {
   let [mousePosition, setMousePosition] = useState({
     x: null,
     y: null,
@@ -17,6 +17,11 @@ export default function useMousePosition() {
     return () => {
       window.removeEventListener("mousemove", handlePosition)
     }
+
+    // Honestly this somehow prevents the floating image from snapping in
+    useEffect(() => {
+      handlePosition
+    }, [hovered])
   }, [])
 
   return mousePosition
