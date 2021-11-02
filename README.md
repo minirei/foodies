@@ -11,6 +11,8 @@
   - ref: https://www.youtube.com/watch?v=ySXy9BFu9LQ&t=199s&ab_channel=WrongAkram
 <!-- - implement parallax scrolling over hero image like https://www.flyplatoon.com/ -->
 - change the policy id
+- implement gatsby-plugin-layout
+  - ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/
 
 ## Website - The Stack
 
