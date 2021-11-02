@@ -1,8 +1,10 @@
 # Foodies
 
 ## To-Do
+- add a FOOTER
 - implement roadmap slider showreel thing
   - ref: https://www.youtube.com/watch?v=t1lx061sncM&t=52s
+  - ref: https://codesandbox.io/s/framer-motion-image-gallery-pqvx3?file=/src/Example.tsx
 -  animate marquee
   - ref: https://www.youtube.com/watch?v=BtsVMvds3P0&t=343s
 - do up HERO image reveal
