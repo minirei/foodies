@@ -16,7 +16,7 @@ const HomeGallery = () => {
   const [hovered2, setHovered2] = useState(false)
   const [hovered3, setHovered3] = useState(false)
   const [hovered4, setHovered4] = useState(false)
-  const { x, y } = useMousePosition(hovered1)
+  const { x, y } = useMousePosition()
 
   // Distance from top of viewport
   const [topPositionState, setTopPositionState] = useState({ top: null })
@@ -87,7 +87,7 @@ const HomeGallery = () => {
       opacity: 0.2,
       zIndex: 0,
       transition: {
-        duration: .4,
+        duration: 0,
       },
     },
     exit: {
