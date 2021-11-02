@@ -26,6 +26,13 @@ const HomeGallery = () => {
     })
   }, [])
 
+  // Colours
+  const bg1 = `rgb(22,183,153)`
+  const bg2 = `rgb(222,137,121)`
+  const bg3 = `rgb(222,137,12)`
+  const bg4 = `rgb(222, 183, 153)`
+  const bgDefault = `rgb(235,235,235)`
+
   // Animation
   const colorControls = useAnimation()
   const controls1 = useAnimation()
@@ -35,38 +42,38 @@ const HomeGallery = () => {
 
   const colorAnimation = {
     initial: {
-      backgroundColor: `rgb(235,235,235)`,
+      backgroundColor: bgDefault,
       transition: {
-        duration: 0.2,
-        ease: "linear",
+        duration: 1,
+        ease: "easeOut",
       },
     },
     cat1: {
-      backgroundColor: `rgb(222,183,153)`,
+      backgroundColor: bg1,
       transition: {
-        duration: 0.2,
-        ease: "linear",
+        duration: 1,
+        ease: "easeOut",
       },
     },
     cat2: {
-      backgroundColor: `rgb(222,137,121)`,
+      backgroundColor: bg2,
       transition: {
-        duration: 0.2,
-        ease: "linear",
+        duration: 1,
+        ease: "easeOut",
       },
     },
     cat3: {
-      backgroundColor: `rgb(222,183,153)`,
+      backgroundColor: bg3,
       transition: {
-        duration: 0.2,
-        ease: "linear",
+        duration: 1,
+        ease: "easeOut",
       },
     },
     cat4: {
-      backgroundColor: `rgb(222,137,121)`,
+      backgroundColor: bg4,
       transition: {
-        duration: 0.2,
-        ease: "linear",
+        duration: 1,
+        ease: "easeOut",
       },
     },
   }
@@ -77,6 +84,7 @@ const HomeGallery = () => {
       opacity: 1,
       zIndex: 2,
       transition: {
+        delay: 0.2,
         duration: 0.2,
       },
     },
@@ -85,14 +93,16 @@ const HomeGallery = () => {
       zIndex: 2,
       opacity: 1,
       transition: {
-        duration: 0.2,
+        duration: 0.1,
+        ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
     fade: {
       opacity: 0.2,
       zIndex: 0,
       transition: {
-        duration: 0.2,
+        duration: 0.1,
+        ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
     exit: {

@@ -10,8 +10,7 @@ export const HomeRevealSection = styled(motion.div)`
   padding-top: 10vh;
   padding-bottom: 10vh;
   overflow: hidden;
-  /* padding-bottom: 20vh; */
-  /* background-color: rgb(222,183,153); */
+  background-color: rgb(222,183,153);
   cursor: default;
   .chapter {
     position: absolute;
