@@ -87,7 +87,7 @@ const HomeGallery = () => {
       opacity: 0.2,
       zIndex: 0,
       transition: {
-        duration: 0.6,
+        duration: 0.2,
       },
     },
     exit: {
@@ -107,9 +107,6 @@ const HomeGallery = () => {
     },
     opacityTrigger: {
       opacity: 1,
-      // transition: {
-      //   delay: 0.1,
-      // },
     },
     triggered: {
       y: (y - topPositionState.top) / 4,
