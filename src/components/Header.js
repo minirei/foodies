@@ -6,12 +6,7 @@ import PropTypes from "prop-types"
 
 // Styles
 import { Container, Flex } from "../styles/globalStyles"
-import {
-  HeaderSection,
-  Navigation,
-  Menu,
-  Logo,
-} from "../styles/headerStyles"
+import { HeaderSection, Navigation, Menu, Logo } from "../styles/headerStyles"
 
 // Hooks
 import useWindowSize from "../hooks/useWindowSize"
