@@ -244,7 +244,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                     <div className="imageWrapper">
                       <StaticImage
                         className="image"
-                        src="../../static/images/cardano-logo.png"
+                        src="../assets/images/cardano-logo.png"
                         alt="cardano logo"
                       />
                     </div>

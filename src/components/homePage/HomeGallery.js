@@ -244,7 +244,7 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../../static/images/forbidden-city.png"
+                src="../../assets/images/forbidden-city.png"
                 alt="forbidden city"
               />
             </motion.div>
@@ -255,7 +255,7 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../../static/images/chinese-foodie.png"
+                src="../../assets/images/chinese-foodie.png"
                 alt="chinese foodie"
               />
             </motion.div>
@@ -286,7 +286,7 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../../static/images/colosseum.png"
+                src="../../assets/images/colosseum.png"
                 alt="the colosseum"
               />
             </motion.div>
@@ -297,7 +297,7 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../../static/images/italian-foodie.png"
+                src="../../assets/images/italian-foodie.png"
                 alt="italian foodie"
               />
             </motion.div>
@@ -328,7 +328,7 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../../static/images/kinkaku-ji.png"
+                src="../../assets/images/kinkaku-ji.png"
                 alt="kinkaku ji"
               />
             </motion.div>
@@ -339,7 +339,7 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../../static/images/japanese-foodie.png"
+                src="../../assets/images/japanese-foodie.png"
                 alt="japanese foodie"
               />
             </motion.div>
@@ -370,7 +370,7 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../../static/images/statue-of-liberty.png"
+                src="../../assets/images/statue-of-liberty.png"
                 alt="statue of liberty"
               />
             </motion.div>
@@ -381,7 +381,7 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../../static/images/american-foodie.png"
+                src="../../assets/images/american-foodie.png"
                 alt="american foodie"
               />
             </motion.div>

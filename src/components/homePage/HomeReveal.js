@@ -113,7 +113,7 @@ const HomeReveal = () => {
             >
               <StaticImage
                 className="image"
-                src="../../../static/images/baby-panda.jpg"
+                src="../../assets/images/baby-panda.jpg"
                 alt="community image"
               />
               <CurtainImageMask
@@ -186,7 +186,7 @@ const HomeReveal = () => {
             >
               <StaticImage
                 className="image"
-                src="../../../static/images/colosseum.png"
+                src="../../assets/images/colosseum.png"
                 alt="charity image"
               />
               <CurtainImageMask
@@ -260,7 +260,7 @@ const HomeReveal = () => {
             >
               <StaticImage
                 className="image"
-                src="../../../static/images/foodie-town.webp"
+                src="../../assets/images/foodie-town.webp"
                 alt="food image"
               />
               <CurtainImageMask
