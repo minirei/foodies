@@ -93,6 +93,7 @@ const HomeReveal = () => {
               <StaticImage
                 className="image"
                 src="../../assets/images/baby-panda.jpg"
+                alt="community image"
               />
               <CurtainImageMask
                 animate={{ y: hovered1 ? `140vh` : 0 }}
@@ -160,6 +161,7 @@ const HomeReveal = () => {
               <StaticImage
                 className="image"
                 src="../../assets/images/colosseum.png"
+                alt="charity image"
               />
               <CurtainImageMask
                 animate={{ y: hovered2 ? `140vh` : 0 }}
@@ -228,6 +230,7 @@ const HomeReveal = () => {
               <StaticImage
                 className="image"
                 src="../../assets/images/foodie-town.webp"
+                alt="food image"
               />
               <CurtainImageMask
                 animate={{ y: hovered3 ? `140vh` : 0 }}

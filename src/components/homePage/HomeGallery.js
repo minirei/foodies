@@ -72,7 +72,7 @@ const HomeGallery = () => {
       opacity: 1,
       zIndex: 2,
       transition: {
-        duration: 0,
+        duration: 0.2,
       },
     },
     triggered: {
@@ -80,7 +80,7 @@ const HomeGallery = () => {
       zIndex: 2,
       opacity: 1,
       transition: {
-        duration: 0,
+        duration: 0.2,
       },
     },
     fade: {
@@ -95,7 +95,7 @@ const HomeGallery = () => {
       opacity: 1,
       zIndex: 2,
       transition: {
-        duration: 0,
+        duration: 0.2,
       },
     },
   }
@@ -108,7 +108,7 @@ const HomeGallery = () => {
     opacityTrigger: {
       opacity: 1,
       transition: {
-        delay: .1,
+        delay: 0.1,
       },
     },
     triggered: {
@@ -120,10 +120,6 @@ const HomeGallery = () => {
     },
     exit: {
       opacity: 0,
-      transition: {
-        delay: .1,
-        duration: .2,
-      }
     },
   }
 
@@ -226,7 +222,10 @@ const HomeGallery = () => {
               animate={controls1}
               initial="initial"
             >
-              <StaticImage src="../../assets/images/chinese-foodie.png" />
+              <StaticImage
+                src="../../assets/images/chinese-foodie.png"
+                alt="chinese foodie"
+              />
             </motion.div>
           </GalleryCategory>
 
@@ -265,7 +264,10 @@ const HomeGallery = () => {
               animate={controls2}
               initial="initial"
             >
-              <StaticImage src="../../assets/images/italian-foodie.png" />
+              <StaticImage
+                src="../../assets/images/italian-foodie.png"
+                alt="italian foodie"
+              />
             </motion.div>
           </GalleryCategory>
 
@@ -304,7 +306,10 @@ const HomeGallery = () => {
               animate={controls3}
               initial="initial"
             >
-              <StaticImage src="../../assets/images/japanese-foodie.png" />
+              <StaticImage
+                src="../../assets/images/japanese-foodie.png"
+                alt="japanese foodie"
+              />
             </motion.div>
           </GalleryCategory>
 
@@ -343,7 +348,10 @@ const HomeGallery = () => {
               animate={controls4}
               initial="initial"
             >
-              <StaticImage src="../../assets/images/american-foodie.png" />
+              <StaticImage
+                src="../../assets/images/american-foodie.png"
+                alt="american foodie"
+              />
             </motion.div>
           </GalleryCategory>
         </Flex>
