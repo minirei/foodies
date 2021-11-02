@@ -260,7 +260,7 @@ const HomeReveal = () => {
             >
               <StaticImage
                 className="image"
-                src="../../assets/images/foodie-town.webp"
+                src="../../assets/images/chinese-foodie.png"
                 alt="food image"
               />
               <CurtainImageMask
