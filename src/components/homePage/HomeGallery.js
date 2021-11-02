@@ -135,6 +135,26 @@ const HomeGallery = () => {
     },
   }
 
+  const bgFoodieAnimation = {
+    initial: {
+      opacity: 0,
+      y: 0,
+    },
+    opacityTrigger: {
+      opacity: 1,
+    },
+    triggered: {
+      y: (y - topPositionState.top) / 8,
+      transition: {
+        ease: "linear",
+        duration: 0,
+      },
+    },
+    exit: {
+      opacity: 0,
+    },
+  }
+
   useEffect(() => {
     if (hovered1) {
       controls1.start("triggered")
@@ -224,18 +244,18 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../assets/images/forbidden-city.png"
+                src="../../../static/images/forbidden-city.png"
                 alt="forbidden city"
               />
             </motion.div>
             <motion.div
               className="floatingFoodie"
-              variants={bgAnimation}
+              variants={bgFoodieAnimation}
               animate={controls1}
               initial="initial"
             >
               <StaticImage
-                src="../../assets/images/chinese-foodie.png"
+                src="../../../static/images/chinese-foodie.png"
                 alt="chinese foodie"
               />
             </motion.div>
@@ -266,18 +286,18 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../assets/images/colosseum.png"
+                src="../../../static/images/colosseum.png"
                 alt="the colosseum"
               />
             </motion.div>
             <motion.div
               className="floatingFoodie"
-              variants={bgAnimation}
+              variants={bgFoodieAnimation}
               animate={controls2}
               initial="initial"
             >
               <StaticImage
-                src="../../assets/images/italian-foodie.png"
+                src="../../../static/images/italian-foodie.png"
                 alt="italian foodie"
               />
             </motion.div>
@@ -308,18 +328,18 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../assets/images/kinkaku-ji.png"
+                src="../../../static/images/kinkaku-ji.png"
                 alt="kinkaku ji"
               />
             </motion.div>
             <motion.div
               className="floatingFoodie"
-              variants={bgAnimation}
+              variants={bgFoodieAnimation}
               animate={controls3}
               initial="initial"
             >
               <StaticImage
-                src="../../assets/images/japanese-foodie.png"
+                src="../../../static/images/japanese-foodie.png"
                 alt="japanese foodie"
               />
             </motion.div>
@@ -350,18 +370,18 @@ const HomeGallery = () => {
               initial="initial"
             >
               <StaticImage
-                src="../../assets/images/statue-of-liberty.png"
+                src="../../../static/images/statue-of-liberty.png"
                 alt="statue of liberty"
               />
             </motion.div>
             <motion.div
               className="floatingFoodie"
-              variants={bgAnimation}
+              variants={bgFoodieAnimation}
               animate={controls4}
               initial="initial"
             >
               <StaticImage
-                src="../../assets/images/american-foodie.png"
+                src="../../../static/images/american-foodie.png"
                 alt="american foodie"
               />
             </motion.div>

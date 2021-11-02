@@ -7,15 +7,12 @@ export const LandingImage = styled(motion.div)`
   /* height needs a media query for mobile */
   height: 100vh;
   position: relative;
-  /* bottom: 10vh; */
   z-index: -1;
-  .hero {
-    height: auto;
-    max-height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-  }
+  background-image: url("images/hero.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 `
 
 // About Section
@@ -65,7 +62,7 @@ export const HomeAboutImage = styled.div`
 // IDK if i'm going to use this
 export const HomeLaunchFiller = styled.div`
   width: 100%;
-  background-color: rgb(222,183,153);
+  background-color: rgb(222, 183, 153);
   p {
     font-weight: 500;
     font-size: 2rem;

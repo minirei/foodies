@@ -13,7 +13,7 @@ const LandingPage = () => {
   return (
     <>
       <LandingImage
-        style={{ y: y1, opacity: o1 }}
+        style={{ opacity: o1 }}
         transition={{ duration: 2, ease: "easeIn" }}
         initial={{ scale: 1.2 }}
         animate={{
@@ -24,12 +24,13 @@ const LandingPage = () => {
           },
         }}
       >
-        <StaticImage
+        {/* <StaticImage
           className="hero"
-          src="../../assets/images/foodie-town.webp"
+          src="../../../static/images/foodie-draft.jpeg"
           alt="foodie-town"
           objectFit="cover"
-        />
+          layout="fullWidth"
+        /> */}
       </LandingImage>
     </>
   )
