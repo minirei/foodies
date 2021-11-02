@@ -1,13 +1,10 @@
 # Foodies
 
 ## To-Do
-- change colour on hover for curtain
+- implement roadmap slider showreel thing
+  - ref: https://www.youtube.com/watch?v=t1lx061sncM&t=52s
 -  animate marquee
   - ref: https://www.youtube.com/watch?v=BtsVMvds3P0&t=343s
-- implement roadmap slider showreel thing
-- Implement global context to allow background-colour switching upon triggering certain events in the DOM (scrolling). I think this is achieved w/ framer motion & react-intersection-observer.
-  - the colours are rgb(235,235,235), rgb(29,29,29), 
-  - might not be necessary if i just change the background colour of the SECTION
 - do up HERO image reveal
   - ref: https://www.youtube.com/watch?v=ySXy9BFu9LQ&t=199s&ab_channel=WrongAkram
 <!-- - implement parallax scrolling over hero image like https://www.flyplatoon.com/ -->
