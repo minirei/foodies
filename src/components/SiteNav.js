@@ -344,7 +344,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
 SiteNav.propTypes = {
   toggleMenu: PropTypes.bool.isRequired,
   setToggleMenu: PropTypes.func.isRequired,
-  accordian: PropTypes.bool.isRequired,
+  accordian: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
 }
 
 export default SiteNav

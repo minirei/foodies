@@ -18,8 +18,7 @@ const AnimatedLetters = ({ title }) => {
   return (
     <span className="rowTitle">
       {[...title].map(letter => (
-        // eslint-disable-next-line react/jsx-key
-        <span className="rowLetter">{letter}</span>
+        <span className="rowLetter" key={`${letter}${Math.random().toString()}`}>{letter}</span>
       ))}
     </span>
   )

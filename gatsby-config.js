@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "Foodies CNFT",
+    title: "Foodies",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Foodies CNFT`,
+        name: `Foodies`,
         short_name: `Foodies`,
         start_url: `/`,
         background_color: `#663399`,

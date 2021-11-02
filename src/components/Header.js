@@ -139,7 +139,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
             </button>
           </Menu>
           <Logo variants={logoAnimation} animate={controls} initial="initial">
-            <Link href="/">
+            <Link to="/">
               <h1>FOODIES</h1>
             </Link>
           </Logo>
@@ -150,16 +150,16 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
                 animate={controls}
                 initial="initial"
               >
-                <Link className="navLink" href="/about">
+                <Link className="navLink" to="/about">
                   <motion.h3 variants={navChildAnimation}>About</motion.h3>
                 </Link>
-                <Link className="navLink" href="/roadmap">
+                <Link className="navLink" to="/roadmap">
                   <motion.h3 variants={navChildAnimation}>Roadmap</motion.h3>
                 </Link>
-                <Link className="navLink" href="/faq">
+                <Link className="navLink" to="/faq">
                   <motion.h3 variants={navChildAnimation}>FAQs</motion.h3>
                 </Link>
-                <Link className="navLink" href="/guide">
+                <Link className="navLink" to="/guide">
                   <motion.h3 variants={navChildAnimation}>Guide</motion.h3>
                 </Link>
               </Navigation>
@@ -174,7 +174,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
 Header.propTypes = {
   toggleMenu: PropTypes.bool.isRequired,
   setToggleMenu: PropTypes.func.isRequired,
-  accordian: PropTypes.bool.isRequired,
+  accordian: PropTypes.oneOfType([PropTypes.number, PropTypes.bool]),
   setAccordian: PropTypes.func.isRequired,
 }
 
