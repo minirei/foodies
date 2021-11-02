@@ -1,10 +1,7 @@
 # Foodies
 
 ## To-Do
-
-- adjust gallery section to follow stockdutchdesign's lookbook format
-  - change background on diff hovers (FIND SOME COLOURS FIRST THO)
-  - ref: https://www.youtube.com/watch?v=qvFLjZvz5Mw&t=903s
+- change colour on hover for curtain
 -  animate marquee
   - ref: https://www.youtube.com/watch?v=BtsVMvds3P0&t=343s
 - implement roadmap slider showreel thing

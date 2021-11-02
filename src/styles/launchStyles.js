@@ -12,7 +12,7 @@ export const HomeLaunchSection = styled.div`
 export const HomeLaunchContent = styled.div`
   width: 100%;
   /* padding: 10vh 0; */
-  height: 70vh;
+  height: 60vh;
   margin: 0 auto;
   display: flex;
 

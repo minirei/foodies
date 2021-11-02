@@ -37,31 +37,36 @@ const HomeGallery = () => {
     initial: {
       backgroundColor: `rgb(235,235,235)`,
       transition: {
-        duration: 0.4,
+        duration: 0.2,
+        ease: "linear",
       },
     },
     cat1: {
       backgroundColor: `rgb(222,183,153)`,
       transition: {
-        duration: 0.4,
+        duration: 0.2,
+        ease: "linear",
       },
     },
     cat2: {
       backgroundColor: `rgb(222,137,121)`,
       transition: {
-        duration: 0.4,
+        duration: 0.2,
+        ease: "linear",
       },
     },
     cat3: {
       backgroundColor: `rgb(222,183,153)`,
       transition: {
-        duration: 0.4,
+        duration: 0.2,
+        ease: "linear",
       },
     },
     cat4: {
       backgroundColor: `rgb(222,137,121)`,
       transition: {
-        duration: 0.4,
+        duration: 0.2,
+        ease: "linear",
       },
     },
   }

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export const HomeGallerySection = styled(motion.div)`
   position: relative;
   height: 120vh;
-  padding-top: 20vh;
+  padding-top: 30vh;
   padding-bottom: 20vh;
   width: 100vw;
   background-color: #ebe;
