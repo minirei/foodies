@@ -67,49 +67,46 @@ const HomeLaunch = () => {
   }, [controls, inView])
 
   return (
-    <Parallax offset={50}>
-      <HomeLaunchSection>
-        <Marquee>
-          <div className={`marqueeInner ${playMarquee && "animate"}`}>
-            <AnimatedLetters title={"DECEMBER'21"} />
-            <AnimatedLetters title={"DECEMBER'21"} />
-            <AnimatedLetters title={"DECEMBER'21"} />
-            <AnimatedLetters title={"DECEMBER'21"} />
-          </div>
-        </Marquee>
-        <HomeLaunchContent>
-          <Container>
-            <Flex vertical alignTop className="launchInfo">
-              <Parallax offset={100}>
-                <motion.div
-                  className="contentAnimationWrapper"
-                  ref={contentRef}
-                  variants={contentAnimation}
-                  animate={controls}
-                  initial="hidden"
-                >
-                  <h3>THIS FOODIES LAUNCH</h3>
-                  <p>
-                    Comprises <strong>10,000</strong> uniquely cooked
-                    individuals (over <strong>8 categories</strong> and more
-                    than <strong>100 traits</strong>) made of <em>real</em>,
-                    edible food ingredients!
-                  </p>
-                  <p>
-                    Each foodie will belong to 1 of these 4 nationalities:{" "}
-                    <em>Japanese, Italian, American and Chinese</em>, some of
-                    the most popular cuisines in the world. Visually-stunning
-                    and deliciously-prepared, each Foodie embodies the spirit of
-                    love, diversity, and appreciation of food from various
-                    cultures!{" "}
-                  </p>
-                </motion.div>
-              </Parallax>
-            </Flex>
-          </Container>
-        </HomeLaunchContent>
-      </HomeLaunchSection>
-    </Parallax>
+    <HomeLaunchSection>
+      <Marquee>
+        <div className={`marqueeInner ${playMarquee && "animate"}`}>
+          <AnimatedLetters title={"DECEMBER'21"} />
+          <AnimatedLetters title={"DECEMBER'21"} />
+          <AnimatedLetters title={"DECEMBER'21"} />
+          <AnimatedLetters title={"DECEMBER'21"} />
+        </div>
+      </Marquee>
+      <HomeLaunchContent>
+        <Container>
+          <Flex vertical alignTop className="launchInfo">
+            <Parallax offset={100}>
+              <motion.div
+                className="contentAnimationWrapper"
+                ref={contentRef}
+                variants={contentAnimation}
+                animate={controls}
+                initial="hidden"
+              >
+                <h3>THIS FOODIES LAUNCH</h3>
+                <p>
+                  Comprises <strong>10,000</strong> uniquely cooked individuals
+                  (over <strong>8 categories</strong> and more than{" "}
+                  <strong>100 traits</strong>) made of <em>real</em>, edible
+                  food ingredients!
+                </p>
+                <p>
+                  Each foodie will belong to 1 of these 4 nationalities:{" "}
+                  <em>Japanese, Italian, American and Chinese</em>, some of the
+                  most popular cuisines in the world. Visually-stunning and
+                  deliciously-prepared, each Foodie embodies the spirit of love,
+                  diversity, and appreciation of food from various cultures!{" "}
+                </p>
+              </motion.div>
+            </Parallax>
+          </Flex>
+        </Container>
+      </HomeLaunchContent>
+    </HomeLaunchSection>
   )
 }
 

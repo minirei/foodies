@@ -42,7 +42,7 @@ export const HomeAboutContent = styled(motion.div)`
     font-weight: 500;
     font-size: 3rem;
     line-height: 3rem;
-    padding-top: calc(5rem + 10vh);
+    padding-top: calc(5rem + 5vh);
   }
 
   p {

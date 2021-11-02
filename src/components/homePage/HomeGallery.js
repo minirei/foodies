@@ -27,84 +27,165 @@ const HomeGallery = () => {
   }, [])
 
   // Animation
+  const colorControls = useAnimation()
   const controls1 = useAnimation()
   const controls2 = useAnimation()
   const controls3 = useAnimation()
   const controls4 = useAnimation()
+
+  const colorAnimation = {
+    initial: {
+      backgroundColor: `rgb(235,235,235)`,
+      transition: {
+        duration: 0.4,
+      },
+    },
+    cat1: {
+      backgroundColor: `rgb(222,183,153)`,
+      transition: {
+        duration: 0.4,
+      },
+    },
+    cat2: {
+      backgroundColor: `rgb(222,137,121)`,
+      transition: {
+        duration: 0.4,
+      },
+    },
+    cat3: {
+      backgroundColor: `rgb(222,183,153)`,
+      transition: {
+        duration: 0.4,
+      },
+    },
+    cat4: {
+      backgroundColor: `rgb(222,137,121)`,
+      transition: {
+        duration: 0.4,
+      },
+    },
+  }
 
   const textAnimation = {
     initial: {
       color: `rgb(29, 29, 29)`,
       opacity: 1,
       zIndex: 2,
+      transition: {
+        duration: 0,
+      },
     },
     triggered: {
       color: `rgb(235, 235, 235)`,
       zIndex: 2,
       opacity: 1,
+      transition: {
+        duration: 0,
+      },
     },
     fade: {
       opacity: 0.2,
       zIndex: 0,
+      transition: {
+        duration: .4,
+      },
+    },
+    exit: {
+      color: `rgb(29, 29, 29)`,
+      opacity: 1,
+      zIndex: 2,
+      transition: {
+        duration: 0,
+      },
     },
   }
 
   const bgAnimation = {
     initial: {
       opacity: 0,
+      y: 0,
+    },
+    opacityTrigger: {
+      opacity: 1,
+      transition: {
+        delay: .1,
+      },
     },
     triggered: {
-      opacity: 1,
       y: (y - topPositionState.top) / 4,
       transition: {
         ease: "linear",
-        duration: 0.2,
+        duration: 0,
       },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        delay: .1,
+        duration: .2,
+      }
     },
   }
 
   useEffect(() => {
     if (hovered1) {
       controls1.start("triggered")
+      controls1.start("opacityTrigger")
+      colorControls.start("cat1")
     } else if (hovered2 || hovered3 || hovered4) {
       controls1.start("fade")
     } else {
-      controls1.start("initial")
+      controls1.start("exit")
+      colorControls.start("initial")
     }
   }, [controls1, hovered1, y])
 
   useEffect(() => {
     if (hovered2) {
       controls2.start("triggered")
+      controls2.start("opacityTrigger")
+      colorControls.start("cat2")
     } else if (hovered1 || hovered3 || hovered4) {
       controls2.start("fade")
     } else {
-      controls2.start("initial")
+      controls2.start("exit")
+      colorControls.start("initial")
     }
   }, [controls2, hovered2, y])
 
   useEffect(() => {
     if (hovered3) {
       controls3.start("triggered")
+      controls3.start("opacityTrigger")
+      colorControls.start("cat3")
     } else if (hovered1 || hovered2 || hovered4) {
       controls3.start("fade")
     } else {
-      controls3.start("initial")
+      controls3.start("exit")
+      colorControls.start("initial")
     }
   }, [controls3, hovered3, y])
 
   useEffect(() => {
     if (hovered4) {
       controls4.start("triggered")
+      controls4.start("opacityTrigger")
+      colorControls.start("cat4")
     } else if (hovered1 || hovered2 || hovered3) {
       controls4.start("fade")
     } else {
-      controls4.start("initial")
+      controls4.start("exit")
+      colorControls.start("initial")
     }
   }, [controls4, hovered4, y])
 
   return (
-    <HomeGallerySection ref={floatingRef}>
+    <HomeGallerySection
+      ref={floatingRef}
+      variants={colorAnimation}
+      animate={colorControls}
+      initial="initial"
+    >
       <div className="chapter">
         <h3>002 - Cultural Diversity</h3>
       </div>

@@ -2,13 +2,13 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 
 // Gallery
-export const HomeGallerySection = styled.div`
+export const HomeGallerySection = styled(motion.div)`
   position: relative;
   height: 120vh;
   padding-top: 20vh;
   padding-bottom: 20vh;
   width: 100vw;
-  background-color: #ebebeb;
+  background-color: #ebe;
   cursor: default;
   overflow: hidden;
   .chapter {
@@ -27,7 +27,6 @@ export const HomeGallerySection = styled.div`
 `
 
 export const GalleryCategory = styled(motion.div)`
-  background-color: #ebebeb;
   width: 100%;
   height: 100%;
   .content {
@@ -55,7 +54,7 @@ export const GalleryCategory = styled(motion.div)`
     left: 10%;
     width: 55%;
     z-index: 1;
-    opacity: 0;
+    opacity: 1;
   }
 
   .floatingFoodie {
