@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 
 // Home Reveal
 
-export const HomeRevealSection = styled.div`
+export const HomeRevealSection = styled(motion.div)`
   position: relative;
   width: 100%;
   height: 120vh;
@@ -11,7 +11,7 @@ export const HomeRevealSection = styled.div`
   padding-bottom: 10vh;
   overflow: hidden;
   /* padding-bottom: 20vh; */
-  background-color: rgb(222,183,153);
+  /* background-color: rgb(222,183,153); */
   cursor: default;
   .chapter {
     position: absolute;

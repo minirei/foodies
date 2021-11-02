@@ -1,5 +1,6 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { motion, useAnimation } from "framer-motion"
 
 // Styles
 import { Flex } from "../../styles/globalStyles"
@@ -14,14 +15,32 @@ import {
   CurtainImage,
   CurtainImageMask,
 } from "../../styles/curtainStyles"
-import { motion } from "framer-motion"
 
 const HomeReveal = () => {
   // Animation
   const [hovered1, setHovered1] = useState(false)
   const [hovered2, setHovered2] = useState(false)
   const [hovered3, setHovered3] = useState(false)
+  const colorControls = useAnimation()
 
+  // Colour
+  const bg1 = `rgb(22,183,153)`
+  const bg2 = `rgb(222,137,121)`
+  const bg3 = `rgb(222,137,12)`
+  const bgDefault = `rgb(222,183,153)`
+  const [bgColor, setBgColor] = useState(bgDefault)
+
+  useEffect(() => {
+    if (hovered1) {
+      setBgColor(bg1)
+    } else if (hovered2) {
+      setBgColor(bg2)
+    } else if (hovered3) {
+      setBgColor(bg3)
+    } else {
+      setBgColor(bgDefault)
+    }
+  }, [hovered1, hovered2, hovered3, colorControls])
   return (
     <>
       <HomeRevealSection>
@@ -47,7 +66,7 @@ const HomeReveal = () => {
           >
             <CurtainContent>
               <CurtainHeading
-                animate={{ y: hovered1 ? `-10vh` : 0 }}
+                animate={{ y: hovered1 ? `-20vh` : 0 }}
                 transition={{
                   duration: 1.4,
                   ease: [0.6, 0.01, -0.05, 0.9],
@@ -60,7 +79,7 @@ const HomeReveal = () => {
               </CurtainHeading>
               <CurtainCover>
                 <CurtainText
-                  animate={{ y: hovered1 ? `-10vh` : 0 }}
+                  animate={{ y: hovered1 ? `-20vh` : 0 }}
                   transition={{
                     duration: 1.4,
                     ease: [0.6, 0.01, -0.05, 0.9],
@@ -74,11 +93,13 @@ const HomeReveal = () => {
                   </p>
                 </CurtainText>
                 <CurtainContentMask
-                  animate={{ y: hovered1 ? `100vh` : 0 }}
+                  animate={{
+                    y: hovered1 ? `100vh` : 0,
+                    backgroundColor: bgColor,
+                  }}
                   transition={{
-                    duration: 1.4,
+                    duration: 1,
                     ease: "easeOut",
-                    delay: 0.1,
                   }}
                 />
               </CurtainCover>
@@ -96,7 +117,10 @@ const HomeReveal = () => {
                 alt="community image"
               />
               <CurtainImageMask
-                animate={{ y: hovered1 ? `140vh` : 0 }}
+                animate={{
+                  y: hovered1 ? `140vh` : 0,
+                  backgroundColor: bgColor,
+                }}
                 transition={{
                   duration: 1,
                   ease: "easeOut",
@@ -116,7 +140,7 @@ const HomeReveal = () => {
           >
             <CurtainContent>
               <CurtainHeading
-                animate={{ y: hovered2 ? `-10vh` : 0 }}
+                animate={{ y: hovered2 ? `-20vh` : 0 }}
                 transition={{
                   duration: 1.4,
                   ease: [0.6, 0.01, -0.05, 0.9],
@@ -128,7 +152,7 @@ const HomeReveal = () => {
               </CurtainHeading>
               <CurtainCover>
                 <CurtainText
-                  animate={{ y: hovered2 ? `-10vh` : 0 }}
+                  animate={{ y: hovered2 ? `-20vh` : 0 }}
                   transition={{
                     duration: 1.4,
                     ease: [0.6, 0.01, -0.05, 0.9],
@@ -142,11 +166,13 @@ const HomeReveal = () => {
                   </p>
                 </CurtainText>
                 <CurtainContentMask
-                  animate={{ y: hovered2 ? `100vh` : 0 }}
+                  animate={{
+                    y: hovered2 ? `100vh` : 0,
+                    backgroundColor: bgColor,
+                  }}
                   transition={{
-                    duration: 1.4,
+                    duration: 1,
                     ease: "easeOut",
-                    delay: 0.1,
                   }}
                 />
               </CurtainCover>
@@ -164,7 +190,10 @@ const HomeReveal = () => {
                 alt="charity image"
               />
               <CurtainImageMask
-                animate={{ y: hovered2 ? `140vh` : 0 }}
+                animate={{
+                  y: hovered2 ? `140vh` : 0,
+                  backgroundColor: bgColor,
+                }}
                 transition={{
                   duration: 1,
                   ease: "easeOut",
@@ -184,7 +213,7 @@ const HomeReveal = () => {
           >
             <CurtainContent>
               <CurtainHeading
-                animate={{ y: hovered3 ? `-10vh` : 0 }}
+                animate={{ y: hovered3 ? `-20vh` : 0 }}
                 transition={{
                   duration: 1.4,
                   ease: [0.6, 0.01, -0.05, 0.9],
@@ -197,7 +226,7 @@ const HomeReveal = () => {
               </CurtainHeading>
               <CurtainCover>
                 <CurtainText
-                  animate={{ y: hovered3 ? `-10vh` : 0 }}
+                  animate={{ y: hovered3 ? `-20vh` : 0 }}
                   transition={{
                     duration: 1.4,
                     ease: [0.6, 0.01, -0.05, 0.9],
@@ -211,11 +240,13 @@ const HomeReveal = () => {
                   </p>
                 </CurtainText>
                 <CurtainContentMask
-                  animate={{ y: hovered3 ? `100vh` : 0 }}
+                  animate={{
+                    y: hovered3 ? `100vh` : 0,
+                    backgroundColor: bgColor,
+                  }}
                   transition={{
-                    duration: 1.4,
+                    duration: 1,
                     ease: "easeOut",
-                    delay: 0.1,
                   }}
                 />
               </CurtainCover>
@@ -233,7 +264,10 @@ const HomeReveal = () => {
                 alt="food image"
               />
               <CurtainImageMask
-                animate={{ y: hovered3 ? `140vh` : 0 }}
+                animate={{
+                  y: hovered3 ? `140vh` : 0,
+                  backgroundColor: bgColor,
+                }}
                 transition={{
                   duration: 1,
                   ease: "easeOut",
