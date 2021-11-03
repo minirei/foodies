@@ -90,6 +90,9 @@ export const NavBottom = styled.div`
   position: relative;
   width: 100%;
   height: 15vw;
+  &.footer {
+    height: 80%;
+  }
   .leftInfo {
     position: absolute;
     height: 100%;

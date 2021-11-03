@@ -5,6 +5,7 @@ import PropTypes from "prop-types"
 import Metadata from "./Metadata"
 import Header from "./Header"
 import SiteNav from "./SiteNav"
+import Footer from "./Footer"
 
 // Styles
 import { GlobalStyle } from "../styles/globalStyles"
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
         setAccordian={setAccordian}
       />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }
