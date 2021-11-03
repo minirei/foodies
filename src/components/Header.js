@@ -20,7 +20,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
 
   const menuAnimation = {
     initial: {
-      right: `10%`,
+      right: `5%`,
       transition: {
         duration: 1.6,
         ease: [0.6, 0.01, -0.05, 0.9],

@@ -130,9 +130,11 @@ export const NavBottom = styled.div`
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+    overflow: hidden;
     .info {
       grid-column: 1/2;
       height: 100%;
+      overflow: hidden;
     }
     .infoWrapper {
       display: flex;
@@ -141,6 +143,7 @@ export const NavBottom = styled.div`
       align-items: center;
       justify-content: flex-end;
       position: relative;
+      overflow: hidden;
     }
     h3 {
       text-align: center;
@@ -165,6 +168,7 @@ export const NavBottom = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
   }
 `
 export const Icon = styled.div`
@@ -186,5 +190,7 @@ export const Icon = styled.div`
     height: 40%;
     width: 40%;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `
