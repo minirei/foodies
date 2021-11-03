@@ -4,11 +4,13 @@ import { motion } from "framer-motion"
 export const HeaderSection = styled.div`
   position: fixed;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   z-index: 99;
 `
 
 export const Navigation = styled(motion.ul)`
+  position: absolute;
+  right: 10%;
   .navLink {
     color: black;
     margin-right: 1.4rem;

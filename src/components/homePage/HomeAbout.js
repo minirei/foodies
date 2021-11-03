@@ -13,10 +13,16 @@ import {
 import Parallax from "../../elements/Parallax"
 
 const HomeAbout = () => {
-  const [contentRef, inView] = useInView({
+  const [contentRef, contentInView] = useInView({
     triggerOnce: true,
     // rootMargin: `-10%`,
   })
+
+  const [imageRef, imageinView] = useInView({
+    triggerOnce: true,
+    rootMargin: `-30%`,
+  })
+
   const controls = useAnimation()
 
   const contentAnimation = {
@@ -34,11 +40,31 @@ const HomeAbout = () => {
     },
   }
 
+  const imageAnimation = {
+    hidden: {
+      y: 0,
+    },
+    visible: {
+      y: `100%`,
+      transition: {
+        duration: 1.6,
+        ease: [0.6, 0.01, -0.05, 0.95],
+      },
+    },
+  }
+
   useEffect(() => {
-    if (inView) {
+    if (contentInView) {
       controls.start("visible")
     }
-  }, [controls, inView])
+  }, [controls, contentInView])
+
+  useEffect(() => {
+    if (imageinView) {
+      controls.start("visible")
+    }
+  }, [controls, imageinView])
+
   return (
     <>
       <Parallax>
@@ -74,13 +100,22 @@ const HomeAbout = () => {
               </HomeAboutContent>
 
               <HomeAboutImage>
-                <Parallax offset={0}>
-                  <StaticImage
-                    className="image"
-                    src="../../assets/images/foodie-about.png"
-                    alt="foodie about"
-                    objectFit="cover"
-                  />
+                <Parallax offset={50}>
+                  <div className="imageWrapper">
+                    <StaticImage
+                      className="image"
+                      src="../../assets/images/foodie-about.png"
+                      alt="foodie about"
+                      objectFit="cover"
+                    />
+                    <motion.div
+                      className="mask"
+                      ref={imageRef}
+                      variants={imageAnimation}
+                      animate={controls}
+                      initial="hidden"
+                    ></motion.div>
+                  </div>
                 </Parallax>
               </HomeAboutImage>
             </Flex>

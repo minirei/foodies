@@ -19,11 +19,11 @@ export const LandingImage = styled(motion.div)`
 export const HomeAboutSection = styled.div`
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
   cursor: default;
-  background-color: #ebebeb;
+  background-color: rgb(255, 248, 237);
   overflow: visible;
 `
 export const HomeAboutContent = styled(motion.div)`
@@ -36,10 +36,10 @@ export const HomeAboutContent = styled(motion.div)`
   justify-content: flex-start;
   h3 {
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 3rem;
     line-height: 3rem;
-    padding-top: calc(5rem + 5vh);
+    /* padding-top: calc(5rem + 5vh); */
   }
 
   p {
@@ -53,20 +53,17 @@ export const HomeAboutContent = styled(motion.div)`
 export const HomeAboutImage = styled.div`
   width: 35%;
   overflow: visible;
-  .image {
-    /* border: 2px solid black; */
+  position: relative;
+  .imageWrapper {
     width: 140%;
+    position: relative;
   }
-`
-
-// IDK if i'm going to use this
-export const HomeLaunchFiller = styled.div`
-  width: 100%;
-  background-color: rgb(222, 183, 153);
-  p {
-    font-weight: 500;
-    font-size: 2rem;
-    text-align: center;
-    /* color: red; */
+  .mask {
+    background-color: rgb(255, 248, 237);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 `

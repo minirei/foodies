@@ -22,8 +22,12 @@ export const GlobalStyle = createGlobalStyle`
     ${
       "" /* font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
     }
-    background: #EBEBEB;
-    color: rgb(29,29,29);
+    ${"" /* background colour here */}
+    ${"" /* background: #EBEBEB; */}
+    background: rgb(255,248,237);
+    ${"" /* font colour here */}
+    ${"" /* color: rgb(29,29,29); */}
+    color: rgb(40,10,11);
     overscroll-behavior: none;
     overflow-x: hidden;
     /* removes scrollbar */
@@ -48,22 +52,13 @@ export const Container = styled.div`
 
   max-width: 300px;
 
-  @media (min-width: 1024px) {
-    max-width: 960px;
-  }
-  @media (min-width: 1216px) {
-    max-width: 1152px;
-  }
-  @media (min-width: 1408px) {
-    max-width: 1244px;
-  }
-
   ${props =>
     props.fluid &&
     css`
       padding: 0;
       margin: 0;
-      max-width: 100%;
+      width: 100vw;
+      max-width: 100vw !important;
     `}
 
   ${props =>
@@ -79,6 +74,16 @@ export const Container = styled.div`
     css`
       overflow: visible;
     `}
+
+  @media (min-width: 1024px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1216px) {
+    max-width: 1152px;
+  }
+  @media (min-width: 1408px) {
+    max-width: 1244px;
+  }
 `
 
 export const Flex = styled.div`

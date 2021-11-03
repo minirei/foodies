@@ -48,14 +48,14 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
     triggered: {
       opacity: 0,
       transition: {
-        duration: 2,
+        duration: 1,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
     hide: {
       display: `none`,
       transition: {
-        delay: 2,
+        delay: 1.2,
       },
     },
   }
@@ -147,7 +147,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
               <h1>FOODIES</h1>
             </Link>
           </Logo>
-          <Container>
+          <Container fluid>
             <Flex flexEnd>
               <Navigation
                 variants={navAnimation}

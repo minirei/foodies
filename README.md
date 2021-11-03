@@ -16,6 +16,10 @@
 - implement gatsby-plugin-layout
   - ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/
 
+## Colour
+rgb(255,248,237)
+
+
 ## Website - The Stack
 
 Frontend: Gatsby

@@ -93,7 +93,9 @@ export const NavBottom = styled.div`
   &.footer {
     height: 75%;
     mix-blend-mode: difference;
-    background-color: rgb(235, 235, 235);
+    /* background-color: rgb(235, 235, 235); */
+    background: rgb(255, 248, 237);
+    color: auto;
   }
   .leftInfo {
     position: absolute;

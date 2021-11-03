@@ -7,6 +7,7 @@ export const FooterSection = styled.div`
   width: 100vw;
   overflow: hidden;
   background-color: rgb(235, 235, 235);
+  color: black;
   .line {
     &.short {
       height: 100%;
@@ -36,6 +37,7 @@ export const MobileFooterSection = styled.div`
   width: 100vw;
   overflow: hidden;
   background-color: rgb(235, 235, 235);
+  color: black;
   .socialsCaption {
     mix-blend-mode: difference;
     background-color: rgb(235, 235, 235);
@@ -57,7 +59,7 @@ export const MobileFooterSection = styled.div`
     text-align: center;
     word-wrap: break-word;
     margin: 0;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
   }
   .line {
     &.short {
