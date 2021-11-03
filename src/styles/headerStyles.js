@@ -97,6 +97,7 @@ export const Logo = styled(motion.div)`
   top: 0;
   left: 3%;
   align-items: center;
+  z-index: 10;
 
   @media screen and (min-width: 1024px) {
     position: absolute;
