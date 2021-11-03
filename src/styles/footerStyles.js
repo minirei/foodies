@@ -3,9 +3,10 @@ import { motion } from "framer-motion"
 
 export const FooterSection = styled.div`
   position: relative;
-  height: 25vh;
+  height: 30vh;
   width: 100vw;
   overflow: hidden;
+  background-color: rgb(235, 235, 235);
   .line {
     &.short {
       height: 100%;
@@ -30,7 +31,15 @@ export const FooterSection = styled.div`
 `
 
 export const Disclaimer = styled.div`
-  height: 20%;
+  height: 25%;
   width: 100vw;
   position: relative;
+  padding-left: 2%;
+  /* background-color: rgb(235, 235, 235);
+  mix-blend-mode: difference; */
+  p {
+    margin: 0;
+    padding-right: calc(1rem + 2vw);
+    color: rgb(29, 29, 29);
+  }
 `

@@ -91,7 +91,9 @@ export const NavBottom = styled.div`
   width: 100%;
   height: 15vw;
   &.footer {
-    height: 80%;
+    height: 75%;
+    mix-blend-mode: difference;
+    background-color: rgb(235, 235, 235);
   }
   .leftInfo {
     position: absolute;
@@ -183,5 +185,6 @@ export const Icon = styled.div`
   a {
     height: 40%;
     width: 40%;
+    display: flex;
   }
 `
