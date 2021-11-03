@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 import { motion } from "framer-motion"
 
 export const HeaderSection = styled.div`
@@ -36,11 +36,37 @@ export const Menu = styled(motion.div)`
   display: flex;
   height: 10vh;
   top: 0;
-  right: 10%;
+  right: 5%;
   z-index: 100;
   height: 10vh;
   justify-content: center;
   align-items: center;
+
+  .circleAround {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    transform: rotate(-90deg);
+    z-index: -10;
+    .path {
+      stroke-dasharray: 0 200;
+      --webkit-transition: 0.5s;
+      transition: 0.5s;
+    }
+  }
+  :hover .path {
+    stroke-dasharray: 200 200;
+    -webkit-transition-property: stroke-dasharray;
+    transition-property: stroke-dasharray;
+  }
+
+  .wrapper {
+    position: relative;
+  }
 
   &.scrolled {
     right: 1%;
@@ -55,10 +81,10 @@ export const Menu = styled(motion.div)`
     height: fit-content;
 
     span {
-      width: 36px;
-      height: 8px;
+      width: 30px;
+      height: 4px;
       display: block;
-      margin: 8px;
+      margin: 10px;
       background-color: black;
     }
   }

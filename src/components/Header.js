@@ -6,7 +6,12 @@ import PropTypes from "prop-types"
 
 // Styles
 import { Container, Flex } from "../styles/globalStyles"
-import { HeaderSection, Navigation, Menu, Logo } from "../styles/headerStyles"
+import {
+  HeaderSection,
+  Navigation,
+  Menu,
+  Logo,
+} from "../styles/headerStyles"
 
 // Context
 import { useGlobalStateContext } from "../context/globalContext"
@@ -137,10 +142,28 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
             initial="initial"
             onClick={() => setToggleMenu(!toggleMenu)}
           >
-            <button>
-              <span></span>
-              <span></span>
-            </button>
+            <div className="wrapper">
+              <svg
+                className="circleAround"
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+              >
+                <circle
+                  className="path"
+                  cx="25"
+                  cy="25"
+                  r="30"
+                  stroke="black"
+                  stroke-width="1"
+                  fill="none"
+                ></circle>
+              </svg>
+              <button>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
           </Menu>
           <Logo variants={logoAnimation} animate={controls} initial="initial">
             <Link to="/">
