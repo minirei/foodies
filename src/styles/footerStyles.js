@@ -43,8 +43,8 @@ export const MobileFooterSection = styled.div`
   .socials {
     width: 100%;
     height: 15vh;
-    mix-blend-mode: difference;
-    background-color: rgb(235, 235, 235);
+    /* mix-blend-mode: difference;
+    background-color: rgb(235, 235, 235); */
   }
   .policy {
     width: 80%;
