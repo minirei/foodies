@@ -30,7 +30,7 @@ export const Navigation = styled(motion.ul)`
 `
 
 export const Menu = styled(motion.div)`
-  position: relative;
+  position: absolute;
   display: flex;
   height: 10vh;
   top: 0;
@@ -42,10 +42,6 @@ export const Menu = styled(motion.div)`
 
   &.scrolled {
     right: 1%;
-  }
-
-  @media screen and (min-width: 1024px) {
-    position: absolute;
   }
 
   button {
@@ -92,7 +88,7 @@ export const Logo = styled(motion.div)`
     font-weight: 600;
     /* letter-spacing: 0.3rem; */
     color: black;
-    margin: 0 auto;
+    margin: 0;
   }
 `
 // export const Socials = styled(motion.div)`

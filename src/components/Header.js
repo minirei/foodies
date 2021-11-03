@@ -112,17 +112,22 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
     <>
       {isMobile ? (
         <HeaderSection>
-          <Flex spaceBetween>
-            <Menu className="mobile">
-              <button>
-                <span></span>
-                <span></span>
-              </button>
-            </Menu>
-            <Logo variants={logoAnimation} animate={controls} initial="initial">
+          <Menu
+            variants={menuAnimation}
+            animate={controls}
+            initial="initial"
+            onClick={() => setToggleMenu(!toggleMenu)}
+          >
+            <button>
+              <span></span>
+              <span></span>
+            </button>
+          </Menu>
+          <Logo variants={logoAnimation} animate={controls} initial="initial">
+            <Link to="/">
               <h1>FOODIES</h1>
-            </Logo>
-          </Flex>
+            </Link>
+          </Logo>
         </HeaderSection>
       ) : (
         <HeaderSection>
