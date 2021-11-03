@@ -8,13 +8,12 @@ import PropTypes from "prop-types"
 import { Container, Flex } from "../styles/globalStyles"
 import { HeaderSection, Navigation, Menu, Logo } from "../styles/headerStyles"
 
-// Hooks
-import useWindowSize from "../hooks/useWindowSize"
+// Context
+import { useGlobalStateContext } from "../context/globalContext"
 
 const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
   // For mobile
-  const size = useWindowSize()
-  const small = size.width < 1024
+  const { isMobile } = useGlobalStateContext()
 
   // Animation
   const controls = useAnimation()
@@ -111,7 +110,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
 
   return (
     <>
-      {small ? (
+      {isMobile ? (
         <HeaderSection>
           <Flex spaceBetween>
             <Menu className="mobile">
