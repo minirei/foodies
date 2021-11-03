@@ -24,7 +24,7 @@ export const HomeAboutSection = styled.div`
   padding-bottom: 10vh;
   cursor: default;
   background-color: rgb(255, 248, 237);
-  overflow: visible;
+  overflow: hidden;
 `
 export const HomeAboutContent = styled(motion.div)`
   width: 55%;
