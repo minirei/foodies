@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components"
 import { motion } from "framer-motion"
 
 // Launch Section
-export const HomeLaunchSection = styled.div`
+export const HomeLaunchSection = styled(motion.div)`
   position: relative;
   width: 100%;
   background-color: rgb(222,183,153);
@@ -53,7 +53,7 @@ to {
 }
 `
 
-export const Marquee = styled.div`
+export const Marquee = styled(motion.div)`
   position: relative;
   overflow: hidden;
   display: flex;
@@ -64,7 +64,7 @@ export const Marquee = styled.div`
     color: rgb(222,183,153);
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 5px;
-    font-size: 22rem;
+    font-size: calc(2rem + 14vw);
     font-weight: 700;
     letter-spacing: -0.8rem;
     display: inline-block;
