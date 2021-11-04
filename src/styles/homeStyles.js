@@ -2,6 +2,19 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 
 // Landing Section
+export const BackgroundSection = styled(motion.div)`
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  .wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+`
+
 export const LandingImage = styled(motion.div)`
   width: 100vw;
   /* height needs a media query for mobile */
