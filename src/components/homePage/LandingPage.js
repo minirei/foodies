@@ -2,13 +2,16 @@ import React from "react"
 import { motion, useViewportScroll, useTransform } from "framer-motion"
 import { getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
 import { BgImage } from "gbimage-bridge"
 
 // Styles
 import { BackgroundSection } from "../../styles/homeStyles"
 
+// Context
+import { useGlobalStateContext } from "../../context/globalContext"
+
 const LandingPage = () => {
+  const { isMobile } = useGlobalStateContext()
   const { scrollY } = useViewportScroll()
   const o1 = useTransform(scrollY, [300, 700], [1, 0])
 
@@ -47,9 +50,11 @@ const LandingPage = () => {
         <BgImage
           image={image}
           className="wrapper"
-          style={{
-            backgroundAttachment: "fixed",
-          }}
+          style={
+            {
+              backgroundAttachment: isMobile ? "" : "fixed",
+            }
+          }
         ></BgImage>
       </BackgroundSection>
       {/* <LandingImage
