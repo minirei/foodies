@@ -10,7 +10,7 @@ export const BackgroundSection = styled(motion.div)`
   background-position: center center;
   .wrapper {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-attachment: fixed;
   }
 `

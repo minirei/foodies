@@ -53,6 +53,7 @@ const LandingPage = () => {
           style={
             {
               backgroundAttachment: isMobile ? "" : "fixed",
+              height: isMobile ? "65vh" : "100vh",
             }
           }
         ></BgImage>
