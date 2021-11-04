@@ -13,7 +13,7 @@ import { useGlobalStateContext } from "../../context/globalContext"
 const LandingPage = () => {
   const { isMobile } = useGlobalStateContext()
   const { scrollY } = useViewportScroll()
-  const o1 = useTransform(scrollY, [300, 700], [1, 0])
+  const o1 = useTransform(scrollY, [400, 750], [1, 0])
 
   const { placeholderImage } = useStaticQuery(
     graphql`
@@ -53,7 +53,7 @@ const LandingPage = () => {
           style={
             {
               backgroundAttachment: isMobile ? "" : "fixed",
-              height: isMobile ? "65vh" : "100vh",
+              height: isMobile ? "70vh" : "100vh",
             }
           }
         ></BgImage>
