@@ -53,13 +53,13 @@ export const Menu = styled(motion.div)`
     transform: rotate(-90deg);
     z-index: -10;
     .path {
-      stroke-dasharray: 0 200;
+      stroke-dasharray: 0 300;
       --webkit-transition: 0.5s;
       transition: 0.5s;
     }
   }
   :hover .path {
-    stroke-dasharray: 200 200;
+    stroke-dasharray: 300 300;
     -webkit-transition-property: stroke-dasharray;
     transition-property: stroke-dasharray;
   }
@@ -82,9 +82,9 @@ export const Menu = styled(motion.div)`
 
     span {
       width: 30px;
-      height: 4px;
+      height: 2px;
       display: block;
-      margin: 10px;
+      margin: 5px;
       background-color: black;
     }
   }

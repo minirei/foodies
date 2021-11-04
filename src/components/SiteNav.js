@@ -201,13 +201,14 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       className="path"
                       cx="25"
                       cy="25"
-                      r="30"
+                      r="40"
                       stroke="black"
-                      stroke-width="1"
+                      stroke-width="2"
                       fill="none"
                     ></circle>
                   </svg>
                   <button>
+                    <span></span>
                     <span></span>
                     <span></span>
                   </button>
