@@ -10,23 +10,30 @@ import { HomeCarouselSection, CarouselNav } from "../../styles/carouselStyles"
 const cardAnimation = {
   enter: direction => {
     return {
-      x: direction > 0 ? 500 : -500,
+      x: direction > 0 ? `100vw` : `-100vw`,
     }
   },
   center: {
-    zIndex: 1,
+    zIndex: 10,
+    opacity: 1,
     x: 0,
     transition: {
-      duration: 4,
-    }
+      duration: 0.8,
+      delay: 0.4,
+      ease: "easeInOut",
+      
+    },
   },
   exit: direction => {
     return {
       zIndex: 0,
-      x: direction < 0 ? 500 : -500,
+      x: direction < 0 ? `100vw` : `-100vw`,
       transition: {
-        duration: 2,
-      }
+        duration: 0.8,
+        delay: 0.4,
+        ease: "easeInOut",
+        
+      },
     }
   },
 }
@@ -102,10 +109,13 @@ const HomeCarousel = () => {
   return (
     <>
       <HomeCarouselSection>
+      <div className="chapter">
+        <h3>004 - Roadmap</h3>
+      </div>
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={card}
-            className="wrapper NIGBSOFDOSDHFODS "
+            className="wrapper"
             custom={direction}
             variants={cardAnimation}
             initial="enter"
@@ -118,6 +128,7 @@ const HomeCarousel = () => {
               alt=""
               objectPosition="50% 100%"
               loading="eager"
+              key={card}
             ></GatsbyImage>
           </motion.div>
         </AnimatePresence>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export const HomeGallerySection = styled(motion.div)`
   position: relative;
   height: 120vh;
-  padding-top: 30vh;
+  padding-top: 20vh;
   padding-bottom: 20vh;
   width: 100vw;
   background-color: #ebe;
@@ -50,7 +50,7 @@ export const GalleryCategory = styled(motion.div)`
     pointer-events: none;
     position: absolute;
     overflow: hidden;
-    top: -40%;
+    top: -30%;
     left: -10%;
     width: 70%;
     z-index: 1;

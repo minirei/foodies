@@ -39,7 +39,7 @@ const HomeLaunch = () => {
 
   const [contentRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: `-5%`,
+    rootMargin: `-10%`,
   })
   const [marqueeRef, marqueeInView] = useInView({
     triggerOnce: true,
@@ -71,7 +71,8 @@ const HomeLaunch = () => {
       opacity: 1,
       transition: {
         delayChildren: 0.4,
-        staggerChildren: 0.1,
+        staggerChildren: 0.08,
+        duration: 1,
       },
     },
   }
@@ -99,7 +100,7 @@ const HomeLaunch = () => {
       marqueeControls.start("visible")
       setTimeout(() => {
         setPlayMarquee(true)
-      }, 2000)
+      }, 1500)
     }
   }, [marqueeInView])
 

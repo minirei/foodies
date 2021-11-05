@@ -56,6 +56,7 @@ const LandingPage = () => {
               height: isMobile ? "70vh" : "100vh",
             }
           }
+          loading="eager"
         ></BgImage>
       </BackgroundSection>
       {/* <LandingImage

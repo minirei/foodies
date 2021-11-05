@@ -3,24 +3,33 @@ import { motion } from "framer-motion"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 export const HomeCarouselSection = styled(motion.div)`
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
-  /* padding-bottom: 10vh; */
+  background-color: rgb(232, 253, 255);
   position: relative;
   overflow: hidden;
+  .chapter {
+    position: absolute;
+    top: 5%;
+    left: 8.33%;
+    z-index: 100;
+    h3 {
+      font-size: 2rem;
+      font-weight: 400;
+      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
+    }
+  }
   .wrapper {
     height: 100%;
     width: 100%;
-    background-color: red;
+    position: absolute;
     .image {
-      /* max-width: 100%; */
+      width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
       left: 0;
-    }
-    .behind {
-      z-index: 5;
     }
   }
 `
