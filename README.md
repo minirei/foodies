@@ -4,17 +4,15 @@
 - toggle animations for mobile (isMobile ? {smth here} : {})
   - https://stackoverflow.com/questions/68195160/how-do-i-turn-off-framer-motion-animations-in-mobile-view
   - https://codesandbox.io/s/framer-motion-stackoverflow-q1-yigvv?file=/src/App.js:0-63
-- implement roadmap slider showreel thing
-  - ref: https://www.youtube.com/watch?v=t1lx061sncM&t=52s
+- implement mobile scrolling for roadmap
   - ref: https://codesandbox.io/s/framer-motion-image-gallery-pqvx3?file=/src/Example.tsx
--  animate marquee
-  - ref: https://www.youtube.com/watch?v=BtsVMvds3P0&t=343s
-- do up HERO image reveal
+- do up HERO image reveal (maybe just do up a whole preloading animation)
   - ref: https://www.youtube.com/watch?v=ySXy9BFu9LQ&t=199s&ab_channel=WrongAkram
 <!-- - implement parallax scrolling over hero image like https://www.flyplatoon.com/ -->
 - change the policy id
 - implement gatsby-plugin-layout
   - ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/
+- do some code splitting optimisation
 
 ## Colour
 rgb(255,248,237)
