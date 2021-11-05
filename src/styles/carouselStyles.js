@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { motion } from "framer-motion"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 export const HomeCarouselSection = styled(motion.div)`
   height: 100vh;
@@ -10,18 +11,28 @@ export const HomeCarouselSection = styled(motion.div)`
   .wrapper {
     height: 100%;
     width: 100%;
+    background-color: red;
     .image {
       /* max-width: 100%; */
       height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .behind {
+      z-index: 5;
     }
   }
 `
 
 export const CarouselNav = styled(motion.div)`
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   right: 5%;
   display: flex;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
   .prev,
   .next {
     width: 4vw;
@@ -46,6 +57,6 @@ export const CarouselNav = styled(motion.div)`
   }
 
   svg {
-    height: 50%;
+    height: 25%;
   }
 `

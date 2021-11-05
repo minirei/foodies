@@ -6,6 +6,31 @@ import { useStaticQuery, graphql } from "gatsby"
 // Styles
 import { HomeCarouselSection, CarouselNav } from "../../styles/carouselStyles"
 
+// Animation
+const cardAnimation = {
+  enter: direction => {
+    return {
+      x: direction > 0 ? 500 : -500,
+    }
+  },
+  center: {
+    zIndex: 1,
+    x: 0,
+    transition: {
+      duration: 4,
+    }
+  },
+  exit: direction => {
+    return {
+      zIndex: 0,
+      x: direction < 0 ? 500 : -500,
+      transition: {
+        duration: 2,
+      }
+    }
+  },
+}
+
 const HomeCarousel = () => {
   const { launch, party, kitchen, supply, wars } = useStaticQuery(
     graphql`
@@ -66,26 +91,43 @@ const HomeCarousel = () => {
     getImage(supply),
     getImage(wars),
   ]
-  // const image = getImage(images[1])
 
   const [[card, direction], setCard] = useState([0, 0])
   const paginate = newDirection => {
-    setPage([page + newDirection, newDirection])
+    if (card + newDirection === images.length) return
+    if (card + newDirection < 0) return
+    setCard([card + newDirection, newDirection])
   }
 
   return (
     <>
       <HomeCarouselSection>
-        <div className="wrapper">
-          <GatsbyImage
-            className="image"
-            image={images[card]}
-            alt=""
-            objectPosition="50% 100%"
-          ></GatsbyImage>
-        </div>
+        <AnimatePresence initial={false} custom={direction}>
+          <motion.div
+            key={card}
+            className="wrapper NIGBSOFDOSDHFODS "
+            custom={direction}
+            variants={cardAnimation}
+            initial="enter"
+            animate="center"
+            exit="exit"
+          >
+            <GatsbyImage
+              className="image"
+              image={images[card]}
+              alt=""
+              objectPosition="50% 100%"
+              loading="eager"
+            ></GatsbyImage>
+          </motion.div>
+        </AnimatePresence>
         <CarouselNav>
-          <motion.div className="prev">
+          <motion.div
+            className="prev"
+            onClick={() => {
+              paginate(-1)
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -102,7 +144,12 @@ const HomeCarousel = () => {
               </g>
             </svg>
           </motion.div>
-          <motion.div className="next">
+          <motion.div
+            className="next"
+            onClick={() => {
+              paginate(1)
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
