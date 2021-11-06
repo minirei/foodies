@@ -32,7 +32,7 @@ export const LandingImage = styled(motion.div)`
 export const HomeAboutSection = styled.div`
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: fit-content;
   padding-top: 10vh;
   padding-bottom: 10vh;
   cursor: default;
@@ -50,8 +50,9 @@ export const HomeAboutContent = styled(motion.div)`
   h3 {
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: calc(1.6rem + 1vw);
+    line-height: calc(2rem + 1vw);
+
     /* padding-top: calc(5rem + 5vh); */
   }
 
@@ -67,6 +68,13 @@ export const HomeAboutImage = styled.div`
   width: 35%;
   overflow: visible;
   position: relative;
+
+  .outerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
   .imageWrapper {
     width: 140%;
     position: relative;

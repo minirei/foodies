@@ -12,7 +12,11 @@ import {
 } from "../../styles/homeStyles"
 import Parallax from "../../elements/Parallax"
 
+// Context
+import { useGlobalStateContext } from "../../context/globalContext"
+
 const HomeAbout = () => {
+  const { isMobile } = useGlobalStateContext()
   const [contentRef, contentInView] = useInView({
     triggerOnce: true,
     // rootMargin: `-10%`,
@@ -25,20 +29,22 @@ const HomeAbout = () => {
 
   const controls = useAnimation()
 
-  const contentAnimation = {
-    hidden: {
-      opacity: 0,
-      y: 100,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        ease: [0.6, 0.01, -0.05, 0.95],
-      },
-    },
-  }
+  const contentAnimation = isMobile
+    ? {}
+    : {
+        hidden: {
+          opacity: 0,
+          y: 100,
+        },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 1,
+            ease: [0.6, 0.01, -0.05, 0.95],
+          },
+        },
+      }
 
   const imageAnimation = {
     hidden: {
@@ -67,12 +73,15 @@ const HomeAbout = () => {
 
   return (
     <>
-      <Parallax>
-        <HomeAboutSection>
+      <Parallax offset={isMobile ? 0 : 50}>
+        <HomeAboutSection style={{ paddingTop: isMobile ? "5vh" : "" }}>
           <Container overflowVisible>
-            <Flex spaceBetween>
-              <HomeAboutContent>
-                <Parallax offset={150}>
+            <Flex
+              spaceBetween
+              style={{ flexDirection: isMobile ? "column" : "row" }}
+            >
+              <HomeAboutContent style={{ width: isMobile ? "100%" : "" }}>
+                <Parallax offset={isMobile ? 0 : 100}>
                   <motion.div
                     className="animationWrapper"
                     ref={contentRef}
@@ -81,7 +90,7 @@ const HomeAbout = () => {
                     initial="hidden"
                   >
                     <h3>
-                      Welcome to FOODIES: An NFT Project,{" "}
+                      Welcome to Foodies: A CNFT Project,{" "}
                       <strong>but so much more</strong>.
                     </h3>
                     <p>
@@ -99,22 +108,27 @@ const HomeAbout = () => {
                 </Parallax>
               </HomeAboutContent>
 
-              <HomeAboutImage>
-                <Parallax offset={50}>
-                  <div className="imageWrapper">
-                    <StaticImage
-                      className="image"
-                      src="../../assets/images/foodie-about.png"
-                      alt="foodie about"
-                      objectFit="cover"
-                    />
-                    <motion.div
-                      className="mask"
-                      ref={imageRef}
-                      variants={imageAnimation}
-                      animate={controls}
-                      initial="hidden"
-                    ></motion.div>
+              <HomeAboutImage style={{ width: isMobile ? "100%" : "" }}>
+                <Parallax offset={isMobile ? 0 : 50}>
+                  <div className={`${isMobile ? "outerWrapper" : ""}`}>
+                    <div
+                      className="imageWrapper"
+                      style={{ width: isMobile ? "120%" : "" }}
+                    >
+                      <StaticImage
+                        className="image"
+                        src="../../assets/images/foodie-about.png"
+                        alt="foodie about"
+                        objectFit="cover"
+                      />
+                      <motion.div
+                        className="mask"
+                        ref={imageRef}
+                        variants={imageAnimation}
+                        animate={controls}
+                        initial="hidden"
+                      ></motion.div>
+                    </div>
                   </div>
                 </Parallax>
               </HomeAboutImage>
