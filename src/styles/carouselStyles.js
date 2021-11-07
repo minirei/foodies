@@ -84,7 +84,7 @@ export const CarouselBullets = styled(motion.div)`
 
 export const CarouselNav = styled(motion.div)`
   position: absolute;
-  bottom: 20%;
+  bottom: 18%;
   right: 1%;
   display: flex;
   cursor: pointer;

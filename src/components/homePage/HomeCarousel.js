@@ -141,7 +141,7 @@ const HomeCarousel = () => {
 
   return (
     <>
-      <HomeCarouselSection style={{ height: isMobile ? "90vh" : "" }}>
+      <HomeCarouselSection style={{ height: isMobile ? "80vh" : "" }}>
         <div className={`${card === 0 && "visible"} chapter`}>
           <h3>004 - Roadmap</h3>
         </div>
@@ -154,17 +154,6 @@ const HomeCarousel = () => {
             initial="enter"
             animate="center"
             exit="exit"
-            // drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={1}
-            onDragEnd={(e, { offset, velocity }) => {
-              const swipe = swipePower(offset.x, velocity.x)
-              if (swipe < -swipeConfidenceThreshold) {
-                paginate(1)
-              } else if (swipe > swipeConfidenceThreshold) {
-                paginate(-1)
-              }
-            }}
           >
             <GatsbyImage
               className="image"
@@ -177,7 +166,9 @@ const HomeCarousel = () => {
             ></GatsbyImage>
           </motion.div>
         </AnimatePresence>
-        <CarouselBullets>
+        <CarouselBullets style={{
+
+        }}>
           <span className={`${card === 0 && "isActive"}`}>
             <div className="dot"></div>
           </span>
