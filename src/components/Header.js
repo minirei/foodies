@@ -156,7 +156,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
                   cy="25"
                   r="40"
                   stroke="black"
-                  stroke-width="2"
+                  strokeWidth="2"
                   fill="none"
                 ></circle>
               </svg>

@@ -6,6 +6,7 @@
   - https://codesandbox.io/s/framer-motion-stackoverflow-q1-yigvv?file=/src/App.js:0-63
 - implement mobile scrolling for roadmap
   - ref: https://codesandbox.io/s/framer-motion-image-gallery-pqvx3?file=/src/Example.tsx
+- implement bullets
 - do up HERO image reveal (maybe just do up a whole preloading animation)
   - ref: https://www.youtube.com/watch?v=ySXy9BFu9LQ&t=199s&ab_channel=WrongAkram
 <!-- - implement parallax scrolling over hero image like https://www.flyplatoon.com/ -->

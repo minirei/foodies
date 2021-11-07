@@ -43,7 +43,7 @@ const HomeLaunch = () => {
   })
   const [marqueeRef, marqueeInView] = useInView({
     triggerOnce: true,
-    rootMargin: `-20%`,
+    rootMargin: `-25%`,
   })
   const controls = useAnimation()
   const marqueeControls = useAnimation()

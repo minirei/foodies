@@ -4,7 +4,11 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 // Styles
-import { HomeCarouselSection, CarouselNav } from "../../styles/carouselStyles"
+import {
+  HomeCarouselSection,
+  CarouselBullets,
+  CarouselNav,
+} from "../../styles/carouselStyles"
 
 // Context
 import { useGlobalStateContext } from "../../context/globalContext"
@@ -22,7 +26,7 @@ const cardAnimation = {
     x: 0,
     transition: {
       duration: 0.8,
-      delay: 1,
+      delay: 0.5,
       ease: "easeInOut",
     },
   },
@@ -32,7 +36,7 @@ const cardAnimation = {
       x: direction < 0 ? `100vw` : `-100vw`,
       transition: {
         duration: 0.8,
-        delay: 1,
+        delay: 0.5,
         ease: "easeInOut",
       },
     }
@@ -131,8 +135,8 @@ const HomeCarousel = () => {
 
   return (
     <>
-      <HomeCarouselSection>
-        <div className="chapter">
+      <HomeCarouselSection style={{ height: isMobile ? "90vh" : "" }}>
+        <div className={`${card === 0 && "visible"} chapter`}>
           <h3>004 - Roadmap</h3>
         </div>
         <AnimatePresence initial={false} custom={direction}>
@@ -156,6 +160,29 @@ const HomeCarousel = () => {
             ></GatsbyImage>
           </motion.div>
         </AnimatePresence>
+        <CarouselBullets>
+          <span className={`${card === 0 && "isActive"}`}>
+            <div className="dot"></div>
+          </span>
+          <span className={`${card === 1 && "isActive"}`}>
+            <div className="dot"></div>
+          </span>
+          <span className={`${card === 2 && "isActive"}`}>
+            <div className="dot"></div>
+          </span>
+          <span className={`${card === 3 && "isActive"}`}>
+            <div className="dot"></div>
+          </span>
+          <span className={`${card === 4 && "isActive"}`}>
+            <div className="dot"></div>
+          </span>
+          <span className={`${card === 5 && "isActive"}`}>
+            <div className="dot"></div>
+          </span>
+          <span className={`${card === 6 && "isActive"}`}>
+            <div className="dot"></div>
+          </span>
+        </CarouselBullets>
         <CarouselNav>
           <motion.div
             className="prev"
@@ -168,11 +195,11 @@ const HomeCarousel = () => {
               x="0px"
               y="0px"
               viewBox="450.284 152.487 391.604 290.307"
-              enable-background="new 450.284 152.487 391.604 290.307"
+              enableBackground="new 450.284 152.487 391.604 290.307"
             >
               <g transform="translate(0 -37)">
                 <polygon
-                  fill="#FFFFFF"
+                  fill="#000"
                   points="450.284,311.096 755.958,311.096 667.735,208.821 690.465,189.487 841.889,323.405 
 		841.889,345.875 690.465,479.794 667.735,460.459 755.958,357.836 450.284,357.836 	"
                 />
@@ -194,7 +221,7 @@ const HomeCarousel = () => {
             >
               <g transform="translate(0 -37)">
                 <polygon
-                  fill="#FFFFFF"
+                  fill="#000"
                   points="450.284,311.096 755.958,311.096 667.735,208.821 690.465,189.487 841.889,323.405 
 		841.889,345.875 690.465,479.794 667.735,460.459 755.958,357.836 450.284,357.836 	"
                 />
