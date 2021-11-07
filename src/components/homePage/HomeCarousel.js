@@ -154,7 +154,7 @@ const HomeCarousel = () => {
             initial="enter"
             animate="center"
             exit="exit"
-            drag="x"
+            // drag="x"
             dragConstraints={{ left: 0, right: 0 }}
             dragElastic={1}
             onDragEnd={(e, { offset, velocity }) => {
