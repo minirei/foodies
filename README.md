@@ -20,6 +20,10 @@
   - ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/
 - do some code splitting optimisation
 
+- gallery images too big
+- follow us no filter too high
+- scale font size better (do this while doing mobile)
+
 ## Colour
 rgb(255,248,237)
 

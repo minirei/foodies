@@ -143,7 +143,7 @@ export const NavBottom = styled.div`
       height: 100%;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: space-evenly;
       position: relative;
       overflow: hidden;
     }
@@ -154,7 +154,6 @@ export const NavBottom = styled.div`
       font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
         sans-serif;
       margin: 0;
-      padding-bottom: 4rem;
     }
     p {
       text-align: center;

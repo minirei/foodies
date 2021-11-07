@@ -191,7 +191,7 @@ const HomeCarousel = () => {
             <div className="dot"></div>
           </span>
         </CarouselBullets>
-        <CarouselNav>
+        <CarouselNav stlye={{width: isMobile ? "auto" : ""}}>
           <motion.div
             className="prev"
             onClick={() => {

@@ -12,7 +12,7 @@ export const HomeCarouselSection = styled(motion.div)`
     top: 5%;
     left: 8.33%;
     opacity: 0;
-    z-index: 100;
+    z-index: 20;
     transition: opacity 1000ms cubic-bezier(0.215, 0.61, 0.355, 1);
     h3 {
       font-size: 2rem;
@@ -60,7 +60,9 @@ export const CarouselBullets = styled(motion.div)`
       display: block;
       background: black;
       border-radius: 100%;
-      transition: opacity 1000ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-delay: 500ms;
+
     }
     ::after {
       opacity: 0;
@@ -71,7 +73,8 @@ export const CarouselBullets = styled(motion.div)`
       border-radius: 100%;
       border: 1px solid black;
       transform-origin: center;
-      transition: opacity 2000ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-delay: 500ms;
     }
     &.isActive {
       ::after,
@@ -84,9 +87,10 @@ export const CarouselBullets = styled(motion.div)`
 
 export const CarouselNav = styled(motion.div)`
   position: absolute;
-  bottom: 18%;
-  right: 1%;
+  width: 100%;
+  bottom: 50%;
   display: flex;
+  justify-content: space-between;
   cursor: pointer;
   user-select: none;
   z-index: 10;
@@ -97,20 +101,17 @@ export const CarouselNav = styled(motion.div)`
     border-radius: 100%;
     display: inline-block;
     border: 1px solid black;
-    margin-right: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 2%;
   }
 
   .prev {
+    margin-left: 2%;
     svg {
       transform: rotate(180deg);
     }
-  }
-
-  .next {
-    margin-right: 0;
   }
 
   svg {

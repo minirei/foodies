@@ -51,16 +51,16 @@ export const GalleryCategory = styled(motion.div)`
     position: absolute;
     overflow: hidden;
     top: -30%;
-    left: -10%;
-    width: 70%;
+    left: -5%;
+    width: 65%;
     z-index: 1;
     opacity: 1;
   }
 
   .floatingFoodie {
     top: -10%;
-    width: 50%;
+    width: 45%;
     left: auto;
-    right: -5%;
+    right: 0%;
   }
 `
