@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 export const HomeCarouselSection = styled(motion.div)`
-  height: 110vh;
+  height: 90vh;
   width: 100vw;
   background-color: rgb(232, 253, 255);
   position: relative;
@@ -28,7 +28,7 @@ export const HomeCarouselSection = styled(motion.div)`
       width: 100%;
       height: 100%;
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
     }
   }

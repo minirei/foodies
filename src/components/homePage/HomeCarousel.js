@@ -6,6 +6,9 @@ import { useStaticQuery, graphql } from "gatsby"
 // Styles
 import { HomeCarouselSection, CarouselNav } from "../../styles/carouselStyles"
 
+// Context
+import { useGlobalStateContext } from "../../context/globalContext"
+
 // Animation
 const cardAnimation = {
   enter: direction => {
@@ -19,9 +22,8 @@ const cardAnimation = {
     x: 0,
     transition: {
       duration: 0.8,
-      delay: 0.4,
+      delay: 1,
       ease: "easeInOut",
-      
     },
   },
   exit: direction => {
@@ -30,66 +32,85 @@ const cardAnimation = {
       x: direction < 0 ? `100vw` : `-100vw`,
       transition: {
         duration: 0.8,
-        delay: 0.4,
+        delay: 1,
         ease: "easeInOut",
-        
       },
     }
   },
 }
 
 const HomeCarousel = () => {
-  const { launch, party, kitchen, supply, wars } = useStaticQuery(
-    graphql`
-      query {
-        launch: file(relativePath: { eq: "roadmap-launch.jpeg" }) {
-          childImageSharp {
-            gatsbyImageData(
-              quality: 100
-              width: 2000
-              formats: [AUTO, WEBP, AVIF]
-            )
+  const { isMobile } = useGlobalStateContext()
+  const { launch, party, kitchen, supply, wars, charity, future } =
+    useStaticQuery(
+      graphql`
+        query {
+          launch: file(relativePath: { eq: "roadmap-launch.png" }) {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 100
+                width: 2420
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
+          }
+          party: file(relativePath: { eq: "roadmap-party.png" }) {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 100
+                width: 2420
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
+          }
+          kitchen: file(relativePath: { eq: "roadmap-kitchen.png" }) {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 100
+                width: 2420
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
+          }
+          supply: file(relativePath: { eq: "roadmap-supply.png" }) {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 100
+                width: 2420
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
+          }
+          wars: file(relativePath: { eq: "roadmap-wars.png" }) {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 100
+                width: 2420
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
+          }
+          charity: file(relativePath: { eq: "roadmap-charity.png" }) {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 100
+                width: 2420
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
+          }
+          future: file(relativePath: { eq: "roadmap-future.png" }) {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 100
+                width: 2420
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
           }
         }
-        party: file(relativePath: { eq: "roadmap-party.jpeg" }) {
-          childImageSharp {
-            gatsbyImageData(
-              quality: 100
-              width: 2000
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-        kitchen: file(relativePath: { eq: "roadmap-kitchen.jpeg" }) {
-          childImageSharp {
-            gatsbyImageData(
-              quality: 100
-              width: 2000
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-        supply: file(relativePath: { eq: "roadmap-supply.jpeg" }) {
-          childImageSharp {
-            gatsbyImageData(
-              quality: 100
-              width: 2000
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-        wars: file(relativePath: { eq: "roadmap-wars.png" }) {
-          childImageSharp {
-            gatsbyImageData(
-              quality: 100
-              width: 2000
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-      }
-    `
-  )
+      `
+    )
 
   const images = [
     getImage(launch),
@@ -97,6 +118,8 @@ const HomeCarousel = () => {
     getImage(kitchen),
     getImage(supply),
     getImage(wars),
+    getImage(charity),
+    getImage(future),
   ]
 
   const [[card, direction], setCard] = useState([0, 0])
@@ -109,9 +132,9 @@ const HomeCarousel = () => {
   return (
     <>
       <HomeCarouselSection>
-      <div className="chapter">
-        <h3>004 - Roadmap</h3>
-      </div>
+        <div className="chapter">
+          <h3>004 - Roadmap</h3>
+        </div>
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={card}
@@ -129,6 +152,7 @@ const HomeCarousel = () => {
               objectPosition="50% 100%"
               loading="eager"
               key={card}
+              style={{ height: isMobile ? "85%" : "" }}
             ></GatsbyImage>
           </motion.div>
         </AnimatePresence>
@@ -140,7 +164,7 @@ const HomeCarousel = () => {
             }}
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2420/svg"
               x="0px"
               y="0px"
               viewBox="450.284 152.487 391.604 290.307"
@@ -162,7 +186,7 @@ const HomeCarousel = () => {
             }}
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2420/svg"
               x="0px"
               y="0px"
               viewBox="450.284 152.487 391.604 290.307"
