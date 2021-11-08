@@ -31,7 +31,7 @@ const HomeGallery = () => {
   const bg2 = `rgb(222,137,121)`
   const bg3 = `rgb(222,137,12)`
   const bg4 = `rgb(222, 183, 153)`
-  const bgDefault = `rgb(235,235,235)`
+  const bgDefault = `rgb(255, 248, 237)`
 
   // Animation
   const colorControls = useAnimation()
@@ -80,7 +80,7 @@ const HomeGallery = () => {
 
   const textAnimation = {
     initial: {
-      color: `rgb(29, 29, 29)`,
+      color: `rgb(40,10,11)`,
       opacity: 1,
       zIndex: 2,
       transition: {
@@ -89,7 +89,7 @@ const HomeGallery = () => {
       },
     },
     triggered: {
-      color: `rgb(235, 235, 235)`,
+      color: `rgb(255, 248, 237)`,
       zIndex: 2,
       opacity: 1,
       transition: {
@@ -106,7 +106,7 @@ const HomeGallery = () => {
       },
     },
     exit: {
-      color: `rgb(29, 29, 29)`,
+      color: `rgb(40,10,11)`,
       opacity: 1,
       zIndex: 2,
       transition: {

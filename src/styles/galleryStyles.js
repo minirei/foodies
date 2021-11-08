@@ -8,7 +8,7 @@ export const HomeGallerySection = styled(motion.div)`
   padding-top: 20vh;
   padding-bottom: 20vh;
   width: 100vw;
-  background-color: #ebe;
+  background-color: rgb(255, 248, 237);
   cursor: default;
   overflow: hidden;
   .chapter {

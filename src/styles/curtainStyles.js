@@ -54,7 +54,6 @@ export const CurtainHeading = styled(motion.div)`
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: calc(3rem + 1vw);
-    color: #292929;
     margin: 0 auto 1rem;
     letter-spacing: 0.1rem;
     white-space: nowrap;

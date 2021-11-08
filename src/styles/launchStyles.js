@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export const HomeLaunchSection = styled(motion.div)`
   position: relative;
   width: 100%;
-  background-color: rgb(222,183,153);
+  background-color: rgb(222, 183, 153);
   cursor: default;
 `
 
@@ -24,8 +24,8 @@ export const HomeLaunchContent = styled.div`
         sans-serif;
       width: 100%;
       font-weight: 600;
-      font-size: 4.6rem;
-      line-height: 10rem;
+      font-size: calc(2rem + 2vw);
+      line-height: calc(2rem + 3vw);
       letter-spacing: 0.1rem;
       text-transform: uppercase;
       text-align: left;
@@ -33,8 +33,8 @@ export const HomeLaunchContent = styled.div`
     }
     p {
       font-weight: 400;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
       text-align: justify;
       margin: 0 auto 2rem;
     }
@@ -59,18 +59,18 @@ export const Marquee = styled(motion.div)`
 
   .rowTitle,
   .rowLetter {
-    color: rgb(222,183,153);
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 5px;
+    color: rgb(222, 183, 153);
+    -webkit-text-stroke-color: rgb(40, 10, 11);
+    -webkit-text-stroke-width: calc(2px + 0.2vw);
     font-size: calc(2rem + 15vw);
     font-weight: 700;
-    letter-spacing: -0.8rem;
+    /* letter-spacing: -0.8rem; */
     display: inline-block;
     white-space: nowrap;
   }
 
   .rowTitle {
-    padding: 0 5vw;
+    padding: 0 4vw;
   }
 
   .marqueeInner {
@@ -86,46 +86,3 @@ export const Marquee = styled(motion.div)`
     animation-play-state: running;
   }
 `
-
-// Gallery (OLD)
-// export const HomeLaunchGallery = styled.div`
-//   position: relative;
-//   width: 100%;
-//   background-color: #de8979;
-//   padding: 5vh 0;
-
-//   h3 {
-//     font-weight: 400;
-//     font-size: 2rem;
-//     text-align: start;
-//     line-height: 3rem;
-//     margin: 0 auto;
-//     padding: 2rem 0;
-//   }
-// `
-
-// export const GalleryImages = styled.div`
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-//   padding: 0 7vw;
-// `
-
-// export const HomeLaunchImage = styled.div`
-//   width: 100%;
-//   @media (min-width: 1408px) {
-//     width: 23%;
-//   }
-
-//   p {
-//     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-//     font-weight: 600;
-//     font-size: 2.2rem;
-//     text-align: center;
-//     margin: 1rem auto;
-//   }
-
-//   .image {
-//     border: 3px solid black;
-//   }
-// `

@@ -52,7 +52,7 @@ const LandingPage = () => {
           className="wrapper"
           style={{
             backgroundAttachment: isMobile ? "" : "fixed",
-            height: isMobile ? "75vh" : "100vh",
+            height: isMobile ? "70vh" : "100vh",
           }}
           loading="eager"
         ></BgImage>

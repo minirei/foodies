@@ -81,10 +81,6 @@ const HomeLaunch = () => {
     hidden: { y: 400 },
     visible: {
       y: 0,
-      transition: {
-        // ease: [0.6, 0.01, -0.05, 0.95],
-        // duration: 1,
-      },
     },
   }
 
@@ -96,7 +92,6 @@ const HomeLaunch = () => {
 
   useEffect(() => {
     if (marqueeInView) {
-      console.log("in view")
       marqueeControls.start("visible")
       setTimeout(() => {
         setPlayMarquee(true)
@@ -114,39 +109,41 @@ const HomeLaunch = () => {
           initial="hidden"
         >
           <AnimatedLetters title={"DECEMBER'21"} />
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            D
-          </motion.span>
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            E
-          </motion.span>
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            C
-          </motion.span>
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            E
-          </motion.span>
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            M
-          </motion.span>
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            B
-          </motion.span>
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            E
-          </motion.span>
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            R
-          </motion.span>
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            '
-          </motion.span>
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            2
-          </motion.span>
-          <motion.span className="rowLetter" variants={letterAnimation}>
-            1
-          </motion.span>
+          <div className="rowTitle">
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              D
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              E
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              C
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              E
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              M
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              B
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              E
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              R
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              '
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              2
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              1
+            </motion.span>
+          </div>
           <AnimatedLetters title={"DECEMBER'21"} />
           <AnimatedLetters title={"DECEMBER'21"} />
         </motion.div>
@@ -164,17 +161,22 @@ const HomeLaunch = () => {
               >
                 <h3>THIS FOODIES LAUNCH</h3>
                 <p>
-                  Comprises <strong>10,000</strong> uniquely cooked individuals
-                  (over <strong>8 categories</strong> and more than{" "}
-                  <strong>100 traits</strong>) made of <em>real</em>, edible
-                  food ingredients!
+                  This launch comprises 10,000 uniquely cooked individuals made
+                  of - you guessed it - real, edible food ingredients! With more
+                  than 100 traits over 8 categories, randomly distributed
+                  according to predetermined rarities, you can be sure that each
+                  Foodie is like no other!
                 </p>
                 <p>
-                  Each foodie will belong to 1 of these 4 nationalities:{" "}
-                  <em>Japanese, Italian, American and Chinese</em>, some of the
-                  most popular cuisines in the world. Visually-stunning and
-                  deliciously-prepared, each Foodie embodies the spirit of love,
-                  diversity, and appreciation of food from various cultures!{" "}
+                  Each Foodie will have traits that represent ingredients from
+                  some of the most popular cuisines around the world.
+                  Visually-stunning and deliciously-prepared, each Foodie
+                  embodies the spirit of love, diversity, and appreciation of
+                  food!
+                </p>
+                <p>
+                  Some lucky Foodies might even have special backgrounds, which
+                  represent popular global landmarks! Have a sneak peek below!
                 </p>
               </motion.div>
             </Parallax>

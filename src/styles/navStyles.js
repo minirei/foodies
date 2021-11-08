@@ -70,7 +70,7 @@ export const NavContent = styled.div`
 
 export const Heading = styled.h1`
   font-size: calc(2.6rem + 1vw);
-  color: black;
+  color: rgb(40,10,11);
   font-weight: 400;
   letter-spacing: 0.1rem;
   font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

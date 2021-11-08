@@ -1,10 +1,6 @@
 # Foodies
 
 ## To-Do
-- add a still clueless thing after the roadmap to add 
-  - about
-  - faqs,
-  - guide
 - change colour of gallery
 - toggle animations for mobile (isMobile ? {smth here} : {})
   - https://stackoverflow.com/questions/68195160/how-do-i-turn-off-framer-motion-animations-in-mobile-view
