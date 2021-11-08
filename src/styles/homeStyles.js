@@ -34,21 +34,13 @@ export const HomeAboutContent = styled(motion.div)`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  h3 {
-    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: calc(1.6rem + 1vw);
-    line-height: calc(2rem + 1vw);
-
-    /* padding-top: calc(5rem + 5vh); */
-  }
 
   p {
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
     padding-bottom: 1rem;
-    text-align: justify;
+  }
+  a {
+    font-weight: 600;
+    color: inherit;
   }
 `
 export const HomeAboutImage = styled.div`

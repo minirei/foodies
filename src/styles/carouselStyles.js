@@ -14,12 +14,6 @@ export const HomeCarouselSection = styled(motion.div)`
     opacity: 0;
     z-index: 20;
     transition: opacity 1000ms cubic-bezier(0.215, 0.61, 0.355, 1);
-    h3 {
-      font-size: 2rem;
-      font-weight: 400;
-      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
-        sans-serif;
-    }
     &.visible {
       opacity: 1;
     }
@@ -44,16 +38,9 @@ export const CarouselContent = styled(motion.div)`
   top: 15%;
   width: 40%;
   h3 {
-    font-size: calc(2.2rem + 1vw);
-    font-weight: 500;
-    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    margin-top: 3rem;
+    margin: 1rem 0;
   }
   p {
-    font-size: calc(1.2rem + 0.2vw);
-    line-height: calc(1.2rem + 0.6vw);
-    text-align: justify;
     &.blockingOne {
       width: 95%
     }

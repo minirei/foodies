@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 
 export const FooterSection = styled.div`
   position: relative;
-  height: 70vh;
+  height: 65vh;
   width: 100vw;
   overflow: hidden;
   background: rgb(255, 248, 237);
@@ -91,25 +91,23 @@ export const MobileFooterSection = styled.div`
 
 export const FooterTop = styled.div`
   width: 100vw;
-  height: 50%;
+  height: 55%;
   background-color: rgb(255, 248, 237);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   p {
-    font-size: calc(1.2rem + 0.2vw);
-    font-weight: 400;
     color: rgb(40, 10, 11);
   }
   .link {
-    font-weight: 600;
-    color: black;
+    font-weight: 700;
+    color: inherit;
   }
 `
 
 export const Disclaimer = styled.div`
-  height: 15%;
+  height: 10%;
   width: 100vw;
   position: relative;
   padding-left: 2%;
@@ -118,6 +116,7 @@ export const Disclaimer = styled.div`
     margin: 0;
     padding-right: calc(1rem + 2vw);
     color: rgb(40, 10, 11);
+    font-size: 1rem;
   }
 
   ${props =>

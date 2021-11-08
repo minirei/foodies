@@ -3,7 +3,6 @@ import React, { useState } from "react"
 import {
   GatsbyImage,
   getImage,
-  getLowResolutionImageURL,
 } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -17,9 +16,6 @@ import {
 
 // Context
 import { useGlobalStateContext } from "../../context/globalContext"
-
-// Elements
-import Parallax from "../../elements/Parallax"
 
 // Animation
 const cardAnimation = {
@@ -190,7 +186,7 @@ const HomeCarousel = () => {
         id="roadmap"
       >
         <div className={`${card === 0 && "visible"} chapter`}>
-          <h3>004 - Roadmap</h3>
+          <h1>003 - Roadmap</h1>
         </div>
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
@@ -212,22 +208,20 @@ const HomeCarousel = () => {
               style={{ height: isMobile ? "85%" : "" }}
             ></GatsbyImage>
             <CarouselContent key={card}>
-              <Parallax offset={isMobile ? 0 : 20}>
-                <motion.h3 key={card} variants={textAnimation}>
-                  {content.title[card]}
-                </motion.h3>
-                <motion.p
-                  className={`
+              <motion.h3 key={card} variants={textAnimation}>
+                {content.title[card]}
+              </motion.h3>
+              <motion.p
+                className={`
                 ${card === 0 && !isMobile && "blockingOne"} 
                 ${card === 3 && !isMobile && "blockingFour"} 
                 ${card === 4 && !isMobile && "blockingFive"}
                 `}
-                  key={card}
-                  variants={textAnimation}
-                >
-                  {content.paragraph[card]}
-                </motion.p>
-              </Parallax>
+                key={card}
+                variants={textAnimation}
+              >
+                {content.paragraph[card]}
+              </motion.p>
             </CarouselContent>
           </motion.div>
         </AnimatePresence>

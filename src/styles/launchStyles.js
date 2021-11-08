@@ -11,7 +11,7 @@ export const HomeLaunchSection = styled(motion.div)`
 
 export const HomeLaunchContent = styled.div`
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   margin: 0 auto;
   display: flex;
 
@@ -20,21 +20,12 @@ export const HomeLaunchContent = styled.div`
     right: 0;
     position: absolute;
     h3 {
-      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
-        sans-serif;
       width: 100%;
-      font-weight: 600;
-      font-size: calc(2rem + 2vw);
-      line-height: calc(2rem + 3vw);
       letter-spacing: 0.1rem;
       text-transform: uppercase;
       text-align: left;
-      margin: 0 auto;
     }
     p {
-      font-weight: 400;
-      font-size: 1.3rem;
-      line-height: 1.8rem;
       text-align: justify;
       margin: 0 auto 2rem;
     }

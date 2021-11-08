@@ -39,6 +39,27 @@ export const GlobalStyle = createGlobalStyle`
     }
     ${"" /* cursor: default; */}
   }
+
+  ${'' /* chapters */}
+  h1 {
+      font-size: 2rem;
+      font-weight: 400;
+      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
+    }
+
+  h3 {
+    font-size: calc(2rem + 1vw);
+    line-height: calc(2rem + 0.8vw);
+    font-weight: 600;
+    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  p {
+    font-size: calc(1.2rem + 0.2vw);
+    line-height: calc(1.4rem + 0.6vw);
+    text-align: justify;
+  }
 `
 
 // General components

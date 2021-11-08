@@ -215,7 +215,7 @@ const HomeGallery = () => {
       initial="initial"
     >
       <div className="chapter">
-        <h3>001 - Cultural Diversity</h3>
+        <h1>001 - Cultural Diversity</h1>
       </div>
       <Container overflowVisible>
         <Flex vertical>

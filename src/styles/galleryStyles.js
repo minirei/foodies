@@ -17,12 +17,6 @@ export const HomeGallerySection = styled(motion.div)`
     top: 5%;
     left: 8.33%;
     z-index: 10;
-    h3 {
-      font-size: 2rem;
-      font-weight: 400;
-      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
-        sans-serif;
-    }
   }
 `
 

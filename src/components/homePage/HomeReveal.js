@@ -52,7 +52,7 @@ const HomeReveal = () => {
             ease: [0.6, 0.01, -0.05, 0.9],
           }}
         >
-          <h3>002 - Our Core Values</h3>
+          <h1>002 - Our Core Values</h1>
         </motion.div>
         <Flex spaceBetween>
           {/* FIRST CURTAIN */}

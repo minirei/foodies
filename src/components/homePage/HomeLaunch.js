@@ -11,10 +11,15 @@ import {
   Marquee,
 } from "../../styles/launchStyles"
 
+// Context
+import { useGlobalStateContext } from "../../context/globalContext"
+
 // Elements
 import Parallax from "../../elements/Parallax"
 
 const HomeLaunch = () => {
+  const { isMobile } = useGlobalStateContext()
+
   const AnimatedLetters = ({ title }) => {
     return (
       <span className="rowTitle">
@@ -39,7 +44,7 @@ const HomeLaunch = () => {
 
   const [contentRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: `-20%`,
+    rootMargin: `-25%`,
   })
   const [marqueeRef, marqueeInView] = useInView({
     triggerOnce: true,
@@ -151,7 +156,7 @@ const HomeLaunch = () => {
       <HomeLaunchContent>
         <Container>
           <Flex vertical alignTop className="launchInfo">
-            <Parallax offset={50}>
+            <Parallax offset={isMobile ? 0 : 50}>
               <motion.div
                 className="contentAnimationWrapper"
                 ref={contentRef}
@@ -159,7 +164,7 @@ const HomeLaunch = () => {
                 animate={controls}
                 initial="hidden"
               >
-                <h3>THIS FOODIES LAUNCH</h3>
+                <h3>This Foodies Launch.</h3>
                 <p>
                   This launch comprises 10,000 uniquely cooked individuals made
                   of - you guessed it - real, edible food ingredients! With more

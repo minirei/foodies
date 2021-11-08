@@ -20,6 +20,9 @@ export const Navigation = styled(motion.ul)`
   }
   h3 {
     display: inline-block;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.1rem;

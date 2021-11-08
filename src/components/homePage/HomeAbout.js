@@ -89,10 +89,7 @@ const HomeAbout = () => {
                     animate={controls}
                     initial="hidden"
                   >
-                    <h3>
-                      Welcome to Foodies: A CNFT Project,{" "}
-                      <strong>but so much more</strong>.
-                    </h3>
+                    <h3>Have a taste of novelty, only at Foodies.</h3>
                     <p>
                       Food is something that connects us universally. Perhaps it
                       has to do with how we need it to live. But perhaps it can
@@ -100,9 +97,18 @@ const HomeAbout = () => {
                       bring Food to life!
                     </p>
                     <p>
-                      Foodies will live in Foodie Town, a bustling hub with a
+                      Infused into pieces of art as NFTs, each Foodie is an
+                      esteemed member of Foodie Town: a bustling hub with a
                       variety of hotspots and activities such as: Foodie
                       Kitchen, Foodie Parties, and Foodie Wars!
+                    </p>
+                    <p>
+                      These features will all be implemented on the Cardano
+                      blockchain, and owning a Foodie will grant you access to
+                      Foodie Town and{" "}
+                      <a href="#roadmap" alt="roadmap">
+                        lots more!
+                      </a>
                     </p>
                   </motion.div>
                 </Parallax>
