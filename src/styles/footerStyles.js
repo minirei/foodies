@@ -5,7 +5,7 @@ export const FooterSection = styled.div`
   height: 30vh;
   width: 100vw;
   overflow: hidden;
-  background-color: rgb(235, 235, 235);
+  background: rgb(255,248,237);
   color: black;
   .line {
     &.short {
@@ -29,6 +29,8 @@ export const FooterSection = styled.div`
     background: black;
   }
 `
+
+
 
 export const MobileFooterSection = styled.div`
   position: relative;

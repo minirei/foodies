@@ -1,7 +1,5 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { motion, useAnimation } from "framer-motion"
-import { useInView } from "react-intersection-observer"
+import { motion } from "framer-motion"
 import { Link } from "gatsby"
 
 // Styles
@@ -20,37 +18,6 @@ import { useGlobalStateContext } from "../context/globalContext"
 const Footer = () => {
   // Mobile
   const { isMobile } = useGlobalStateContext()
-
-  // Animation
-  const controls = useAnimation()
-  const [contentRef, inView] = useInView()
-  const bottomLeftLineAnimation = {
-    initial: {
-      y: "-100%",
-    },
-    triggered: {
-      y: 0,
-      transition: {
-        delay: 0.8,
-        duration: 0.8,
-        ease: [0.6, 0.05, -0.01, 0.9],
-      },
-    },
-  }
-
-  const bottomRightLineAnimation = {
-    initial: {
-      y: "-100%",
-    },
-    triggered: {
-      y: 0,
-      transition: {
-        delay: 1,
-        duration: 0.8,
-        ease: [0.6, 0.05, -0.01, 0.9],
-      },
-    },
-  }
 
   return isMobile ? (
     <MobileFooterSection>

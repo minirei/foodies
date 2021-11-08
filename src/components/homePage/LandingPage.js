@@ -1,10 +1,8 @@
 import React from "react"
 import { useViewportScroll, useTransform } from "framer-motion"
-import { getImage, GatsbyImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { BgImage } from "gbimage-bridge"
-import { convertToBgImage } from "gbimage-bridge"
-import BackgroundImage from "gatsby-background-image"
 
 // Styles
 import { BackgroundSection } from "../../styles/homeStyles"
@@ -20,7 +18,7 @@ const LandingPage = () => {
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "hero.jpeg" }) {
+        placeholderImage: file(relativePath: { eq: "hero.png" }) {
           childImageSharp {
             gatsbyImageData(
               quality: 100
@@ -34,7 +32,6 @@ const LandingPage = () => {
   )
 
   const image = getImage(placeholderImage)
-  const bgImage = convertToBgImage(image)
 
   return (
     <>
