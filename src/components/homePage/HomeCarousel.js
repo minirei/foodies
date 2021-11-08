@@ -18,6 +18,9 @@ import {
 // Context
 import { useGlobalStateContext } from "../../context/globalContext"
 
+// Elements
+import Parallax from "../../elements/Parallax"
+
 // Animation
 const cardAnimation = {
   enter: direction => {
@@ -215,20 +218,22 @@ const HomeCarousel = () => {
               style={{ height: isMobile ? "85%" : "" }}
             ></GatsbyImage>
             <CarouselContent key={card}>
-              <motion.h3 key={card} variants={textAnimation}>
-                {content.title[card]}
-              </motion.h3>
-              <motion.p
-                className={`
+              <Parallax offset={ isMobile ? 0 : 20}>
+                <motion.h3 key={card} variants={textAnimation}>
+                  {content.title[card]}
+                </motion.h3>
+                <motion.p
+                  className={`
                 ${card === 0 && !isMobile && "blockingOne"} 
                 ${card === 3 && !isMobile && "blockingFour"} 
-                ${card === 4 && !isMobile && "blockingFive" }
+                ${card === 4 && !isMobile && "blockingFive"}
                 `}
-                key={card}
-                variants={textAnimation}
-              >
-                {content.paragraph[card]}
-              </motion.p>
+                  key={card}
+                  variants={textAnimation}
+                >
+                  {content.paragraph[card]}
+                </motion.p>
+              </Parallax>
             </CarouselContent>
           </motion.div>
         </AnimatePresence>

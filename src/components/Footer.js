@@ -139,8 +139,8 @@ const Footer = () => {
         <div className="cardanoWrapper">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="100"
+            width="1000"
+            height="1000"
             viewBox="0 0 2000 1848"
             className="cardanoSVG"
           >

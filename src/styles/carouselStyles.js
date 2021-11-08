@@ -48,7 +48,7 @@ export const CarouselContent = styled(motion.div)`
     font-weight: 500;
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   p {
     font-size: calc(1.2rem + 0.2vw);
