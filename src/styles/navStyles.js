@@ -98,9 +98,8 @@ export const NavBottom = styled.div`
   height: 15vw;
 
   &.footer {
-    height: 75%;
+    height: 35%;
     mix-blend-mode: difference;
-    /* background-color: rgb(235, 235, 235); */
     background: rgb(255, 248, 237);
     color: auto;
   }
@@ -174,7 +173,6 @@ export const NavBottom = styled.div`
       font-size: 1rem;
       font-weight: 400;
       margin: 0;
-      padding-bottom: 1rem;
     }
   }
 

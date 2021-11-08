@@ -72,12 +72,6 @@ const textAnimation = {
   },
 }
 
-// Mobile Swiping
-const swipeConfidenceThreshold = 10000
-const swipePower = (offset, velocity) => {
-  return Math.abs(offset) * velocity
-}
-
 const HomeCarousel = () => {
   const { isMobile } = useGlobalStateContext()
   const { launch, party, kitchen, supply, wars, future, charity } =
@@ -184,9 +178,9 @@ const HomeCarousel = () => {
 
   const [[card, direction], setCard] = useState([0, 0])
   const paginate = newDirection => {
-    if (card + newDirection === images.length) return
-    if (card + newDirection < 0) return
-    setCard([card + newDirection, newDirection])
+    if (card + newDirection < 0) setCard([6, newDirection])
+    else if (card + newDirection === images.length) setCard([0, newDirection])
+    else setCard([card + newDirection, newDirection])
   }
 
   return (
@@ -215,10 +209,10 @@ const HomeCarousel = () => {
               objectPosition="50% 100%"
               loading="eager"
               key={card}
-            style={{ height: isMobile ? "85%" : "" }}
+              style={{ height: isMobile ? "85%" : "" }}
             ></GatsbyImage>
             <CarouselContent key={card}>
-              <Parallax offset={ isMobile ? 0 : 20}>
+              <Parallax offset={isMobile ? 0 : 20}>
                 <motion.h3 key={card} variants={textAnimation}>
                   {content.title[card]}
                 </motion.h3>

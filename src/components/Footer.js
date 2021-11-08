@@ -7,6 +7,7 @@ import { NavBottom, Icon } from "../styles/navStyles"
 import { Flex } from "../styles/globalStyles"
 import {
   FooterSection,
+  FooterTop,
   Disclaimer,
   MobileFooterSection,
   CardanoInfo,
@@ -121,6 +122,21 @@ const Footer = () => {
     </MobileFooterSection>
   ) : (
     <FooterSection>
+      <FooterTop>
+        <p>
+          New to NFTs? Check out our{" "}
+          <Link to="/guide" className="link">
+            Guide
+          </Link>
+        </p>
+        <p>
+          Want to know more? Have a look at our{" "}
+          <Link to="/faq" className="link">
+            FAQ
+          </Link>
+        </p>
+        <p>Still have questions? Reach out to us on our socials below!</p>
+      </FooterTop>
       <NavBottom className="footer">
         <span className="horizontalLine" />
         <div className="leftInfo">

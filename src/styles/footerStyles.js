@@ -2,10 +2,10 @@ import styled, { css } from "styled-components"
 
 export const FooterSection = styled.div`
   position: relative;
-  height: 30vh;
+  height: 70vh;
   width: 100vw;
   overflow: hidden;
-  background: rgb(255,248,237);
+  background: rgb(255, 248, 237);
   color: black;
   .line {
     &.short {
@@ -30,25 +30,23 @@ export const FooterSection = styled.div`
   }
 `
 
-
-
 export const MobileFooterSection = styled.div`
   position: relative;
   /* height: 30vh; */
   padding-bottom: 5vh;
   width: 100vw;
   overflow: hidden;
-  background-color: rgb(235, 235, 235);
+  background: rgb(255, 248, 237);
   color: black;
   .socialsCaption {
     mix-blend-mode: difference;
-    background-color: rgb(235, 235, 235);
+    background: rgb(255, 248, 237);
   }
   .socials {
     width: 100%;
     height: 15vh;
     mix-blend-mode: difference;
-    background-color: rgb(235, 235, 235);
+    background: rgb(255, 248, 237);
   }
   .policy {
     width: 80%;
@@ -91,12 +89,30 @@ export const MobileFooterSection = styled.div`
   }
 `
 
+export const FooterTop = styled.div`
+  width: 100vw;
+  height: 50%;
+  background: rgb(255, 248, 237);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    font-size: calc(1.2rem + 0.2vw);
+    font-weight: 400;
+  }
+  .link {
+    font-weight: 600;
+    color: black;
+  }
+`
+
 export const Disclaimer = styled.div`
-  height: 25%;
+  height: 15%;
   width: 100vw;
   position: relative;
   padding-left: 2%;
-  background-color: rgb(235, 235, 235);
+  background: rgb(255, 248, 237);
   p {
     margin: 0;
     padding-right: calc(1rem + 2vw);
@@ -116,12 +132,12 @@ export const Disclaimer = styled.div`
 
 export const CardanoInfo = styled.div`
   position: relative;
-  height: 15vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(235, 235, 235);
+  background: rgb(255, 248, 237);
 
   .cardanoWrapper {
     height: 100%;
