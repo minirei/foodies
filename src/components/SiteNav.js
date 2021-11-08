@@ -231,10 +231,18 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       initial="initial"
                       exit="exit"
                     />
-                    <Heading large>About</Heading>
-                    <Heading large>FAQs</Heading>
-                    <Heading large>Guide</Heading>
-                    <Heading large>Mint</Heading>
+                    <Link to="about">
+                      <Heading large>About </Heading>
+                    </Link>
+                    <Link to="faq">
+                      <Heading large>FAQ</Heading>
+                    </Link>
+                    <Link to="/guide">
+                      <Heading large>Guide</Heading>
+                    </Link>
+                    <Heading large unavailable>
+                      Mint
+                    </Heading>
                   </div>
                   <div className="roadmap">
                     <motion.span
@@ -244,11 +252,13 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       initial="initial"
                       exit="exit"
                     />
-                    <Heading large>Roadmap</Heading>
-                    <Heading>Foodie Parties</Heading>
-                    <Heading>Foodie Kitchen</Heading>
-                    <Heading>Supply Drop</Heading>
-                    <Heading>Foodie Wars</Heading>
+                    <Heading large style={{ cursor: "default" }}>
+                      Roadmap
+                    </Heading>
+                    <Heading unavailable>Foodie Parties</Heading>
+                    <Heading unavailable>Foodie Kitchen</Heading>
+                    <Heading unavailable>Supply Drop</Heading>
+                    <Heading unavailable>Foodie Wars</Heading>
                   </div>
                   <motion.span
                     className="horizontalLine"
@@ -265,6 +275,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         className="image"
                         src="../assets/images/cardano-logo.png"
                         alt="cardano logo"
+                        loading="eager"
                       />
                     </div>
                     <p>Powered by Cardano</p>
@@ -283,7 +294,6 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       <Flex>
                         <Icon>
                           <div className="svgWrapper">
-                            {/* <span className="line"></span> */}
                             <a
                               href="https://twitter.com/Foodies_CNFT"
                               target="_blank"

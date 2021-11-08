@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     font-smooth: always;
+    scroll-behavior: smooth;
   }
 
   body {

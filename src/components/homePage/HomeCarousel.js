@@ -1,11 +1,16 @@
 import { motion, AnimatePresence } from "framer-motion"
 import React, { useState } from "react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import {
+  GatsbyImage,
+  getImage,
+  getLowResolutionImageURL,
+} from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 // Styles
 import {
   HomeCarouselSection,
+  CarouselContent,
   CarouselBullets,
   CarouselNav,
 } from "../../styles/carouselStyles"
@@ -51,7 +56,7 @@ const swipePower = (offset, velocity) => {
 
 const HomeCarousel = () => {
   const { isMobile } = useGlobalStateContext()
-  const { launch, party, kitchen, supply, wars, charity, future } =
+  const { launch, party, kitchen, supply, wars, future, charity } =
     useStaticQuery(
       graphql`
         query {
@@ -100,7 +105,7 @@ const HomeCarousel = () => {
               )
             }
           }
-          charity: file(relativePath: { eq: "roadmap-charity.png" }) {
+          future: file(relativePath: { eq: "roadmap-future.png" }) {
             childImageSharp {
               gatsbyImageData(
                 quality: 100
@@ -109,7 +114,7 @@ const HomeCarousel = () => {
               )
             }
           }
-          future: file(relativePath: { eq: "roadmap-future.png" }) {
+          charity: file(relativePath: { eq: "roadmap-charity.png" }) {
             childImageSharp {
               gatsbyImageData(
                 quality: 100
@@ -128,9 +133,30 @@ const HomeCarousel = () => {
     getImage(kitchen),
     getImage(supply),
     getImage(wars),
-    getImage(charity),
     getImage(future),
+    getImage(charity),
   ]
+
+  const content = {
+    title: [
+      "The Launch (Dec '21)",
+      "Foodie Parties (Jan '22)",
+      "Suppliers Come to Town (Q1 '22)",
+      "Foodie Kitchen (Q2 '22)",
+      "Foodie Wars (Q3 '22)",
+      "Future Drops & Collabs",
+      "Bonus: Food For Good",
+    ],
+    paragraph: [
+      "10,000 unique Foodies arrive at Foodie Town. They begin to find their worth as they behold the rapid development of their town. Meanwhile, fun initiatives such as contests and giveaways will be carried out on socials. Along the way, royalties that the team receives from the sale of Foodies on the secondary market will be distributed to Foodie holders as well.",
+      "Once a month, 500 Foodies will be airdropped an NFT which can be used to redeem a food voucher at outlets around the world. There will be a list of outlets generated for Foodies to choose from, so meet your fellow foodies for a meal on the last day of each month! If it so happens that none of the food outlets on the list that month interest you, you can either sell the NFT, or keep it for future Foodie Parties (no expiry date!)",
+      "Once a month, ingredient suppliers will visit Foodie Town, bringing limited edition traits each month! These limited edition traits will be in the form of NFTs, and are available for minting ONLY for those holding onto Foodies. The traits can then be added into your recipe to re-cook your Foodie, resold on the secondary market or kept for future use!",
+      "Re-cook your Foodies! For a small “gas” fee, the Foodie Kitchen will allow you to either swap traits that belong to the same category between 2 Foodies or swap out a trait in your Foodie with another trait in the same category. By doing so, you receive the new Foodie NFT as well as a new trait NFT. Just send us your new recipe and NFTs, and we'll return them freshly re-cooked!",
+      "A monthly, free-for-all 24h war where Foodies battle each other for a chance to upgrade themselves! 2 Foodies will randomly be matched with each other in a game and play until the HP of one goes to 0. The winner of each battle will win one trait from the loser. The trait can either be kept as an NFT, or added into your Foodie recipe for re-cooking in the Kitchen!",
+      "Throughout the entirety of this project, we will be donating 5% of all proceeds to . We recognise the potential of this project and are excited to contribute directly to those suffering in society, in an area related to our project. Starvation is a serious issue and it would be incredibly meaningful for food art to raise money and contribute directly to ending it.",
+      "Depending on the overall sentiment of the community, we may launch new Foodies series and collaborate with various food chains or NFT projects, which Foodie holders will be given priority access to. The possibilities are endless here at Foodie Town!",
+    ],
+  }
 
   const [[card, direction], setCard] = useState([0, 0])
   const paginate = newDirection => {
@@ -141,7 +167,7 @@ const HomeCarousel = () => {
 
   return (
     <>
-      <HomeCarouselSection style={{ height: isMobile ? "80vh" : "" }}>
+      <HomeCarouselSection style={{ height: isMobile ? "80vh" : "" }} id="roadmap">
         <div className={`${card === 0 && "visible"} chapter`}>
           <h3>004 - Roadmap</h3>
         </div>
@@ -164,11 +190,19 @@ const HomeCarousel = () => {
               key={card}
               style={{ height: isMobile ? "85%" : "" }}
             ></GatsbyImage>
+            <CarouselContent>
+              <h3>{content.title[card]}</h3>
+              <p
+                className={`${card === 3 && "blockingBoxes"} ${
+                  card === 4 && "blockingWars"
+                }`}
+              >
+                {content.paragraph[card]}
+              </p>
+            </CarouselContent>
           </motion.div>
         </AnimatePresence>
-        <CarouselBullets style={{
-
-        }}>
+        <CarouselBullets style={{}}>
           <span className={`${card === 0 && "isActive"}`}>
             <div className="dot"></div>
           </span>
@@ -191,7 +225,7 @@ const HomeCarousel = () => {
             <div className="dot"></div>
           </span>
         </CarouselBullets>
-        <CarouselNav stlye={{width: isMobile ? "auto" : ""}}>
+        <CarouselNav style={{ width: isMobile ? "auto" : "" }}>
           <motion.div
             className="prev"
             onClick={() => {

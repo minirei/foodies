@@ -15,19 +15,6 @@ export const BackgroundSection = styled(motion.div)`
   }
 `
 
-export const LandingImage = styled(motion.div)`
-  width: 100vw;
-  /* height needs a media query for mobile */
-  height: 100vh;
-  position: relative;
-  z-index: -1;
-  background-image: url("images/hero.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-`
-
 // About Section
 export const HomeAboutSection = styled.div`
   position: relative;

@@ -18,7 +18,7 @@ export const SiteNavSection = styled(motion.div)`
     top: 0;
     width: 1px;
     display: block;
-    background: black;
+    background: black !important;
   }
   .horizontalLine {
     position: absolute;
@@ -27,7 +27,7 @@ export const SiteNavSection = styled(motion.div)`
     left: 0;
     bottom: 0;
     display: block;
-    background: black;
+    background: black !important;
   }
 `
 
@@ -55,7 +55,6 @@ export const NavContent = styled.div`
     justify-content: flex-end;
     padding-bottom: 157px;
     position: relative;
-    mix-blend-mode: hard-light;
   }
 
   .roadmap {
@@ -84,12 +83,20 @@ export const Heading = styled.h1`
     css`
       font-weight: 500;
     `}
+
+  ${props =>
+    props.unavailable &&
+    css`
+      opacity: 0.6;
+      cursor: not-allowed;
+    `}
 `
 
 export const NavBottom = styled.div`
   position: relative;
   width: 100%;
   height: 15vw;
+
   &.footer {
     height: 75%;
     mix-blend-mode: difference;
@@ -105,6 +112,7 @@ export const NavBottom = styled.div`
     left: 0;
     display: flex;
     flex-direction: column;
+
     .imageWrapper {
       height: 100%;
       max-height: 100%;
@@ -113,10 +121,13 @@ export const NavBottom = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      user-select: none;
+
       .image {
         max-height: 100%;
         max-width: 45%;
         object-fit: contain;
+        user-select: none;
       }
     }
     p {

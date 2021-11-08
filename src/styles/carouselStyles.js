@@ -38,6 +38,31 @@ export const HomeCarouselSection = styled(motion.div)`
   }
 `
 
+export const CarouselContent = styled(motion.div)`
+  position: relative;
+  left: 8.33%;
+  top: 15%;
+  width: 40%;
+  h3 {
+    font-size: calc(2.2rem + 1vw);
+    font-weight: 500;
+    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  p {
+    font-size: calc(1.2rem + 0.2vw);
+    line-height: calc(1.2rem + 0.6vw);
+    text-align: justify;
+    &.blockingBoxes {
+      width: 90%;
+    }
+    &.blockingWars {
+      width: 78%;
+    }
+  }
+`
+
 export const CarouselBullets = styled(motion.div)`
   position: absolute;
   left: 1%;
@@ -62,7 +87,6 @@ export const CarouselBullets = styled(motion.div)`
       border-radius: 100%;
       transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
       transition-delay: 500ms;
-
     }
     ::after {
       opacity: 0;
@@ -91,7 +115,6 @@ export const CarouselNav = styled(motion.div)`
   bottom: 50%;
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
   user-select: none;
   z-index: 10;
   .prev,
@@ -105,6 +128,8 @@ export const CarouselNav = styled(motion.div)`
     justify-content: center;
     align-items: center;
     margin-right: 2%;
+    cursor: pointer;
+
   }
 
   .prev {
