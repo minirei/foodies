@@ -270,7 +270,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                 </NavContent>
                 <NavBottom>
                   <div className="leftInfo">
-                    <div className="imageWrapper">
+                    <div className="cardanoWrapper">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="1000"

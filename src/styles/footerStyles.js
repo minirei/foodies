@@ -34,6 +34,7 @@ export const FooterSection = styled.div`
 export const MobileFooterSection = styled.div`
   position: relative;
   /* height: 30vh; */
+  padding-bottom: 5vh;
   width: 100vw;
   overflow: hidden;
   background-color: rgb(235, 235, 235);
@@ -50,7 +51,7 @@ export const MobileFooterSection = styled.div`
   }
   .policy {
     width: 80%;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
   p {
     position: relative;
@@ -133,6 +134,22 @@ export const CardanoInfo = styled.div`
       max-height: 100%;
       max-width: 50%;
       object-fit: contain;
+    }
+    .cardanoWrapper {
+      height: 100%;
+      max-height: 100%;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+
+      .cardanoSVG {
+        height: 75%;
+        object-fit: contain;
+        user-select: none;
+      }
     }
   }
   p {

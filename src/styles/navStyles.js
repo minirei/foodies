@@ -112,11 +112,10 @@ export const NavBottom = styled.div`
     left: 0;
     display: flex;
     flex-direction: column;
-    background-color: #de8979;
     user-select: none;
 
 
-    .imageWrapper {
+    .cardanoWrapper {
       height: 100%;
       max-height: 100%;
       width: 100%;
@@ -125,14 +124,12 @@ export const NavBottom = styled.div`
       align-items: center;
       justify-content: center;
       user-select: none;
-      background-color: #de8979;
 
 
       .cardanoSVG {
         height: 75%;
         object-fit: contain;
         user-select: none;
-        background-color: #de8979;
 
       }
     }
