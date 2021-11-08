@@ -36,7 +36,7 @@ export const MobileFooterSection = styled.div`
   width: 100vw;
   overflow: hidden;
   background-color: rgb(255, 248, 237);
-  color: rgb(40, 10, 11);
+  color: black;
   .socialsCaption {
     mix-blend-mode: difference;
     background-color: rgb(255, 248, 237);
@@ -114,8 +114,10 @@ export const Disclaimer = styled.div`
   p {
     margin: 0;
     padding-right: calc(1rem + 2vw);
-    color: rgb(40, 10, 11);
     font-size: 1rem;
+  }
+  .link {
+    color: inherit;
   }
 
   ${props =>
@@ -149,7 +151,7 @@ export const CardanoInfo = styled.div`
     user-select: none;
 
     .cardanoSVG {
-      height: 80%;
+      height: 90%;
       object-fit: contain;
       user-select: none;
     }
