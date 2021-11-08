@@ -31,7 +31,7 @@ const cardAnimation = {
     x: 0,
     transition: {
       duration: 0.8,
-      delay: 0.5,
+      delay: 0.8,
       ease: "easeInOut",
     },
   },
@@ -41,10 +41,31 @@ const cardAnimation = {
       x: direction < 0 ? `100vw` : `-100vw`,
       transition: {
         duration: 0.8,
-        delay: 0.5,
+        delay: 0.8,
         ease: "easeInOut",
       },
     }
+  },
+}
+
+const textAnimation = {
+  enter: {
+    opacity: 0,
+  },
+  center: {
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      delay: 1.4,
+      ease: "easeIn",
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
   },
 }
 
@@ -167,7 +188,10 @@ const HomeCarousel = () => {
 
   return (
     <>
-      <HomeCarouselSection style={{ height: isMobile ? "80vh" : "" }} id="roadmap">
+      <HomeCarouselSection
+        style={{ height: isMobile ? "80vh" : "" }}
+        id="roadmap"
+      >
         <div className={`${card === 0 && "visible"} chapter`}>
           <h3>004 - Roadmap</h3>
         </div>
@@ -190,15 +214,19 @@ const HomeCarousel = () => {
               key={card}
               style={{ height: isMobile ? "85%" : "" }}
             ></GatsbyImage>
-            <CarouselContent>
-              <h3>{content.title[card]}</h3>
-              <p
+            <CarouselContent key={card}>
+              <motion.h3 key={card} variants={textAnimation}>
+                {content.title[card]}
+              </motion.h3>
+              <motion.p
                 className={`${card === 3 && "blockingBoxes"} ${
                   card === 4 && "blockingWars"
                 }`}
+                key={card}
+                variants={textAnimation}
               >
                 {content.paragraph[card]}
-              </p>
+              </motion.p>
             </CarouselContent>
           </motion.div>
         </AnimatePresence>
