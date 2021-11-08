@@ -1,7 +1,6 @@
 # Foodies
 
 ## To-Do
-- implement h1 and p for roadmap 
 - add a still clueless thing after the roadmap to add 
   - about
   - faqs,

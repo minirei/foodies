@@ -11,7 +11,6 @@ export const HomeLaunchSection = styled(motion.div)`
 
 export const HomeLaunchContent = styled.div`
   width: 100%;
-  /* padding: 10vh 0; */
   height: 60vh;
   margin: 0 auto;
   display: flex;
@@ -20,7 +19,6 @@ export const HomeLaunchContent = styled.div`
     width: 75%;
     right: 0;
     position: absolute;
-    /* padding-top: 5vh; */
     h3 {
       font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
         sans-serif;

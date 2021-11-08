@@ -219,9 +219,11 @@ const HomeCarousel = () => {
                 {content.title[card]}
               </motion.h3>
               <motion.p
-                className={`${card === 3 && "blockingBoxes"} ${
-                  card === 4 && "blockingWars"
-                }`}
+                className={`
+                ${card === 0 && !isMobile && "blockingOne"} 
+                ${card === 3 && !isMobile && "blockingFour"} 
+                ${card === 4 && !isMobile && "blockingFive" }
+                `}
                 key={card}
                 variants={textAnimation}
               >

@@ -54,10 +54,13 @@ export const CarouselContent = styled(motion.div)`
     font-size: calc(1.2rem + 0.2vw);
     line-height: calc(1.2rem + 0.6vw);
     text-align: justify;
-    &.blockingBoxes {
+    &.blockingOne {
+      width: 95%
+    }
+    &.blockingFour {
       width: 90%;
     }
-    &.blockingWars {
+    &.blockingFive {
       width: 78%;
     }
   }

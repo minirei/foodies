@@ -39,7 +39,7 @@ const HomeLaunch = () => {
 
   const [contentRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: `-10%`,
+    rootMargin: `-20%`,
   })
   const [marqueeRef, marqueeInView] = useInView({
     triggerOnce: true,
@@ -154,7 +154,7 @@ const HomeLaunch = () => {
       <HomeLaunchContent>
         <Container>
           <Flex vertical alignTop className="launchInfo">
-            <Parallax offset={100}>
+            <Parallax offset={50}>
               <motion.div
                 className="contentAnimationWrapper"
                 ref={contentRef}
