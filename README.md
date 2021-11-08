@@ -1,25 +1,48 @@
 # Foodies
 
 ## To-Do
-- toggle animations for mobile (isMobile ? {smth here} : {})
-  - https://stackoverflow.com/questions/68195160/how-do-i-turn-off-framer-motion-animations-in-mobile-view
-  - https://codesandbox.io/s/framer-motion-stackoverflow-q1-yigvv?file=/src/App.js:0-63
-- shift pos of bullets to bottom left, pos of nav to top left (MOBILE)
-- do up HERO image reveal (maybe just do up a whole preloading animation)
-  - ref: https://www.youtube.com/watch?v=ySXy9BFu9LQ&t=199s&ab_channel=WrongAkram
 
+- work on mobile integrations
+
+  - sitenav
+  - launch
+  - gallery showreel
+  - curtain reveal (just scroll)
+  - roadmap (do this first)
+    - shift pos of bullets to bottom left, pos of nav to top left (MOBILE)
+
+  - ref: toggle animations for mobile (isMobile ? {smth here} : {})
+    - https://stackoverflow.com/questions/68195160/how-do-i-turn-off-framer-motion-animations-in-mobile-view
+    - https://codesandbox.io/s/framer-motion-stackoverflow-q1-yigvv?file=/src/App.js:0-63
+
+- about page
+- faq page
+- guide page
+
+### Design Concerns
+
+- COLOUR SCHEME
+
+  - background is sepia: rgb(255,248, 237)
+  - text colour is rgb(40,10,11)
+  - find DEFAULTS for launch, curtain, menu
+  - curtain needs 3 additional colours
+  - gallery needs 4 additional colours
+
+- feedback
+  - gallery images too big
+  - follow us no filter too high
+  - scale font size better (do this while doing mobile)
+
+### Optimisation Concerns
 
 - implement gatsby-plugin-layout
   - ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/
 - do some code splitting optimisation
 
-- gallery images too big
-- follow us no filter too high
-- scale font size better (do this while doing mobile)
-
 ## Colour
-rgb(255,248,237)
 
+rgb(255,248,237)
 
 ## Website - The Stack
 
