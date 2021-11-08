@@ -32,12 +32,11 @@ export const FooterSection = styled.div`
 
 export const MobileFooterSection = styled.div`
   position: relative;
-  /* height: 30vh; */
   padding-bottom: 5vh;
   width: 100vw;
   overflow: hidden;
   background-color: rgb(255, 248, 237);
-  color: black;
+  color: rgb(40, 10, 11);
   .socialsCaption {
     mix-blend-mode: difference;
     background-color: rgb(255, 248, 237);
@@ -150,7 +149,7 @@ export const CardanoInfo = styled.div`
     user-select: none;
 
     .cardanoSVG {
-      height: 90%;
+      height: 80%;
       object-fit: contain;
       user-select: none;
     }
