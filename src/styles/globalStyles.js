@@ -51,7 +51,7 @@ export const Container = styled.div`
   flex-grow: 1;
   overflow: hidden;
 
-  max-width: 300px;
+  max-width: 90vw;
 
   ${props =>
     props.fluid &&
