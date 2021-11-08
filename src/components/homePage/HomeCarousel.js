@@ -215,7 +215,7 @@ const HomeCarousel = () => {
               objectPosition="50% 100%"
               loading="eager"
               key={card}
-              style={{ height: isMobile ? "85%" : "" }}
+            style={{ height: isMobile ? "85%" : "" }}
             ></GatsbyImage>
             <CarouselContent key={card}>
               <Parallax offset={ isMobile ? 0 : 20}>

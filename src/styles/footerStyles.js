@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components"
-import { motion } from "framer-motion"
 
 export const FooterSection = styled.div`
   position: relative;
@@ -122,36 +121,23 @@ export const CardanoInfo = styled.div`
   justify-content: center;
   background-color: rgb(235, 235, 235);
 
-  .imageWrapper {
+  .cardanoWrapper {
     height: 100%;
     max-height: 100%;
-    width: 50%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    .image {
-      max-height: 100%;
-      max-width: 50%;
-      object-fit: contain;
-    }
-    .cardanoWrapper {
-      height: 100%;
-      max-height: 100%;
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      user-select: none;
+    user-select: none;
 
-      .cardanoSVG {
-        height: 75%;
-        object-fit: contain;
-        user-select: none;
-      }
+    .cardanoSVG {
+      height: 90%;
+      object-fit: contain;
+      user-select: none;
     }
   }
+
   p {
     text-align: center;
     margin: 0;
