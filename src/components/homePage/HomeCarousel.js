@@ -275,7 +275,7 @@ const HomeCarousel = () => {
               x="0px"
               y="0px"
               viewBox="450.284 152.487 391.604 290.307"
-              enable-background="new 450.284 152.487 391.604 290.307"
+              enableBackground="new 450.284 152.487 391.604 290.307"
             >
               <g transform="translate(0 -37)">
                 <polygon
