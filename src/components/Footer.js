@@ -22,6 +22,31 @@ const Footer = () => {
 
   return isMobile ? (
     <MobileFooterSection>
+      <FooterTop mobile>
+        <p>
+          New to NFTs? Check out our{" "}
+          <Link to="/guide" className="link">
+            Guide
+          </Link>
+        </p>
+        <p>
+          Want to know more? Have a look at our{" "}
+          <Link to="/faq" className="link">
+            FAQ
+          </Link>
+        </p>
+        <p>
+          Don't miss out! Join our awesome{" "}
+          <a
+            href="https://discord.gg/9Qttw23Zs2"
+            target="_blank"
+            rel="noreferrer"
+            className="link"
+          >
+            Community!
+          </a>
+        </p>
+      </FooterTop>
       <p className="socialsCaption">Follow Us. No Filter</p>
       <div className="socials">
         <Flex>
@@ -135,7 +160,17 @@ const Footer = () => {
             FAQ
           </Link>
         </p>
-        <p>Still have questions? Reach out to us on our socials below!</p>
+        <p>
+          Don't miss out! Join our awesome{" "}
+          <a
+            href="https://discord.gg/9Qttw23Zs2"
+            target="_blank"
+            rel="noreferrer"
+            className="link"
+          >
+            Community!
+          </a>
+        </p>
       </FooterTop>
       <NavBottom className="footer">
         <span className="horizontalLine" />

@@ -37,6 +37,7 @@ export const CarouselContent = styled(motion.div)`
   left: 8.33%;
   top: 15%;
   width: 40%;
+  z-index: 10;
   h3 {
     margin: 1rem 0;
   }

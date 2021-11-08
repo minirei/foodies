@@ -54,7 +54,7 @@ export const MobileFooterSection = styled.div`
   p {
     position: relative;
     width: 100%;
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-align: center;
     word-wrap: break-word;
     margin: 0;
@@ -103,6 +103,11 @@ export const FooterTop = styled.div`
     font-weight: 700;
     color: inherit;
   }
+  ${props =>
+    props.mobile &&
+    css`
+      height: 20vh;
+    `}
 `
 
 export const Disclaimer = styled.div`

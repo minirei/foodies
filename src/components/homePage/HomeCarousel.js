@@ -1,9 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion"
 import React, { useState } from "react"
-import {
-  GatsbyImage,
-  getImage,
-} from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 // Styles
@@ -207,21 +204,17 @@ const HomeCarousel = () => {
               key={card}
               style={{ height: isMobile ? "85%" : "" }}
             ></GatsbyImage>
-            <CarouselContent key={card}>
-              <motion.h3 key={card} variants={textAnimation}>
-                {content.title[card]}
-              </motion.h3>
-              <motion.p
+            <CarouselContent key="carouselContentKey" variants={textAnimation}>
+              <h3>{content.title[card]}</h3>
+              <p
                 className={`
                 ${card === 0 && !isMobile && "blockingOne"} 
                 ${card === 3 && !isMobile && "blockingFour"} 
                 ${card === 4 && !isMobile && "blockingFive"}
                 `}
-                key={card}
-                variants={textAnimation}
               >
                 {content.paragraph[card]}
-              </motion.p>
+              </p>
             </CarouselContent>
           </motion.div>
         </AnimatePresence>
