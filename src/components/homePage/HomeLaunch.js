@@ -104,11 +104,45 @@ const HomeLaunch = () => {
     }
   }, [marqueeInView])
 
+  // Colour Animation
+  const bgDefault = `rgb(255, 248, 237)`
+  const bgChange = `rgb(241,202,137)`
+  const colorAnimation = {
+    initial: {
+      backgroundColor: bgDefault,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+    changeColor: {
+      backgroundColor: bgChange,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+  }
+  const colorControls = useAnimation()
+  const [bgRef, bgInView] = useInView({
+    rootMargin: `-50%`,
+  })
+  useEffect(() => {
+    if (bgInView) colorControls.start("changeColor")
+  }, [bgInView, colorControls])
+
   return (
-    <HomeLaunchSection>
+    <HomeLaunchSection
+      variants={colorAnimation}
+      animate={colorControls}
+      initial="initial"
+      ref={bgRef}
+    >
       <Marquee ref={marqueeRef}>
         <motion.div
-          className={`marqueeInner ${playMarquee && "animate"} ${isMobile && "mobile"}`}
+          className={`marqueeInner ${playMarquee && "animate"} ${
+            isMobile && "mobile"
+          }`}
           variants={bannerAnimation}
           animate={marqueeControls}
           initial="hidden"
@@ -155,7 +189,11 @@ const HomeLaunch = () => {
       </Marquee>
       <HomeLaunchContent className={`${isMobile && "mobile"}`}>
         <Container>
-          <Flex vertical alignTop className={`launchInfo ${isMobile && "mobile"}`}>
+          <Flex
+            vertical
+            alignTop
+            className={`launchInfo ${isMobile && "mobile"}`}
+          >
             <Parallax offset={isMobile ? 0 : 50}>
               <motion.div
                 className="contentAnimationWrapper"
@@ -166,18 +204,16 @@ const HomeLaunch = () => {
               >
                 <h3>This Foodies Launch</h3>
                 <p>
-                  Comprises 10,000 uniquely cooked individuals made
-                  of - you guessed it - real, edible food ingredients! With more
-                  than 100 traits over 8 categories, randomly distributed
-                  according to predetermined rarities, you can be sure that each
-                  Foodie is like no other!
+                  Comprises 10,000 uniquely cooked individuals made of real,
+                  edible food ingredients! With more than 100 traits over 8
+                  categories, randomly distributed according to predetermined
+                  rarities, you can be sure that each Foodie is like no other!
                 </p>
                 <p>
-                  Each Foodie will have traits that represent ingredients from
-                  some of the most popular cuisines around the world.
-                  Visually-stunning and deliciously-prepared, each Foodie
-                  embodies the spirit of love, diversity, and appreciation of
-                  food!
+                  Every Foodie has traits that represent ingredients from
+                  popular cuisines around the world. Visually-stunning and
+                  deliciously-prepared, each Foodie embodies the spirit of love,
+                  diversity, and appreciation of food!
                 </p>
                 <p>
                   Some lucky Foodies even have special backgrounds, which

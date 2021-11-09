@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
-import { motion, useAnimation, useTransform } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 import { StaticImage } from "gatsby-plugin-image"
 
 // Hooks
@@ -49,45 +50,43 @@ const HomeGallery = () => {
   const controls3 = useAnimation()
   const controls4 = useAnimation()
 
-  const colorAnimation = isMobile
-    ? {}
-    : {
-        initial: {
-          backgroundColor: bgDefault,
-          transition: {
-            duration: 1,
-            ease: "easeOut",
-          },
-        },
-        cat1: {
-          backgroundColor: bg1,
-          transition: {
-            duration: 1,
-            ease: "easeOut",
-          },
-        },
-        cat2: {
-          backgroundColor: bg2,
-          transition: {
-            duration: 1,
-            ease: "easeOut",
-          },
-        },
-        cat3: {
-          backgroundColor: bg3,
-          transition: {
-            duration: 1,
-            ease: "easeOut",
-          },
-        },
-        cat4: {
-          backgroundColor: bg4,
-          transition: {
-            duration: 1,
-            ease: "easeOut",
-          },
-        },
-      }
+  const colorAnimation = {
+    initial: {
+      backgroundColor: bgDefault,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+    cat1: {
+      backgroundColor: bg1,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+    cat2: {
+      backgroundColor: bg2,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+    cat3: {
+      backgroundColor: bg3,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+    cat4: {
+      backgroundColor: bg4,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+  }
 
   const textAnimation = isMobile
     ? {}
@@ -224,6 +223,20 @@ const HomeGallery = () => {
     }
   }, [controls4, hovered4, y])
 
+  // Mobile Animations
+  const [m1Ref, m1InView] = useInView({ rootMargin: `-25%` })
+  const [m2Ref, m2InView] = useInView({ rootMargin: `-25%` })
+  const [m3Ref, m3InView] = useInView({ rootMargin: `-25%` })
+  const [m4Ref, m4InView] = useInView({ rootMargin: `-25%` })
+
+  useEffect(() => {
+    if (!isMobile) return
+    if (m1InView) colorControls.start("cat1")
+    if (m2InView) colorControls.start("cat2")
+    if (m3InView) colorControls.start("cat3")
+    if (m4InView) colorControls.start("cat4")
+  }, [colorControls, m1InView, m2InView, m3InView, m4InView])
+
   return (
     <HomeGallerySection
       ref={floatingRef}
@@ -240,7 +253,10 @@ const HomeGallery = () => {
           vertical
           style={{ justifyContent: isMobile ? "space-between" : "" }}
         >
-          <GalleryCategory className={`china ${isMobile && "mobile"}`}>
+          <GalleryCategory
+            className={`china ${isMobile && "mobile"}`}
+            ref={m1Ref}
+          >
             <motion.div
               className="content"
               onHoverStart={() => {
@@ -273,22 +289,25 @@ const HomeGallery = () => {
                 </motion.div>
               </Parallax>
               <Parallax offset={isMobile ? -30 : 0}>
-              <motion.div
-                className="floatingFoodie"
-                variants={bgFoodieAnimation}
-                animate={controls1}
-                initial="initial"
-              >
-                <StaticImage
-                  src="../../assets/images/chinese-foodie.png"
-                  alt="chinese foodie"
-                />
-              </motion.div>
+                <motion.div
+                  className="floatingFoodie"
+                  variants={bgFoodieAnimation}
+                  animate={controls1}
+                  initial="initial"
+                >
+                  <StaticImage
+                    src="../../assets/images/chinese-foodie.png"
+                    alt="chinese foodie"
+                  />
+                </motion.div>
               </Parallax>
             </div>
           </GalleryCategory>
 
-          <GalleryCategory className={`italy ${isMobile && "mobile"}`}>
+          <GalleryCategory
+            className={`italy ${isMobile && "mobile"}`}
+            ref={m2Ref}
+          >
             <motion.div
               className="content"
               onHoverStart={() => {
@@ -336,7 +355,10 @@ const HomeGallery = () => {
             </div>
           </GalleryCategory>
 
-          <GalleryCategory className={`japan ${isMobile && "mobile"}`}>
+          <GalleryCategory
+            className={`japan ${isMobile && "mobile"}`}
+            ref={m3Ref}
+          >
             <motion.div
               className="content"
               onHoverStart={() => {
@@ -384,7 +406,10 @@ const HomeGallery = () => {
             </div>
           </GalleryCategory>
 
-          <GalleryCategory className={`usa ${isMobile && "mobile"}`}>
+          <GalleryCategory
+            className={`usa ${isMobile && "mobile"}`}
+            ref={m4Ref}
+          >
             <motion.div
               className="content"
               onHoverStart={() => {

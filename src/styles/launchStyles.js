@@ -66,7 +66,8 @@ export const Marquee = styled(motion.div)`
   .rowLetter {
     /* color: rgb(222, 183, 153); */
     /* color:rgb(243,228,195); */
-    color: rgb(241, 202, 137);
+    /* color: rgb(241, 202, 137); */
+    color: transparent;
     -webkit-text-stroke-color: rgb(40, 10, 11);
     -webkit-text-stroke-width: calc(2px + 0.4vw);
     font-size: calc(2rem + 15vw);
