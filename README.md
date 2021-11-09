@@ -5,18 +5,12 @@
 - work on mobile integrations
 
   - sitenav
-  - launch
-    - increase padding between marquee and content?
   - gallery showreel
   - curtain reveal (just scroll)
-  - roadmap (do this first)
-    - shift pos of bullets to bottom left, pos of nav to top left (MOBILE)
 
   - ref: toggle animations for mobile (isMobile ? {smth here} : {})
     - https://stackoverflow.com/questions/68195160/how-do-i-turn-off-framer-motion-animations-in-mobile-view
     - https://codesandbox.io/s/framer-motion-stackoverflow-q1-yigvv?file=/src/App.js:0-63
-
-
 
 - about page
 - faq page
@@ -66,9 +60,9 @@ Frontend: Gatsby
 ### Fonts
 
 Sans-Serif
-
 - Poppins - https://www.typewolf.com/poppins
-  Serif
+
+Serif
 - Garamond
 
 ## USEFUL

@@ -27,14 +27,14 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
     initial: {
       right: `5%`,
       transition: {
-        duration: isMobile ? 0.8 : 1.6,
+        duration: 1.6,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
     triggered: {
       right: isMobile ? 0 : `1%`,
       transition: {
-        duration: isMobile ? 0.8 : 1.6,
+        duration: 1.6,
         delay: isMobile ? 0 : 0.8,
         ease: [0.6, 0.01, -0.05, 0.9],
       },

@@ -18,6 +18,11 @@ export const HomeGallerySection = styled(motion.div)`
     left: 8.33%;
     z-index: 10;
   }
+  &.mobile {
+    height: 160vh;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+  }
 `
 
 export const GalleryCategory = styled(motion.div)`
@@ -40,7 +45,8 @@ export const GalleryCategory = styled(motion.div)`
       z-index: 2;
     }
   }
-  .floatingBackground, .floatingFoodie {
+  .floatingBackground,
+  .floatingFoodie {
     pointer-events: none;
     position: absolute;
     overflow: hidden;
@@ -56,5 +62,24 @@ export const GalleryCategory = styled(motion.div)`
     width: 45%;
     left: auto;
     right: 0%;
+  }
+
+  &.mobile {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    .content {
+      width: 100%;
+      height: auto;
+      padding-bottom: 1rem;
+    }
+    .floatingBackground {
+      top: 0%;
+      width: 70%;
+    }
+    .floatingFoodie {
+      top: 10%;
+    }
   }
 `

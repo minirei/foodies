@@ -9,7 +9,12 @@ import useMousePosition from "../../hooks/useMousePosition"
 import { Container, Flex } from "../../styles/globalStyles"
 import { HomeGallerySection, GalleryCategory } from "../../styles/galleryStyles"
 
+// Context
+import { useGlobalStateContext } from "../../context/globalContext"
+
 const HomeGallery = () => {
+  const { isMobile } = useGlobalStateContext()
+
   // Floating requirements
   let floatingRef = useRef()
   const [hovered1, setHovered1] = useState(false)
@@ -21,6 +26,7 @@ const HomeGallery = () => {
   // Distance from top of viewport
   const [topPositionState, setTopPositionState] = useState({ top: null })
   useEffect(() => {
+    if (isMobile) return
     setTopPositionState({
       top: floatingRef.current.getBoundingClientRect().top,
     })
@@ -40,120 +46,128 @@ const HomeGallery = () => {
   const controls3 = useAnimation()
   const controls4 = useAnimation()
 
-  const colorAnimation = {
-    initial: {
-      backgroundColor: bgDefault,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-      },
-    },
-    cat1: {
-      backgroundColor: bg1,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-      },
-    },
-    cat2: {
-      backgroundColor: bg2,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-      },
-    },
-    cat3: {
-      backgroundColor: bg3,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-      },
-    },
-    cat4: {
-      backgroundColor: bg4,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-      },
-    },
-  }
+  const colorAnimation = isMobile
+    ? {}
+    : {
+        initial: {
+          backgroundColor: bgDefault,
+          transition: {
+            duration: 1,
+            ease: "easeOut",
+          },
+        },
+        cat1: {
+          backgroundColor: bg1,
+          transition: {
+            duration: 1,
+            ease: "easeOut",
+          },
+        },
+        cat2: {
+          backgroundColor: bg2,
+          transition: {
+            duration: 1,
+            ease: "easeOut",
+          },
+        },
+        cat3: {
+          backgroundColor: bg3,
+          transition: {
+            duration: 1,
+            ease: "easeOut",
+          },
+        },
+        cat4: {
+          backgroundColor: bg4,
+          transition: {
+            duration: 1,
+            ease: "easeOut",
+          },
+        },
+      }
 
-  const textAnimation = {
-    initial: {
-      color: `rgb(40,10,11)`,
-      opacity: 1,
-      zIndex: 2,
-      transition: {
-        delay: 0.2,
-        duration: 0.2,
-      },
-    },
-    triggered: {
-      color: `rgb(255, 248, 237)`,
-      zIndex: 2,
-      opacity: 1,
-      transition: {
-        duration: 0.1,
-        ease: [0.6, 0.01, -0.05, 0.9],
-      },
-    },
-    fade: {
-      opacity: 0.2,
-      zIndex: 0,
-      transition: {
-        duration: 0.1,
-        ease: [0.6, 0.01, -0.05, 0.9],
-      },
-    },
-    exit: {
-      color: `rgb(40,10,11)`,
-      opacity: 1,
-      zIndex: 2,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  }
+  const textAnimation = isMobile
+    ? {}
+    : {
+        initial: {
+          color: `rgb(40,10,11)`,
+          opacity: 1,
+          zIndex: 2,
+          transition: {
+            delay: 0.2,
+            duration: 0.2,
+          },
+        },
+        triggered: {
+          color: `rgb(255, 248, 237)`,
+          zIndex: 2,
+          opacity: 1,
+          transition: {
+            duration: 0.1,
+            ease: [0.6, 0.01, -0.05, 0.9],
+          },
+        },
+        fade: {
+          opacity: 0.2,
+          zIndex: 0,
+          transition: {
+            duration: 0.1,
+            ease: [0.6, 0.01, -0.05, 0.9],
+          },
+        },
+        exit: {
+          color: `rgb(40,10,11)`,
+          opacity: 1,
+          zIndex: 2,
+          transition: {
+            duration: 0.2,
+          },
+        },
+      }
 
-  const bgAnimation = {
-    initial: {
-      opacity: 0,
-      y: 0,
-    },
-    opacityTrigger: {
-      opacity: 1,
-    },
-    triggered: {
-      y: (y - topPositionState.top) / 4,
-      transition: {
-        ease: "linear",
-        duration: 0,
-      },
-    },
-    exit: {
-      opacity: 0,
-    },
-  }
+  const bgAnimation = isMobile
+    ? {}
+    : {
+        initial: {
+          opacity: 0,
+          y: 0,
+        },
+        opacityTrigger: {
+          opacity: 1,
+        },
+        triggered: {
+          y: (y - topPositionState.top) / 4,
+          transition: {
+            ease: "linear",
+            duration: 0,
+          },
+        },
+        exit: {
+          opacity: 0,
+        },
+      }
 
-  const bgFoodieAnimation = {
-    initial: {
-      opacity: 0,
-      y: 0,
-    },
-    opacityTrigger: {
-      opacity: 1,
-    },
-    triggered: {
-      y: (y - topPositionState.top) / 8,
-      transition: {
-        ease: "linear",
-        duration: 0,
-      },
-    },
-    exit: {
-      opacity: 0,
-    },
-  }
+  const bgFoodieAnimation = isMobile
+    ? {}
+    : {
+        initial: {
+          opacity: 0,
+          y: 0,
+        },
+        opacityTrigger: {
+          opacity: 1,
+        },
+        triggered: {
+          y: (y - topPositionState.top) / 8,
+          transition: {
+            ease: "linear",
+            duration: 0,
+          },
+        },
+        exit: {
+          opacity: 0,
+        },
+      }
 
   useEffect(() => {
     if (hovered1) {
@@ -213,13 +227,14 @@ const HomeGallery = () => {
       variants={colorAnimation}
       animate={colorControls}
       initial="initial"
+      className={`${isMobile && "mobile"}`}
     >
       <div className="chapter">
         <h1>001 - Cultural Diversity</h1>
       </div>
       <Container overflowVisible>
         <Flex vertical>
-          <GalleryCategory className="china">
+          <GalleryCategory className={`china ${isMobile && "mobile"}`}>
             <motion.div
               className="content"
               onHoverStart={() => {
@@ -261,7 +276,7 @@ const HomeGallery = () => {
             </motion.div>
           </GalleryCategory>
 
-          <GalleryCategory className="italy">
+          <GalleryCategory className={`italy ${isMobile && "mobile"}`}>
             <motion.div
               className="content"
               onHoverStart={() => {
@@ -303,7 +318,7 @@ const HomeGallery = () => {
             </motion.div>
           </GalleryCategory>
 
-          <GalleryCategory className="japan">
+          <GalleryCategory className={`japan ${isMobile && "mobile"}`}>
             <motion.div
               className="content"
               onHoverStart={() => {
@@ -345,7 +360,7 @@ const HomeGallery = () => {
             </motion.div>
           </GalleryCategory>
 
-          <GalleryCategory className="usa">
+          <GalleryCategory className={`usa ${isMobile && "mobile"}`}>
             <motion.div
               className="content"
               onHoverStart={() => {
