@@ -27,15 +27,15 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
     initial: {
       right: `5%`,
       transition: {
-        duration: 1.6,
+        duration: isMobile ? 0.8 : 1.6,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
     triggered: {
-      right: `1%`,
+      right: isMobile ? 0 : `1%`,
       transition: {
-        duration: 1.6,
-        delay: 0.8,
+        duration: isMobile ? 0.8 : 1.6,
+        delay: isMobile ? 0 : 0.8,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },
@@ -53,7 +53,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
     triggered: {
       opacity: 0,
       transition: {
-        duration: 1,
+        duration: isMobile ? 0.5 : 1,
         ease: [0.6, 0.01, -0.05, 0.9],
       },
     },

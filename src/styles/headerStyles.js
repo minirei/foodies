@@ -116,29 +116,9 @@ export const Logo = styled(motion.div)`
     height: auto;
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-    font-size: 3rem;
+    font-size: calc(2rem + 1vw);
     font-weight: 600;
-    /* letter-spacing: 0.3rem; */
     color: black;
     margin: 0;
   }
 `
-// export const Socials = styled(motion.div)`
-//   .icon {
-//     height: 2.2rem;
-//     width: 2.2rem;
-//     display: block;
-//     position: relative;
-//     overflow: hidden;
-//     margin-right: 1rem;
-//     :last-child {
-//       margin-right: 0;
-//     }
-//     svg {
-//       position: absolute;
-//     }
-//     path {
-//       fill: black;
-//     }
-//   }
-// `
