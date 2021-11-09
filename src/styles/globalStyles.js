@@ -49,8 +49,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
   h3 {
-    font-size: calc(2rem + 1vw);
-    line-height: calc(2rem + 1vw);
+    font-size: calc(1.8rem + 1.2vw);
+    line-height: calc(2rem + 1.4vw);
     font-weight: 700;
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -58,6 +58,7 @@ export const GlobalStyle = createGlobalStyle`
   p {
     font-size: calc(1.2rem + 0.2vw);
     line-height: calc(1.4rem + 0.6vw);
+    font-weight: 400;
     text-align: justify;
   }
 `

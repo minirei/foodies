@@ -153,9 +153,9 @@ const HomeLaunch = () => {
           <AnimatedLetters title={"DECEMBER'21"} />
         </motion.div>
       </Marquee>
-      <HomeLaunchContent>
+      <HomeLaunchContent className={`${isMobile && "mobile"}`}>
         <Container>
-          <Flex vertical alignTop className="launchInfo">
+          <Flex vertical alignTop className={`launchInfo ${isMobile && "mobile"}`}>
             <Parallax offset={isMobile ? 0 : 50}>
               <motion.div
                 className="contentAnimationWrapper"
@@ -180,7 +180,7 @@ const HomeLaunch = () => {
                   food!
                 </p>
                 <p>
-                  Some lucky Foodies might even have special backgrounds, which
+                  Some lucky Foodies even have special backgrounds, which
                   represent popular global landmarks! Have a sneak peek below!
                 </p>
               </motion.div>

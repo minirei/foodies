@@ -89,7 +89,9 @@ const HomeAbout = () => {
                     animate={controls}
                     initial="hidden"
                   >
-                    <h3>Have a taste of novelty, <br /> only at Foodies.</h3>
+                    <h3 style={{ marginTop: isMobile ? 0 : "" }}>
+                      Have a taste of novelty, <br /> only at Foodies.
+                    </h3>
                     <p>
                       Food is something that connects us universally. Perhaps it
                       has to do with how we need it to live. But perhaps it can

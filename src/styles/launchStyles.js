@@ -7,7 +7,7 @@ export const HomeLaunchSection = styled(motion.div)`
   width: 100%;
   /* background-color: rgb(222, 183, 153); */
   /* background-color:rgb(243,228,195); */
-  background-color: rgb(241,202,137);
+  background-color: rgb(241, 202, 137);
   cursor: default;
 `
 
@@ -16,6 +16,11 @@ export const HomeLaunchContent = styled.div`
   height: 70vh;
   margin: 0 auto;
   display: flex;
+  position: relative;
+
+  &.mobile {
+    height: fit-content;
+  }
 
   .launchInfo {
     width: 75%;
@@ -24,12 +29,19 @@ export const HomeLaunchContent = styled.div`
     h3 {
       width: 100%;
       letter-spacing: 0.1rem;
-      text-transform: uppercase;
       text-align: left;
     }
     p {
       text-align: justify;
       padding-bottom: 1rem;
+    }
+    &.mobile {
+      width: 100%;
+      padding-top: 5vh;
+      position: relative;
+      h3 {
+        margin-top: 0;
+      }
     }
   }
 `
@@ -54,7 +66,7 @@ export const Marquee = styled(motion.div)`
   .rowLetter {
     /* color: rgb(222, 183, 153); */
     /* color:rgb(243,228,195); */
-    color: rgb(241,202,137);
+    color: rgb(241, 202, 137);
     -webkit-text-stroke-color: rgb(40, 10, 11);
     -webkit-text-stroke-width: calc(2px + 0.4vw);
     font-size: calc(2rem + 15vw);
