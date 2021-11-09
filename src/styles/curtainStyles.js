@@ -11,11 +11,14 @@ export const HomeRevealSection = styled(motion.div)`
   padding-bottom: 10vh;
   overflow: hidden;
   cursor: default;
-  .chapter {
-    position: absolute;
-    top: 3%;
-    left: 8.33%;
-    z-index: 10;
+  &.mobile {
+    height: 240vh;
+    padding: 0;
+    .wrapper {
+      height: 100%;
+      width: 100%;
+      position: relative;
+    }
   }
 `
 export const HomeCurtain = styled(motion.div)`
@@ -30,23 +33,30 @@ export const HomeCurtain = styled(motion.div)`
 
 export const CurtainContent = styled.div`
   position: relative;
-  top: 10%;
+  top: 5%;
   width: 50%;
   margin: 0 auto;
   z-index: 10;
+  &.mobile {
+    width: 90%;
+    top: 5%;
+    &.first {
+      top: 15%;
+    }
+  }
 `
 
 export const CurtainHeading = styled(motion.div)`
-  p {
+  h2 {
     font-weight: 200;
-    font-size: calc(2rem + 0.5vw);
+    font-size: calc(0.875rem + 2vw);
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0 auto 3rem;
+    margin: calc(0.875rem + 2vw) auto;
   }
-  h1 {
+  h3 {
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
-    font-size: calc(3rem + 1vw);
+    font-size: calc(2rem + 2vw);
     margin: 0 auto 1rem;
     letter-spacing: 0.1rem;
     white-space: nowrap;
@@ -62,10 +72,7 @@ export const CurtainCover = styled(motion.div)`
 
 export const CurtainText = styled(motion.div)`
   p {
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 2.6rem;
-    text-align: left;
+    /* text-align: left; */
   }
 `
 export const CurtainContentMask = styled(motion.div)`

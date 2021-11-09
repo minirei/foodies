@@ -8,11 +8,7 @@ export const HomeCarouselSection = styled(motion.div)`
   position: relative;
   overflow: hidden;
   .chapter {
-    position: absolute;
-    top: 3%;
-    left: 8.33%;
     opacity: 0;
-    z-index: 20;
     transition: opacity 1000ms cubic-bezier(0.215, 0.61, 0.355, 1);
     &.visible {
       opacity: 1;
@@ -29,6 +25,8 @@ export const HomeCarouselSection = styled(motion.div)`
       bottom: 0;
       left: 0;
     }
+  }
+  &.mobile {
   }
 `
 

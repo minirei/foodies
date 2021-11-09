@@ -11,13 +11,6 @@ export const HomeGallerySection = styled(motion.div)`
   background-color: rgb(255, 248, 237);
   cursor: default;
   overflow: hidden;
-  .chapter {
-    position: absolute;
-    margin: 0;
-    top: 3%;
-    left: 8.33%;
-    z-index: 10;
-  }
   &.mobile {
     height: 200vh;
     padding-top: 15vh;

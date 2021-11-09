@@ -224,17 +224,17 @@ const HomeGallery = () => {
   }, [controls4, hovered4, y])
 
   // Mobile Animations
-  const [m1Ref, m1InView] = useInView({ rootMargin: `-25%` })
-  const [m2Ref, m2InView] = useInView({ rootMargin: `-25%` })
-  const [m3Ref, m3InView] = useInView({ rootMargin: `-25%` })
-  const [m4Ref, m4InView] = useInView({ rootMargin: `-25%` })
+  const [m1Ref, m1InView] = useInView({ rootMargin: `-40%` })
+  const [m2Ref, m2InView] = useInView({ rootMargin: `-40%` })
+  const [m3Ref, m3InView] = useInView({ rootMargin: `-40%` })
+  const [m4Ref, m4InView] = useInView({ rootMargin: `-40%` })
 
   useEffect(() => {
     if (!isMobile) return
     if (m1InView) colorControls.start("cat1")
-    if (m2InView) colorControls.start("cat2")
-    if (m3InView) colorControls.start("cat3")
-    if (m4InView) colorControls.start("cat4")
+    else if (m2InView) colorControls.start("cat2")
+    else if (m3InView) colorControls.start("cat3")
+    else if (m4InView) colorControls.start("cat4")
     else colorControls.start("initial")
   }, [colorControls, m1InView, m2InView, m3InView, m4InView])
 
@@ -246,7 +246,7 @@ const HomeGallery = () => {
       initial="initial"
       className={`${isMobile && "mobile"}`}
     >
-      <div className="chapter">
+      <div className={`chapter ${isMobile && "mobile"}`}>
         <h1>001 - Cultural Diversity</h1>
       </div>
       <Container overflowVisible>

@@ -179,10 +179,14 @@ const HomeCarousel = () => {
   return (
     <>
       <HomeCarouselSection
-        style={{ height: isMobile ? "100vh" : "" }}
+        className={`${isMobile && "mobile"}`}
         id="roadmap"
       >
-        <div className={`${card === 0 && "visible"} chapter`}>
+        <div
+          className={`${card === 0 && "visible"} chapter ${
+            isMobile && "mobile"
+          }`}
+        >
           <h1>003 - Roadmap</h1>
         </div>
         <AnimatePresence initial={false} custom={direction}>

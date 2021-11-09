@@ -41,6 +41,19 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   ${'' /* chapters */}
+  .chapter {
+    position: absolute;
+    top: 5%;
+    left: 8.33%;
+    z-index: 20;
+    &.mobile {
+      top: 3%;
+      left: 7.5%;
+    }
+    h1 {
+      margin: 0;
+    }
+  }
   h1 {
       font-size: calc(1.2rem + 1vw);
       font-weight: 400;
