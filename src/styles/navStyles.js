@@ -35,17 +35,17 @@ export const SiteNavMobile = styled(motion.div)`
   position: fixed;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: rgb(242, 155, 155);
   z-index: 100;
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 20vh;
   .links {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80%;
+    height: 70%;
   }
   .socialsCaption {
     width: 100%;
