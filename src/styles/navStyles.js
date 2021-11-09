@@ -38,22 +38,32 @@ export const SiteNavMobile = styled(motion.div)`
   overflow: hidden;
   background-color: rgb(242, 155, 155);
   z-index: 100;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   .links {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70%;
+    height: 80%;
   }
   .socialsCaption {
     width: 100%;
     height: 10%;
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    p {
+      color: rgb(255, 248, 237);
+      font-size: 1rem;
+      text-align: center;
+      margin: 0;
+    }
   }
   .socials {
     width: 100%;
     height: 20%;
-    background-color: blue;
     .line {
       &.short {
         height: 100%;
@@ -77,6 +87,9 @@ export const SiteNavMobile = styled(motion.div)`
       &.top {
         top: 0;
         bottom: auto;
+        width: 100%;
+      }
+      &.bottom {
         width: 100%;
       }
     }

@@ -247,10 +247,13 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       Mint
                     </Heading>
                   </div>
-                  <p className="socialsCaption">Follow Us. No Filter</p>
+                  <div className="socialsCaption">
+                    <p>Follow Us. No Filter</p>
+                  </div>
                   <div className="socials">
                     <Flex>
-                      <span className="horizontalLine top" />
+                    <span className="horizontalLine top" />
+                    <span className="horizontalLine bottom" />
                       <Icon>
                         <div className="svgWrapper">
                           <a
