@@ -12,7 +12,7 @@ export const HomeRevealSection = styled(motion.div)`
   overflow: hidden;
   cursor: default;
   &.mobile {
-    height: 240vh;
+    height: 270vh;
     padding: 0;
     .wrapper {
       height: 100%;
@@ -57,6 +57,7 @@ export const CurtainHeading = styled(motion.div)`
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: calc(2rem + 2vw);
+    line-height: calc(1rem + 3vw);
     margin: 0 auto 1rem;
     letter-spacing: 0.1rem;
     white-space: nowrap;
