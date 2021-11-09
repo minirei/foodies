@@ -179,7 +179,7 @@ const HomeCarousel = () => {
   return (
     <>
       <HomeCarouselSection
-        style={{ height: isMobile ? "80vh" : "" }}
+        style={{ height: isMobile ? "100vh" : "" }}
         id="roadmap"
       >
         <div className={`${card === 0 && "visible"} chapter`}>
@@ -204,7 +204,11 @@ const HomeCarousel = () => {
               key={card}
               style={{ height: isMobile ? "85%" : "" }}
             ></GatsbyImage>
-            <CarouselContent key="carouselContentKey" variants={textAnimation}>
+            <CarouselContent
+              key="carouselContentKey"
+              variants={textAnimation}
+              className={`${isMobile && "mobile"}`}
+            >
               <h3>{content.title[card]}</h3>
               <p
                 className={`

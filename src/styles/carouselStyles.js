@@ -55,6 +55,11 @@ export const CarouselContent = styled(motion.div)`
       width: 93%;
     }
   }
+  &.mobile {
+    width: 90vw;
+    margin: 0 auto;
+    left: 0;
+  }
 `
 
 export const CarouselBullets = styled(motion.div)`
