@@ -57,7 +57,7 @@ export const CarouselContent = styled(motion.div)`
       /* width: 90%; */
     }
     &.mobileBlockingSix {
-      width: 85%;
+      width: 80%;
     }
   }
   &.mobile {
