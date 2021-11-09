@@ -2,11 +2,10 @@
 
 ## To-Do
 
-- work on mobile integrations
-
-  - sitenav
-
 - about page
+  - Add Token Policy - "Metadata
+    We follow CIP-25, the NFT metadata standard on Cardano, which was created by SpaceBudz. Images are stored on IPFS and you find the image link to a SpaceBud inside the metadata."
+    - https://github.com/cardano-foundation/CIPs/blob/master/CIP-0025/CIP-0025.md
 - faq page
 - guide page
 
@@ -34,10 +33,6 @@
   - ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/
 - do some code splitting optimisation
 
-## Colour
-
-rgb(255,248,237)
-
 ## Website - The Stack
 
 Frontend: Gatsby
@@ -61,7 +56,3 @@ Serif
 - Garamond
 
 ## USEFUL
-
-- Add Token Policy - "Metadata
-  We follow CIP-25, the NFT metadata standard on Cardano, which was created by SpaceBudz. Images are stored on IPFS and you find the image link to a SpaceBud inside the metadata."
-  - https://github.com/cardano-foundation/CIPs/blob/master/CIP-0025/CIP-0025.md
