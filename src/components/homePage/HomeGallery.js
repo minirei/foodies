@@ -252,28 +252,30 @@ const HomeGallery = () => {
                 China: Forbidden City
               </motion.h1>
             </motion.div>
-            <motion.div
-              className="floatingBackground"
-              variants={bgAnimation}
-              animate={controls1}
-              initial="initial"
-            >
-              <StaticImage
-                src="../../assets/images/forbidden-city.png"
-                alt="forbidden city"
-              />
-            </motion.div>
-            <motion.div
-              className="floatingFoodie"
-              variants={bgFoodieAnimation}
-              animate={controls1}
-              initial="initial"
-            >
-              <StaticImage
-                src="../../assets/images/chinese-foodie.png"
-                alt="chinese foodie"
-              />
-            </motion.div>
+            <div className="imageWrapper">
+              <motion.div
+                className="floatingBackground"
+                variants={bgAnimation}
+                animate={controls1}
+                initial="initial"
+              >
+                <StaticImage
+                  src="../../assets/images/forbidden-city.png"
+                  alt="forbidden city"
+                />
+              </motion.div>
+              <motion.div
+                className="floatingFoodie"
+                variants={bgFoodieAnimation}
+                animate={controls1}
+                initial="initial"
+              >
+                <StaticImage
+                  src="../../assets/images/chinese-foodie.png"
+                  alt="chinese foodie"
+                />
+              </motion.div>
+            </div>
           </GalleryCategory>
 
           <GalleryCategory className={`italy ${isMobile && "mobile"}`}>
@@ -294,28 +296,30 @@ const HomeGallery = () => {
                 Italy: The Colosseum
               </motion.h1>
             </motion.div>
-            <motion.div
-              className="floatingBackground"
-              variants={bgAnimation}
-              animate={controls2}
-              initial="initial"
-            >
-              <StaticImage
-                src="../../assets/images/colosseum.png"
-                alt="the colosseum"
-              />
-            </motion.div>
-            <motion.div
-              className="floatingFoodie"
-              variants={bgFoodieAnimation}
-              animate={controls2}
-              initial="initial"
-            >
-              <StaticImage
-                src="../../assets/images/italian-foodie.png"
-                alt="italian foodie"
-              />
-            </motion.div>
+            <div className="imageWrapper">
+              <motion.div
+                className="floatingBackground"
+                variants={bgAnimation}
+                animate={controls2}
+                initial="initial"
+              >
+                <StaticImage
+                  src="../../assets/images/colosseum.png"
+                  alt="the colosseum"
+                />
+              </motion.div>
+              <motion.div
+                className="floatingFoodie"
+                variants={bgFoodieAnimation}
+                animate={controls2}
+                initial="initial"
+              >
+                <StaticImage
+                  src="../../assets/images/italian-foodie.png"
+                  alt="italian foodie"
+                />
+              </motion.div>
+            </div>
           </GalleryCategory>
 
           <GalleryCategory className={`japan ${isMobile && "mobile"}`}>
@@ -336,28 +340,30 @@ const HomeGallery = () => {
                 Japan: Kinkaku-Ji
               </motion.h1>
             </motion.div>
-            <motion.div
-              className="floatingBackground"
-              variants={bgAnimation}
-              animate={controls3}
-              initial="initial"
-            >
-              <StaticImage
-                src="../../assets/images/kinkaku-ji.png"
-                alt="kinkaku ji"
-              />
-            </motion.div>
-            <motion.div
-              className="floatingFoodie"
-              variants={bgFoodieAnimation}
-              animate={controls3}
-              initial="initial"
-            >
-              <StaticImage
-                src="../../assets/images/japanese-foodie.png"
-                alt="japanese foodie"
-              />
-            </motion.div>
+            <div className="imageWrapper">
+              <motion.div
+                className="floatingBackground"
+                variants={bgAnimation}
+                animate={controls3}
+                initial="initial"
+              >
+                <StaticImage
+                  src="../../assets/images/kinkaku-ji.png"
+                  alt="kinkaku ji"
+                />
+              </motion.div>
+              <motion.div
+                className="floatingFoodie"
+                variants={bgFoodieAnimation}
+                animate={controls3}
+                initial="initial"
+              >
+                <StaticImage
+                  src="../../assets/images/japanese-foodie.png"
+                  alt="japanese foodie"
+                />
+              </motion.div>
+            </div>
           </GalleryCategory>
 
           <GalleryCategory className={`usa ${isMobile && "mobile"}`}>
@@ -378,28 +384,30 @@ const HomeGallery = () => {
                 USA: Statue of Liberty
               </motion.h1>
             </motion.div>
-            <motion.div
-              className="floatingBackground"
-              variants={bgAnimation}
-              animate={controls4}
-              initial="initial"
-            >
-              <StaticImage
-                src="../../assets/images/statue-of-liberty.png"
-                alt="statue of liberty"
-              />
-            </motion.div>
-            <motion.div
-              className="floatingFoodie"
-              variants={bgFoodieAnimation}
-              animate={controls4}
-              initial="initial"
-            >
-              <StaticImage
-                src="../../assets/images/american-foodie.png"
-                alt="american foodie"
-              />
-            </motion.div>
+            <div className="imageWrapper">
+              <motion.div
+                className="floatingBackground"
+                variants={bgAnimation}
+                animate={controls4}
+                initial="initial"
+              >
+                <StaticImage
+                  src="../../assets/images/statue-of-liberty.png"
+                  alt="statue of liberty"
+                />
+              </motion.div>
+              <motion.div
+                className="floatingFoodie"
+                variants={bgFoodieAnimation}
+                animate={controls4}
+                initial="initial"
+              >
+                <StaticImage
+                  src="../../assets/images/american-foodie.png"
+                  alt="american foodie"
+                />
+              </motion.div>
+            </div>
           </GalleryCategory>
         </Flex>
       </Container>

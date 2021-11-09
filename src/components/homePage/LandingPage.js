@@ -38,11 +38,11 @@ const LandingPage = () => {
       <BackgroundSection
         style={{ opacity: o1 }}
         transition={{ duration: 2, ease: "easeIn" }}
-        initial={{ scale: 1.2 }}
+        initial={{ scale: 1.1 }}
         animate={{
           scale: 1,
           transition: {
-            duration: 1.4,
+            duration: 1,
             ease: [0.6, 0.05, -0.01, 0.9],
           },
         }}

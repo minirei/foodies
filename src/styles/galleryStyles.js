@@ -68,11 +68,17 @@ export const GalleryCategory = styled(motion.div)`
     position: relative;
     display: flex;
     align-items: flex-end;
+    flex-direction: column-reverse;
     height: 100%;
     .content {
       width: 100%;
       height: auto;
-      padding-bottom: 1rem;
+      padding: 1rem 0;
+    }
+    .imageWrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
     }
     .floatingBackground {
       top: 0%;
