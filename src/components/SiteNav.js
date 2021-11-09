@@ -14,7 +14,6 @@ import {
   NavBottom,
   Icon,
 } from "../styles/navStyles"
-import { StaticImage } from "gatsby-plugin-image"
 
 const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
   const controls = useAnimation()

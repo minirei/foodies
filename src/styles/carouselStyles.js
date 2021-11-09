@@ -9,7 +9,7 @@ export const HomeCarouselSection = styled(motion.div)`
   overflow: hidden;
   .chapter {
     position: absolute;
-    top: 5%;
+    top: 2%;
     left: 8.33%;
     opacity: 0;
     z-index: 20;
@@ -35,7 +35,7 @@ export const HomeCarouselSection = styled(motion.div)`
 export const CarouselContent = styled(motion.div)`
   position: relative;
   left: 8.33%;
-  top: 15%;
+  top: 12%;
   width: 40%;
   z-index: 10;
   h3 {
@@ -50,6 +50,9 @@ export const CarouselContent = styled(motion.div)`
     }
     &.blockingFive {
       width: 78%;
+    }
+    &.blockingSeven {
+      width: 93%;
     }
   }
 `

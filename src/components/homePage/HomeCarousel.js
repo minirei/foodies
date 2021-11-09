@@ -164,8 +164,8 @@ const HomeCarousel = () => {
       "Once a month, ingredient suppliers will visit Foodie Town, bringing limited edition traits each month! These limited edition traits will be in the form of NFTs, and are available for minting ONLY for those holding onto Foodies. The traits can then be added into your recipe to re-cook your Foodie, resold on the secondary market or kept for future use!",
       "Re-cook your Foodies! For a small “gas” fee, the Foodie Kitchen will allow you to either swap traits that belong to the same category between 2 Foodies or swap out a trait in your Foodie with another trait in the same category. By doing so, you receive the new Foodie NFT as well as a new trait NFT. Just send us your new recipe and NFTs, and we'll return them freshly re-cooked!",
       "A monthly, free-for-all 24h war where Foodies battle each other for a chance to upgrade themselves! 2 Foodies will randomly be matched with each other in a game and play until the HP of one goes to 0. The winner of each battle will win one trait from the loser. The trait can either be kept as an NFT, or added into your Foodie recipe for re-cooking in the Kitchen!",
-      "Throughout the entirety of this project, we will be donating 5% of all proceeds to . We recognise the potential of this project and are excited to contribute directly to those suffering in society, in an area related to our project. Starvation is a serious issue and it would be incredibly meaningful for food art to raise money and contribute directly to ending it.",
       "Depending on the overall sentiment of the community, we may launch new Foodies series and collaborate with various food chains or NFT projects, which Foodie holders will be given priority access to. The possibilities are endless here at Foodie Town!",
+      `Throughout the entirety of this project, we will be donating 5% of all proceeds to the UN World Food Programme. We recognise the potential of this project in contributing directly to those suffering in society, in an area close to our hearts. We feel that it would be incredibly meaningful for food art to make a difference and take decisive action against the causes and effects of hunger.`,
     ],
   }
 
@@ -211,6 +211,7 @@ const HomeCarousel = () => {
                 ${card === 0 && !isMobile && "blockingOne"} 
                 ${card === 3 && !isMobile && "blockingFour"} 
                 ${card === 4 && !isMobile && "blockingFive"}
+                ${card === 6 && !isMobile && "blockingSeven"}
                 `}
               >
                 {content.paragraph[card]}

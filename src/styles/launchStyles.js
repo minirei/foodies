@@ -5,7 +5,9 @@ import { motion } from "framer-motion"
 export const HomeLaunchSection = styled(motion.div)`
   position: relative;
   width: 100%;
-  background-color: rgb(222, 183, 153);
+  /* background-color: rgb(222, 183, 153); */
+  background-color:rgb(243,228,195);
+  background-color: rgb(241,202,137);
   cursor: default;
 `
 
@@ -27,7 +29,7 @@ export const HomeLaunchContent = styled.div`
     }
     p {
       text-align: justify;
-      margin: 0 auto 2rem;
+      padding-bottom: 1rem;
     }
   }
 `
@@ -50,9 +52,11 @@ export const Marquee = styled(motion.div)`
 
   .rowTitle,
   .rowLetter {
-    color: rgb(222, 183, 153);
+    /* color: rgb(222, 183, 153); */
+    color:rgb(243,228,195);
+    color: rgb(241,202,137);
     -webkit-text-stroke-color: rgb(40, 10, 11);
-    -webkit-text-stroke-width: calc(2px + 0.2vw);
+    -webkit-text-stroke-width: calc(2px + 0.4vw);
     font-size: calc(2rem + 15vw);
     font-weight: 700;
     /* letter-spacing: -0.8rem; */

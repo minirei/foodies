@@ -29,6 +29,10 @@
   - curtain needs 3 additional colours
   - gallery needs 4 additional colours
 
+  possibles:
+  - rgb(255,229,211)
+  - rgb(178,254,233)
+
 - feedback
   - gallery images too big
   - follow us no filter too high
