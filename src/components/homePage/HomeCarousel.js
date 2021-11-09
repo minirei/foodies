@@ -179,7 +179,7 @@ const HomeCarousel = () => {
   return (
     <>
       <HomeCarouselSection
-        style={{ height: isMobile ? "100vh" : "" }}
+        style={{ height: isMobile ? "90vh" : "" }}
         id="roadmap"
       >
         <div className={`${card === 0 && "visible"} chapter`}>
@@ -202,7 +202,7 @@ const HomeCarousel = () => {
               objectPosition="50% 100%"
               loading="eager"
               key={card}
-              style={{ height: isMobile ? "85%" : "" }}
+              style={{ height: isMobile ? "75%" : "" }}
             ></GatsbyImage>
             <CarouselContent
               key="carouselContentKey"

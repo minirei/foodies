@@ -56,9 +56,10 @@ export const CarouselContent = styled(motion.div)`
     }
   }
   &.mobile {
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto;
     left: 0;
+    top: 9%;
   }
 `
 

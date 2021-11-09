@@ -56,7 +56,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-size: calc(1.2rem + 0.2vw);
+    font-size: calc(1rem + 0.4vw);
     line-height: calc(1.4rem + 0.6vw);
     font-weight: 400;
     text-align: justify;
@@ -73,7 +73,7 @@ export const Container = styled.div`
   flex-grow: 1;
   overflow: hidden;
 
-  max-width: 90vw;
+  max-width: 85vw;
 
   ${props =>
     props.fluid &&
