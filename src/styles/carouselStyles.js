@@ -114,6 +114,15 @@ export const CarouselBullets = styled(motion.div)`
       }
     }
   }
+
+  &.mobile {
+    left: 7.5vw;
+    bottom: 15%;
+    span {
+      height: 18px;
+      width: 18px;
+    }
+  }
 `
 
 export const CarouselNav = styled(motion.div)`

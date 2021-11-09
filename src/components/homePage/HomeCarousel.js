@@ -225,7 +225,7 @@ const HomeCarousel = () => {
             </CarouselContent>
           </motion.div>
         </AnimatePresence>
-        <CarouselBullets style={{}}>
+        <CarouselBullets className={`${isMobile && "mobile"}`}>
           <span className={`${card === 0 && "isActive"}`}>
             <div className="dot"></div>
           </span>
