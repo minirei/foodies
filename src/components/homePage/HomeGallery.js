@@ -273,17 +273,17 @@ const HomeGallery = () => {
                 </motion.div>
               </Parallax>
               <Parallax offset={isMobile ? -30 : 0}>
-                <motion.div
-                  className="floatingFoodie"
-                  variants={bgFoodieAnimation}
-                  animate={controls1}
-                  initial="initial"
-                >
-                  <StaticImage
-                    src="../../assets/images/chinese-foodie.png"
-                    alt="chinese foodie"
-                  />
-                </motion.div>
+              <motion.div
+                className="floatingFoodie"
+                variants={bgFoodieAnimation}
+                animate={controls1}
+                initial="initial"
+              >
+                <StaticImage
+                  src="../../assets/images/chinese-foodie.png"
+                  alt="chinese foodie"
+                />
+              </motion.div>
               </Parallax>
             </div>
           </GalleryCategory>

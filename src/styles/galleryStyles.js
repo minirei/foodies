@@ -19,7 +19,7 @@ export const HomeGallerySection = styled(motion.div)`
     z-index: 10;
   }
   &.mobile {
-    height: 180vh;
+    height: 200vh;
     padding-top: 15vh;
     padding-bottom: 5vh;
   }
@@ -72,21 +72,23 @@ export const GalleryCategory = styled(motion.div)`
     height: 25%;
     .content {
       width: 100%;
-      height: 30%;
+      height: 20%;
       display: flex;
       align-items: flex-start;
     }
     .imageWrapper {
       width: 100%;
-      height: 100%;
+      height: 80%;
       position: relative;
     }
     .floatingBackground {
       top: 0%;
-      width: 70%;
+      width: 75%;
     }
     .floatingFoodie {
-      top: 10%;
+      width: 50%;
+      right: -5%;
+      top: 50%;
     }
   }
 `
