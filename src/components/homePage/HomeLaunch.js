@@ -68,30 +68,26 @@ const HomeLaunch = () => {
     },
   }
 
-  const bannerAnimation = isMobile
-    ? {}
-    : {
-        hidden: {
-          opacity: 0,
-        },
-        visible: {
-          opacity: 1,
-          transition: {
-            delayChildren: 0.4,
-            staggerChildren: 0.08,
-            duration: 1,
-          },
-        },
-      }
+  const bannerAnimation = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.4,
+        staggerChildren: 0.08,
+        duration: 1,
+      },
+    },
+  }
 
-  const letterAnimation = isMobile
-    ? {}
-    : {
-        hidden: { y: 400 },
-        visible: {
-          y: 0,
-        },
-      }
+  const letterAnimation = {
+    hidden: { y: 400 },
+    visible: {
+      y: 0,
+    },
+  }
 
   useEffect(() => {
     if (inView) {
