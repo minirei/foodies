@@ -216,6 +216,8 @@ const HomeCarousel = () => {
                 ${card === 3 && !isMobile && "blockingFour"} 
                 ${card === 4 && !isMobile && "blockingFive"}
                 ${card === 6 && !isMobile && "blockingSeven"}
+                ${card === 2 && isMobile && "mobileBlockingThree"}
+                ${card === 5 && isMobile && "mobileBlockingSix"}
                 `}
               >
                 {content.paragraph[card]}
@@ -246,7 +248,7 @@ const HomeCarousel = () => {
             <div className="dot"></div>
           </span>
         </CarouselBullets>
-        <CarouselNav style={{ width: isMobile ? "auto" : "" }}>
+        <CarouselNav className={`${isMobile && "mobile"}`}>
           <motion.div
             className="prev"
             onClick={() => {

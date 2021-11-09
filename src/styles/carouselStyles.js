@@ -43,7 +43,7 @@ export const CarouselContent = styled(motion.div)`
   }
   p {
     &.blockingOne {
-      width: 95%
+      width: 95%;
     }
     &.blockingFour {
       width: 90%;
@@ -54,12 +54,19 @@ export const CarouselContent = styled(motion.div)`
     &.blockingSeven {
       width: 93%;
     }
+
+    &.mobileBlockingThree {
+      /* width: 90%; */
+    }
+    &.mobileBlockingSix {
+      width: 80%;
+    }
   }
   &.mobile {
     width: 85vw;
     margin: 0 auto;
     left: 0;
-    top: 9%;
+    top: 8%;
   }
 `
 
@@ -129,7 +136,6 @@ export const CarouselNav = styled(motion.div)`
     align-items: center;
     margin-right: 2%;
     cursor: pointer;
-
   }
 
   .prev {
@@ -141,5 +147,20 @@ export const CarouselNav = styled(motion.div)`
 
   svg {
     height: 25%;
+  }
+
+  &.mobile {
+    width: auto;
+    bottom: 25%;
+    left: 7.5vw;
+    .prev,
+    .next {
+      width: 16vw;
+      height: 16vw;
+      margin: 0;
+    }
+    .next {
+      margin-left: 1vw;
+    }
   }
 `
