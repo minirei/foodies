@@ -31,6 +31,32 @@ export const SiteNavSection = styled(motion.div)`
   }
 `
 
+export const SiteNavMobile = styled(motion.div)`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(242, 155, 155);
+  z-index: 100;
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+  }
+  .socialsCaption {
+    width: 100%;
+    height: 10%;
+    background-color: red;
+  }
+  .socials {
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+  }
+`
+
 export const NavHeader = styled.div`
   position: fixed;
   height: 10vh;
@@ -89,6 +115,12 @@ export const Heading = styled.h1`
     css`
       opacity: 0.6;
       cursor: not-allowed;
+    `}
+
+  ${props =>
+    props.mobile &&
+    css`
+      padding: 0;
     `}
 `
 

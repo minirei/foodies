@@ -5,12 +5,6 @@
 - work on mobile integrations
 
   - sitenav
-  - gallery showreel
-  - curtain reveal (just scroll)
-
-  - ref: toggle animations for mobile (isMobile ? {smth here} : {})
-    - https://stackoverflow.com/questions/68195160/how-do-i-turn-off-framer-motion-animations-in-mobile-view
-    - https://codesandbox.io/s/framer-motion-stackoverflow-q1-yigvv?file=/src/App.js:0-63
 
 - about page
 - faq page
