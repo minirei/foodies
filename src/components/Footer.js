@@ -112,12 +112,12 @@ const Footer = () => {
       <Disclaimer mobile>
         <Flex vertical spaceBetween center>
           <p>© Foodies CNFT. All Rights Reserved.</p>
-          <Link to="/termsofuse" className="link">
+          {/* <Link to="/termsofuse" className="link">
             <p>Terms of Use</p>
           </Link>
           <Link to="/privacypolicy" className="link">
             <p>Privacy Policy</p>
-          </Link>
+          </Link> */}
           <span className="horizontalLine" />
         </Flex>
       </Disclaimer>
@@ -267,12 +267,12 @@ const Footer = () => {
       <Disclaimer>
         <Flex>
           <p>© Foodies CNFT. All Rights Reserved.</p>
-          <Link to="/termsofuse" className="link">
+          {/* <Link to="/termsofuse" className="link">
             <p>Terms of Use</p>
           </Link>
           <Link to="/privacypolicy" className="link">
             <p>Privacy Policy</p>
-          </Link>
+          </Link> */}
         </Flex>
       </Disclaimer>
     </FooterSection>
