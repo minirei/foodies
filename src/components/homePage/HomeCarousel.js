@@ -179,7 +179,7 @@ const HomeCarousel = () => {
   return (
     <>
       <HomeCarouselSection
-        style={{ height: isMobile ? "90vh" : "" }}
+        style={{ height: isMobile ? "100vh" : "" }}
         id="roadmap"
       >
         <div className={`${card === 0 && "visible"} chapter`}>
