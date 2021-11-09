@@ -25,13 +25,11 @@
 
   - background is sepia: rgb(255,248, 237)
   - text colour is rgb(40,10,11)
-  - find DEFAULTS for launch, curtain, menu
-  - curtain needs 3 additional colours
-  - gallery needs 4 additional colours
-
-  possibles:
-  - rgb(255,229,211)
-  - rgb(178,254,233)
+  - rgb(241,202,137)
+  - rgb(254,200,216)
+  - rgb(181,234,234)
+  - rgb(192, 237, 196)
+  - carousel: rgb(232, 253, 255)
 
 - feedback
   - gallery images too big

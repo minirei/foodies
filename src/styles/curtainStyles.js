@@ -10,7 +10,6 @@ export const HomeRevealSection = styled(motion.div)`
   padding-top: 10vh;
   padding-bottom: 10vh;
   overflow: hidden;
-  background-color: rgb(222,183,153);
   cursor: default;
   .chapter {
     position: absolute;
@@ -70,7 +69,6 @@ export const CurtainText = styled(motion.div)`
   }
 `
 export const CurtainContentMask = styled(motion.div)`
-  background-color: rgb(222,183,153);
   position: absolute;
   z-index: 1;
   height: 100%;
@@ -94,7 +92,6 @@ export const CurtainImage = styled(motion.div)`
 export const CurtainImageMask = styled(motion.div)`
   position: absolute;
   display: block;
-  background-color: rgb(222,183,153);
   height: 100%;
   width: 100%;
   top: 0;

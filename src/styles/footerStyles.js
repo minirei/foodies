@@ -100,7 +100,7 @@ export const FooterTop = styled.div`
     color: rgb(40, 10, 11);
   }
   .link {
-    font-weight: 700;
+    font-weight: 600;
     color: inherit;
   }
   ${props =>

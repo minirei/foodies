@@ -206,4 +206,7 @@ export const Icon = styled.div`
     align-items: center;
     justify-content: center;
   }
+  svg {
+    transform-origin: center !important;
+  }
 `
