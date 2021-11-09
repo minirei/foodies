@@ -35,8 +35,8 @@ export const GalleryCategory = styled(motion.div)`
     height: 100%;
     width: 100%;
     h1 {
-      font-size: calc(0.5rem + 6vw);
-      font-weight: 400;
+      font-size: calc(0.7rem + 6vw);
+      font-weight: 500;
       font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
         sans-serif;
       margin: 0;

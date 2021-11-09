@@ -9,6 +9,9 @@ import useMousePosition from "../../hooks/useMousePosition"
 import { Container, Flex } from "../../styles/globalStyles"
 import { HomeGallerySection, GalleryCategory } from "../../styles/galleryStyles"
 
+// Elements
+import Parallax from "../../elements/Parallax"
+
 // Context
 import { useGlobalStateContext } from "../../context/globalContext"
 
@@ -233,7 +236,10 @@ const HomeGallery = () => {
         <h1>001 - Cultural Diversity</h1>
       </div>
       <Container overflowVisible>
-        <Flex vertical style={{justifyContent: isMobile ? "space-between" : ""}}>
+        <Flex
+          vertical
+          style={{ justifyContent: isMobile ? "space-between" : "" }}
+        >
           <GalleryCategory className={`china ${isMobile && "mobile"}`}>
             <motion.div
               className="content"
@@ -253,28 +259,32 @@ const HomeGallery = () => {
               </motion.h1>
             </motion.div>
             <div className="imageWrapper">
-              <motion.div
-                className="floatingBackground"
-                variants={bgAnimation}
-                animate={controls1}
-                initial="initial"
-              >
-                <StaticImage
-                  src="../../assets/images/forbidden-city.png"
-                  alt="forbidden city"
-                />
-              </motion.div>
-              <motion.div
-                className="floatingFoodie"
-                variants={bgFoodieAnimation}
-                animate={controls1}
-                initial="initial"
-              >
-                <StaticImage
-                  src="../../assets/images/chinese-foodie.png"
-                  alt="chinese foodie"
-                />
-              </motion.div>
+              <Parallax offset={isMobile ? 20 : 0}>
+                <motion.div
+                  className="floatingBackground"
+                  variants={bgAnimation}
+                  animate={controls1}
+                  initial="initial"
+                >
+                  <StaticImage
+                    src="../../assets/images/forbidden-city.png"
+                    alt="forbidden city"
+                  />
+                </motion.div>
+              </Parallax>
+              <Parallax offset={isMobile ? -30 : 0}>
+                <motion.div
+                  className="floatingFoodie"
+                  variants={bgFoodieAnimation}
+                  animate={controls1}
+                  initial="initial"
+                >
+                  <StaticImage
+                    src="../../assets/images/chinese-foodie.png"
+                    alt="chinese foodie"
+                  />
+                </motion.div>
+              </Parallax>
             </div>
           </GalleryCategory>
 
@@ -297,28 +307,32 @@ const HomeGallery = () => {
               </motion.h1>
             </motion.div>
             <div className="imageWrapper">
-              <motion.div
-                className="floatingBackground"
-                variants={bgAnimation}
-                animate={controls2}
-                initial="initial"
-              >
-                <StaticImage
-                  src="../../assets/images/colosseum.png"
-                  alt="the colosseum"
-                />
-              </motion.div>
-              <motion.div
-                className="floatingFoodie"
-                variants={bgFoodieAnimation}
-                animate={controls2}
-                initial="initial"
-              >
-                <StaticImage
-                  src="../../assets/images/italian-foodie.png"
-                  alt="italian foodie"
-                />
-              </motion.div>
+              <Parallax offset={isMobile ? 20 : 0}>
+                <motion.div
+                  className="floatingBackground"
+                  variants={bgAnimation}
+                  animate={controls2}
+                  initial="initial"
+                >
+                  <StaticImage
+                    src="../../assets/images/colosseum.png"
+                    alt="the colosseum"
+                  />
+                </motion.div>
+              </Parallax>
+              <Parallax offset={isMobile ? -30 : 0}>
+                <motion.div
+                  className="floatingFoodie"
+                  variants={bgFoodieAnimation}
+                  animate={controls2}
+                  initial="initial"
+                >
+                  <StaticImage
+                    src="../../assets/images/italian-foodie.png"
+                    alt="italian foodie"
+                  />
+                </motion.div>
+              </Parallax>
             </div>
           </GalleryCategory>
 
@@ -341,28 +355,32 @@ const HomeGallery = () => {
               </motion.h1>
             </motion.div>
             <div className="imageWrapper">
-              <motion.div
-                className="floatingBackground"
-                variants={bgAnimation}
-                animate={controls3}
-                initial="initial"
-              >
-                <StaticImage
-                  src="../../assets/images/kinkaku-ji.png"
-                  alt="kinkaku ji"
-                />
-              </motion.div>
-              <motion.div
-                className="floatingFoodie"
-                variants={bgFoodieAnimation}
-                animate={controls3}
-                initial="initial"
-              >
-                <StaticImage
-                  src="../../assets/images/japanese-foodie.png"
-                  alt="japanese foodie"
-                />
-              </motion.div>
+              <Parallax offset={isMobile ? 20 : 0}>
+                <motion.div
+                  className="floatingBackground"
+                  variants={bgAnimation}
+                  animate={controls3}
+                  initial="initial"
+                >
+                  <StaticImage
+                    src="../../assets/images/kinkaku-ji.png"
+                    alt="kinkaku ji"
+                  />
+                </motion.div>
+              </Parallax>
+              <Parallax offset={isMobile ? -30 : 0}>
+                <motion.div
+                  className="floatingFoodie"
+                  variants={bgFoodieAnimation}
+                  animate={controls3}
+                  initial="initial"
+                >
+                  <StaticImage
+                    src="../../assets/images/japanese-foodie.png"
+                    alt="japanese foodie"
+                  />
+                </motion.div>
+              </Parallax>
             </div>
           </GalleryCategory>
 
@@ -385,28 +403,32 @@ const HomeGallery = () => {
               </motion.h1>
             </motion.div>
             <div className="imageWrapper">
-              <motion.div
-                className="floatingBackground"
-                variants={bgAnimation}
-                animate={controls4}
-                initial="initial"
-              >
-                <StaticImage
-                  src="../../assets/images/statue-of-liberty.png"
-                  alt="statue of liberty"
-                />
-              </motion.div>
-              <motion.div
-                className="floatingFoodie"
-                variants={bgFoodieAnimation}
-                animate={controls4}
-                initial="initial"
-              >
-                <StaticImage
-                  src="../../assets/images/american-foodie.png"
-                  alt="american foodie"
-                />
-              </motion.div>
+              <Parallax offset={isMobile ? 20 : 0}>
+                <motion.div
+                  className="floatingBackground"
+                  variants={bgAnimation}
+                  animate={controls4}
+                  initial="initial"
+                >
+                  <StaticImage
+                    src="../../assets/images/statue-of-liberty.png"
+                    alt="statue of liberty"
+                  />
+                </motion.div>
+              </Parallax>
+              <Parallax offset={isMobile ? -30 : 0}>
+                <motion.div
+                  className="floatingFoodie"
+                  variants={bgFoodieAnimation}
+                  animate={controls4}
+                  initial="initial"
+                >
+                  <StaticImage
+                    src="../../assets/images/american-foodie.png"
+                    alt="american foodie"
+                  />
+                </motion.div>
+              </Parallax>
             </div>
           </GalleryCategory>
         </Flex>
