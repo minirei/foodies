@@ -196,7 +196,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
               >
                 <div className="wrapper">
                   <svg
-                    className="circleAround"
+                    className={`circleAround ${isMobile && "mobile"}`}
                     width="50"
                     height="50"
                     viewBox="0 0 50 50"

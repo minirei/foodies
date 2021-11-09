@@ -120,7 +120,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
           >
             <div className="wrapper">
               <svg
-                className="circleAround"
+                className="circleAround mobile"
                 width="50"
                 height="50"
                 viewBox="0 0 50 50"

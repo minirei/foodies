@@ -45,7 +45,7 @@ export const SiteNavMobile = styled(motion.div)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70%;
+    height: 65%;
   }
   .socialsCaption {
     width: 100%;
@@ -56,6 +56,7 @@ export const SiteNavMobile = styled(motion.div)`
     background-color: black;
     p {
       color: rgb(255, 248, 237);
+      width: 100%;
       font-size: 1rem;
       text-align: center;
       margin: 0;
@@ -63,7 +64,7 @@ export const SiteNavMobile = styled(motion.div)`
   }
   .socials {
     width: 100%;
-    height: 20%;
+    height: 25%;
     .line {
       &.short {
         height: 100%;

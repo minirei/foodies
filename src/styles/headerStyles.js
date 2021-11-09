@@ -81,6 +81,9 @@ export const Menu = styled(motion.div)`
       --webkit-transition: 0.5s;
       transition: 0.5s;
     }
+    &.mobile{
+      display: none;
+    }
   }
   :hover .path {
     stroke-dasharray: 300 300;
