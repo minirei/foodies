@@ -13,7 +13,7 @@ export const HomeRevealSection = styled(motion.div)`
   cursor: default;
   .chapter {
     position: absolute;
-    top: 5%;
+    top: 3%;
     left: 8.33%;
     z-index: 10;
   }

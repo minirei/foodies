@@ -9,7 +9,7 @@ export const HomeCarouselSection = styled(motion.div)`
   overflow: hidden;
   .chapter {
     position: absolute;
-    top: 2%;
+    top: 3%;
     left: 8.33%;
     opacity: 0;
     z-index: 20;

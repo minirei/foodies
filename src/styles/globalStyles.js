@@ -42,7 +42,7 @@ export const GlobalStyle = createGlobalStyle`
 
   ${'' /* chapters */}
   h1 {
-      font-size: 2rem;
+      font-size: calc(1.2rem + 1vw);
       font-weight: 400;
       font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
         sans-serif;

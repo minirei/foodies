@@ -14,7 +14,7 @@ export const HomeGallerySection = styled(motion.div)`
   .chapter {
     position: absolute;
     margin: 0;
-    top: 5%;
+    top: 3%;
     left: 8.33%;
     z-index: 10;
   }
