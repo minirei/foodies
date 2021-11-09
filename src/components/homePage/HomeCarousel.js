@@ -202,7 +202,7 @@ const HomeCarousel = () => {
               objectPosition="50% 100%"
               loading="eager"
               key={card}
-              style={{ height: isMobile ? "75%" : "" }}
+              style={{ height: isMobile ? "80%" : "" }}
             ></GatsbyImage>
             <CarouselContent
               key="carouselContentKey"
