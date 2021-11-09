@@ -105,8 +105,8 @@ const HomeAbout = () => {
                       Kitchen, Foodie Parties, and Foodie Wars!
                     </p>
                     <p>
-                      These features will all be implemented on the Cardano
-                      blockchain, and owning a Foodie will grant you access to
+                      These features will be implemented on the Cardano
+                      blockchain, where owning a Foodie will grant you access to
                       Foodie Town and{" "}
                       <a href="#roadmap" alt="roadmap">
                         lots more!

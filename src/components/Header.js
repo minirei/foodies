@@ -6,12 +6,7 @@ import PropTypes from "prop-types"
 
 // Styles
 import { Container, Flex } from "../styles/globalStyles"
-import {
-  HeaderSection,
-  Navigation,
-  Menu,
-  Logo,
-} from "../styles/headerStyles"
+import { HeaderSection, Navigation, Menu, Logo } from "../styles/headerStyles"
 
 // Context
 import { useGlobalStateContext } from "../context/globalContext"
@@ -186,10 +181,10 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
                   <motion.h3 variants={navChildAnimation}>Roadmap</motion.h3>
                 </a>
                 <Link className="navLink" to="/faq">
-                  <motion.h3 variants={navChildAnimation}>FAQs</motion.h3>
+                  <motion.h3 variants={navChildAnimation}> FAQs</motion.h3>
                 </Link>
                 <Link className="navLink" to="/guide">
-                  <motion.h3 variants={navChildAnimation}>Guide</motion.h3>
+                  <motion.h3 variants={navChildAnimation}> Guide</motion.h3>
                 </Link>
               </Navigation>
             </Flex>

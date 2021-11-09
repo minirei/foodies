@@ -28,8 +28,29 @@ export const Navigation = styled(motion.ul)`
     letter-spacing: 0.1rem;
     text-decoration: none;
     margin-right: 1.4rem;
+    position: relative;
     :last-child {
       margin-right: 0;
+    }
+    :before {
+      left: 0;
+      bottom: 20%;
+      content: "";
+      height: 2px;
+      background: rgb(40, 10, 11);
+      position: absolute;
+      transform: scaleX(0);
+      will-change: transform;
+      transform-origin: right;
+      width: 100%;
+      transition: transform 0.4s ease-out, background 500ms linear;
+    }
+
+    :hover {
+      :before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
     }
   }
 `

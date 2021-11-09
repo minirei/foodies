@@ -129,6 +129,7 @@ const HomeLaunch = () => {
   })
   useEffect(() => {
     if (bgInView) colorControls.start("changeColor")
+    else colorControls.start("initial")
   }, [bgInView, colorControls])
 
   return (

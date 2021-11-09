@@ -235,6 +235,7 @@ const HomeGallery = () => {
     if (m2InView) colorControls.start("cat2")
     if (m3InView) colorControls.start("cat3")
     if (m4InView) colorControls.start("cat4")
+    else colorControls.start("initial")
   }, [colorControls, m1InView, m2InView, m3InView, m4InView])
 
   return (

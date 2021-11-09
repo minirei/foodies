@@ -21,6 +21,7 @@
 - COLOUR SCHEME
   - background is sepia: rgb(255,248, 237)
   - text colour is rgb(40,10,11)
+    - white if overlaid on image (if necessary)
   - menu: rgb(242,155,155)
   - rgb(241,202,137)
   - rgb(254,200,216)
