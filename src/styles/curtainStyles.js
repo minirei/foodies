@@ -12,7 +12,7 @@ export const HomeRevealSection = styled(motion.div)`
   overflow: hidden;
   cursor: default;
   &.mobile {
-    height: 270vh;
+    height: 300vh;
     padding: 0;
     .wrapper {
       height: 100%;
