@@ -228,12 +228,12 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
               >
                 <Flex vertical center>
                   <div className="links">
-                    <Link to="about">
+                    <Link to="/about">
                       <Heading large mobile>
                         About{" "}
                       </Heading>
                     </Link>
-                    <Link to="faq">
+                    <Link to="/faq">
                       <Heading large mobile>
                         FAQ
                       </Heading>
@@ -331,10 +331,10 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         initial="initial"
                         exit="exit"
                       />
-                      <Link to="about">
+                      <Link to="/about">
                         <Heading large>About </Heading>
                       </Link>
-                      <Link to="faq">
+                      <Link to="/faq">
                         <Heading large>FAQ</Heading>
                       </Link>
                       <Link to="/guide">
