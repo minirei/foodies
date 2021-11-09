@@ -19,7 +19,7 @@ export const HomeGallerySection = styled(motion.div)`
     z-index: 10;
   }
   &.mobile {
-    height: 160vh;
+    height: 180vh;
     padding-top: 15vh;
     padding-bottom: 5vh;
   }
@@ -69,11 +69,12 @@ export const GalleryCategory = styled(motion.div)`
     display: flex;
     align-items: flex-end;
     flex-direction: column-reverse;
-    height: 100%;
+    height: 25%;
     .content {
       width: 100%;
-      height: auto;
-      padding: 1rem 0;
+      height: 30%;
+      display: flex;
+      align-items: flex-start;
     }
     .imageWrapper {
       width: 100%;

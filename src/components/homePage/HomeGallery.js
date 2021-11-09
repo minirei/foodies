@@ -233,7 +233,7 @@ const HomeGallery = () => {
         <h1>001 - Cultural Diversity</h1>
       </div>
       <Container overflowVisible>
-        <Flex vertical>
+        <Flex vertical style={{justifyContent: isMobile ? "space-between" : ""}}>
           <GalleryCategory className={`china ${isMobile && "mobile"}`}>
             <motion.div
               className="content"

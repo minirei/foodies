@@ -111,7 +111,7 @@ const Footer = () => {
       </div>
       <Disclaimer mobile>
         <Flex vertical spaceBetween center>
-          <p>(c) Foodies CNFT. All Rights Reserved.</p>
+          <p>© Foodies CNFT. All Rights Reserved.</p>
           <Link to="/termsofuse" className="link">
             <p>Terms of Use</p>
           </Link>
@@ -266,7 +266,7 @@ const Footer = () => {
       </NavBottom>
       <Disclaimer>
         <Flex>
-          <p>(c) Foodies CNFT. All Rights Reserved.</p>
+          <p>© Foodies CNFT. All Rights Reserved.</p>
           <Link to="/termsofuse" className="link">
             <p>Terms of Use</p>
           </Link>

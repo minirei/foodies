@@ -49,7 +49,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
   h3 {
-    font-size: calc(1.8rem + 1.2vw);
+    font-size: calc(1.6rem + 1.4vw);
     line-height: calc(2rem + 1.4vw);
     font-weight: 700;
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
