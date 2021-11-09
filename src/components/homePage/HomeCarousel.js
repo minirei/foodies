@@ -248,6 +248,7 @@ const HomeCarousel = () => {
             onClick={() => {
               paginate(-1)
             }}
+            whileHover={{ scale: 1.1 }}
           >
             <svg
               xmlns="http://www.w3.org/2420/svg"
@@ -270,6 +271,7 @@ const HomeCarousel = () => {
             onClick={() => {
               paginate(1)
             }}
+            whileHover={{ scale: 1.1 }}
           >
             <svg
               xmlns="http://www.w3.org/2420/svg"
