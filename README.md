@@ -22,9 +22,9 @@
 ### Design Concerns
 
 - COLOUR SCHEME
-
   - background is sepia: rgb(255,248, 237)
   - text colour is rgb(40,10,11)
+  - menu: rgb(242,155,155)
   - rgb(241,202,137)
   - rgb(254,200,216)
   - rgb(181,234,234)

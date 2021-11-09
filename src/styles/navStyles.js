@@ -7,7 +7,7 @@ export const SiteNavSection = styled(motion.div)`
   width: 100vw;
   z-index: 100;
   overflow: hidden;
-  background-color: #de8979;
+  background-color: rgb(242, 155, 155);
   .line {
     &.short {
       height: 100%;
@@ -70,7 +70,7 @@ export const NavContent = styled.div`
 
 export const Heading = styled.h1`
   font-size: calc(2.6rem + 1vw);
-  color: rgb(40,10,11);
+  color: rgb(40, 10, 11);
   font-weight: 400;
   letter-spacing: 0.1rem;
   font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -113,7 +113,6 @@ export const NavBottom = styled.div`
     flex-direction: column;
     user-select: none;
 
-
     .cardanoWrapper {
       height: 100%;
       max-height: 100%;
@@ -124,12 +123,10 @@ export const NavBottom = styled.div`
       justify-content: center;
       user-select: none;
 
-
       .cardanoSVG {
         height: 75%;
         object-fit: contain;
         user-select: none;
-
       }
     }
     p {

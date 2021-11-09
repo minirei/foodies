@@ -75,6 +75,9 @@ export const Marquee = styled(motion.div)`
     transform: translate3d(calc(-25%), 0, 0);
     animation: ${roll} 5s linear infinite;
     animation-play-state: paused;
+    &.mobile {
+      padding-top: 5vh;
+    }
   }
 
   .animate {

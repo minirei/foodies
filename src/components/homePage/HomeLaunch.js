@@ -108,7 +108,7 @@ const HomeLaunch = () => {
     <HomeLaunchSection>
       <Marquee ref={marqueeRef}>
         <motion.div
-          className={`marqueeInner ${playMarquee && "animate"}`}
+          className={`marqueeInner ${playMarquee && "animate"} ${isMobile && "mobile"}`}
           variants={bannerAnimation}
           animate={marqueeControls}
           initial="hidden"
