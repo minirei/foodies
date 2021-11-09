@@ -94,6 +94,9 @@ export const Menu = styled(motion.div)`
 
   &.scrolled {
     right: 1%;
+    &.mobile {
+      right: 0;
+    }
   }
 
   button {

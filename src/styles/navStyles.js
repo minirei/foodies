@@ -54,6 +54,32 @@ export const SiteNavMobile = styled(motion.div)`
     width: 100%;
     height: 20%;
     background-color: blue;
+    .line {
+      &.short {
+        height: 100%;
+      }
+      height: 100vh;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 1px;
+      display: block;
+      background-color: black;
+    }
+    .horizontalLine {
+      position: absolute;
+      width: 80%;
+      transform-origin: center;
+      height: 1px;
+      bottom: 0;
+      display: block;
+      background-color: black;
+      &.top {
+        top: 0;
+        bottom: auto;
+        width: 100%;
+      }
+    }
   }
 `
 
