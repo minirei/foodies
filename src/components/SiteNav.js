@@ -356,8 +356,8 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         Roadmap
                       </Heading>
                       <Heading unavailable>Foodie Parties</Heading>
-                      <Heading unavailable>Foodie Kitchen</Heading>
                       <Heading unavailable>Supply Drop</Heading>
+                      <Heading unavailable>Foodie Kitchen</Heading>
                       <Heading unavailable>Foodie Wars</Heading>
                     </div>
                     <motion.span

@@ -89,7 +89,7 @@ const HomeCarousel = () => {
               )
             }
           }
-          kitchen: file(relativePath: { eq: "roadmap-kitchen.png" }) {
+          supply: file(relativePath: { eq: "roadmap-supply.png" }) {
             childImageSharp {
               gatsbyImageData(
                 quality: 100
@@ -98,7 +98,7 @@ const HomeCarousel = () => {
               )
             }
           }
-          supply: file(relativePath: { eq: "roadmap-supply.png" }) {
+          kitchen: file(relativePath: { eq: "roadmap-kitchen.png" }) {
             childImageSharp {
               gatsbyImageData(
                 quality: 100
@@ -141,8 +141,8 @@ const HomeCarousel = () => {
   const images = [
     getImage(launch),
     getImage(party),
-    getImage(kitchen),
     getImage(supply),
+    getImage(kitchen),
     getImage(wars),
     getImage(future),
     getImage(charity),
@@ -214,6 +214,7 @@ const HomeCarousel = () => {
               <p
                 className={`
                 ${card === 0 && !isMobile && "blockingOne"} 
+                ${card === 2 && !isMobile && "blockingThree"} 
                 ${card === 3 && !isMobile && "blockingFour"} 
                 ${card === 4 && !isMobile && "blockingFive"}
                 ${card === 6 && !isMobile && "blockingSeven"}

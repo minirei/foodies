@@ -43,6 +43,9 @@ export const CarouselContent = styled(motion.div)`
     &.blockingOne {
       width: 95%;
     }
+    &.blockingThree {
+      width: 85%;
+    }
     &.blockingFour {
       width: 90%;
     }
