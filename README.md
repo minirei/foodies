@@ -2,10 +2,10 @@
 
 ## To-Do
 
-- about page
-  - Add Token Policy - "Metadata
-    We follow CIP-25, the NFT metadata standard on Cardano, which was created by SpaceBudz. Images are stored on IPFS and you find the image link to a SpaceBud inside the metadata."
-    - https://github.com/cardano-foundation/CIPs/blob/master/CIP-0025/CIP-0025.md
+- add scroll to top when redirected
+- google analytics
+- gatsby seo
+
 - faq page
 - guide page
 

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 
 // Components
 import Layout from "../components/Layout"
@@ -12,6 +12,7 @@ import HomeCarousel from "../components/homePage/HomeCarousel"
 const IndexPage = () => {
   // loading
   const [loading, setLoading] = useState(true)
+  const isIndex = true
 
   useEffect(() => {
     loading
@@ -28,7 +29,7 @@ const IndexPage = () => {
       {loading ? (
         <div></div>
       ) : (
-        <Layout>
+        <Layout isIndex={isIndex}>
           <LandingPage />
           <HomeAbout />
           <HomeLaunch />

@@ -262,6 +262,7 @@ const HomeGallery = () => {
               className="content"
               onHoverStart={() => {
                 setHovered1(true)
+                console.log("hello")
               }}
               onHoverEnd={() => {
                 setHovered1(false)

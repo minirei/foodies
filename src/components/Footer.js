@@ -1,6 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { Link } from "gatsby"
+import PropTypes from "prop-types"
 
 // Styles
 import { NavBottom, Icon } from "../styles/navStyles"
@@ -16,15 +17,13 @@ import {
 // Context
 import { useGlobalStateContext } from "../context/globalContext"
 
-const Footer = () => {
+const Footer = ({ isIndex = false }) => {
   // Mobile
   const { isMobile } = useGlobalStateContext()
-
   return isMobile ? (
     <MobileFooterSection>
       <FooterTop mobile>
         <span className="horizontalLine top" />
-
         <p>
           New to NFTs? Check out our{" "}
           <Link to="/guide" className="link">
@@ -150,7 +149,7 @@ const Footer = () => {
   ) : (
     <FooterSection>
       <FooterTop>
-        <span className="horizontalLine top" />
+        <span className={`${!isIndex && "horizontalLine top"}`} />
         <p>
           New to NFTs? Check out our{" "}
           <Link to="/guide" className="link">
@@ -280,6 +279,10 @@ const Footer = () => {
       </Disclaimer>
     </FooterSection>
   )
+}
+
+Footer.propTypes = {
+  isIndex: PropTypes.bool.isRequired,
 }
 
 export default Footer

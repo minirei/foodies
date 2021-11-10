@@ -216,10 +216,19 @@ const HomeLaunch = () => {
                   deliciously-prepared, each Foodie embodies the spirit of love,
                   diversity, and appreciation of food!
                 </p>
-                <p>
-                  Some lucky Foodies even have special backgrounds, which
-                  represent popular global landmarks! Have a sneak peek below!
-                </p>
+                {isMobile ? (
+                  <p>
+                    Some lucky Foodies even have special backgrounds, which
+                    represent popular global landmarks! Have a sneak peek below!
+                  </p>
+                ) : (
+                  <p>
+                    Some lucky Foodies even have special backgrounds, which
+                    represent popular global landmarks! Do{" "}
+                    <strong style={{ fontWeight: 600 }}>hover</strong> to have a
+                    sneak peek below!
+                  </p>
+                )}
               </motion.div>
             </Parallax>
           </Flex>

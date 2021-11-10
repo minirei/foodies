@@ -16,8 +16,7 @@ const About = () => {
           <SubPageSection>
             <h3>About the Team</h3>
             <p>
-              Hey There, we’re Soong and Rei, two crypto-enthusiasts from
-              Singapore!
+              Hey There, we’re Soong and Rei, two individuals from Singapore!
             </p>
             <p>
               Growing up in a country where our cuisine is as diverse as our

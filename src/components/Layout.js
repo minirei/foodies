@@ -10,7 +10,7 @@ import Footer from "./Footer"
 // Styles
 import { GlobalStyle } from "../styles/globalStyles"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isIndex=false }) => {
   const [toggleMenu, setToggleMenu] = useState(false)
   const [accordian, setAccordian] = useState(false)
 
@@ -31,13 +31,14 @@ const Layout = ({ children }) => {
         setAccordian={setAccordian}
       />
       <main>{children}</main>
-      <Footer />
+      <Footer isIndex={isIndex}/>
     </>
   )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  isIndex: PropTypes.bool.isRequired,
 }
 
 export default Layout
