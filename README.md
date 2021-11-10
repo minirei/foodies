@@ -2,7 +2,7 @@
 
 ## To-Do
 
-- add scroll to top when redirected
+<!-- - add scroll to top when redirected -->
 - google analytics
 - gatsby seo
 
