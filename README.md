@@ -9,6 +9,9 @@
 - faq page
 - guide page
 
+- privacy policy & terms of use 
+  - adjust height in FooterStyles>Disclaimer>props.mobile to 15vh when done
+
 ### Design Concerns
 
 - COLOUR SCHEME

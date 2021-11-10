@@ -27,6 +27,14 @@ export const FooterSection = styled.div`
     bottom: 0;
     display: block;
     background: black;
+    &.top {
+      transform-origin: center;
+      left: auto;
+      right: auto;
+      top: 0;
+      bottom: auto;
+      width: 60%;
+    }
   }
 `
 
@@ -83,6 +91,8 @@ export const MobileFooterSection = styled.div`
     &.top {
       top: 0;
       bottom: auto;
+    }
+    &.fullWidth {
       width: 100%;
     }
   }
@@ -96,6 +106,7 @@ export const FooterTop = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
   p {
     color: rgb(40, 10, 11);
   }
@@ -149,7 +160,8 @@ export const Disclaimer = styled.div`
   ${props =>
     props.mobile &&
     css`
-      height: 15vh;
+    ${'' /* adjust height when adding privacy policy and terms back */}
+      height: 10vh;
       padding: 0;
       p {
         padding-right: 0;

@@ -96,7 +96,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
   const { scrollY } = useViewportScroll()
 
   scrollY.onChange(x => {
-    setAccordian(x > 150 ? 1 : 0)
+    setAccordian(x > (isMobile ? 50 : 150) ? 1 : 0)
   })
 
   useEffect(() => {

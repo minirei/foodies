@@ -188,7 +188,9 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                 initial="initial"
                 exit="exit"
               >
-                <h1>FOODIES</h1>
+                <Link to="/">
+                  <h1>FOODIES</h1>
+                </Link>
               </Logo>
               <Menu
                 className={`${accordian && "scrolled"} ${isMobile && "mobile"}`}
@@ -252,8 +254,8 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                   </div>
                   <div className="socials">
                     <Flex>
-                    <span className="horizontalLine top" />
-                    <span className="horizontalLine bottom" />
+                      <span className="horizontalLine top" />
+                      <span className="horizontalLine bottom" />
                       <Icon>
                         <div className="svgWrapper">
                           <a
@@ -332,13 +334,19 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         exit="exit"
                       />
                       <Link to="/about">
-                        <Heading large hover>About </Heading>
+                        <Heading large hover>
+                          About{" "}
+                        </Heading>
                       </Link>
                       <Link to="/faq">
-                        <Heading large hover>FAQ</Heading>
+                        <Heading large hover>
+                          FAQ
+                        </Heading>
                       </Link>
                       <Link to="/guide">
-                        <Heading large hover>Guide</Heading>
+                        <Heading large hover>
+                          Guide
+                        </Heading>
                       </Link>
                       <Heading large unavailable>
                         Mint
@@ -352,9 +360,6 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         initial="initial"
                         exit="exit"
                       />
-                      <Heading large style={{ cursor: "default" }}>
-                        Roadmap
-                      </Heading>
                       <Heading unavailable>Foodie Parties</Heading>
                       <Heading unavailable>Supply Drop</Heading>
                       <Heading unavailable>Foodie Kitchen</Heading>

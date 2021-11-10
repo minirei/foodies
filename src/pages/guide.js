@@ -1,7 +1,9 @@
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 
 // Components
 import Layout from "../components/Layout"
+import { SubPageContainer, SubPageSection } from "../styles/subPageStyles"
+import { Container } from "../styles/globalStyles"
 
 const GuidePage = () => {
   // loading
@@ -17,7 +19,8 @@ const GuidePage = () => {
     setLoading(false)
   })
 
-  return <>{loading ? <div></div> : <Layout>GuidePage</Layout>}</>
+  return <>{loading ? <div></div> : <Layout>
+  </Layout>}</>
 }
 
 export default GuidePage

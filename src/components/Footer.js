@@ -23,6 +23,8 @@ const Footer = () => {
   return isMobile ? (
     <MobileFooterSection>
       <FooterTop mobile>
+        <span className="horizontalLine top" />
+
         <p>
           New to NFTs? Check out our{" "}
           <Link to="/guide" className="link">
@@ -50,7 +52,7 @@ const Footer = () => {
       <p className="socialsCaption">Follow Us. No Filter</p>
       <div className="socials">
         <Flex>
-          <span className="horizontalLine top" />
+          <span className="horizontalLine top fullWidth" />
           <Icon>
             <div className="svgWrapper">
               <a
@@ -148,6 +150,7 @@ const Footer = () => {
   ) : (
     <FooterSection>
       <FooterTop>
+        <span className="horizontalLine top" />
         <p>
           New to NFTs? Check out our{" "}
           <Link to="/guide" className="link">

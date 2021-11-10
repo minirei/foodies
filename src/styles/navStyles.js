@@ -119,7 +119,7 @@ export const NavContent = styled.div`
     flex-direction: column;
     height: 100%;
     justify-content: flex-end;
-    padding-bottom: 157px;
+    padding-bottom: 130px;
     position: relative;
   }
 
@@ -129,7 +129,7 @@ export const NavContent = styled.div`
     flex-direction: column;
     height: 100%;
     justify-content: flex-end;
-    padding-bottom: 65px;
+    padding-bottom: 130px;
     position: relative;
   }
 `
