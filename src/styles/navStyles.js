@@ -142,7 +142,34 @@ export const Heading = styled.h1`
   font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: calc(4.6rem + 1vw);
   margin: 0;
-  padding-left: 50px;
+  margin-left: 50px;
+  display: inline-block;
+
+  ${props =>
+    props.hover &&
+    css`
+      position: relative;
+      :before {
+        left: 0;
+        bottom: 5%;
+        content: "";
+        height: 2px;
+        background: rgb(40, 10, 11);
+        position: absolute;
+        transform: scaleX(0);
+        will-change: transform;
+        transform-origin: right;
+        width: 100%;
+        transition: transform 0.4s ease-out, background 500ms linear;
+      }
+
+      :hover {
+        :before {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    `}
 
   ${props =>
     props.large &&

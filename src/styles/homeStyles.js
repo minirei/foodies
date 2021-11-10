@@ -42,6 +42,30 @@ export const HomeAboutContent = styled(motion.div)`
     font-weight: 600;
     color: inherit;
   }
+
+  .link {
+    position: relative;
+    :before {
+      left: 0;
+      bottom: 10%;
+      content: "";
+      height: 2px;
+      background: rgb(40, 10, 11);
+      position: absolute;
+      transform: scaleX(0);
+      will-change: transform;
+      transform-origin: right;
+      width: 100%;
+      transition: transform 0.4s ease-out, background 500ms linear;
+    }
+
+    :hover {
+      :before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
 `
 export const HomeAboutImage = styled.div`
   width: 35%;

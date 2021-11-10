@@ -34,7 +34,7 @@ export const Navigation = styled(motion.ul)`
     }
     :before {
       left: 0;
-      bottom: 20%;
+      bottom: 25%;
       content: "";
       height: 2px;
       background: rgb(40, 10, 11);

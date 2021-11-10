@@ -332,13 +332,13 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         exit="exit"
                       />
                       <Link to="/about">
-                        <Heading large>About </Heading>
+                        <Heading large hover>About </Heading>
                       </Link>
                       <Link to="/faq">
-                        <Heading large>FAQ</Heading>
+                        <Heading large hover>FAQ</Heading>
                       </Link>
                       <Link to="/guide">
-                        <Heading large>Guide</Heading>
+                        <Heading large hover>Guide</Heading>
                       </Link>
                       <Heading large unavailable>
                         Mint

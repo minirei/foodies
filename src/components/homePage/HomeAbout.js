@@ -108,7 +108,7 @@ const HomeAbout = () => {
                       These features will be implemented on the Cardano
                       blockchain, where owning a Foodie will grant you access to
                       Foodie Town and{" "}
-                      <a href="#roadmap" alt="roadmap">
+                      <a href="#roadmap" alt="roadmap" className="link">
                         lots more!
                       </a>
                     </p>

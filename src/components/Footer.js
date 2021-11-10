@@ -151,33 +151,13 @@ const Footer = () => {
         <p>
           New to NFTs? Check out our{" "}
           <Link to="/guide" className="link">
-            <motion.span
-              whileHover={{
-                letterSpacing: "0.1rem",
-                transition: {
-                  duration: 0.2,
-                  ease: [0.6, 0.05, -0.01, 0.9],
-                },
-              }}
-            >
-              Guide
-            </motion.span>
+            <motion.span>Guide</motion.span>
           </Link>
         </p>
         <p>
           Want to know more? Have a look at our{" "}
           <Link to="/faq" className="link">
-            <motion.span
-              whileHover={{
-                letterSpacing: "0.1rem",
-                transition: {
-                  duration: 0.2,
-                  ease: [0.6, 0.05, -0.01, 0.9],
-                },
-              }}
-            >
-              FAQ
-            </motion.span>
+            <motion.span>FAQ</motion.span>
           </Link>
         </p>
         <p>
@@ -187,13 +167,6 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
             className="link"
-            whileHover={{
-              letterSpacing: "0.1rem",
-              transition: {
-                duration: 0.2,
-                ease: [0.6, 0.05, -0.01, 0.9],
-              },
-            }}
           >
             Community!
           </motion.a>
