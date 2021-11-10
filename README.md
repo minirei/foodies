@@ -3,8 +3,8 @@
 ## To-Do
 
 <!-- - add scroll to top when redirected -->
-- google analytics
 - gatsby seo
+- gatsby-plugin-offline:
 
 - faq page
 - guide page
