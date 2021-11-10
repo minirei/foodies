@@ -25,10 +25,10 @@ const About = () => {
               NFT project.
             </p>
             <p>
-              Resembling Singapore where people from vastly different
-              communities share a common thread in the food we indulge, it is
-              our goal to build a virtual town where Foodies from all walks of
-              life can have an immersive and enriching experience!
+              Mirroring Singapore where people from vastly different communities
+              share a common thread in the food we indulge, it is our goal to
+              build a virtual town where Foodies from all walks of life can have
+              an immersive and enriching experience!
             </p>
             <p>
               We are immensely committed to the development of this project and
