@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react"
 
 // Components
 import Layout from "../components/Layout"
-import { SubPageContainer, SubPageSection } from "../styles/subPageStyles"
-import { Container } from "../styles/globalStyles"
+import Guide from "../components/About"
 
 const GuidePage = () => {
-  // loading
+  // loading (needed so that i don't call window during SSR)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -19,8 +18,17 @@ const GuidePage = () => {
     setLoading(false)
   })
 
-  return <>{loading ? <div></div> : <Layout>
-  </Layout>}</>
+  return (
+    <>
+      {loading ? (
+        <div></div>
+      ) : (
+        <Layout>
+          <Guide />
+        </Layout>
+      )}
+    </>
+  )
 }
 
 export default GuidePage

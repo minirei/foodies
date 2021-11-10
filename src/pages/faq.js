@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react"
 
 // Components
 import Layout from "../components/Layout"
+import FAQ from "../components/About"
 
 const FAQPage = () => {
-  // loading
+  // loading (needed so that i don't call window during SSR)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -17,7 +18,17 @@ const FAQPage = () => {
     setLoading(false)
   })
 
-  return <>{loading ? <div></div> : <Layout>FAQPage</Layout>}</>
+  return (
+    <>
+      {loading ? (
+        <div></div>
+      ) : (
+        <Layout>
+          <FAQ />
+        </Layout>
+      )}
+    </>
+  )
 }
 
-export default FAQPage
+export default AboutPage
