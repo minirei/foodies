@@ -26,14 +26,14 @@ export const HomeCurtain = styled(motion.div)`
   height: 130vh;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   overflow: hidden;
 `
 
 export const CurtainContent = styled.div`
   position: relative;
-  top: 5%;
+  top: 25%;
   width: 50%;
   margin: 0 auto;
   z-index: 10;

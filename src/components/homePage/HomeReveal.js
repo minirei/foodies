@@ -298,7 +298,7 @@ const HomeReveal = () => {
                 <h2>03</h2>
                 <h3>Appreciating</h3>
                 <h3>Culture</h3>
-                <h3>& Cuisine</h3>{" "}
+                <h3>& Cuisine</h3>
               </CurtainHeading>
               <CurtainCover>
                 <CurtainText

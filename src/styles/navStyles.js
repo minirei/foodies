@@ -188,6 +188,7 @@ export const Heading = styled.h1`
     props.mobile &&
     css`
       padding: 0;
+      margin: 0;
     `}
 `
 
