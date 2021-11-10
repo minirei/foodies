@@ -38,7 +38,7 @@ export const CurtainContent = styled.div`
   margin: 0 auto;
   z-index: 10;
   &.mobile {
-    width: 90%;
+    width: 100%;
     top: 5%;
     &.first {
       top: 15%;
