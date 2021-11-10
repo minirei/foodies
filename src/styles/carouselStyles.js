@@ -7,13 +7,13 @@ export const HomeCarouselSection = styled(motion.div)`
   background-color: rgb(232, 253, 255);
   position: relative;
   overflow: hidden;
-  .chapter {
+  /* .chapter {
     opacity: 0;
     transition: opacity 1000ms cubic-bezier(0.215, 0.61, 0.355, 1);
     &.visible {
       opacity: 1;
     }
-  }
+  } */
   .wrapper {
     height: 100%;
     width: 100%;
