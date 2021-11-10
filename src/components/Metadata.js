@@ -5,6 +5,7 @@ const Metadata = () => {
   return (
     <Helmet>
       <meta charset="utf-8" />
+      <html lang="en" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <title>Foodies CNFT</title>
       <meta name="description" content="Foodies CNFT" />
