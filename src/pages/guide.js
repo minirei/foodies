@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 
 // Components
 import Layout from "../components/Layout"
-import Guide from "../components/About"
+import Guide from "../components/Guide"
 
 const GuidePage = () => {
   // loading (needed so that i don't call window during SSR)

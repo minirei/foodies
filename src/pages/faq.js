@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 
 // Components
 import Layout from "../components/Layout"
-import FAQ from "../components/About"
+import FAQ from "../components/FAQ"
 
 const FAQPage = () => {
   // loading (needed so that i don't call window during SSR)
@@ -31,4 +31,4 @@ const FAQPage = () => {
   )
 }
 
-export default AboutPage
+export default FAQPage
