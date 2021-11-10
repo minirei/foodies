@@ -153,7 +153,7 @@ export const Heading = styled.h1`
         left: 0;
         bottom: 5%;
         content: "";
-        height: 2px;
+        height: 3px;
         background: rgb(40, 10, 11);
         position: absolute;
         transform: scaleX(0);

@@ -195,7 +195,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
                 <Link className="navLink" to="/about">
                   <motion.h3 variants={navChildAnimation}>About</motion.h3>
                 </Link>
-                <a className="navLink" href="#roadmap">
+                <a className="navLink" href="/#roadmap">
                   <motion.h3 variants={navChildAnimation}>Roadmap</motion.h3>
                 </a>
                 <Link className="navLink" to="/faq">
