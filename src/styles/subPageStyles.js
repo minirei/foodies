@@ -54,4 +54,7 @@ export const SubPageSection = styled.div`
     word-wrap: break-word;
     width: 100%;
   }
+  li {
+    margin-left: 1rem;
+  }
 `
