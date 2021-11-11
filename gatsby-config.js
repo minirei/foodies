@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://foodiescnft.io",
+    url: "https://foodiescnft.io",
     title: "Foodies",
     description: "Foodies: A CNFT Project. Have a taste of novelty.",
     image: "/hero.png",
