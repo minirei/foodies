@@ -38,9 +38,9 @@ const HomeGallery = () => {
 
   // Colours
   const bg1 = `rgb(241,202,137)`
-  const bg2 = `rgb(254,200,216)`
+  const bg2 = `rgb(192, 237, 196)`
   const bg3 = `rgb(181,234,234)`
-  const bg4 = `rgb(192, 237, 196)`
+  const bg4 = `rgb(254,200,216)`
   const bgDefault = `rgb(255, 248, 237)`
 
   // Animation
