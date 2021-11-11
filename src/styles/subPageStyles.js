@@ -57,4 +57,7 @@ export const SubPageSection = styled.div`
   li {
     margin-left: 1rem;
   }
+  strong {
+    font-weight: 600;
+  }
 `
