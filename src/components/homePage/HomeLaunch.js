@@ -148,7 +148,7 @@ const HomeLaunch = () => {
           animate={marqueeControls}
           initial="hidden"
         >
-          <AnimatedLetters title={"16'DECEMBER'21"} />
+          <AnimatedLetters title={"16'DEC'3PM'UTC"} />
           <div className="rowTitle">
             <motion.span className="rowLetter" variants={letterAnimation}>
               1
@@ -169,32 +169,32 @@ const HomeLaunch = () => {
               C
             </motion.span>
             <motion.span className="rowLetter" variants={letterAnimation}>
-              E
+              '
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              3
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              P
             </motion.span>
             <motion.span className="rowLetter" variants={letterAnimation}>
               M
             </motion.span>
             <motion.span className="rowLetter" variants={letterAnimation}>
-              B
-            </motion.span>
-            <motion.span className="rowLetter" variants={letterAnimation}>
-              E
-            </motion.span>
-            <motion.span className="rowLetter" variants={letterAnimation}>
-              R
-            </motion.span>
-            <motion.span className="rowLetter" variants={letterAnimation}>
               '
             </motion.span>
             <motion.span className="rowLetter" variants={letterAnimation}>
-              2
+              U
             </motion.span>
             <motion.span className="rowLetter" variants={letterAnimation}>
-              1
+              T
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              C
             </motion.span>
           </div>
-          <AnimatedLetters title={"16'DECEMBER'21"} />
-          <AnimatedLetters title={"16'DECEMBER'21"} />
+          <AnimatedLetters title={"16'DEC'3PM'UTC"} />
+          <AnimatedLetters title={"16'DEC'3PM'UTC"} />
         </motion.div>
       </Marquee>
       <HomeLaunchContent className={`${isMobile && "mobile"}`}>
