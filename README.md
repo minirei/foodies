@@ -1,9 +1,6 @@
 # Foodies
 
 ## To-Do
-
-<!-- - add scroll to top when redirected -->
-- gatsby seo
 - gatsby-plugin-offline:
 
 - faq page

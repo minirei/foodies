@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 
 // Components
+import SEO from "./SEO"
 import Metadata from "./Metadata"
 import Header from "./Header"
 import SiteNav from "./SiteNav"
@@ -16,6 +17,7 @@ const Layout = ({ children, isIndex=false }) => {
 
   return (
     <>
+      <SEO />
       <Metadata />
       <GlobalStyle />
       <SiteNav
@@ -38,7 +40,7 @@ const Layout = ({ children, isIndex=false }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  isIndex: PropTypes.bool.isRequired,
+  isIndex: PropTypes.bool,
 }
 
 export default Layout

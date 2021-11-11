@@ -282,7 +282,7 @@ const Footer = ({ isIndex = false }) => {
 }
 
 Footer.propTypes = {
-  isIndex: PropTypes.bool.isRequired,
+  isIndex: PropTypes.bool,
 }
 
 export default Footer
