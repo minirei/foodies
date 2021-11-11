@@ -262,7 +262,6 @@ const HomeGallery = () => {
               className="content"
               onHoverStart={() => {
                 setHovered1(true)
-                console.log("hello")
               }}
               onHoverEnd={() => {
                 setHovered1(false)
@@ -285,7 +284,7 @@ const HomeGallery = () => {
                   initial="initial"
                 >
                   <StaticImage
-                    src="../../assets/images/forbidden-city.png"
+                    src="../../assets/images/fbg-forbidden-city.png"
                     alt="forbidden city"
                   />
                 </motion.div>
@@ -298,7 +297,7 @@ const HomeGallery = () => {
                   initial="initial"
                 >
                   <StaticImage
-                    src="../../assets/images/chinese-foodie.png"
+                    src="../../assets/images/foodie-chinese.png"
                     alt="chinese foodie"
                   />
                 </motion.div>
@@ -336,7 +335,7 @@ const HomeGallery = () => {
                   initial="initial"
                 >
                   <StaticImage
-                    src="../../assets/images/colosseum.png"
+                    src="../../assets/images/fbg-colosseum.png"
                     alt="the colosseum"
                   />
                 </motion.div>
@@ -349,7 +348,7 @@ const HomeGallery = () => {
                   initial="initial"
                 >
                   <StaticImage
-                    src="../../assets/images/italian-foodie.png"
+                    src="../../assets/images/foodie-italian.png"
                     alt="italian foodie"
                   />
                 </motion.div>
@@ -387,7 +386,7 @@ const HomeGallery = () => {
                   initial="initial"
                 >
                   <StaticImage
-                    src="../../assets/images/kinkaku-ji.png"
+                    src="../../assets/images/fbg-kinkaku-ji.png"
                     alt="kinkaku ji"
                   />
                 </motion.div>
@@ -400,7 +399,7 @@ const HomeGallery = () => {
                   initial="initial"
                 >
                   <StaticImage
-                    src="../../assets/images/japanese-foodie.png"
+                    src="../../assets/images/foodie-japanese.png"
                     alt="japanese foodie"
                   />
                 </motion.div>
@@ -438,7 +437,7 @@ const HomeGallery = () => {
                   initial="initial"
                 >
                   <StaticImage
-                    src="../../assets/images/statue-of-liberty.png"
+                    src="../../assets/images/fbg-statue-of-liberty.png"
                     alt="statue of liberty"
                   />
                 </motion.div>
@@ -451,7 +450,7 @@ const HomeGallery = () => {
                   initial="initial"
                 >
                   <StaticImage
-                    src="../../assets/images/american-foodie.png"
+                    src="../../assets/images/foodie-american.png"
                     alt="american foodie"
                   />
                 </motion.div>
