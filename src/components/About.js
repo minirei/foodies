@@ -38,9 +38,9 @@ const About = () => {
                 rel="noreferrer"
                 className="link"
               >
-                join
+                join us
               </a>{" "}
-              us for the inception of Foodie Town!
+              for the inception of Foodie Town!
             </p>
           </SubPageSection>
           <SubPageSection>
