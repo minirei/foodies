@@ -148,8 +148,17 @@ const HomeLaunch = () => {
           animate={marqueeControls}
           initial="hidden"
         >
-          <AnimatedLetters title={"DECEMBER'21"} />
+          <AnimatedLetters title={"16'DECEMBER'21"} />
           <div className="rowTitle">
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              1
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              6
+            </motion.span>
+            <motion.span className="rowLetter" variants={letterAnimation}>
+              '
+            </motion.span>
             <motion.span className="rowLetter" variants={letterAnimation}>
               D
             </motion.span>
@@ -184,8 +193,8 @@ const HomeLaunch = () => {
               1
             </motion.span>
           </div>
-          <AnimatedLetters title={"DECEMBER'21"} />
-          <AnimatedLetters title={"DECEMBER'21"} />
+          <AnimatedLetters title={"16'DECEMBER'21"} />
+          <AnimatedLetters title={"16'DECEMBER'21"} />
         </motion.div>
       </Marquee>
       <HomeLaunchContent className={`${isMobile && "mobile"}`}>
