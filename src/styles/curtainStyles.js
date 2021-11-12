@@ -20,9 +20,9 @@ export const HomeRevealSection = styled(motion.div)`
       position: relative;
     }
   }
-  p {
-    
-}
+  .chapter {
+    color: white;
+  }
 `
 export const HomeCurtain = styled(motion.div)`
   position: relative;
@@ -37,7 +37,7 @@ export const HomeCurtain = styled(motion.div)`
 export const CurtainContent = styled.div`
   position: relative;
   top: 25%;
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
   z-index: 10;
   &.mobile {
@@ -55,6 +55,7 @@ export const CurtainHeading = styled(motion.div)`
     font-size: calc(0.875rem + 2vw);
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: calc(0.875rem + 2vw) auto;
+    color: white;
   }
   h3 {
     font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -64,6 +65,7 @@ export const CurtainHeading = styled(motion.div)`
     margin: 0 auto 1rem;
     letter-spacing: 0.1rem;
     white-space: nowrap;
+    color: white;
   }
   margin-bottom: 3rem;
 `
@@ -76,8 +78,10 @@ export const CurtainCover = styled(motion.div)`
 
 export const CurtainText = styled(motion.div)`
   p {
-    /* text-align: left; */
+    color: white;
+    padding: 0.4rem;
   }
+  background-color: rgb(79,102,117, 0.6);
 `
 export const CurtainContentMask = styled(motion.div)`
   position: absolute;

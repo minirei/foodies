@@ -21,7 +21,7 @@ import { useGlobalStateContext } from "../../context/globalContext"
 
 const content = {
   community:
-    "We are committed to creating an engaging ecosystem in Foodie Town, where you’ll be able to live as your Foodie, interact with newfound friends, continually upgrade your Foodie, and expand your collection! Furthermore, all Foodies will also stand a chance to win vouchers, airdrops, and more! ",
+    "We are committed to creating an engaging ecosystem in Foodie Town, where you’ll be able to live as your Foodie, hangout with friends, continually upgrade your Foodie, and expand your collection! Furthermore, all Foodies will also stand a chance to win vouchers, airdrops, and more! ",
   difference:
     "We pledge to donate 5% of all Foodie proceeds to alleviate rampant starvation across the globe. Here at Foodie Town, not only will all Foodie owners have a direct impact in providing food to those in need, Foodie Town aims to improve your overall well-being and financial situation.",
   food: `As our entire project lives and breathes food, you can be certain that everything - and we mean everything - incorporates our love of various cuisines from all corners of the globe. We are Foodies after all! From our planned Foodie Parties to cooking competitions on our socials, we hope to truly foster a community of Foodies!`,
