@@ -62,8 +62,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
   h3 {
-    font-size: calc(1.6rem + 1.4vw);
-    line-height: calc(2rem + 1.4vw);
+    font-size: calc(1.2rem + 2.2vw);
+    line-height: calc(1.2rem + 2.6vw);
     font-weight: 700;
     font-family: 'Butler ', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }

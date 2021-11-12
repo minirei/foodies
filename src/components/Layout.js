@@ -10,7 +10,7 @@ import Footer from "./Footer"
 
 // Styles
 import { GlobalStyle } from "../styles/globalStyles"
-import ButlerFonts from "../fonts/Butler_Stencil_Webfont/ButlerFonts"
+import ButlerFonts from "../fonts/Butler/ButlerFonts"
 
 const Layout = ({ children, isIndex=false }) => {
   const [toggleMenu, setToggleMenu] = useState(false)

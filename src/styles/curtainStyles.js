@@ -21,7 +21,7 @@ export const HomeRevealSection = styled(motion.div)`
     }
   }
   .chapter {
-    color: white;
+    color: whitesmoke;
   }
 `
 export const HomeCurtain = styled(motion.div)`
@@ -55,7 +55,7 @@ export const CurtainHeading = styled(motion.div)`
     font-size: calc(0.875rem + 2vw);
     font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: calc(0.875rem + 2vw) auto;
-    color: white;
+    color: whitesmoke;
   }
   h3 {
     font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -65,7 +65,7 @@ export const CurtainHeading = styled(motion.div)`
     margin: 0 auto 1rem;
     letter-spacing: 0.1rem;
     white-space: nowrap;
-    color: white;
+    color: whitesmoke;
   }
   margin-bottom: 3rem;
 `
@@ -78,7 +78,7 @@ export const CurtainCover = styled(motion.div)`
 
 export const CurtainText = styled(motion.div)`
   p {
-    color: white;
+    color: whitesmoke;
     padding: 0.4rem;
   }
   background-color: rgb(79,102,117, 0.6);
