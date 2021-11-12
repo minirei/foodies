@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     ${
-      "" /* font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+      "" /* font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
     }
     ${"" /* background colour here */}
     ${"" /* background: #EBEBEB; */}
@@ -57,7 +57,7 @@ export const GlobalStyle = createGlobalStyle`
   h1 {
       font-size: calc(1.6rem + 1vw);
       font-weight: 400;
-      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
+      font-family: 'Butler ', "Segoe UI", Tahoma, Geneva, Verdana,
         sans-serif;
     }
 
@@ -65,7 +65,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: calc(1.6rem + 1.4vw);
     line-height: calc(2rem + 1.4vw);
     font-weight: 700;
-    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Butler ', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   p {

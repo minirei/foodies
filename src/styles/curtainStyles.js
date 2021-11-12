@@ -53,12 +53,12 @@ export const CurtainHeading = styled(motion.div)`
   h2 {
     font-weight: 200;
     font-size: calc(0.875rem + 2vw);
-    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: calc(0.875rem + 2vw) auto;
     color: white;
   }
   h3 {
-    font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: calc(2rem + 2vw);
     line-height: calc(1rem + 3vw);

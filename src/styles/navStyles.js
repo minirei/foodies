@@ -139,7 +139,7 @@ export const Heading = styled.h1`
   color: rgb(40, 10, 11);
   font-weight: 400;
   letter-spacing: 0.1rem;
-  font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: calc(4.6rem + 1vw);
   margin: 0;
   margin-left: 50px;
@@ -261,7 +261,7 @@ export const NavBottom = styled.div`
       text-align: center;
       font-size: 1.8rem;
       font-weight: 500;
-      font-family: "EB Garamond", "Segoe UI", Tahoma, Geneva, Verdana,
+      font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana,
         sans-serif;
       margin: 0;
     }

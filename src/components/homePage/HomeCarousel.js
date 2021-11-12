@@ -150,7 +150,7 @@ const HomeCarousel = () => {
 
   const content = {
     title: [
-      "The Launch (Dec '21)",
+      "The Launch (16 Dec '21)",
       "Foodie Parties (Jan '22)",
       "Suppliers Come to Town (Q1 '22)",
       "Foodie Kitchen (Q2 '22)",
