@@ -111,9 +111,8 @@ const Guide = () => {
               sent to your wallet.
             </p>
             <p>
-              5. Once minting is over, our wallet address will stay up for 24
-              hours. This is solely for issuing refunds. DO NOT send any ADA to
-              this address after the mint as it will no longer be monitored.
+              5. Once minting is over, <strong>do not</strong> send any ADA to
+              this address as it will no longer be monitored.
             </p>
           </SubPageSection>
           <SubPageSection>

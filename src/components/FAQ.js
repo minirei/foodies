@@ -14,10 +14,9 @@ const FAQ = () => {
       <Container>
         <div className={`wrapper`}>
           <SubPageSection>
-            <h3>Who are we?</h3>
+            <h3>FAQ</h3>
             <p>
-              Hey There, we’re Soong and Rei, two crypto-enthusiasts from
-              Singapore!
+              Hey There, we’re Sen and Rei!
             </p>
           </SubPageSection>
         </div>
