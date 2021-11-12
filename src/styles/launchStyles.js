@@ -69,7 +69,7 @@ export const Marquee = styled(motion.div)`
     /* color: rgb(241, 202, 137); */
     color: transparent;
     -webkit-text-stroke-color: rgb(40, 10, 11);
-    -webkit-text-stroke-width: calc(2px + 0.4vw);
+    -webkit-text-stroke-width: calc(4px + 0.4vw);
     font-size: calc(2rem + 15vw);
     font-weight: 700;
     /* letter-spacing: -0.8rem; */

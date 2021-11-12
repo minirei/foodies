@@ -20,6 +20,9 @@ export const HomeRevealSection = styled(motion.div)`
       position: relative;
     }
   }
+  p {
+    
+}
 `
 export const HomeCurtain = styled(motion.div)`
   position: relative;

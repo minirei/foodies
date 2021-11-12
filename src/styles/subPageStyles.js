@@ -61,4 +61,8 @@ export const SubPageSection = styled.div`
   strong {
     font-weight: 600;
   }
+  .question {
+    font-style: italic;
+    font-weight: 600;
+  }
 `

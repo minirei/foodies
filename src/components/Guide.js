@@ -112,7 +112,7 @@ const Guide = () => {
             </p>
             <p>
               5. Once minting is over, <strong>do not</strong> send any ADA to
-              this address as it will no longer be monitored.
+              the wallet address as it will no longer be monitored.
             </p>
           </SubPageSection>
           <SubPageSection>

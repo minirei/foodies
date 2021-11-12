@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 // Styles
 import { SubPageContainer, SubPageSection } from "../styles/subPageStyles"
@@ -15,8 +16,197 @@ const FAQ = () => {
         <div className={`wrapper`}>
           <SubPageSection>
             <h3>FAQ</h3>
+            <p className="question">When will the drop happen?</p>
             <p>
-              Hey There, we’re Sen and Rei!
+              The launch will take place on <strong>16 Dec, 3pm UTC</strong>.
+              From now till then, we will be focusing on growing the community
+              and ensuring most people in the CNFT space know about Foodies!
+            </p>
+            <p className="question">How do I mint a Foodie?</p>
+            <p>
+              On launch day, a wallet address will be released on this website
+              and our socials. Each foodie will cost <strong>45 ADA</strong>.
+              Refer to our{" "}
+              <Link to="/guide" className="link">
+                guide
+              </Link>{" "}
+              for more details!
+            </p>
+            <p className="question">How are the 10,000 Foodies cooked?</p>
+            <p>
+              Foodies are made of real food ingredients. Each trait was
+              exquisitely molded from and shaped with food! These traits have
+              been algorithmically randomised to create 10,000{" "}
+              <strong>unique</strong> Foodies from billions of possible
+              combinations. These are the chosen ones that will live on the
+              blockchain in Foodie Town!
+            </p>
+            <p className="question">How does the rarity work in Foodies?</p>
+            <p>
+              There are over 100 traits spread across 8 categories in total.
+              Even though certain traits are set to be more rare than others,
+              you can be assured that each Foodie is unique and wonderfully
+              made! A rarity table will be released right after minting, and we
+              will be listed on both{" "}
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.tokenref.com/"
+              >
+                tokenref.com
+              </a>{" "}
+              and{" "}
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://cnft.tools/"
+              >
+                cnft.tools
+              </a>
+              , where you will be able to see your Foodies’ rarity stats.
+            </p>
+            <p className="question">How many Foodies can I mint?</p>
+            <p>
+              You can mint only <strong>one Foodie per transaction</strong>, but
+              are free to mint as many Foodies as you’d like per wallet.
+            </p>
+            <p className="question">What can I do with my Foodies?</p>
+            <p>
+              Each Foodie is an esteemed member of Foodie Town, and will be
+              given the exclusive rights to participate in all activities
+              within. For more details, please refer to our{" "}
+              <Link to="/#rpadmap" className="link">
+                roadmap
+              </Link>
+              .{" "}
+            </p>
+            <p>
+              If you’ve had enough fun in Foodie Town and are willing to pass
+              your Foodie on to the next holder, you can do so via Cardano NFT
+              marketplaces such as{" "}
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://cnft.io/"
+              >
+                cnft.io
+              </a>{" "}
+              &{" "}
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://tokhun.io/"
+              >
+                tokhun.io
+              </a>
+              , or escrows on{" "}
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://discord.gg/9Qttw23Zs2"
+              >
+                Discord
+              </a>
+              !
+            </p>
+            <p className="question">
+              Why Cardano instead of other blockchains?
+            </p>
+            <p>
+              We have decided on{" "}
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://cardano.org/"
+              >
+                Cardano
+              </a>{" "}
+              for two reasons:
+              <li>
+                One, the low gas fees will not put a dent in your wallet. A lower
+                barrier to purchasing NFTs also leads to greater liquidity in
+                the markets!
+              </li>
+              <li>
+                Two, the Cardano NFT ecosystem is still young and growing. We
+                would love to contribute to this space with Foodies, and draw
+                more people into CNFTs as a whole since we have greatly
+                benefited from them too!
+              </li>
+            </p>
+            <p className="question">How may I get in touch?</p>
+            <p>
+              You can contact us through chat in{" "}
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://discord.gg/9Qttw23Zs2"
+              >
+                Discord
+              </a>{" "}
+              or{" "}
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/Foodies_CNFT"
+              >
+                Twitter
+              </a>
+              . Our official email is <strong>foodiescnft@gmail.com</strong>
+            </p>
+          </SubPageSection>
+          <SubPageSection>
+            <h3>How will the roadmap be achieved?</h3>
+            <p>
+              We personally believe that the most exciting part of this project
+              is in be fulfilling each stage of the roadmap. This will ensure
+              that all Foodies holders, regardless of how rare their Foodie is,
+              will stand to gain much from Foodie Town. We aim to build an
+              ecosystem that is intertwined across all stages.
+            </p>
+            <p className="question">Foodie Parties</p>
+            <p>
+              The moment the launch is over, we will start contacting various
+              food outlets from different countries to secure food vouchers, and
+              distribute the first set of Foodie Party NFTs{" "}
+              <strong>the following month</strong> to 500 random holders!
+            </p>
+
+            <p className="question">Suppliers Come to Town</p>
+            <p>
+              Each month we will be designing a set of new special traits (with
+              limited supply) as separate NFTs, which will be available for
+              minting. These traits will then be available for resale or
+              recooking in the Foodie Kitchen.
+            </p>
+            <p className="question">Foodie Kitchen</p>
+            <p>
+              We will start working on the development of Foodie Kitchen using
+              smart contracts. If needed the team will hire more developers
+              after the launch to ensure that the Foodie Kitchen runs smoothly.
+            </p>
+            <p className="question">Foodie Wars</p>
+            <p>
+              After the launch, we will be hiring a game developer to bring
+              Foodie Wars to life. Once the game itself has been sorted out, our
+              development team will then implement more code and smart contracts
+              in order for the NFTs to be received from, burnt, re-minted, and
+              sent back to players.
+            </p>
+            <p className="question">Foodies for Goodies</p>
+            <p>
+              Once the launch ends, we will be sending out 5% of our proceeds to
+              the UN World Food Programme. Similarly, any profits that Foodies
+              generate every month will continue to be donated to food-related
+              charities.
             </p>
           </SubPageSection>
         </div>
