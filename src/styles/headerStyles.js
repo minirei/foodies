@@ -6,11 +6,43 @@ export const HeaderSection = styled.div`
   height: 10vh;
   width: 100vw;
   z-index: 99;
+  .svgWrapper {
+    height: 10vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.4rem;
+    a {
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+    svg {
+      height: 80%;
+      width: 80%;
+      transform-origin: center !important;
+    }
+    &.mobile {
+      position: absolute;
+      height: 10vh;
+      width: 10vw;
+      right: calc(10vh + 5%);
+      top: 0;
+      margin-right: 0;
+    }
+  }
 `
 
-export const Navigation = styled(motion.ul)`
+export const Navigation = styled(motion.div)`
   position: absolute;
   right: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   .navLink {
     color: black;
     margin-right: 1.4rem;
@@ -81,7 +113,7 @@ export const Menu = styled(motion.div)`
       --webkit-transition: 0.5s;
       transition: 0.5s;
     }
-    &.mobile{
+    &.mobile {
       display: none;
     }
   }
@@ -121,7 +153,7 @@ export const Menu = styled(motion.div)`
 `
 
 export const Logo = styled(motion.div)`
-  position: relative;
+  position: absolute;
   display: flex;
   height: 10vh;
   top: 0;
@@ -135,6 +167,11 @@ export const Logo = styled(motion.div)`
     margin: 0 auto;
   }
 
+  .logoLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   h1 {
     transform-origin: center;
     z-index: 1;
@@ -142,10 +179,13 @@ export const Logo = styled(motion.div)`
     width: auto;
     height: auto;
     font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
     font-size: calc(2rem + 1vw);
     font-weight: 600;
     color: black;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 `

@@ -70,7 +70,7 @@ const Footer = ({ isIndex = false }) => {
               </a>
             </div>
           </Icon>
-          <Icon className>
+          <Icon>
             <div className="svgWrapper">
               <motion.span className="line short" />
               <a

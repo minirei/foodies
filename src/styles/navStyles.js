@@ -261,8 +261,7 @@ export const NavBottom = styled.div`
       text-align: center;
       font-size: 1.8rem;
       font-weight: 500;
-      font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana,
-        sans-serif;
+      font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
     }
     p {
