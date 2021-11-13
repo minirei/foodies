@@ -55,7 +55,7 @@ const Guide = () => {
               ) and transfer at least 45 ADA from a crypto exchange into it.
             </p>
             <p>
-              2. On launch <strong>(16 Dec, 3pm UTC)</strong>, our wallet
+              2. On launch <strong>(16 Dec, 4pm UTC)</strong>, our wallet
               address will <strong>ONLY</strong> be available on:
               <li>
                 Our{" "}
