@@ -114,6 +114,14 @@ const FAQ = () => {
               </a>
               !
             </p>
+            <p className="question">How many Foodies will your team keep?</p>
+            <p>
+              The Foodies team will reserve 25 Foodies, solely to mint them for
+              community giveaways/airdrops. With regard to our personal
+              collections, we will have a limit of 5 Foodies each (only 2 of us
+              in the team). We will be taking part in the Foodies Launch with
+              the community in order to ensure fairness!
+            </p>
             <p className="question">
               Why Cardano instead of other blockchains?
             </p>
@@ -129,9 +137,9 @@ const FAQ = () => {
               </a>{" "}
               for two reasons:
               <li>
-                One, the low gas fees will not put a dent in your wallet. A lower
-                barrier to purchasing NFTs also leads to greater liquidity in
-                the markets!
+                One, the low gas fees will not put a dent in your wallet. A
+                lower barrier to purchasing NFTs also leads to greater liquidity
+                in the markets!
               </li>
               <li>
                 Two, the Cardano NFT ecosystem is still young and growing. We

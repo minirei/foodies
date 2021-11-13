@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components"
+import styled, { css } from "styled-components"
 import { motion } from "framer-motion"
 
 export const HeaderSection = styled.div`
@@ -29,8 +29,8 @@ export const HeaderSection = styled.div`
       position: absolute;
       height: 10vh;
       width: 10vw;
-      right: calc(10vh + 5%);
-      top: 0;
+      right: calc(10vh + 10%);
+      top: -2%;
       margin-right: 0;
     }
   }
@@ -171,15 +171,18 @@ export const Logo = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
   }
   h1 {
     transform-origin: center;
     z-index: 1;
     display: inline;
     width: auto;
-    height: auto;
+    height: 100%;
     font-family: "Butler ", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: calc(2rem + 1vw);
+    line-height: calc(2rem + 1vw);
+    line-height: 0;
     font-weight: 600;
     color: black;
     margin: 0;

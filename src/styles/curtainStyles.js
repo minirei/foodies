@@ -79,9 +79,10 @@ export const CurtainCover = styled(motion.div)`
 export const CurtainText = styled(motion.div)`
   p {
     color: whitesmoke;
-    padding: 0.4rem;
+    padding: 0.6rem;
+    font-weight: 500;
   }
-  background-color: rgb(79,102,117, 0.6);
+  background-color: rgb(79,102,117, 0.7);
 `
 export const CurtainContentMask = styled(motion.div)`
   position: absolute;
