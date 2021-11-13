@@ -64,5 +64,9 @@ export const SubPageSection = styled.div`
   .question {
     font-style: italic;
     font-weight: 600;
+    padding-top: calc(1rem + 1vw);
+    &.firstChild {
+      padding-top: 0;
+    }
   }
 `

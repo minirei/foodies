@@ -247,7 +247,7 @@ const HomeGallery = () => {
       className={`${isMobile && "mobile"}`}
     >
       <div className={`chapter ${isMobile && "mobile"}`}>
-        <h1>001 - Cultural Diversity</h1>
+        <h1>001 - Foodie Gallery</h1>
       </div>
       <Container overflowVisible>
         <Flex

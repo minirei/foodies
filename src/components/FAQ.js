@@ -16,7 +16,7 @@ const FAQ = () => {
         <div className={`wrapper`}>
           <SubPageSection>
             <h3>FAQ</h3>
-            <p className="question">When will the drop happen?</p>
+            <p className="question firstChild">When will the drop happen?</p>
             <p>
               The launch will take place on <strong>16 Dec, 3pm UTC</strong>.
               From now till then, we will be focusing on growing the community
