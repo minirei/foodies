@@ -18,7 +18,7 @@ const FAQ = () => {
             <h3>FAQ</h3>
             <p className="question firstChild">When will the drop happen?</p>
             <p>
-              The launch will take place on <strong>16 Dec, 3pm UTC</strong>.
+              The launch will take place on <strong>16 Dec, 4pm UTC</strong>.
               From now till then, we will be focusing on growing the community
               and ensuring most people in the CNFT space know about Foodies!
             </p>
