@@ -20,7 +20,7 @@ const Guide = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://daedaluswallet.io/"
               >
                 Daedalus
@@ -29,7 +29,7 @@ const Guide = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://namiwallet.io/"
               >
                 Nami
@@ -38,7 +38,7 @@ const Guide = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://yoroi-wallet.com/"
               >
                 Yoroi
@@ -47,7 +47,7 @@ const Guide = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://adalite.io/"
               >
                 AdaLite
@@ -62,7 +62,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://foodiescnft.io"
                 >
                   Website
@@ -73,7 +73,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://discord.gg/9Qttw23Zs2"
                 >
                   Discord
@@ -85,7 +85,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://twitter.com/Foodies_CNFT"
                 >
                   Twitter
@@ -150,7 +150,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://coinbase.com"
                 >
                   coinbase.com
@@ -160,7 +160,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://kucoin.com"
                 >
                   kucoin.com
@@ -170,7 +170,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://binance.com/en"
                 >
                   binance.com
@@ -180,7 +180,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://crypto.com"
                 >
                   crypto.com
@@ -197,7 +197,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://daedaluswallet.io/"
                 >
                   Daedalus
@@ -207,7 +207,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://namiwallet.io/"
                 >
                   Nami
@@ -217,7 +217,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://yoroi-wallet.com/"
                 >
                   Yoroi
@@ -227,7 +227,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://adalite.io/"
                 >
                   AdaLite
@@ -238,7 +238,7 @@ const Guide = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://pool.pm"
               >
                 pool.pm
@@ -250,7 +250,7 @@ const Guide = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://pool.pm"
               >
                 pool.pm
@@ -262,7 +262,7 @@ const Guide = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://cnft.tools"
               >
                 cnft.tools
@@ -271,7 +271,7 @@ const Guide = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://www.tokenref.com/"
               >
                 tokenref
@@ -296,7 +296,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://cnft.io"
                 >
                   cnft.io
@@ -306,7 +306,7 @@ const Guide = () => {
                 <a
                   className="link"
                   target="_blank"
-                  rel="noreferrer"
+                   
                   href="https://www.tokhun.io"
                 >
                   tokhun.io

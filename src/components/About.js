@@ -35,7 +35,7 @@ const About = () => {
               <a
                 href="https://discord.gg/9Qttw23Zs2"
                 target="_blank"
-                rel="noreferrer"
+                 
                 className="link"
               >
                 join us
@@ -50,7 +50,7 @@ const About = () => {
               <a
                 href="https://github.com/cardano-foundation/CIPs/blob/master/CIP-0025/CIP-0025.md"
                 target="_blank"
-                rel="noreferrer"
+                 
                 className="link"
               >
                 CIP-25

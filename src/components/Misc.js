@@ -7,7 +7,7 @@
 //       <a
 //         href="https://www.instagram.com/foodies.nft/"
 //         target="_blank"
-//         rel="noreferrer"
+//          
 //       >
 //         <svg
 //           xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@
 //       </a>
 //     </div>
 //     <div className="icon discord">
-    //   <a href="https://discord.gg/9Qttw23Zs2" target="_blank" rel="noreferrer">
+    //   <a href="https://discord.gg/9Qttw23Zs2" target="_blank"  >
     //     <svg
     //       xmlns="http://www.w3.org/2000/svg"
     //       viewBox="0 0 24 24"
@@ -33,7 +33,7 @@
     //   <a
     //     href="https://twitter.com/Foodies_CNFT"
     //     target="_blank"
-    //     rel="noreferrer"
+    //      
     //   >
     //     <svg
     //       xmlns="http://www.w3.org/2000/svg"

@@ -179,6 +179,7 @@ const HomeReveal = () => {
                     backgroundColor: bgColor,
                   }}
                   transition={{
+                    y: { delay: 0.2, duration: 1, ease: "easeOut" },
                     duration: 1,
                     ease: "easeOut",
                   }}
@@ -247,6 +248,7 @@ const HomeReveal = () => {
                     backgroundColor: bgColor,
                   }}
                   transition={{
+                    y: { delay: 0.2, duration: 1, ease: "easeOut" },
                     duration: 1,
                     ease: "easeOut",
                   }}
@@ -316,6 +318,7 @@ const HomeReveal = () => {
                     backgroundColor: bgColor,
                   }}
                   transition={{
+                    y: { delay: 0.2, duration: 1, ease: "easeOut" },
                     duration: 1,
                     ease: "easeOut",
                   }}

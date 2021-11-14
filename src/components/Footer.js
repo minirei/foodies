@@ -41,7 +41,7 @@ const Footer = ({ isIndex = false }) => {
           <a
             href="https://discord.gg/9Qttw23Zs2"
             target="_blank"
-            rel="noreferrer"
+             
             className="link"
           >
             Community!
@@ -57,7 +57,7 @@ const Footer = ({ isIndex = false }) => {
               <a
                 href="https://twitter.com/Foodies_CNFT"
                 target="_blank"
-                rel="noreferrer"
+                 
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const Footer = ({ isIndex = false }) => {
               <a
                 href="https://discord.gg/9Qttw23Zs2"
                 target="_blank"
-                rel="noreferrer"
+                 
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ const Footer = ({ isIndex = false }) => {
               <a
                 href="https://www.instagram.com/foodies.nft/"
                 target="_blank"
-                rel="noreferrer"
+                 
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +167,7 @@ const Footer = ({ isIndex = false }) => {
           <motion.a
             href="https://discord.gg/9Qttw23Zs2"
             target="_blank"
-            rel="noreferrer"
+             
             className="link"
           >
             Community!
@@ -211,7 +211,7 @@ const Footer = ({ isIndex = false }) => {
                   <a
                     href="https://twitter.com/Foodies_CNFT"
                     target="_blank"
-                    rel="noreferrer"
+                     
                   >
                     <motion.svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -232,7 +232,7 @@ const Footer = ({ isIndex = false }) => {
                   <a
                     href="https://discord.gg/9Qttw23Zs2"
                     target="_blank"
-                    rel="noreferrer"
+                     
                   >
                     <motion.svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -253,7 +253,7 @@ const Footer = ({ isIndex = false }) => {
                   <a
                     href="https://www.instagram.com/foodies.nft/"
                     target="_blank"
-                    rel="noreferrer"
+                     
                   >
                     <motion.svg
                       xmlns="http://www.w3.org/2000/svg"

@@ -51,7 +51,7 @@ const FAQ = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://www.tokenref.com/"
               >
                 tokenref.com
@@ -60,7 +60,7 @@ const FAQ = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://cnft.tools/"
               >
                 cnft.tools
@@ -89,7 +89,7 @@ const FAQ = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://cnft.io/"
               >
                 cnft.io
@@ -98,7 +98,7 @@ const FAQ = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://tokhun.io/"
               >
                 tokhun.io
@@ -107,7 +107,7 @@ const FAQ = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://discord.gg/9Qttw23Zs2"
               >
                 Discord
@@ -130,7 +130,7 @@ const FAQ = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://cardano.org/"
               >
                 Cardano
@@ -154,7 +154,7 @@ const FAQ = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://discord.gg/9Qttw23Zs2"
               >
                 Discord
@@ -163,7 +163,7 @@ const FAQ = () => {
               <a
                 className="link"
                 target="_blank"
-                rel="noreferrer"
+                 
                 href="https://twitter.com/Foodies_CNFT"
               >
                 Twitter
