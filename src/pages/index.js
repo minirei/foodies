@@ -27,10 +27,13 @@ const IndexPage = () => {
   return (
     <>
       {loading ? (
-        <div>
-          Your device has an issue! Please checkout our about, faq, and guide
-          instead!
-        </div>
+        <>
+          <div>Loading...</div>
+          <div>
+            If it takes too long your hardware or network has an issue! Please
+            checkout our /about, /faq, and /guide instead!
+          </div>
+        </>
       ) : (
         <Layout isIndex={isIndex}>
           <LandingPage />

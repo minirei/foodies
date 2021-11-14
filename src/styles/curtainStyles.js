@@ -86,7 +86,7 @@ export const CurtainText = styled(motion.div)`
     background-color: rgb(74,157,152, 0.6);
   }
   &.difference {
-    background-color: rgb(136, 100, 71, 0.7);
+    background-color: rgb(136, 100, 71, 0.6);
   }
   &.food {
     background-color: rgb(79, 102, 117, 0.7);
