@@ -6,6 +6,8 @@ const Metadata = () => {
     <Helmet>
       <meta charset="utf-8" />
       <html lang="en" />
+      <title>Foodies</title>
+      <meta name="description" content = "Foodies: A CNFT Project. Have a taste of novelty." />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
