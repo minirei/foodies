@@ -27,7 +27,10 @@ const IndexPage = () => {
   return (
     <>
       {loading ? (
-        <div></div>
+        <div>
+          Your device has an issue! Please checkout our about, faq, and guide
+          instead!
+        </div>
       ) : (
         <Layout isIndex={isIndex}>
           <LandingPage />

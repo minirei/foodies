@@ -77,7 +77,7 @@ const HomeReveal = () => {
           <CurtainImage>
             <StaticImage
               className="image"
-              src="../../assets/images/curtain-community.png"
+              src="../../assets/images/curtain-community.jpeg"
               alt="community curtain"
             />
           </CurtainImage>
