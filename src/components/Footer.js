@@ -38,7 +38,7 @@ const Footer = ({ isIndex = false }) => {
         </p>
         <p>
           Don't miss out! Join our awesome{" "}
-          <a
+          <a rel="noopener"
             href="https://discord.gg/9Qttw23Zs2"
             target="_blank"
              
@@ -54,7 +54,7 @@ const Footer = ({ isIndex = false }) => {
           <span className="horizontalLine top fullWidth" />
           <Icon>
             <div className="svgWrapper">
-              <a
+              <a rel="noopener"
                 href="https://twitter.com/Foodies_CNFT"
                 target="_blank"
                  
@@ -73,7 +73,7 @@ const Footer = ({ isIndex = false }) => {
           <Icon>
             <div className="svgWrapper">
               <motion.span className="line short" />
-              <a
+              <a rel="noopener"
                 href="https://discord.gg/9Qttw23Zs2"
                 target="_blank"
                  
@@ -92,7 +92,7 @@ const Footer = ({ isIndex = false }) => {
           <Icon>
             <div className="svgWrapper">
               <motion.span className="line short" />
-              <a
+              <a rel="noopener"
                 href="https://www.instagram.com/foodies.nft/"
                 target="_blank"
                  
@@ -208,7 +208,7 @@ const Footer = ({ isIndex = false }) => {
               <Icon>
                 <div className="svgWrapper">
                   <motion.span className="line short" />
-                  <a
+                  <a rel="noopener"
                     href="https://twitter.com/Foodies_CNFT"
                     target="_blank"
                      
@@ -229,7 +229,7 @@ const Footer = ({ isIndex = false }) => {
               <Icon className>
                 <div className="svgWrapper">
                   <motion.span className="line short" />
-                  <a
+                  <a rel="noopener"
                     href="https://discord.gg/9Qttw23Zs2"
                     target="_blank"
                      
@@ -250,7 +250,7 @@ const Footer = ({ isIndex = false }) => {
               <Icon>
                 <div className="svgWrapper">
                   <motion.span className="line short" />
-                  <a
+                  <a rel="noopener"
                     href="https://www.instagram.com/foodies.nft/"
                     target="_blank"
                      

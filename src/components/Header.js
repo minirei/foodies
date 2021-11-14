@@ -144,7 +144,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
             </div>
           </Menu>
           <div className="svgWrapper mobile">
-            <a
+            <a rel="noopener"
               href="https://discord.gg/9Qttw23Zs2"
               target="_blank"
                
@@ -214,7 +214,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
                 initial="initial"
               >
                 <div className="svgWrapper">
-                  <a
+                  <a rel="noopener"
                     href="https://discord.gg/9Qttw23Zs2"
                     target="_blank"
                      
@@ -234,7 +234,7 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
                 <Link className="navLink" to="/about">
                   <motion.h3 variants={navChildAnimation}>About</motion.h3>
                 </Link>
-                <a className="navLink" href="/#roadmap">
+                <a rel="noopener" className="navLink" href="/#roadmap">
                   <motion.h3 variants={navChildAnimation}>Roadmap</motion.h3>
                 </a>
                 <Link className="navLink" to="/faq">

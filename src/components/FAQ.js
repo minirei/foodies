@@ -48,7 +48,7 @@ const FAQ = () => {
               you can be assured that each Foodie is unique and wonderfully
               made! A rarity table will be released right after minting, and we
               will be listed on both{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -57,7 +57,7 @@ const FAQ = () => {
                 tokenref.com
               </a>{" "}
               and{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -86,7 +86,7 @@ const FAQ = () => {
               If you’ve had enough fun in Foodie Town and are willing to pass
               your Foodie on to the next holder, you can do so via Cardano NFT
               marketplaces such as{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -95,7 +95,7 @@ const FAQ = () => {
                 cnft.io
               </a>{" "}
               &{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -104,7 +104,7 @@ const FAQ = () => {
                 tokhun.io
               </a>
               , or escrows on{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -127,7 +127,7 @@ const FAQ = () => {
             </p>
             <p>
               We have decided on{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -151,7 +151,7 @@ const FAQ = () => {
             <p className="question">How may I get in touch?</p>
             <p>
               You can contact us through chat in{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -160,7 +160,7 @@ const FAQ = () => {
                 Discord
               </a>{" "}
               or{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  

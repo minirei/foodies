@@ -258,7 +258,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       <span className="horizontalLine bottom" />
                       <Icon>
                         <div className="svgWrapper">
-                          <a
+                          <a rel="noopener"
                             href="https://twitter.com/Foodies_CNFT"
                             target="_blank"
                              
@@ -277,7 +277,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       <Icon className>
                         <div className="svgWrapper">
                           <motion.span className="line short" />
-                          <a
+                          <a rel="noopener"
                             href="https://discord.gg/9Qttw23Zs2"
                             target="_blank"
                              
@@ -296,7 +296,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       <Icon>
                         <div className="svgWrapper">
                           <motion.span className="line short" />
-                          <a
+                          <a rel="noopener"
                             href="https://www.instagram.com/foodies.nft/"
                             target="_blank"
                              
@@ -404,7 +404,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         <Flex>
                           <Icon>
                             <div className="svgWrapper">
-                              <a
+                              <a rel="noopener"
                                 href="https://twitter.com/Foodies_CNFT"
                                 target="_blank"
                                  
@@ -431,7 +431,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                                 initial="initial"
                                 exit="exit"
                               />
-                              <a
+                              <a rel="noopener"
                                 href="https://discord.gg/9Qttw23Zs2"
                                 target="_blank"
                                  
@@ -458,7 +458,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                                 initial="initial"
                                 exit="exit"
                               />
-                              <a
+                              <a rel="noopener"
                                 href="https://www.instagram.com/foodies.nft/"
                                 target="_blank"
                                  

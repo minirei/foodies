@@ -17,7 +17,7 @@ const Guide = () => {
             <h3>How to Mint</h3>
             <p>
               1. Set up a Cardano (Shelley Era) Wallet (
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -26,7 +26,7 @@ const Guide = () => {
                 Daedalus
               </a>
               ,{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -35,7 +35,7 @@ const Guide = () => {
                 Nami
               </a>
               ,{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -44,7 +44,7 @@ const Guide = () => {
                 Yoroi
               </a>
               ,{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -59,7 +59,7 @@ const Guide = () => {
               address will <strong>ONLY</strong> be available on:
               <li>
                 Our{" "}
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -70,7 +70,7 @@ const Guide = () => {
               </li>
               <li>
                 Our{" "}
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -82,7 +82,7 @@ const Guide = () => {
               </li>
               <li>
                 Our{" "}
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -147,7 +147,7 @@ const Guide = () => {
             </p>
             <p>
               <li>
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -157,7 +157,7 @@ const Guide = () => {
                 </a>
               </li>
               <li>
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -167,7 +167,7 @@ const Guide = () => {
                 </a>
               </li>
               <li>
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -177,7 +177,7 @@ const Guide = () => {
                 </a>
               </li>
               <li>
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -194,7 +194,7 @@ const Guide = () => {
             </p>
             <p>
               <li>
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -204,7 +204,7 @@ const Guide = () => {
                 </a>
               </li>
               <li>
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -214,7 +214,7 @@ const Guide = () => {
                 </a>
               </li>
               <li>
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -224,7 +224,7 @@ const Guide = () => {
                 </a>
               </li>
               <li>
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -235,7 +235,7 @@ const Guide = () => {
               </li>
             </p>
             <p className="addSpacing">
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -247,7 +247,7 @@ const Guide = () => {
             </p>
             <p>
               Once you have received your NFT, view it on{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -259,7 +259,7 @@ const Guide = () => {
               paste your wallet (receiving) address into the search bar.
             </p>
             <p className="addSpacing">
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -268,7 +268,7 @@ const Guide = () => {
                 cnft.tools
               </a>{" "}
               &{" "}
-              <a
+              <a rel="noopener"
                 className="link"
                 target="_blank"
                  
@@ -293,7 +293,7 @@ const Guide = () => {
             </p>
             <p>
               <li>
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    
@@ -303,7 +303,7 @@ const Guide = () => {
                 </a>
               </li>
               <li>
-                <a
+                <a rel="noopener"
                   className="link"
                   target="_blank"
                    

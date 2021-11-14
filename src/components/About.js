@@ -15,9 +15,7 @@ const About = () => {
         <div className={`wrapper`}>
           <SubPageSection>
             <h3>About the Team</h3>
-            <p>
-              Hey There, we’re Sen and Rei, two individuals from Singapore!
-            </p>
+            <p>Hey There, we’re Sen and Rei, two individuals from Singapore!</p>
             <p>
               Growing up in a country where our cuisine is as diverse as our
               culture, our love for food has inspired us to start a food-based
@@ -33,9 +31,9 @@ const About = () => {
               We are immensely committed to the development of this project and
               community, and are so excited for you to{" "}
               <a
+                rel="noopener"
                 href="https://discord.gg/9Qttw23Zs2"
                 target="_blank"
-                 
                 className="link"
               >
                 join us
@@ -48,9 +46,9 @@ const About = () => {
             <p>
               We follow{" "}
               <a
+                rel="noopener"
                 href="https://github.com/cardano-foundation/CIPs/blob/master/CIP-0025/CIP-0025.md"
                 target="_blank"
-                 
                 className="link"
               >
                 CIP-25
