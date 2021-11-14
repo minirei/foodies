@@ -175,7 +175,7 @@ const FAQ = () => {
             <h3>How will the roadmap be achieved?</h3>
             <p>
               We personally believe that the most exciting part of this project
-              is in be fulfilling each stage of the roadmap. This will ensure
+              is in fulfilling each stage of the roadmap. This will ensure
               that all Foodies holders, regardless of how rare their Foodie is,
               will stand to gain much from Foodie Town. We aim to build an
               ecosystem that is intertwined across all stages.
@@ -211,7 +211,7 @@ const FAQ = () => {
             </p>
             <p className="question">Foodies for Goodies</p>
             <p>
-              Once the launch ends, we will be sending out 5% of our proceeds to
+              Once the launch ends, we will be donating 5% of our proceeds to
               the UN World Food Programme. Similarly, any profits that Foodies
               generate every month will continue to be donated to food-related
               charities.

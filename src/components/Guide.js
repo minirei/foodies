@@ -139,6 +139,181 @@ const Guide = () => {
               address which is not owned by us.
             </p>
           </SubPageSection>
+          <SubPageSection>
+            <h3>Useful Tools</h3>
+            <p>
+              <strong>Crypto Exchanges</strong>: Where you can purchase ADA, and
+              transfer the ADA to your Cardano Wallet!
+            </p>
+            <p>
+              <li>
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://coinbase.com"
+                >
+                  coinbase.com
+                </a>
+              </li>
+              <li>
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://kucoin.com"
+                >
+                  kucoin.com
+                </a>
+              </li>
+              <li>
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://binance.com/en"
+                >
+                  binance.com
+                </a>
+              </li>
+              <li>
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://crypto.com"
+                >
+                  crypto.com
+                </a>
+              </li>
+            </p>
+            <p className="addSpacing">
+              <strong>Cardano Wallets</strong>: Set up one or multiple cardano
+              wallets for free! Send ADA from here to the minting address to
+              receive a Foodie NFT in your wallet!
+            </p>
+            <p>
+              <li>
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://daedaluswallet.io/"
+                >
+                  Daedalus
+                </a>
+              </li>
+              <li>
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://namiwallet.io/"
+                >
+                  Nami
+                </a>
+              </li>
+              <li>
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://yoroi-wallet.com/"
+                >
+                  Yoroi
+                </a>
+              </li>
+              <li>
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://adalite.io/"
+                >
+                  AdaLite
+                </a>
+              </li>
+            </p>
+            <p className="addSpacing">
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://pool.pm"
+              >
+                pool.pm
+              </a>
+              : Where you can view the NFTs in your Cardano wallets!
+            </p>
+            <p>
+              Once you have received your NFT, view it on{" "}
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://pool.pm"
+              >
+                pool.pm
+              </a>{" "}
+              by clicking on the magnifying glass icon on the top-right. Then
+              paste your wallet (receiving) address into the search bar.
+            </p>
+            <p className="addSpacing">
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://cnft.tools"
+              >
+                cnft.tools
+              </a>{" "}
+              &{" "}
+              <a
+                className="link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.tokenref.com/"
+              >
+                tokenref
+              </a>
+              : Check out the rarity stats for each trait of your Foodie here!
+            </p>
+            <p>
+              You can even check out the rarity rank of each Foodie, which might
+              be useful when deciding which to buy or sell on the secondary
+              market!
+            </p>
+            <p className="addSpacing">
+              <strong>CNFT Markets</strong>: You can sell your Foodies here!
+            </p>
+            <p>
+              Missed out on the mint or wish to buy more Foodies? Once minting
+              is over, you can also buy more Foodies on the secondary market at
+              the links below!
+            </p>
+            <p>
+              <li>
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://cnft.io"
+                >
+                  cnft.io
+                </a>
+              </li>
+              <li>
+                <a
+                  className="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.tokhun.io"
+                >
+                  tokhun.io
+                </a>
+              </li>
+            </p>
+          </SubPageSection>
         </div>
       </Container>
     </SubPageContainer>

@@ -69,4 +69,7 @@ export const SubPageSection = styled.div`
       padding-top: 0;
     }
   }
+  .addSpacing {
+    padding-top: calc(1rem + 1vw);
+  }
 `
