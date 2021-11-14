@@ -209,7 +209,7 @@ const FAQ = () => {
               in order for the NFTs to be received from, burnt, re-minted, and
               sent back to players.
             </p>
-            <p className="question">Foodies for Goodies</p>
+            <p className="question">Food for Good</p>
             <p>
               Once the launch ends, we will be donating 5% of our proceeds to
               the UN World Food Programme. Similarly, any profits that Foodies
