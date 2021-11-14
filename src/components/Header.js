@@ -144,10 +144,10 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
             </div>
           </Menu>
           <div className="svgWrapper mobile">
-            <a rel="noopener"
+            <a
+              rel="noopener"
               href="https://discord.gg/9Qttw23Zs2"
               target="_blank"
-               
             >
               <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -214,10 +214,10 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
                 initial="initial"
               >
                 <div className="svgWrapper">
-                  <a rel="noopener"
+                  <a
+                    rel="noopener"
                     href="https://discord.gg/9Qttw23Zs2"
                     target="_blank"
-                     
                   >
                     <motion.svg
                       xmlns="http://www.w3.org/2000/svg"

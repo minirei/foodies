@@ -258,10 +258,10 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       <span className="horizontalLine bottom" />
                       <Icon>
                         <div className="svgWrapper">
-                          <a rel="noopener"
+                          <a
+                            rel="noopener"
                             href="https://twitter.com/Foodies_CNFT"
                             target="_blank"
-                             
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -277,10 +277,10 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       <Icon className>
                         <div className="svgWrapper">
                           <motion.span className="line short" />
-                          <a rel="noopener"
+                          <a
+                            rel="noopener"
                             href="https://discord.gg/9Qttw23Zs2"
                             target="_blank"
-                             
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -296,10 +296,10 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       <Icon>
                         <div className="svgWrapper">
                           <motion.span className="line short" />
-                          <a rel="noopener"
+                          <a
+                            rel="noopener"
                             href="https://www.instagram.com/foodies.nft/"
                             target="_blank"
-                             
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -404,10 +404,10 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         <Flex>
                           <Icon>
                             <div className="svgWrapper">
-                              <a rel="noopener"
+                              <a
+                                rel="noopener"
                                 href="https://twitter.com/Foodies_CNFT"
                                 target="_blank"
-                                 
                               >
                                 <motion.svg
                                   xmlns="http://www.w3.org/2000/svg"
@@ -431,10 +431,10 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                                 initial="initial"
                                 exit="exit"
                               />
-                              <a rel="noopener"
+                              <a
+                                rel="noopener"
                                 href="https://discord.gg/9Qttw23Zs2"
                                 target="_blank"
-                                 
                               >
                                 <motion.svg
                                   xmlns="http://www.w3.org/2000/svg"
@@ -458,10 +458,10 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                                 initial="initial"
                                 exit="exit"
                               />
-                              <a rel="noopener"
+                              <a
+                                rel="noopener"
                                 href="https://www.instagram.com/foodies.nft/"
                                 target="_blank"
-                                 
                               >
                                 <motion.svg
                                   xmlns="http://www.w3.org/2000/svg"

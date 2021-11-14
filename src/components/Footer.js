@@ -38,10 +38,10 @@ const Footer = ({ isIndex = false }) => {
         </p>
         <p>
           Don't miss out! Join our awesome{" "}
-          <a rel="noopener"
+          <a
+            rel="noopener"
             href="https://discord.gg/9Qttw23Zs2"
             target="_blank"
-             
             className="link"
           >
             Community!
@@ -54,10 +54,10 @@ const Footer = ({ isIndex = false }) => {
           <span className="horizontalLine top fullWidth" />
           <Icon>
             <div className="svgWrapper">
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 href="https://twitter.com/Foodies_CNFT"
                 target="_blank"
-                 
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,10 +73,10 @@ const Footer = ({ isIndex = false }) => {
           <Icon>
             <div className="svgWrapper">
               <motion.span className="line short" />
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 href="https://discord.gg/9Qttw23Zs2"
                 target="_blank"
-                 
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -92,10 +92,10 @@ const Footer = ({ isIndex = false }) => {
           <Icon>
             <div className="svgWrapper">
               <motion.span className="line short" />
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 href="https://www.instagram.com/foodies.nft/"
                 target="_blank"
-                 
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -165,9 +165,9 @@ const Footer = ({ isIndex = false }) => {
         <p>
           Don't miss out! Join our awesome{" "}
           <motion.a
+            rel="noopener"
             href="https://discord.gg/9Qttw23Zs2"
             target="_blank"
-             
             className="link"
           >
             Community!
@@ -208,10 +208,10 @@ const Footer = ({ isIndex = false }) => {
               <Icon>
                 <div className="svgWrapper">
                   <motion.span className="line short" />
-                  <a rel="noopener"
+                  <a
+                    rel="noopener"
                     href="https://twitter.com/Foodies_CNFT"
                     target="_blank"
-                     
                   >
                     <motion.svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -229,10 +229,10 @@ const Footer = ({ isIndex = false }) => {
               <Icon className>
                 <div className="svgWrapper">
                   <motion.span className="line short" />
-                  <a rel="noopener"
+                  <a
+                    rel="noopener"
                     href="https://discord.gg/9Qttw23Zs2"
                     target="_blank"
-                     
                   >
                     <motion.svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -250,10 +250,10 @@ const Footer = ({ isIndex = false }) => {
               <Icon>
                 <div className="svgWrapper">
                   <motion.span className="line short" />
-                  <a rel="noopener"
+                  <a
+                    rel="noopener"
                     href="https://www.instagram.com/foodies.nft/"
                     target="_blank"
-                     
                   >
                     <motion.svg
                       xmlns="http://www.w3.org/2000/svg"

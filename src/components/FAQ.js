@@ -48,19 +48,19 @@ const FAQ = () => {
               you can be assured that each Foodie is unique and wonderfully
               made! A rarity table will be released right after minting, and we
               will be listed on both{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://www.tokenref.com/"
               >
                 tokenref.com
               </a>{" "}
               and{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://cnft.tools/"
               >
                 cnft.tools
@@ -86,28 +86,28 @@ const FAQ = () => {
               If you’ve had enough fun in Foodie Town and are willing to pass
               your Foodie on to the next holder, you can do so via Cardano NFT
               marketplaces such as{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://cnft.io/"
               >
                 cnft.io
               </a>{" "}
               &{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://tokhun.io/"
               >
                 tokhun.io
               </a>
               , or escrows on{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://discord.gg/9Qttw23Zs2"
               >
                 Discord
@@ -127,10 +127,10 @@ const FAQ = () => {
             </p>
             <p>
               We have decided on{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://cardano.org/"
               >
                 Cardano
@@ -151,19 +151,19 @@ const FAQ = () => {
             <p className="question">How may I get in touch?</p>
             <p>
               You can contact us through chat in{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://discord.gg/9Qttw23Zs2"
               >
                 Discord
               </a>{" "}
               or{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://twitter.com/Foodies_CNFT"
               >
                 Twitter
@@ -175,10 +175,10 @@ const FAQ = () => {
             <h3>How will the roadmap be achieved?</h3>
             <p>
               We personally believe that the most exciting part of this project
-              is in fulfilling each stage of the roadmap. This will ensure
-              that all Foodies holders, regardless of how rare their Foodie is,
-              will stand to gain much from Foodie Town. We aim to build an
-              ecosystem that is intertwined across all stages.
+              is in fulfilling each stage of the roadmap. This will ensure that
+              all Foodies holders, regardless of how rare their Foodie is, will
+              stand to gain much from Foodie Town. We aim to build an ecosystem
+              that is intertwined across all stages.
             </p>
             <p className="question">Foodie Parties</p>
             <p>

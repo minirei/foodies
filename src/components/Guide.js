@@ -17,37 +17,37 @@ const Guide = () => {
             <h3>How to Mint</h3>
             <p>
               1. Set up a Cardano (Shelley Era) Wallet (
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://daedaluswallet.io/"
               >
                 Daedalus
               </a>
               ,{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://namiwallet.io/"
               >
                 Nami
               </a>
               ,{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://yoroi-wallet.com/"
               >
                 Yoroi
               </a>
               ,{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://adalite.io/"
               >
                 AdaLite
@@ -59,10 +59,10 @@ const Guide = () => {
               address will <strong>ONLY</strong> be available on:
               <li>
                 Our{" "}
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://foodiescnft.io"
                 >
                   Website
@@ -70,10 +70,10 @@ const Guide = () => {
               </li>
               <li>
                 Our{" "}
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://discord.gg/9Qttw23Zs2"
                 >
                   Discord
@@ -82,10 +82,10 @@ const Guide = () => {
               </li>
               <li>
                 Our{" "}
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://twitter.com/Foodies_CNFT"
                 >
                   Twitter
@@ -147,40 +147,40 @@ const Guide = () => {
             </p>
             <p>
               <li>
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://coinbase.com"
                 >
                   coinbase.com
                 </a>
               </li>
               <li>
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://kucoin.com"
                 >
                   kucoin.com
                 </a>
               </li>
               <li>
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://binance.com/en"
                 >
                   binance.com
                 </a>
               </li>
               <li>
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://crypto.com"
                 >
                   crypto.com
@@ -194,40 +194,40 @@ const Guide = () => {
             </p>
             <p>
               <li>
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://daedaluswallet.io/"
                 >
                   Daedalus
                 </a>
               </li>
               <li>
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://namiwallet.io/"
                 >
                   Nami
                 </a>
               </li>
               <li>
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://yoroi-wallet.com/"
                 >
                   Yoroi
                 </a>
               </li>
               <li>
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://adalite.io/"
                 >
                   AdaLite
@@ -235,10 +235,10 @@ const Guide = () => {
               </li>
             </p>
             <p className="addSpacing">
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://pool.pm"
               >
                 pool.pm
@@ -247,10 +247,10 @@ const Guide = () => {
             </p>
             <p>
               Once you have received your NFT, view it on{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://pool.pm"
               >
                 pool.pm
@@ -259,19 +259,19 @@ const Guide = () => {
               paste your wallet (receiving) address into the search bar.
             </p>
             <p className="addSpacing">
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://cnft.tools"
               >
                 cnft.tools
               </a>{" "}
               &{" "}
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 className="link"
                 target="_blank"
-                 
                 href="https://www.tokenref.com/"
               >
                 tokenref
@@ -293,20 +293,20 @@ const Guide = () => {
             </p>
             <p>
               <li>
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://cnft.io"
                 >
                   cnft.io
                 </a>
               </li>
               <li>
-                <a rel="noopener"
+                <a
+                  rel="noopener"
                   className="link"
                   target="_blank"
-                   
                   href="https://www.tokhun.io"
                 >
                   tokhun.io
