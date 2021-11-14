@@ -69,7 +69,7 @@ const HomeReveal = () => {
                 <h3>Sustainable</h3>
                 <h3>Community</h3>
               </CurtainHeading>
-              <CurtainText>
+              <CurtainText className="community">
                 <p>{content.community}</p>
               </CurtainText>
             </CurtainContent>
@@ -90,7 +90,7 @@ const HomeReveal = () => {
                 <h3>Making a</h3>
                 <h3>Difference</h3>
               </CurtainHeading>
-              <CurtainText>
+              <CurtainText className="difference">
                 <p>{content.difference}</p>
               </CurtainText>
             </CurtainContent>
@@ -112,7 +112,7 @@ const HomeReveal = () => {
                 <h3>Culture &</h3>
                 <h3>Cuisine</h3>
               </CurtainHeading>
-              <CurtainText>
+              <CurtainText className="food">
                 <p>{content.food}</p>
               </CurtainText>
             </CurtainContent>
@@ -170,6 +170,7 @@ const HomeReveal = () => {
                     duration: 1.4,
                     ease: [0.6, 0.01, -0.05, 0.9],
                   }}
+                  className="community"
                 >
                   <p>{content.community}</p>
                 </CurtainText>
@@ -195,7 +196,7 @@ const HomeReveal = () => {
             >
               <StaticImage
                 className="image"
-                src="../../assets/images/curtain-community.png"
+                src="../../assets/images/curtain-community.jpeg"
                 alt="community curtain"
               />
               <CurtainImageMask
@@ -239,6 +240,7 @@ const HomeReveal = () => {
                     duration: 1.4,
                     ease: [0.6, 0.01, -0.05, 0.9],
                   }}
+                  className="difference"
                 >
                   <p>{content.difference}</p>
                 </CurtainText>
@@ -309,6 +311,7 @@ const HomeReveal = () => {
                     duration: 1.4,
                     ease: [0.6, 0.01, -0.05, 0.9],
                   }}
+                  className="food"
                 >
                   <p>{content.food}</p>
                 </CurtainText>

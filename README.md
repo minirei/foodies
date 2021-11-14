@@ -1,10 +1,8 @@
 # Foodies
 
 ## To-Do
-- gatsby-plugin-offline:
 
-- faq page
-- guide page
+- update colours for curtain
 
 - privacy policy & terms of use 
   - adjust height in FooterStyles>Disclaimer>props.mobile to 15vh when done
@@ -32,6 +30,8 @@
 - implement gatsby-plugin-layout
   - ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/
 - do some code splitting optimisation
+- gatsby-plugin-offline:
+
 
 ## Website - The Stack
 

@@ -82,7 +82,15 @@ export const CurtainText = styled(motion.div)`
     padding: 0.6rem;
     font-weight: 500;
   }
-  background-color: rgb(79,102,117, 0.7);
+  &.community {
+    background-color: rgb(74,157,152, 0.6);
+  }
+  &.difference {
+    background-color: rgb(136, 100, 71, 0.7);
+  }
+  &.food {
+    background-color: rgb(79, 102, 117, 0.7);
+  }
 `
 export const CurtainContentMask = styled(motion.div)`
   position: absolute;
