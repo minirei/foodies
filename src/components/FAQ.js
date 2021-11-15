@@ -7,6 +7,7 @@ import { Container } from "../styles/globalStyles"
 
 // Context
 import { useGlobalStateContext } from "../context/globalContext"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const FAQ = () => {
   const { isMobile } = useGlobalStateContext()
@@ -77,9 +78,9 @@ const FAQ = () => {
               Each Foodie is an esteemed member of Foodie Town, and will be
               given the exclusive rights to participate in all activities
               within. For more details, please refer to our{" "}
-              <Link to="/#rpadmap" className="link">
+              <AnchorLink to="/#roadmap" className="link">
                 roadmap
-              </Link>
+              </AnchorLink>
               .{" "}
             </p>
             <p>

@@ -54,6 +54,13 @@ module.exports = {
         icon: `src/assets/images/foodie-about.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100,
+        duration: 500,
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-meta-redirect",
   ],

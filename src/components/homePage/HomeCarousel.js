@@ -177,38 +177,37 @@ const HomeCarousel = () => {
   }
 
   return (
-    <>
-      <HomeCarouselSection className={`${isMobile && "mobile"}`} id="roadmap">
-        <div className={` chapter ${isMobile && "mobile"}`}>
-          <h1>003 - Roadmap</h1>
-        </div>
-        <AnimatePresence initial={false} custom={direction}>
-          <motion.div
+    <HomeCarouselSection className={`${isMobile && "mobile"}`} id="roadmap">
+      <div className={` chapter ${isMobile && "mobile"}`}>
+        <h1>003 - Roadmap</h1>
+      </div>
+      <AnimatePresence initial={false} custom={direction}>
+        <motion.div
+          key={card}
+          className="wrapper"
+          custom={direction}
+          variants={cardAnimation}
+          initial="enter"
+          animate="center"
+          exit="exit"
+        >
+          <GatsbyImage
+            className="image"
+            image={images[card]}
+            alt=""
+            objectPosition="50% 100%"
+            loading="eager"
             key={card}
-            className="wrapper"
-            custom={direction}
-            variants={cardAnimation}
-            initial="enter"
-            animate="center"
-            exit="exit"
+            style={{ height: isMobile ? "75%" : "" }}
+          ></GatsbyImage>
+          <CarouselContent
+            key="carouselContentKey"
+            variants={textAnimation}
+            className={`${isMobile && "mobile"}`}
           >
-            <GatsbyImage
-              className="image"
-              image={images[card]}
-              alt=""
-              objectPosition="50% 100%"
-              loading="eager"
-              key={card}
-              style={{ height: isMobile ? "75%" : "" }}
-            ></GatsbyImage>
-            <CarouselContent
-              key="carouselContentKey"
-              variants={textAnimation}
-              className={`${isMobile && "mobile"}`}
-            >
-              <h3>{content.title[card]}</h3>
-              <p
-                className={`
+            <h3>{content.title[card]}</h3>
+            <p
+              className={`
                 ${card === 0 && !isMobile && "blockingOne"} 
                 ${card === 2 && !isMobile && "blockingThree"} 
                 ${card === 3 && !isMobile && "blockingFour"} 
@@ -217,85 +216,84 @@ const HomeCarousel = () => {
                 ${card === 2 && isMobile && "mobileBlockingThree"}
                 ${card === 5 && isMobile && "mobileBlockingSix"}
                 `}
-              >
-                {content.paragraph[card]}
-              </p>
-            </CarouselContent>
-          </motion.div>
-        </AnimatePresence>
-        <CarouselBullets className={`${isMobile && "mobile"}`}>
-          <span className={`${card === 0 && "isActive"}`}>
-            <div className="dot"></div>
-          </span>
-          <span className={`${card === 1 && "isActive"}`}>
-            <div className="dot"></div>
-          </span>
-          <span className={`${card === 2 && "isActive"}`}>
-            <div className="dot"></div>
-          </span>
-          <span className={`${card === 3 && "isActive"}`}>
-            <div className="dot"></div>
-          </span>
-          <span className={`${card === 4 && "isActive"}`}>
-            <div className="dot"></div>
-          </span>
-          <span className={`${card === 5 && "isActive"}`}>
-            <div className="dot"></div>
-          </span>
-          <span className={`${card === 6 && "isActive"}`}>
-            <div className="dot"></div>
-          </span>
-        </CarouselBullets>
-        <CarouselNav className={`${isMobile && "mobile"}`}>
-          <motion.div
-            className="prev"
-            onClick={() => {
-              paginate(-1)
-            }}
-            whileHover={{ scale: 1.1 }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2420/svg"
-              x="0px"
-              y="0px"
-              viewBox="450.284 152.487 391.604 290.307"
-              enableBackground="new 450.284 152.487 391.604 290.307"
             >
-              <g transform="translate(0 -37)">
-                <polygon
-                  fill="#000"
-                  points="450.284,311.096 755.958,311.096 667.735,208.821 690.465,189.487 841.889,323.405 
-		841.889,345.875 690.465,479.794 667.735,460.459 755.958,357.836 450.284,357.836 	"
-                />
-              </g>
-            </svg>
-          </motion.div>
-          <motion.div
-            className="next"
-            onClick={() => {
-              paginate(1)
-            }}
-            whileHover={{ scale: 1.1 }}
+              {content.paragraph[card]}
+            </p>
+          </CarouselContent>
+        </motion.div>
+      </AnimatePresence>
+      <CarouselBullets className={`${isMobile && "mobile"}`}>
+        <span className={`${card === 0 && "isActive"}`}>
+          <div className="dot"></div>
+        </span>
+        <span className={`${card === 1 && "isActive"}`}>
+          <div className="dot"></div>
+        </span>
+        <span className={`${card === 2 && "isActive"}`}>
+          <div className="dot"></div>
+        </span>
+        <span className={`${card === 3 && "isActive"}`}>
+          <div className="dot"></div>
+        </span>
+        <span className={`${card === 4 && "isActive"}`}>
+          <div className="dot"></div>
+        </span>
+        <span className={`${card === 5 && "isActive"}`}>
+          <div className="dot"></div>
+        </span>
+        <span className={`${card === 6 && "isActive"}`}>
+          <div className="dot"></div>
+        </span>
+      </CarouselBullets>
+      <CarouselNav className={`${isMobile && "mobile"}`}>
+        <motion.div
+          className="prev"
+          onClick={() => {
+            paginate(-1)
+          }}
+          whileHover={{ scale: 1.1 }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2420/svg"
+            x="0px"
+            y="0px"
+            viewBox="450.284 152.487 391.604 290.307"
+            enableBackground="new 450.284 152.487 391.604 290.307"
           >
-            <svg
-              xmlns="http://www.w3.org/2420/svg"
-              x="0px"
-              y="0px"
-              viewBox="450.284 152.487 391.604 290.307"
-              enableBackground="new 450.284 152.487 391.604 290.307"
-            >
-              <g transform="translate(0 -37)">
-                <polygon
-                  fill="#000"
-                  points="450.284,311.096 755.958,311.096 667.735,208.821 690.465,189.487 841.889,323.405 
+            <g transform="translate(0 -37)">
+              <polygon
+                fill="#000"
+                points="450.284,311.096 755.958,311.096 667.735,208.821 690.465,189.487 841.889,323.405 
 		841.889,345.875 690.465,479.794 667.735,460.459 755.958,357.836 450.284,357.836 	"
-                />
-              </g>
-            </svg>
-          </motion.div>
-        </CarouselNav>
-      </HomeCarouselSection>
-    </>
+              />
+            </g>
+          </svg>
+        </motion.div>
+        <motion.div
+          className="next"
+          onClick={() => {
+            paginate(1)
+          }}
+          whileHover={{ scale: 1.1 }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2420/svg"
+            x="0px"
+            y="0px"
+            viewBox="450.284 152.487 391.604 290.307"
+            enableBackground="new 450.284 152.487 391.604 290.307"
+          >
+            <g transform="translate(0 -37)">
+              <polygon
+                fill="#000"
+                points="450.284,311.096 755.958,311.096 667.735,208.821 690.465,189.487 841.889,323.405 
+		841.889,345.875 690.465,479.794 667.735,460.459 755.958,357.836 450.284,357.836 	"
+              />
+            </g>
+          </svg>
+        </motion.div>
+      </CarouselNav>
+    </HomeCarouselSection>
   )
 }
 

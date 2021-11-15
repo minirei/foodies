@@ -2,6 +2,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import React, { useEffect } from "react"
 import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
+import { Link } from "gatsby"
 
 // Components
 import { Container, Flex } from "../../styles/globalStyles"
@@ -14,6 +15,7 @@ import Parallax from "../../elements/Parallax"
 
 // Context
 import { useGlobalStateContext } from "../../context/globalContext"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const HomeAbout = () => {
   const { isMobile } = useGlobalStateContext()
@@ -108,9 +110,9 @@ const HomeAbout = () => {
                       These features will be implemented on the Cardano
                       blockchain, where owning a Foodie will grant you access to
                       Foodie Town and{" "}
-                      <a rel="noopener" href="#roadmap" alt="roadmap" className="link">
+                      <AnchorLink to="/#roadmap" className="link">
                         lots more!
-                      </a>
+                      </AnchorLink>
                     </p>
                   </motion.div>
                 </Parallax>

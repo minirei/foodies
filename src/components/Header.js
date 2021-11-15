@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 import { motion, useViewportScroll } from "framer-motion"
 import { useAnimation } from "framer-motion"
 import PropTypes from "prop-types"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 // Styles
 import { Container, Flex } from "../styles/globalStyles"
 import { HeaderSection, Navigation, Menu, Logo } from "../styles/headerStyles"
-import { Icon } from "../styles/navStyles"
 
 // Context
 import { useGlobalStateContext } from "../context/globalContext"
@@ -234,9 +234,9 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
                 <Link className="navLink" to="/about">
                   <motion.h3 variants={navChildAnimation}>About</motion.h3>
                 </Link>
-                <a rel="noopener" className="navLink" href="/#roadmap">
+                <AnchorLink className="navLink" to="/#roadmap">
                   <motion.h3 variants={navChildAnimation}>Roadmap</motion.h3>
-                </a>
+                </AnchorLink>
                 <Link className="navLink" to="/faq">
                   <motion.h3 variants={navChildAnimation}> FAQs</motion.h3>
                 </Link>
