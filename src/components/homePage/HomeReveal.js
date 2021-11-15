@@ -77,7 +77,7 @@ const HomeReveal = () => {
           <CurtainImage>
             <StaticImage
               className="image"
-              src="../../assets/images/curtain-community.jpeg"
+              src="../../assets/images/curtain-community.png"
               alt="community curtain"
             />
           </CurtainImage>
@@ -98,7 +98,7 @@ const HomeReveal = () => {
           <CurtainImage>
             <StaticImage
               className="image"
-              src="../../assets/images/curtain-difference.jpeg"
+              src="../../assets/images/curtain-difference.png"
               alt="difference curtain"
             />
           </CurtainImage>
@@ -120,7 +120,7 @@ const HomeReveal = () => {
           <CurtainImage>
             <StaticImage
               className="image"
-              src="../../assets/images/curtain-food.jpeg"
+              src="../../assets/images/curtain-food.png"
               alt="food curtain"
             />
           </CurtainImage>
@@ -196,7 +196,7 @@ const HomeReveal = () => {
             >
               <StaticImage
                 className="image"
-                src="../../assets/images/curtain-community.jpeg"
+                src="../../assets/images/curtain-community.png"
                 alt="community curtain"
               />
               <CurtainImageMask
@@ -266,7 +266,7 @@ const HomeReveal = () => {
             >
               <StaticImage
                 className="image"
-                src="../../assets/images/curtain-difference.jpeg"
+                src="../../assets/images/curtain-difference.png"
                 alt="difference curtain"
               />
               <CurtainImageMask
@@ -337,7 +337,7 @@ const HomeReveal = () => {
             >
               <StaticImage
                 className="image"
-                src="../../assets/images/curtain-food.jpeg"
+                src="../../assets/images/curtain-food.png"
                 alt="food curtain"
               />
               <CurtainImageMask
