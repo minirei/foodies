@@ -37,10 +37,10 @@ const HomeReveal = () => {
   const colorControls = useAnimation()
 
   // Colour
-  const bg1 = `rgb(181,234,234)`
-  const bg2 = `rgb(254,200,216)`
-  const bg3 = `rgb(192, 237, 196)`
-  const bgDefault = `rgb(241,202,137)`
+  const bg1 = `rgb(67,121,123)`
+  const bg2 = `rgb(222,137,143)`
+  const bg3 = `rgb(78, 128, 163)`
+  const bgDefault = `rgb(232, 182, 102)`
   const [bgColor, setBgColor] = useState(bgDefault)
 
   useEffect(() => {
