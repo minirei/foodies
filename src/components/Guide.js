@@ -43,15 +43,6 @@ const Guide = () => {
               >
                 Yoroi
               </a>
-              ,{" "}
-              <a
-                rel="noopener"
-                className="link"
-                target="_blank"
-                href="https://adalite.io/"
-              >
-                AdaLite
-              </a>
               ) and transfer at least 45 ADA from a crypto exchange into it.
             </p>
             <p>
@@ -221,16 +212,6 @@ const Guide = () => {
                   href="https://yoroi-wallet.com/"
                 >
                   Yoroi
-                </a>
-              </li>
-              <li>
-                <a
-                  rel="noopener"
-                  className="link"
-                  target="_blank"
-                  href="https://adalite.io/"
-                >
-                  AdaLite
                 </a>
               </li>
             </p>
