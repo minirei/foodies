@@ -1,8 +1,8 @@
 # Foodies
 
 ## To-Do
-
-- update colours for curtain
+- label images & links for seo
+- code splitting
 
 - privacy policy & terms of use 
   - adjust height in FooterStyles>Disclaimer>props.mobile to 15vh when done
@@ -20,16 +20,12 @@
   - rgb(192, 237, 196)
   - carousel: rgb(232, 253, 255)
 
-- feedback
-  - gallery images too big
-  - follow us no filter too high
-  - scale font size better (do this while doing mobile)
 
 ### Optimisation Concerns
 
+- do some code splitting optimisation
 - implement gatsby-plugin-layout
   - ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/
-- do some code splitting optimisation
 - gatsby-plugin-offline:
 
 
