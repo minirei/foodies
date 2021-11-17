@@ -2,7 +2,7 @@ import React from "react"
 import { useViewportScroll, useTransform } from "framer-motion"
 import { getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
-import { BgImage } from "gbimage-bridge"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 // Styles
 import { BackgroundSection } from "../../styles/homeStyles"
@@ -47,15 +47,14 @@ const LandingPage = () => {
           },
         }}
       >
-        <BgImage
+        <GatsbyImage
           image={image}
           className="wrapper"
           style={{
             backgroundAttachment: isMobile ? "" : "fixed",
             height: isMobile ? "70vh" : "100vh",
           }}
-          // loading="eager"
-        ></BgImage>
+        ></GatsbyImage>
       </BackgroundSection>
     </>
   )
