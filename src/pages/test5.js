@@ -29,13 +29,8 @@ const Test5Page = () => {
       {loading ? (
         <div></div>
       ) : (
-        <Layout isIndex={isIndex}>
-          {/* <LandingPage /> */}
-          {/* <HomeAbout /> */}
-          <HomeLaunch />
-          {/* <HomeGallery /> */}
-          {/* <HomeReveal /> */}
-          {/* <HomeCarousel /> */}
+        <Layout>
+          <HomeReveal />
         </Layout>
       )}
     </>

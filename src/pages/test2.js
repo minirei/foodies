@@ -29,13 +29,8 @@ const Test2Page = () => {
       {loading ? (
         <div></div>
       ) : (
-        <Layout isIndex={isIndex}>
-          <LandingPage />
+        <Layout>
           <HomeAbout />
-          <HomeLaunch />
-          <HomeGallery />
-          <HomeReveal />
-          {/* <HomeCarousel /> */}
         </Layout>
       )}
     </>

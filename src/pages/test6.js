@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 
 // Components
 import Layout from "../components/Layout"
-import HomeGallery from "../components/homePage/HomeGallery"
+import HomeCarousel from "../components/homePage/HomeGallery"
 
 const Test6Page = () => {
   // loading
@@ -24,12 +24,7 @@ const Test6Page = () => {
         <div></div>
       ) : (
         <Layout>
-          {/* <LandingPage /> */}
-          {/* <HomeAbout /> */}
-          {/* <HomeLaunch /> */}
-          <HomeGallery />
-          {/* <HomeReveal /> */}
-          {/* <HomeCarousel /> */}
+          <HomeCarousel />
         </Layout>
       )}
     </>
