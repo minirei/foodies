@@ -7,7 +7,7 @@ import HomeAbout from "../components/homePage/HomeAbout"
 import HomeLaunch from "../components/homePage/HomeLaunch"
 import HomeGallery from "../components/homePage/HomeGallery"
 import HomeReveal from "../components/homePage/HomeReveal"
-// import HomeCarousel from "../components/homePage/HomeCarousel"
+import HomeCarousel from "../components/homePage/HomeCarousel"
 
 const IndexPage = () => {
   // loading
@@ -35,7 +35,7 @@ const IndexPage = () => {
           <HomeLaunch />
           <HomeGallery />
           <HomeReveal />
-          {/* <HomeCarousel /> */}
+          <HomeCarousel />
         </Layout>
       )}
     </>
