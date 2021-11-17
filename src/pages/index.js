@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react"
 // Components
 import Layout from "../components/Layout"
 import LandingPage from "../components/homePage/LandingPage"
-// import HomeAbout from "../components/homePage/HomeAbout"
+import HomeAbout from "../components/homePage/HomeAbout"
 // import HomeLaunch from "../components/homePage/HomeLaunch"
 // import HomeReveal from "../components/homePage/HomeReveal"
 // import HomeGallery from "../components/homePage/HomeGallery"
@@ -31,11 +31,11 @@ const IndexPage = () => {
       ) : (
         <Layout isIndex={isIndex}>
           <LandingPage />
-          {/* <HomeAbout />
-          <HomeLaunch />
-          <HomeGallery />
-          <HomeReveal />
-          <HomeCarousel /> */}
+          <HomeAbout />
+          {/* <HomeLaunch /> */}
+          {/* <HomeGallery /> */}
+          {/* <HomeReveal /> */}
+          {/* <HomeCarousel /> */}
         </Layout>
       )}
     </>
