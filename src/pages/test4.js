@@ -9,7 +9,7 @@ import HomeReveal from "../components/homePage/HomeReveal"
 import HomeGallery from "../components/homePage/HomeGallery"
 import HomeCarousel from "../components/homePage/HomeCarousel"
 
-const Test3Page = () => {
+const Test4Page = () => {
   // loading
   const [loading, setLoading] = useState(true)
   const isIndex = true
@@ -32,9 +32,9 @@ const Test3Page = () => {
         <Layout isIndex={isIndex}>
           {/* <LandingPage /> */}
           <HomeAbout />
-          <HomeLaunch />
-          <HomeGallery />
-          <HomeReveal />
+          {/* <HomeLaunch /> */}
+          {/* <HomeGallery /> */}
+          {/* <HomeReveal /> */}
           {/* <HomeCarousel /> */}
         </Layout>
       )}
@@ -42,4 +42,4 @@ const Test3Page = () => {
   )
 }
 
-export default Test3Page
+export default Test4Page
