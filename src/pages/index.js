@@ -5,8 +5,8 @@ import Layout from "../components/Layout"
 import LandingPage from "../components/homePage/LandingPage"
 import HomeAbout from "../components/homePage/HomeAbout"
 import HomeLaunch from "../components/homePage/HomeLaunch"
-import HomeReveal from "../components/homePage/HomeReveal"
-// import HomeGallery from "../components/homePage/HomeGallery"
+import HomeGallery from "../components/homePage/HomeGallery"
+// import HomeReveal from "../components/homePage/HomeReveal"
 // import HomeCarousel from "../components/homePage/HomeCarousel"
 
 const IndexPage = () => {
