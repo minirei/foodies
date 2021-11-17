@@ -1,8 +1,5 @@
 import React from "react"
 import { useViewportScroll, useTransform } from "framer-motion"
-import { getImage } from "gatsby-plugin-image"
-import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
 
 // Styles
@@ -38,15 +35,6 @@ const LandingPage = () => {
     <>
       <BackgroundSection
         style={{ opacity: o1 }}
-        transition={{ duration: 2, ease: "easeIn" }}
-        initial={{ scale: 1.1 }}
-        animate={{
-          scale: 1,
-          transition: {
-            duration: 1,
-            ease: [0.6, 0.05, -0.01, 0.9],
-          },
-        }}
       >
         <StaticImage
           src="../../assets/images/hero.png"
@@ -55,6 +43,7 @@ const LandingPage = () => {
             backgroundAttachment: isMobile ? "" : "fixed",
             height: isMobile ? "70vh" : "100vh",
           }}
+          loading="eager"
         ></StaticImage>
       </BackgroundSection>
     </>

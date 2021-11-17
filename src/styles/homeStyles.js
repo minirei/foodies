@@ -4,10 +4,10 @@ import { motion } from "framer-motion"
 // Landing Section
 export const BackgroundSection = styled(motion.div)`
   position: relative;
-  background-size: cover;
+  /* background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: center center; */
   .wrapper {
     width: 100%;
     height: 100vh;
