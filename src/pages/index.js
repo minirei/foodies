@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react"
 import Layout from "../components/Layout"
 import LandingPage from "../components/homePage/LandingPage"
 import HomeAbout from "../components/homePage/HomeAbout"
-// import HomeLaunch from "../components/homePage/HomeLaunch"
-// import HomeGallery from "../components/homePage/HomeGallery"
+import HomeLaunch from "../components/homePage/HomeLaunch"
+import HomeGallery from "../components/homePage/HomeGallery"
 // import HomeReveal from "../components/homePage/HomeReveal"
 // import HomeCarousel from "../components/homePage/HomeCarousel"
 
@@ -32,8 +32,8 @@ const IndexPage = () => {
         <Layout isIndex={isIndex}>
           <LandingPage />
           <HomeAbout />
-          {/* <HomeLaunch /> */}
-          {/* <HomeGallery /> */}
+          <HomeLaunch />
+          <HomeGallery />
           {/* <HomeReveal /> */}
           {/* <HomeCarousel /> */}
         </Layout>

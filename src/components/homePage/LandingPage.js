@@ -3,6 +3,7 @@ import { useViewportScroll, useTransform } from "framer-motion"
 import { getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 // Styles
 import { BackgroundSection } from "../../styles/homeStyles"
@@ -15,23 +16,23 @@ const LandingPage = () => {
   const { scrollY } = useViewportScroll()
   const o1 = useTransform(scrollY, [400, 750], [1, 0])
 
-  const { placeholderImage } = useStaticQuery(
-    graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "hero.png" }) {
-          childImageSharp {
-            gatsbyImageData(
-              quality: 100
-              width: 2000
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-      }
-    `
-  )
+  // const { placeholderImage } = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       placeholderImage: file(relativePath: { eq: "hero.png" }) {
+  //         childImageSharp {
+  //           gatsbyImageData(
+  //             quality: 100
+  //             width: 2000
+  //             formats: [AUTO, WEBP, AVIF]
+  //           )
+  //         }
+  //       }
+  //     }
+  //   `
+  // )
 
-  const image = getImage(placeholderImage)
+  // const image = getImage(placeholderImage)
 
   return (
     <>
@@ -47,14 +48,14 @@ const LandingPage = () => {
           },
         }}
       >
-        <GatsbyImage
-          image={image}
+        <StaticImage
+          src="../../assets/images/hero.png"
           className="wrapper"
           style={{
             backgroundAttachment: isMobile ? "" : "fixed",
             height: isMobile ? "70vh" : "100vh",
           }}
-        ></GatsbyImage>
+        ></StaticImage>
       </BackgroundSection>
     </>
   )
