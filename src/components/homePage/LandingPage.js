@@ -10,31 +10,13 @@ import { useGlobalStateContext } from "../../context/globalContext"
 
 const LandingPage = () => {
   const { isMobile } = useGlobalStateContext()
-  const { scrollY } = useViewportScroll()
-  const o1 = useTransform(scrollY, [400, 750], [1, 0])
-
-  // const { placeholderImage } = useStaticQuery(
-  //   graphql`
-  //     query {
-  //       placeholderImage: file(relativePath: { eq: "hero.png" }) {
-  //         childImageSharp {
-  //           gatsbyImageData(
-  //             quality: 100
-  //             width: 2000
-  //             formats: [AUTO, WEBP, AVIF]
-  //           )
-  //         }
-  //       }
-  //     }
-  //   `
-  // )
-
-  // const image = getImage(placeholderImage)
+  // const { scrollY } = useViewportScroll()
+  // const o1 = useTransform(scrollY, [400, 750], [1, 0])
 
   return (
     <>
       <BackgroundSection
-        style={{ opacity: o1 }}
+        // style={{ opacity: o1 }}
       >
         <StaticImage
           src="../../assets/images/hero.png"
