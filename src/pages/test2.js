@@ -12,7 +12,6 @@ import HomeCarousel from "../components/homePage/HomeCarousel"
 const Test2Page = () => {
   // loading
   const [loading, setLoading] = useState(true)
-  const isIndex = true
 
   useEffect(() => {
     loading
