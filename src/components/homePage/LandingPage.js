@@ -25,6 +25,7 @@ const LandingPage = () => {
             backgroundAttachment: isMobile ? "" : "fixed",
             height: isMobile ? "70vh" : "100vh",
           }}
+          placeholder="blurred"
           loading="eager"
         ></StaticImage>
       </BackgroundSection>
