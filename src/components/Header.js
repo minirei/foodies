@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 import { motion, useViewportScroll } from "framer-motion"
 import { useAnimation } from "framer-motion"
 import PropTypes from "prop-types"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 // Styles
 import { Container, Flex } from "../styles/globalStyles"
@@ -234,9 +233,9 @@ const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
                 <Link className="navLink" to="/about">
                   <motion.h3 variants={navChildAnimation}>About</motion.h3>
                 </Link>
-                <AnchorLink className="navLink" to="/#roadmap">
+                <a className="navLink" href="/#roadmap">
                   <motion.h3 variants={navChildAnimation}>Roadmap</motion.h3>
-                </AnchorLink>
+                </a>
                 <Link className="navLink" to="/faq">
                   <motion.h3 variants={navChildAnimation}> FAQs</motion.h3>
                 </Link>
