@@ -6,7 +6,7 @@ import LandingPage from "../components/homePage/LandingPage"
 import HomeAbout from "../components/homePage/HomeAbout"
 import HomeLaunch from "../components/homePage/HomeLaunch"
 import HomeGallery from "../components/homePage/HomeGallery"
-import HomeReveal from "../components/homePage/HomeReveal"
+// import HomeReveal from "../components/homePage/HomeReveal"
 // import HomeCarousel from "../components/homePage/HomeCarousel"
 
 const IndexPage = () => {
@@ -34,7 +34,7 @@ const IndexPage = () => {
           <HomeAbout />
           <HomeLaunch />
           <HomeGallery />
-          <HomeReveal />
+          {/* <HomeReveal /> */}
           {/* <HomeCarousel /> */}
         </Layout>
       )}
