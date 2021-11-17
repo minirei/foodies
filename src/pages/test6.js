@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 
 // Components
 import Layout from "../components/Layout"
-import HomeCarousel from "../components/homePage/HomeGallery"
+import HomeCarousel from "../components/homePage/HomeCarousel"
 
 const Test6Page = () => {
   // loading

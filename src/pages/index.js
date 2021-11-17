@@ -24,18 +24,22 @@ const IndexPage = () => {
     setLoading(false)
   })
 
-  return <>{loading ? <div></div> : <p>Site is down for maintenance!</p>}</>
-}
-
-export default IndexPage
-
-{
-  /* <Layout isIndex={isIndex}>
+  return (
+    <>
+      {loading ? (
+        <div></div>
+      ) : (
+        <Layout isIndex={isIndex}>
           <LandingPage />
           <HomeAbout />
           <HomeLaunch />
           <HomeGallery />
           <HomeReveal />
           <HomeCarousel />
-        </Layout> */
+        </Layout>
+      )}
+    </>
+  )
 }
+
+export default IndexPage
