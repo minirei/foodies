@@ -54,7 +54,7 @@ const LandingPage = () => {
             backgroundAttachment: isMobile ? "" : "fixed",
             height: isMobile ? "70vh" : "100vh",
           }}
-          loading="eager"
+          // loading="eager"
         ></BgImage>
       </BackgroundSection>
     </>

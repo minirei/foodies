@@ -196,7 +196,7 @@ const HomeCarousel = () => {
             image={images[card]}
             alt=""
             objectPosition="50% 100%"
-            loading="eager"
+            // loading="eager"
             key={card}
             style={{ height: isMobile ? "75%" : "" }}
           ></GatsbyImage>
