@@ -45,7 +45,7 @@ export const SiteNavMobile = styled(motion.div)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 65%;
+    height: 70%;
   }
   .socialsCaption {
     width: 100%;
@@ -135,7 +135,7 @@ export const NavContent = styled.div`
 `
 
 export const Heading = styled.h1`
-  font-size: calc(2.6rem + 1vw);
+  font-size: calc(2.2rem + 1.2vw);
   color: rgb(40, 10, 11);
   font-weight: 400;
   letter-spacing: 0.1rem;
