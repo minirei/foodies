@@ -1,6 +1,5 @@
-import React, { useState, useRef, useLayoutEffect, ReactNode } from "react"
+import React, { useState, useRef, useLayoutEffect } from "react"
 import {
-  motion,
   useViewportScroll,
   useTransform,
   useSpring,
