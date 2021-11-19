@@ -194,7 +194,7 @@ const HomeCarousel = () => {
           <GatsbyImage
             className="image"
             image={images[card]}
-            alt=""
+            alt="foodies nft roadmap"
             objectPosition="50% 100%"
             // loading="eager"
             key={card}

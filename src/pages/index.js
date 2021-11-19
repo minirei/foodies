@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react"
+import loadable from "@loadable/component"
 
 // Components
 import Layout from "../components/Layout"
 import LandingPage from "../components/homePage/LandingPage"
-import HomeAbout from "../components/homePage/HomeAbout"
-import HomeLaunch from "../components/homePage/HomeLaunch"
-import HomeGallery from "../components/homePage/HomeGallery"
-import HomeReveal from "../components/homePage/HomeReveal"
-import HomeCarousel from "../components/homePage/HomeCarousel"
+const HomeAbout = loadable(() => import("../components/homePage/HomeAbout"))
+const HomeLaunch = loadable(() => import("../components/homePage/HomeLaunch"))
+const HomeGallery = loadable(() => import("../components/homePage/HomeGallery"))
+const HomeReveal = loadable(() => import("../components/homePage/HomeReveal"))
+const HomeCarousel = loadable(() =>
+  import("../components/homePage/HomeCarousel")
+)
 
 const IndexPage = () => {
   // loading
