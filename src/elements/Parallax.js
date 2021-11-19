@@ -11,10 +11,9 @@ import PropTypes from "prop-types"
 import { ParallaxStyle } from "../styles/elementStyles"
 
 const Parallax = ({ children, offset = 50 }) => {
-  const prefersReducedMotion = useReducedMotion()
   const [elementTop, setElementTop] = useState(0)
   const [clientHeight, setClientHeight] = useState(0)
-  const ref = useRef(null)
+  const ref = useRef()
 
   const { scrollY } = useViewportScroll()
 
@@ -37,11 +36,6 @@ const Parallax = ({ children, offset = 50 }) => {
     window.addEventListener("resize", onResize)
     return () => window.removeEventListener("resize", onResize)
   }, [ref])
-
-  // Don't parallax if the user has "reduced motion" enabled
-  if (prefersReducedMotion) {
-    return <>{children}</>
-  }
 
   return (
     <ParallaxStyle ref={ref} style={{ y }}>

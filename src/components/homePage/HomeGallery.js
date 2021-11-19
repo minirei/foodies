@@ -31,6 +31,7 @@ const HomeGallery = () => {
   const [topPositionState, setTopPositionState] = useState({ top: null })
   useEffect(() => {
     if (isMobile) return
+    if (!floatingRef) return
     setTopPositionState({
       top: floatingRef.current.getBoundingClientRect().top,
     })
