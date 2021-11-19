@@ -9,16 +9,20 @@ const GlobalStateContext = createContext()
 
 export const GlobalProvider = ({ children }) => {
   // Usage of the hook should probably be conditional but wtv for now
-  const size = useWindowSize()
-  const state = {
-    isMobile: size.width < 1024 ? true : false,
-  }
+  const isBrowser = typeof window !== "undefined"
+  if (isBrowser) {
+    const size = useWindowSize()
+    const state = {
+      isMobile: size.width < 1024 ? true : false,
+    }
 
-  return (
-    <GlobalStateContext.Provider value={state}>
-      {children}
-    </GlobalStateContext.Provider>
-  )
+    return (
+      <GlobalStateContext.Provider value={state}>
+        {children}
+      </GlobalStateContext.Provider>
+    )
+  }
+  return null
 }
 
 GlobalProvider.propTypes = {
