@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 export const HomeRevealSection = styled(motion.div)`
   position: relative;
   width: 100%;
-  height: 120vh;
+  height: 130vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
   overflow: hidden;
