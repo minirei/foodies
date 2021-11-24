@@ -6,7 +6,7 @@ import { Container } from "../styles/globalStyles"
 
 const FoodieParties = () => {
   return (
-    <SubPageContainer>
+    <SubPageContainer className={`${isMobile && "mobile"}`}>
       <Container>
         <div className="wrapper">
           <SubPageSection>
