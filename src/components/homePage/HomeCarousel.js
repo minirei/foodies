@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion"
 import React, { useState } from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 // Styles
 import {
@@ -205,7 +205,15 @@ const HomeCarousel = () => {
             variants={textAnimation}
             className={`${isMobile && "mobile"}`}
           >
-            <h3>{content.title[card]}</h3>
+            <Link to={`${card === 1 && "/party"}`}>
+              <h3
+                className={`
+              ${card === 1 && "link"}`}
+              >
+                {content.title[card]}
+              </h3>
+            </Link>
+            {}
             <p
               className={`
                 ${card === 0 && !isMobile && "blockingOne"} 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 import { AnimatePresence, motion, useAnimation } from "framer-motion"
 import PropTypes from "prop-types"
@@ -238,24 +238,35 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         Roadmap
                       </Heading>
                     </Link>
-                    <Link to="/about">
+                    <Link
+                      to="/party"
+                      onClick={() => setToggleMenu(!toggleMenu)}
+                    >
+                      <Heading large mobile>
+                        Foodie Parties
+                      </Heading>
+                    </Link>
+                    <Link
+                      to="/about"
+                      onClick={() => setToggleMenu(!toggleMenu)}
+                    >
                       <Heading large mobile>
                         About{" "}
                       </Heading>
                     </Link>
-                    <Link to="/faq">
+                    <Link to="/faq" onClick={() => setToggleMenu(!toggleMenu)}>
                       <Heading large mobile>
                         FAQ
                       </Heading>
                     </Link>
-                    <Link to="/guide">
+                    <Link
+                      to="/guide"
+                      onClick={() => setToggleMenu(!toggleMenu)}
+                    >
                       <Heading large mobile>
                         Guide
                       </Heading>
                     </Link>
-                    <Heading large unavailable mobile>
-                      Mint
-                    </Heading>
                   </div>
                   <div className="socialsCaption">
                     <p>Follow Us. No Filter</p>
@@ -377,7 +388,14 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         initial="initial"
                         exit="exit"
                       />
-                      <Heading unavailable>Foodie Parties</Heading>
+                      <Link
+                        to="/party"
+                        onClick={() => setToggleMenu(!toggleMenu)}
+                      >
+                        <Heading large hover>
+                          Foodie Parties
+                        </Heading>
+                      </Link>
                       <Heading unavailable>Supply Drop</Heading>
                       <Heading unavailable>Foodie Kitchen</Heading>
                       <Heading unavailable>Foodie Wars</Heading>

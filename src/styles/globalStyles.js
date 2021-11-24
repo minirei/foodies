@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
     ${"" /* cursor: default; */}
   }
 
-  ${'' /* chapters */}
+  ${"" /* chapters */}
   .chapter {
     position: absolute;
     top: 5%;
@@ -73,6 +73,11 @@ export const GlobalStyle = createGlobalStyle`
     line-height: calc(1.4rem + 0.6vw);
     font-weight: 400;
     text-align: justify;
+  }
+
+  a {
+    font-weight: 600;
+    color: inherit;
   }
 `
 

@@ -37,7 +37,8 @@ export const CarouselContent = styled(motion.div)`
   width: 40%;
   z-index: 10;
   h3 {
-    margin: 1rem 0;
+    margin: 1rem auto;
+    display: inline-block;
   }
   p {
     &.blockingOne {
@@ -68,6 +69,30 @@ export const CarouselContent = styled(motion.div)`
     margin: 0 auto;
     left: 0;
     top: 8%;
+  }
+
+  .link {
+    position: relative;
+    :before {
+      left: 0;
+      bottom: 0%;
+      content: "";
+      height: 3px;
+      background: rgb(40, 10, 11);
+      position: absolute;
+      transform: scaleX(0);
+      will-change: transform;
+      transform-origin: right;
+      width: 100%;
+      transition: transform 0.4s ease-out, background 500ms linear;
+    }
+
+    :hover {
+      :before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
   }
 `
 

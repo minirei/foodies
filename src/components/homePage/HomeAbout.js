@@ -21,7 +21,6 @@ const HomeAbout = () => {
   const { isMobile } = useGlobalStateContext()
   const [contentRef, contentInView] = useInView({
     triggerOnce: true,
-    // rootMargin: `-10%`,
   })
 
   const [imageRef, imageinView] = useInView({
@@ -103,8 +102,11 @@ const HomeAbout = () => {
                     <p>
                       Infused into pieces of art as NFTs, each Foodie is an
                       esteemed member of Foodie Town: a bustling hub with a
-                      variety of hotspots and activities such as: Foodie
-                      Kitchen, Foodie Parties, and Foodie Wars!
+                      variety of hotspots and activities such as:{" "}
+                      <AnchorLink to="/party" className="link">
+                        Foodie Parties
+                      </AnchorLink>
+                      , Foodie Kitchen , and Foodie Wars!
                     </p>
                     <p>
                       These features will be implemented on the Cardano
