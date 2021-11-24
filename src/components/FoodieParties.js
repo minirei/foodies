@@ -4,7 +4,11 @@ import React from "react"
 import { SubPageContainer, SubPageSection } from "../styles/subPageStyles"
 import { Container } from "../styles/globalStyles"
 
+// Context
+import { useGlobalStateContext } from "../context/globalContext"
+
 const FoodieParties = () => {
+  const { isMobile } = useGlobalStateContext()
   return (
     <SubPageContainer className={`${isMobile && "mobile"}`}>
       <Container>
