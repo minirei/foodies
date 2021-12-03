@@ -2,10 +2,8 @@
 
 ## To-Do
 - label images & links for seo
-- code splitting
+- optimise new supply & kitchen images
 
-- privacy policy & terms of use 
-  - adjust height in FooterStyles>Disclaimer>props.mobile to 15vh when done
 
 ### Design Concerns
 

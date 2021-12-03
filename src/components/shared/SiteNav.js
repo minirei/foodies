@@ -247,6 +247,22 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       </Heading>
                     </Link>
                     <Link
+                      to="/supply"
+                      onClick={() => setToggleMenu(!toggleMenu)}
+                    >
+                      <Heading large mobile>
+                        Supply Drop
+                      </Heading>
+                    </Link>
+                    <Link
+                      to="/kitchen"
+                      onClick={() => setToggleMenu(!toggleMenu)}
+                    >
+                      <Heading large mobile>
+                        Foodie Kitchen
+                      </Heading>
+                    </Link>
+                    <Link
                       to="/about"
                       onClick={() => setToggleMenu(!toggleMenu)}
                     >
@@ -377,7 +393,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         </Heading>
                       </Link>
                       <Heading large unavailable>
-                        Mint
+                        Mint (16 Dec)
                       </Heading>
                     </div>
                     <div className="roadmap">
@@ -396,8 +412,22 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                           Foodie Parties
                         </Heading>
                       </Link>
-                      <Heading unavailable>Supply Drop</Heading>
-                      <Heading unavailable>Foodie Kitchen</Heading>
+                      <Link
+                        to="/supply"
+                        onClick={() => setToggleMenu(!toggleMenu)}
+                      >
+                        <Heading large hover>
+                          Supply Drop
+                        </Heading>
+                      </Link>
+                      <Link
+                        to="/kitchen"
+                        onClick={() => setToggleMenu(!toggleMenu)}
+                      >
+                        <Heading large hover>
+                          Foodie Kitchen
+                        </Heading>
+                      </Link>
                       <Heading unavailable>Foodie Wars</Heading>
                     </div>
                     <motion.span
