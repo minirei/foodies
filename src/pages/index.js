@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import loadable from "@loadable/component"
 
 // Components
-import Layout from "../components/Layout"
+import Layout from "../components/shared/Layout"
 import LandingPage from "../components/homePage/LandingPage"
 const HomeAbout = loadable(() => import("../components/homePage/HomeAbout"))
 const HomeLaunch = loadable(() => import("../components/homePage/HomeLaunch"))

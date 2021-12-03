@@ -4,8 +4,8 @@ import { AnimatePresence, motion, useAnimation } from "framer-motion"
 import PropTypes from "prop-types"
 
 // Styles
-import { Flex } from "../styles/globalStyles"
-import { Menu, Logo } from "../styles/headerStyles"
+import { Flex } from "../../styles/globalStyles"
+import { Menu, Logo } from "../../styles/headerStyles"
 import {
   SiteNavSection,
   SiteNavMobile,
@@ -14,10 +14,10 @@ import {
   Heading,
   NavBottom,
   Icon,
-} from "../styles/navStyles"
+} from "../../styles/navStyles"
 
 // Context
-import { useGlobalStateContext } from "../context/globalContext"
+import { useGlobalStateContext } from "../../context/globalContext"
 
 const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
   const { isMobile } = useGlobalStateContext()

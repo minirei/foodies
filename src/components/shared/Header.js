@@ -5,11 +5,11 @@ import { useAnimation } from "framer-motion"
 import PropTypes from "prop-types"
 
 // Styles
-import { Container, Flex } from "../styles/globalStyles"
-import { HeaderSection, Navigation, Menu, Logo } from "../styles/headerStyles"
+import { Container, Flex } from "../../styles/globalStyles"
+import { HeaderSection, Navigation, Menu, Logo } from "../../styles/headerStyles"
 
 // Context
-import { useGlobalStateContext } from "../context/globalContext"
+import { useGlobalStateContext } from "../../context/globalContext"
 
 const Header = ({ toggleMenu, setToggleMenu, accordian, setAccordian }) => {
   // For mobile

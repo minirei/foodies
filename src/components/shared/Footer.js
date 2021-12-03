@@ -4,18 +4,18 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 // Styles
-import { NavBottom, Icon } from "../styles/navStyles"
-import { Flex } from "../styles/globalStyles"
+import { NavBottom, Icon } from "../../styles/navStyles"
+import { Flex } from "../../styles/globalStyles"
 import {
   FooterSection,
   FooterTop,
   Disclaimer,
   MobileFooterSection,
   CardanoInfo,
-} from "../styles/footerStyles"
+} from "../../styles/footerStyles"
 
 // Context
-import { useGlobalStateContext } from "../context/globalContext"
+import { useGlobalStateContext } from "../../context/globalContext"
 
 const Footer = ({ isIndex = false }) => {
   // Mobile

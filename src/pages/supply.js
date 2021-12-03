@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react"
 
 // Components
 import Layout from "../components/shared/Layout"
-import FoodieParties from "../components/FoodieParties"
+import FoodieSupply from "../components/FoodieSupply"
 
-const PartyPage = () => {
+const SupplyPage = () => {
   // loading (needed so that i don't call window during SSR)
   const [loading, setLoading] = useState(true)
 
@@ -24,11 +24,11 @@ const PartyPage = () => {
         <div></div>
       ) : (
         <Layout>
-          <FoodieParties />
+          <FoodieSupply />
         </Layout>
       )}
     </>
   )
 }
 
-export default PartyPage
+export default SupplyPage

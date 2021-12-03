@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 
 // Components
-import Layout from "../components/Layout"
+import Layout from "../components/shared/Layout"
 
 const NotFoundPage = () => {
   // loading (needed so that i don't call window during SSR)

@@ -73,3 +73,32 @@ export const SubPageSection = styled.div`
     padding-top: calc(1rem + 1vw);
   }
 `
+
+export const SupplyExamples = styled.div`
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .imageWrapper {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .caption {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        margin: 0;
+        text-align: center;
+        font-size: calc(1rem + 0.3vw);
+
+      }
+    }
+  }
+`

@@ -9,8 +9,8 @@ import SiteNav from "./SiteNav"
 import Footer from "./Footer"
 
 // Styles
-import { GlobalStyle } from "../styles/globalStyles"
-import ButlerFonts from "../fonts/Butler/ButlerFonts"
+import { GlobalStyle } from "../../styles/globalStyles"
+import ButlerFonts from "../../fonts/Butler/ButlerFonts"
 
 const Layout = ({ children, isIndex=false }) => {
   const [toggleMenu, setToggleMenu] = useState(false)

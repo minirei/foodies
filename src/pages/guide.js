@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 
 // Components
-import Layout from "../components/Layout"
+import Layout from "../components/shared/Layout"
 import Guide from "../components/Guide"
 
 const GuidePage = () => {
