@@ -72,6 +72,15 @@ export const SubPageSection = styled.div`
   .addSpacing {
     padding-top: calc(1rem + 1vw);
   }
+
+  .videoWrapper {
+    width: 100%;
+    height: 40vh;
+    .video {
+      height: 100%;
+      width: 100%;
+    }
+  }
 `
 
 export const SupplyExamples = styled.div`
@@ -94,10 +103,9 @@ export const SupplyExamples = styled.div`
       align-items: center;
       justify-content: center;
       p {
-        margin: 0;
+        margin-top: 0;
         text-align: center;
         font-size: calc(1rem + 0.3vw);
-
       }
     }
   }

@@ -34,7 +34,8 @@ const FoodieSupply = () => {
               <div className="content">
                 <div className="imageWrapper">
                   <StaticImage
-                    src="../assets/images/heart-eyes.png"
+                    src="../assets/images/supplypage-heart-eyes.png"
+                    alt="heart eyes example"
                     objectFit="cover"
                   />
                 </div>
@@ -47,7 +48,8 @@ const FoodieSupply = () => {
               <div className="content">
                 <div className="imageWrapper">
                   <StaticImage
-                    src="../assets/images/herbs.png"
+                    src="../assets/images/supplypage-herbs.png"
+                    alt="herbs example"
                     objectFit="cover"
                   />
                 </div>
@@ -60,7 +62,8 @@ const FoodieSupply = () => {
               <div className="content">
                 <div className="imageWrapper">
                   <StaticImage
-                    src="../assets/images/ninja-headband.png"
+                    src="../assets/images/supplypage-ninja-headband.png"
+                    alt="ninjga example"
                     objectFit="cover"
                   />
                 </div>
@@ -90,7 +93,7 @@ const FoodieSupply = () => {
             </p>
           </SubPageSection>
           <SubPageSection>
-            <h3>Utility of Singular Trait NFTs</h3>
+            <h3>Utility of Foodie Trait NFTs</h3>
             <p>
               These traits that you mint can then be added into your recipe to
               re-cook your Foodie (checkout{" "}

@@ -205,10 +205,12 @@ const HomeCarousel = () => {
             variants={textAnimation}
             className={`${isMobile && "mobile"}`}
           >
-            <Link to={`${card === 1 && "/party"}`}>
+            <Link
+              to={`${card === 1 ? "/party" : card === 2 ? "/supply" : card === 3 ? "/kitchen" : "" }`}
+            >
               <h3
                 className={`
-              ${card === 1 && "link"}`}
+              ${(card === 1 || card === 2 || card === 3) && "link"}`}
               >
                 {content.title[card]}
               </h3>
