@@ -97,7 +97,7 @@ const FoodieSupply = () => {
             <p>
               These ingredients that you mint can then be added into your recipe to
               re-cook your Foodie (checkout{" "}
-              <Link className="link" to="/about">
+              <Link className="link" to="/kitchen">
                 Foodie Kitchen
               </Link>
               !), resold on the secondary market or kept for future use!

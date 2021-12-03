@@ -11,7 +11,7 @@ export const shouldUpdateScroll = ({
 }) => {
   const { pathname } = location
   // list of routes for the scroll-to-top-hook
-  const scrollToTopRoutes = [`/404`, `/about`, `/faq`, `/guide`, `/privacypolicy`, `/termsofuse`]
+  const scrollToTopRoutes = [`/404`, `/about`, `/faq`, `/guide`, `/party`, `/supply`, `/kitchen`, `/war`]
   // if the new route is part of the list above, scroll to top (0, 0)
   if (scrollToTopRoutes.indexOf(pathname) !== -1) {
     window.scrollTo(0, 0)
