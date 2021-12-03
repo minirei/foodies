@@ -79,6 +79,7 @@ export const SubPageSection = styled.div`
     .video {
       height: 100%;
       width: 100%;
+      border: 0;
     }
   }
 `
