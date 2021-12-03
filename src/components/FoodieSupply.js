@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import {
   SubPageContainer,
   SubPageSection,
-  SupplyExamples,
+  ImageArray,
 } from "../styles/subPageStyles"
 import { Container } from "../styles/globalStyles"
 
@@ -28,9 +28,9 @@ const FoodieSupply = () => {
               bringing <strong>limited edition traits</strong> each month! These
               limited edition traits will be in the form of{" "}
               <strong>Foodie Ingredient NFTs</strong>, and are available for
-              minting <strong>only</strong> for those holding onto Foodies.
+              minting <strong>only</strong> for Foodie holders.
             </p>
-            <SupplyExamples style={{ height: isMobile ? "25vh" : "" }}>
+            <ImageArray>
               <div className="content">
                 <div className="imageWrapper">
                   <StaticImage
@@ -73,7 +73,7 @@ const FoodieSupply = () => {
                   </p>
                 </div>
               </div>
-            </SupplyExamples>
+            </ImageArray>
           </SubPageSection>
           <SubPageSection>
             <h3>
@@ -93,9 +93,9 @@ const FoodieSupply = () => {
             </p>
           </SubPageSection>
           <SubPageSection>
-            <h3>Utility of Foodie Trait NFTs</h3>
+            <h3>Utility of Foodie Ingredient NFTs</h3>
             <p>
-              These traits that you mint can then be added into your recipe to
+              These ingredients that you mint can then be added into your recipe to
               re-cook your Foodie (checkout{" "}
               <Link className="link" to="/about">
                 Foodie Kitchen
@@ -104,12 +104,12 @@ const FoodieSupply = () => {
             </p>
             <p>
               It’s also important to note that while we are introducing new
-              Foodie traits,{" "}
+              Foodie Ingredients,{" "}
               <strong>the total number of Foodies remains constant!</strong>{" "}
             </p>
             <p>
-              This means that the more common traits will be swapped out with
-              these new limited edition traits over time! Essentially, Foodies
+              This means that the more common ingredients will be swapped out with
+              these new limited edition ingredients over time! Essentially, Foodies
               will become <strong>even more diverse and unique!</strong>
             </p>
           </SubPageSection>

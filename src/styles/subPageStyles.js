@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const SubPageContainer = styled.div`
   width: 100vw;
@@ -53,10 +53,23 @@ export const SubPageSection = styled.div`
   p {
     word-wrap: break-word;
     width: 100%;
+    &.addSpacing {
+      padding-top: calc(1rem + 1vw);
+    }
+    &.kitchenStep {
+      font-size: calc(1.2rem + 0.8vw);
+      line-height: calc(1.2rem + 1.6vw);
+      font-weight: 600;
+    }
+    &.centered {
+      text-align: center;
+      font-weight: 500;
+    }
   }
   li {
     margin-left: 1rem;
     text-align: left;
+    margin-bottom: 0.8rem;
   }
   strong {
     font-weight: 600;
@@ -69,24 +82,24 @@ export const SubPageSection = styled.div`
       padding-top: 0;
     }
   }
-  .addSpacing {
-    padding-top: calc(1rem + 1vw);
-  }
 
   .videoWrapper {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     .video {
       height: 100%;
       width: 100%;
       border: 0;
     }
+    &.mobile {
+      height: 20vh;
+    }
   }
 `
 
-export const SupplyExamples = styled.div`
+export const ImageArray = styled.div`
   display: flex;
-  height: 40vh;
+  height: fit-content;
   width: 100%;
   position: relative;
   .content {
@@ -96,7 +109,6 @@ export const SupplyExamples = styled.div`
     .imageWrapper {
       width: 100%;
       height: 100%;
-      overflow: hidden;
       position: relative;
     }
     .caption {
@@ -104,10 +116,15 @@ export const SupplyExamples = styled.div`
       align-items: center;
       justify-content: center;
       p {
-        margin-top: 0;
         text-align: center;
         font-size: calc(1rem + 0.3vw);
       }
     }
   }
+
+  ${props =>
+    props.kitchen &&
+    css`
+      height: fit-content;
+    `}
 `
