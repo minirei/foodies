@@ -393,7 +393,7 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                         </Heading>
                       </Link>
                       <Heading large unavailable>
-                        Mint (16 Dec)
+                        Mint (17 Dec)
                       </Heading>
                     </div>
                     <div className="roadmap">

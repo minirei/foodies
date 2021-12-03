@@ -71,16 +71,16 @@ const FoodieSupply = () => {
             </ImageArray>
             <p className="addSpacing">
               <ol>
-                <li>
+                <li className={`${isMobile && "mobile"}`}>
                   Select the <strong>category</strong> you wish to swap traits
                   under (e.g. <em>headgear</em>)
                 </li>
-                <li>
+                <li className={`${isMobile && "mobile"}`}>
                   Send <strong>2 Foodie NFTs</strong>, along with the{" "}
                   <strong>Kitchen Gas Fee</strong> to the wallet address
                   specified{" "}
                 </li>
-                <li>
+                <li className={`${isMobile && "mobile"}`}>
                   Receive 2 Foodies freshly <em>re-cooked</em>!
                 </li>
               </ol>
@@ -125,17 +125,17 @@ const FoodieSupply = () => {
             </ImageArray>
             <p className="addSpacing">
               <ol>
-                <li>
+                <li className={`${isMobile && "mobile"}`}>
                   Select the <strong>category</strong> you wish to swap traits
                   under
                 </li>
-                <li>
+                <li className={`${isMobile && "mobile"}`}>
                   Send <strong>1 Foodie NFT</strong> and{" "}
                   <strong>1 Foodie Ingredient NFT</strong>, along with the{" "}
                   <strong>Kitchen Gas Fee</strong> to the wallet address
                   specified
                 </li>
-                <li>
+                <li className={`${isMobile && "mobile"}`}>
                   Receive 1 Foodie freshly <em>re-cooked</em>, and 1 Foodie
                   Ingredient that was <em>swapped out</em>!
                 </li>

@@ -70,6 +70,9 @@ export const SubPageSection = styled.div`
     margin-left: 1rem;
     text-align: left;
     margin-bottom: 0.8rem;
+    &.mobile {
+      margin-left: 0;
+    }
   }
   strong {
     font-weight: 600;
