@@ -121,6 +121,16 @@ export const ImageArray = styled.div`
       }
     }
   }
+  .plus {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transform-origin: center; */
+    font-size: calc(1.6rem + 3vw);
+    text-align: center;
+  }
 
   ${props =>
     props.kitchen &&

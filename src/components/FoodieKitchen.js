@@ -67,6 +67,7 @@ const FoodieSupply = () => {
                   objectFit="cover"
                 />
               </div>
+              <div className="plus">+</div>
             </ImageArray>
             <p className="addSpacing">
               <ol>
@@ -120,6 +121,7 @@ const FoodieSupply = () => {
                   objectFit="cover"
                 />
               </div>
+              <div className="plus">+</div>
             </ImageArray>
             <p className="addSpacing">
               <ol>
@@ -160,8 +162,8 @@ const FoodieSupply = () => {
           <SubPageSection>
             <h3>Why Re-cook my Foodie?</h3>
             <p>
-              While all Foodies are <em>beautifully and uniquely cooked</em>, some of you
-              would want your Foodie to be as rare as can be.
+              While all Foodies are <em>beautifully and uniquely cooked</em>,
+              some of you would want your Foodie to be as rare as can be.
             </p>
             <p>
               The Kitchen allows you to transfer the rarest traits in each
