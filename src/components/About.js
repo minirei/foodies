@@ -60,7 +60,7 @@ const About = () => {
             <p>
               Please ensure the validity of your Foodie! Our Policy ID:
               <br />
-              16b8174d4cda3468d0566969b654979a26260cb91c8754b540ca7393
+              129b6e979309b919f4f56c80b00d55149c073fd74176917c1ff560f2
             </p>
           </SubPageSection>
           <SubPageSection>
