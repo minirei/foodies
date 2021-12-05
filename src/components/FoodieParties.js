@@ -21,7 +21,7 @@ const FoodieParties = () => {
               <strong>Foodie Parties</strong> is an integral part of Foodie
               Town! The Foodie Rulers love fun and laughter over hearty meals.
               Hence, they distribute <strong>Foodie Ticket NFTs</strong> to{" "}
-              <strong>500</strong> randomly chosen Foodies{" "}
+              <strong>5%</strong> of Foodies{" "}
               <strong>every month</strong>!
             </p>
             <p>

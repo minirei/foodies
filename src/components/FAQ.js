@@ -186,7 +186,7 @@ const FAQ = () => {
               The moment the launch is over, we will start contacting various
               food outlets from different countries to secure food vouchers, and
               distribute the first set of Foodie Party NFTs{" "}
-              <strong>the following month</strong> to 500 random holders!
+              <strong>the following month</strong> to 5% of all holders!
             </p>
 
             <p className="question">Suppliers Come to Town</p>
