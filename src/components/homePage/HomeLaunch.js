@@ -212,12 +212,16 @@ const HomeLaunch = () => {
                 animate={controls}
                 initial="hidden"
               >
-                <h3>This Foodies Launch</h3>
+                <h3>This First Foodies Launch</h3>
                 <p>
-                  Comprises 10,000 uniquely cooked individuals made of real,
-                  edible food ingredients! With more than 100 traits over 8
-                  categories, randomly distributed according to predetermined
-                  rarities, you can be sure that each Foodie is like no other!
+                  Comprises 2,500 uniquely cooked individuals made of real,
+                  edible food ingredients! Further batches will be dropped for a
+                  total of 10,000 Foodies!
+                </p>
+                <p>
+                  With more than 100 traits over 8 categories, randomly
+                  distributed according to predetermined rarities, you can be
+                  sure that each Foodie is like no other!
                 </p>
                 <p>
                   Every Foodie has traits that represent ingredients from
