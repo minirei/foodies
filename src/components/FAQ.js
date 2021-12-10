@@ -19,7 +19,7 @@ const FAQ = () => {
             <h3>FAQ</h3>
             <p className="question firstChild">When will the drop happen?</p>
             <p>
-              The launch will take place on <strong>17 Dec, 4pm UTC</strong>.
+              The first Foodies launch, with 2,500 Foodies available for minting, will take place on <strong>17 Dec, 4pm UTC</strong>.
               From now till then, we will be focusing on growing the community
               and ensuring most people in the CNFT space know about Foodies!
             </p>
@@ -33,31 +33,27 @@ const FAQ = () => {
               </Link>{" "}
               for more details!
             </p>
-            <p className="question">How are the 10,000 Foodies cooked?</p>
+            <p className="question">How are the 2,500 Foodies cooked?</p>
             <p>
               Foodies are made of real food ingredients. Each trait was
               exquisitely molded from and shaped with food! These traits have
-              been algorithmically randomised to create 10,000{" "}
+              been algorithmically randomised to create 2,500{" "}
               <strong>unique</strong> Foodies from billions of possible
               combinations. These are the chosen ones that will live on the
               blockchain in Foodie Town!
             </p>
+            <p className="question">How many Foodies will there be in total?</p>
+            <p>There will be 10,000 Foodies in total after 4 Foodies drops! The reason why we chose 10,000 is that we envision a large community here at Foodie Town, for the future and longevity of the project (eg. Foodie Kitchen and Foodie Wars, where it'll be way more fun with large numbers of holders participating!) We also have utmost confidence in our unique project art and the immense potential of our roadmap!</p>
+            <p className="question">Why not release all 10,000 Foodies in the first drop?</p>
+            <p>As part of our goals for Foodie Town to be sustainable and flourishing, we have decided to release Foodies in 4 batches of 2,500 each. By doing so, we will be better able to push demand above supply, building confidence among Foodie holders and incentivising more people to hold Foodies.</p>
+            <p>Secondly, we want more people within the CNFT community to be able to learn about this project and join Foodie Town before we sell out. With our first drop, we hope that Foodie Holders would spread the word and change their Discord/Twitter PFPs!</p>
             <p className="question">How does the rarity work in Foodies?</p>
             <p>
               There are over 100 traits spread across 8 categories in total.
               Even though certain traits are set to be more rare than others,
               you can be assured that each Foodie is unique and wonderfully
               made! A rarity table will be released right after minting, and we
-              will be listed on both{" "}
-              <a
-                rel="noopener"
-                className="link"
-                target="_blank"
-                href="https://www.tokenref.com/"
-              >
-                tokenref.com
-              </a>{" "}
-              and{" "}
+              will be listed on{" "}
               <a
                 rel="noopener"
                 className="link"
