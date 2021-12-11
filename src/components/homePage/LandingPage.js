@@ -13,7 +13,7 @@ const LandingPage = () => {
   const { isMobile } = useGlobalStateContext()
 
   // Timer
-  const dropDate = new Date("December 17, 2021 16:00:00")
+  const dropDate = new Date(Date.UTC(2021, 11, 17, 16))
   const {
     seconds,
     minutes,
