@@ -4,14 +4,58 @@ import { motion } from "framer-motion"
 // Landing Section
 export const BackgroundSection = styled(motion.div)`
   position: relative;
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center; */
   .wrapper {
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
+  }
+`
+
+export const TimerSection = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  .timer {
+    width: 27%;
+    text-align: center;
+    font-size: calc(0.6rem + 0.6vw);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    .box {
+      width: 5.5vw;
+      height: 5.5vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: rgb(255, 248, 237, 0.6);
+      border-radius: 20%;
+      .digit {
+        font-size: calc(1.6rem + 1.5vw);
+        font-weight: 600;
+      }
+      &.second {
+        background-color: rgb(241, 202, 137, 0.6);
+      }
+    }
+  }
+  &.mobile {
+    top: -30%;
+    .timer {
+      width: 80%;
+      .box {
+        width: 17vw;
+        height: 17vw;
+      }
+    }
   }
 `
 
