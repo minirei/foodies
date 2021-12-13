@@ -206,11 +206,21 @@ const HomeCarousel = () => {
             className={`${isMobile && "mobile"}`}
           >
             <Link
-              to={`${card === 1 ? "/party" : card === 2 ? "/supply" : card === 3 ? "/kitchen" : "" }`}
+              to={`${
+                card === 1
+                  ? "/party"
+                  : card === 2
+                  ? "/supply"
+                  : card === 3
+                  ? "/kitchen"
+                  : card === 4
+                  ? "/roadmap"
+                  : ""
+              }`}
             >
               <h3
                 className={`
-              ${(card === 1 || card === 2 || card === 3) && "link"}`}
+              ${(card === 1 || card === 2 || card === 3 || card === 4) && "link"}`}
               >
                 {content.title[card]}
               </h3>

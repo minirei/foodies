@@ -263,6 +263,14 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                       </Heading>
                     </Link>
                     <Link
+                      to="/war"
+                      onClick={() => setToggleMenu(!toggleMenu)}
+                    >
+                      <Heading large mobile>
+                        Foodie Wars
+                      </Heading>
+                    </Link>
+                    <Link
                       to="/about"
                       onClick={() => setToggleMenu(!toggleMenu)}
                     >
@@ -428,7 +436,14 @@ const SiteNav = ({ toggleMenu, setToggleMenu, accordian }) => {
                           Foodie Kitchen
                         </Heading>
                       </Link>
-                      <Heading unavailable>Foodie Wars</Heading>
+                      <Link
+                        to="/war"
+                        onClick={() => setToggleMenu(!toggleMenu)}
+                      >
+                        <Heading large hover>
+                          Foodie Wars
+                        </Heading>
+                      </Link>
                     </div>
                     <motion.span
                       className="horizontalLine"
