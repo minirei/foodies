@@ -77,12 +77,23 @@ export const SubPageSection = styled.div`
   strong {
     font-weight: 600;
   }
+
   .question {
     font-style: italic;
     font-weight: 600;
     padding-top: calc(1rem + 1vw);
     &.firstChild {
       padding-top: 0;
+    }
+  }
+
+  .caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      text-align: center;
+      font-size: calc(1rem + 0.3vw);
     }
   }
 
@@ -113,15 +124,6 @@ export const ImageArray = styled.div`
       width: 100%;
       height: 100%;
       position: relative;
-    }
-    .caption {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      p {
-        text-align: center;
-        font-size: calc(1rem + 0.3vw);
-      }
     }
   }
   .plus {
