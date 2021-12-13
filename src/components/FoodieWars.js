@@ -26,14 +26,18 @@ const FoodieWars = () => {
               src="../assets/images/wars-king-queen.png"
               alt="king queen"
             />
-          </SubPageSection>
-          <SubPageSection>
-            <h3>Gameplay</h3>
             <p>
               The War Zone will be split into many boxing rings, where Foodies
               who choose to participate will randomly be paired up to fight.
               Simply link your wallet to the system, and select your Foodie!
             </p>
+            <StaticImage
+              src="../assets/images/wars-boxing-ring.png"
+              alt="wars - boxing ring"
+            />
+          </SubPageSection>
+          <SubPageSection>
+            <h3>Gameplay</h3>
             <StaticImage
               src="../assets/images/wars-gamescreen.png"
               alt="wars - game screen"
@@ -105,9 +109,9 @@ const FoodieWars = () => {
           <SubPageSection>
             <h3>Important Details</h3>
             <p>
-              The main factor which determines the <em>power</em> of your
-              traits (Attacks/Boosts/Defence) depend mostly on
-              the rarity of the traits!
+              The main factor which determines the <em>power</em> of your traits
+              (Attacks/Boosts/Defence) depend mostly on the rarity of the
+              traits!
             </p>
             <p>
               <strong>However</strong>, The Foodie Rulers would like to
@@ -119,14 +123,16 @@ const FoodieWars = () => {
               alt="king queen 2"
             />
             <p>
-              As such, <strong>some common traits will have high stats as well!</strong> These
-              traits will randomly get selected each month!
+              As such,{" "}
+              <strong>some common traits will have high stats as well!</strong>{" "}
+              These traits will randomly get selected each month!
             </p>
           </SubPageSection>
           <SubPageSection>
             <p>
               Foodie Wars allow your Foodie to have a chance to acquire a new
-              trait and upgrade itself! With the newly won trait, head over to the{" "}
+              trait and upgrade itself! With the newly won trait, head over to
+              the{" "}
               <Link className="link" to="/kitchen">
                 Foodie Kitchen
               </Link>{" "}

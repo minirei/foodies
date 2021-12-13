@@ -3,9 +3,6 @@
 ## To-Do
 - label images & links for seo
 - optimise new supply & kitchen images
-- add timer
-- foodie wars
-- generate art
 
 
 ### Design Concerns
