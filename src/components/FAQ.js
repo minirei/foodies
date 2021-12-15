@@ -135,7 +135,7 @@ const FAQ = () => {
             </p>
             <p className="question">How many Foodies will your team keep?</p>
             <p>
-              The Foodies team will reserve 30 Foodies, solely to mint them for
+              The Foodies team will reserve 50 Foodies, solely to mint them for
               community giveaways/airdrops. With regard to our personal
               collections, we will have a limit of 5 Foodies each (only 2 of us
               in the team). We will be taking part in the Foodies Launch with
