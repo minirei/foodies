@@ -47,13 +47,71 @@ export const TimerSection = styled.div`
       }
     }
   }
+
+  .launchWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(241, 202, 137, 0.85);
+    border-radius: 7%;
+    padding: 1rem;
+    p {
+      font-size: calc(1.3rem + 1vw);
+      line-height: calc(2rem + 1vw);
+      font-weight: 600;
+      margin: 1rem;
+    }
+    .firstLine {
+      p {
+        /* font-size: calc(1.8rem + 1vw); */
+        font-weight: 700;
+      }
+    }
+    .secondLine {
+      p {
+        font-weight: 500;
+      }
+      strong {
+        font-weight: 700;
+      }
+    }
+    .thirdLine {
+      max-width: 100%;
+      p {
+        word-wrap: break-word;
+        font-size: 500;
+      }
+      .svgWrapper {
+        svg {
+          cursor: pointer;
+          width: 5%;
+          height: 5%;
+        }
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
   &.mobile {
-    top: -30%;
+    top: -10%;
+
     .timer {
       width: 80%;
       .box {
         width: 17vw;
         height: 17vw;
+      }
+    }
+    .launchWrapper {
+      width: 90%;
+      padding: 0.5rem;
+      .svgWrapper {
+        svg {
+          width: 10%;
+          height: 10%;
+        }
       }
     }
   }
