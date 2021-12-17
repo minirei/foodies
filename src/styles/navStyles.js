@@ -189,8 +189,8 @@ export const Heading = styled.h1`
     css`
       padding: 0;
       margin: 0;
-      font-size: calc(1.4rem + 1vw);
-      line-height: calc(3rem + 1.4vw);
+      font-size: calc(1.2rem + 1vw);
+      line-height: calc(2.4rem + 1vw);
     `}
 `
 
