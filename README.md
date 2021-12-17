@@ -3,7 +3,7 @@
 ## To-Do
 - label images & links for seo
 - optimise new supply & kitchen images
-- branch off into address-release
+- add `onClick={() => {navigator.clipboard.writeText(this.state.textToCopy)}}`
 
 
 ### Design Concerns
