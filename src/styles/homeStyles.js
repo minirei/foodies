@@ -71,13 +71,21 @@ export const TimerSection = styled.div`
     }
     .secondLine {
       p {
-        font-weight: 500;
+        font-weight: 400;
       }
       strong {
-        font-weight: 700;
+        font-weight: 600;
       }
     }
     .thirdLine {
+      p {
+        font-weight: 400;
+      }
+      em {
+        font-weight: 600;
+      }
+    }
+    .forthLine {
       max-width: 100%;
       p {
         word-wrap: break-word;

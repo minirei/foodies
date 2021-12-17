@@ -53,11 +53,17 @@ const LandingPage = () => {
             </div>
             <div className="secondLine">
               <p>
-                Send <em>exactly </em>
-                <strong> 45 </strong>ADA to:
+                <li><strong>1</strong> Foodie: <strong>45</strong> ADA</li>
+                <li><strong>3</strong> Foodies: <strong>135</strong> ADA</li>
+                <li><strong>5</strong> Foodies: <strong>225</strong> ADA</li>
               </p>
             </div>
             <div className="thirdLine">
+              <p>
+                Send the <em>exact</em> amount of ADA to:
+              </p>
+            </div>
+            <div className="forthLine">
               <p>addr1v9fvvwz8y79f955rp5ruz8dhrm73mskvph9r3vykdfrultsarc0vm</p>
               <div
                 className="svgWrapper"
