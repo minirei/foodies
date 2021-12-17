@@ -88,7 +88,7 @@ const FAQ = () => {
             </p>
             <p className="question">How many Foodies can I mint?</p>
             <p>
-              You can mint only <strong>one Foodie per transaction</strong>, but
+              You can mint only <strong>one, three, or five Foodies per transaction</strong>, but
               are free to mint as many Foodies as you’d like per wallet.
             </p>
             <p className="question">What can I do with my Foodies?</p>

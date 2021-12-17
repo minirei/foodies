@@ -89,7 +89,7 @@ const Guide = () => {
               <strong>
                 <em>exactly</em>
               </strong>{" "}
-              45 ADA from your Cardano Wallet to the wallet address stated.{" "}
+              45, 135, or 225 ADA (depending on the number of Foodies you'd like to mint per your tx) from your Cardano Wallet to the wallet address stated.{" "}
               <strong>Do not</strong> send any ADA from an exchange, your NFT
               will be lost{" "}
               <strong>
