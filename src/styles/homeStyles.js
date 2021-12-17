@@ -58,8 +58,8 @@ export const TimerSection = styled.div`
     border-radius: 7%;
     padding: 1rem;
     p {
-      font-size: calc(1.3rem + 1vw);
-      line-height: calc(2rem + 1vw);
+      font-size: calc(1rem + 1vw);
+      line-height: calc(1rem + 1.6vw);
       font-weight: 600;
       margin: 1rem;
     }
