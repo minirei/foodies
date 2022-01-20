@@ -1,53 +1,29 @@
 # Foodies
+## [**foodiescnft.io**](https://foodiescnft.io)
 
-## To-Do
-- label images & links for seo
-- optimise new supply & kitchen images
-- add `onClick={() => {navigator.clipboard.writeText(this.state.textToCopy)}}`
+Procedurally-generated *food art* sold as an NFT Project, built on the [**Cardano**](https://cardano.org/) blockchain. 
 
+The project launched on 17th December and ended on 31st December, with a revenue of 20,000 SGD.
 
-### Design Concerns
+## Website Technologies
+Built using the [Gatsby](https://www.gatsbyjs.com/) framework, with state management via React hooks.
 
-- COLOUR SCHEME
-  - background is sepia: rgb(255,248, 237)
-  - text colour is rgb(40,10,11)
-    - white if overlaid on image (if necessary)
-  - menu: rgb(242,155,155)
+Styled with the [Styled Components](https://styled-components.com/) library (SASS) and animated by [Framer Motion](https://www.framer.com/motion/).
+
+Hosted on [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/) with analytics by Google Analytics.
+
+## Design
+### Colour Scheme
+- Background (sepia): rgb(255,248, 237)
+- Text colour: rgb(40,10,11)
+- Menu background: rgb(242,155,155)
+- Gallery:
   - rgb(241,202,137)
   - rgb(254,200,216)
   - rgb(181,234,234)
   - rgb(192, 237, 196)
-  - carousel: rgb(232, 253, 255)
-
-
-### Optimisation Concerns
-
-- do some code splitting optimisation
-- implement gatsby-plugin-layout
-  - ref: https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/
-- gatsby-plugin-offline:
-
-
-## Website - The Stack
-
-Frontend: Gatsby
-
-- images
-  - `npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp`
-- framer-motion
-- styled-components
-  - `npm install gatsby-plugin-styled-components styled-components babel-plugin-styled-components styled-normalize`
-- gatsby-plugin-react-helmet react-helmet
-- eslint-config-react-app (--save-dev)
-- cloud functionality
-  - npm install --save gatsby-plugin-gatsby-cloud
+- Carousel: rgb(232, 253, 255)
 
 ### Fonts
-
-Sans-Serif
-- Poppins - https://www.typewolf.com/poppins
-
-Serif
-- Garamond
-
-## USEFUL
+- [Butler](http://fabiandesmet.com/portfolio/butler-font/)
+- [Poppins](https://www.typewolf.com/poppins)
