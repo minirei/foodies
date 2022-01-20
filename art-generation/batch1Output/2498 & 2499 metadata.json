@@ -1,0 +1,32 @@
+{
+  "2498": {
+    "name": "Foodie#2498",
+    "description": "Have a taste of novelty, only at Foodies.",
+    "image": "ipfs://2498",
+    "attributes": [
+      { "trait_type": "background", "value": "Statue of Liberty" },
+      { "trait_type": "face", "value": "VeggieMates Face" },
+      { "trait_type": "headgear", "value": "Bald" },
+      { "trait_type": "arms", "value": "Spaghetti" },
+      { "trait_type": "hands", "value": "Herbs" },
+      { "trait_type": "body", "value": "Plain Soup Shirt" },
+      { "trait_type": "mouth", "value": "Drooling" },
+      { "trait_type": "eyes", "value": "Moon" }
+    ]
+  },
+  "2499": {
+    "name": "Foodie#2499",
+    "description": "Have a taste of novelty, only at Foodies.",
+    "image": "ipfs://2499",
+    "attributes": [
+      { "trait_type": "background", "value": "Summer" },
+      { "trait_type": "face", "value": "Rice Face" },
+      { "trait_type": "headgear", "value": "Foodies Cap" },
+      { "trait_type": "arms", "value": "Sausage" },
+      { "trait_type": "hands", "value": "Liquid Blade" },
+      { "trait_type": "body", "value": "Plain Veggie Shirt" },
+      { "trait_type": "mouth", "value": "Stuffed With Cheese" },
+      { "trait_type": "eyes", "value": "ADA Apocalypse" }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "0": {
+    "name": "Foodie#0",
+    "description": "Have a taste of novelty, only at Foodies.",
+    "image": "ipfs://0",
+    "attributes": [
+      { "trait_type": "background", "value": "Summer" },
+      { "trait_type": "face", "value": "Rice Face" },
+      { "trait_type": "headgear", "value": "Foodies Cap" },
+      { "trait_type": "arms", "value": "Sausage" },
+      { "trait_type": "hands", "value": "Liquid Blade" },
+      { "trait_type": "body", "value": "Plain Veggie Shirt" },
+      { "trait_type": "mouth", "value": "Stuffed With Cheese" },
+      { "trait_type": "eyes", "value": "ADA Apocalypse" }
+    ]
+  }
+}

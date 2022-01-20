@@ -1,0 +1,7 @@
+name: foodies_env
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pillow
+prefix: /home/minrei/anaconda3/envs/foodies_env
