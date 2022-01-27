@@ -12,6 +12,16 @@ Styled with the [Styled Components](https://styled-components.com/) library (SAS
 
 Hosted on [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/) with analytics by Google Analytics.
 
+## Analytics
+### Daily users
+![](analytics/daily-users.png)
+---
+### User activity over time
+![](analytics/user-activity-over-time.png)
+---
+### Users by country
+![](analytics/users-by-country.png)
+
 ## Design
 ### Colour Scheme
 - Background (sepia): rgb(255,248, 237)
